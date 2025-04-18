@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 
 h1 {
@@ -10,26 +10,13 @@ h1 {
 }
 
 form {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
-input, button, select {
-  margin: 5px 0;
-  padding: 8px;
-}
-
-.member {
-  margin-bottom: 20px;
-}
-
-.category {
-  margin-top: 20px;
-}
-
-button {
-  cursor: pointer;
-}
-
-hr {
-  margin-top: 40px;
+.member, .category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
 }

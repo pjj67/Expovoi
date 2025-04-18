@@ -3,11 +3,7 @@
     {
       "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
       "name": "Kythor",
-      "attendance": [
-        true,
-        true,
-        true
-      ],
+      "attendance": [true, true, true],
       "items": [
         {
           "categoryId": "category-uuid-1",
@@ -22,22 +18,7 @@
     {
       "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
       "name": "LexieGoldfish",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "b98db62d-2ccb-4a76-81a4-6ede87c6d848",
-      "name": "LexieGoldfish",
-      "attendance": [],
+      "attendance": [true, true, true, true, true, true, true, true],
       "items": []
     }
   ],
@@ -46,76 +27,28 @@
       "id": "category-uuid-1",
       "name": "Wand",
       "items": [
-        {
-          "id": "item-uuid-1",
-          "name": "Codex of deep secrets"
-        },
-        {
-          "id": "item-uuid-2",
-          "name": "Cordy's grasp of manipulation"
-        },
-        {
-          "id": "684b0882-8c69-4ea8-95af-2f584852e212",
-          "name": "Deckman's balefire scepter"
-        },
-        {
-          "id": "43eae8e3-4ec1-4247-a1d3-c3078e09e841",
-          "name": "Forbidden Demonic Lexicon"
-        },
-        {
-          "id": "1c179b6e-3e07-40fe-ba5b-9f62ceba1afb",
-          "name": "Grayeye's Dripping Tome"
-        },
-        {
-          "id": "d0cdadb1-d3cd-4e1f-b132-5da89ed2dc8a",
-          "name": "Khanzaizin's valorous wand"
-        },
-        {
-          "id": "71363b07-249b-4545-bd85-addbf02acd8f",
-          "name": "Overture of eternal salvation"
-        },
-        {
-          "id": "361aa1b3-3a55-4791-822e-78c0c9686fee",
-          "name": "Tevent's grasp of withering"
-        }
+        { "id": "item-uuid-1", "name": "Codex of deep secrets" },
+        { "id": "item-uuid-2", "name": "Cordy's grasp of manipulation" },
+        { "id": "684b0882-8c69-4ea8-95af-2f584852e212", "name": "Deckman's balefire scepter" },
+        { "id": "43eae8e3-4ec1-4247-a1d3-c3078e09e841", "name": "Forbidden Demonic Lexicon" },
+        { "id": "1c179b6e-3e07-40fe-ba5b-9f62ceba1afb", "name": "Grayeye's Dripping Tome" },
+        { "id": "d0cdadb1-d3cd-4e1f-b132-5da89ed2dc8a", "name": "Khanzaizin's valorous wand" },
+        { "id": "71363b07-249b-4545-bd85-addbf02acd8f", "name": "Overture of eternal salvation" },
+        { "id": "361aa1b3-3a55-4791-822e-78c0c9686fee", "name": "Tevent's grasp of withering" }
       ]
     },
     {
       "id": "category-uuid-2",
       "name": "Staff",
       "items": [
-        {
-          "id": "item-uuid-3",
-          "name": "Abyssal Renaissance Foci"
-        },
-        {
-          "id": "item-uuid-4",
-          "name": "Crimson Wicked Staff"
-        },
-        {
-          "id": "14f151e9-e452-422b-a1b8-5989138f5f41",
-          "name": "Daigon's charred Emberstaff"
-        },
-        {
-          "id": "f1b5463c-f100-40ba-8128-4f4effabe266",
-          "name": "Deluzhnoa's ancient petrified staff"
-        },
-        {
-          "id": "c2e227f9-b803-41ab-87f7-7bc888397b77",
-          "name": "Ebon soulwind staff"
-        },
-        {
-          "id": "9f089b71-e326-4bfd-8fa8-77992a5446b0",
-          "name": "Grayeye's electrified staff"
-        },
-        {
-          "id": "e70324aa-89e6-49f9-b3df-99f4bdc31b6f",
-          "name": "Staff of enlightened reform"
-        },
-        {
-          "id": "9cd0418d-4098-4d2b-a8e7-dc3cd6ffd215",
-          "name": "Queen bellandir's hivemind staff"
-        }
+        { "id": "item-uuid-3", "name": "Abyssal Renaissance Foci" },
+        { "id": "item-uuid-4", "name": "Crimson Wicked Staff" },
+        { "id": "14f151e9-e452-422b-a1b8-5989138f5f41", "name": "Daigon's charred Emberstaff" },
+        { "id": "f1b5463c-f100-40ba-8128-4f4effabe266", "name": "Deluzhnoa's ancient petrified staff" },
+        { "id": "c2e227f9-b803-41ab-87f7-7bc888397b77", "name": "Ebon soulwind staff" },
+        { "id": "9f089b71-e326-4bfd-8fa8-77992a5446b0", "name": "Grayeye's electrified staff" },
+        { "id": "e70324aa-89e6-49f9-b3df-99f4bdc31b6f", "name": "Staff of enlightened reform" },
+        { "id": "9cd0418d-4098-4d2b-a8e7-dc3cd6ffd215", "name": "Queen bellandir's hivemind staff" }
       ]
     }
   ]

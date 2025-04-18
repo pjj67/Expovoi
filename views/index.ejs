@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Item Attendance Checker</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Member Attendance Manager</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
-<body class="bg-gray-100 min-h-screen p-8">
-  <div class="max-w-2xl mx-auto bg-white shadow-md rounded-xl p-6">
-    <h1 class="text-2xl font-bold mb-4">Item Attendance Checker</h1>
+<body>
+  <h1>👥 Member Attendance Manager</h1>
 
-    <!-- Form to add a new member -->
-    <form action="/add-member" method="POST" class="mb-6 space-y-4">
-      <div>
-        <label for="memberName" class="block font-medium">New Member Name</label>
-        <input type="text" id="memberName" name="name" class="w-full p-2 border rounded" required>
-      </div>
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Add Member</button>
-    </form>
+  <!-- Add Member -->
+  <h2>Add Member</h2>
+  <form action="/members" method="POST">
+    <input type="text" name="name" placeholder="Member Name" required />
+    <button type="submit">Add Member</button>
+  </form>
 
-    <!-- Form to add a new category -->
-    <form action="/add-category" method="POST" class="mb-6 space-y-4">
-      <div>
-        <label for="categoryName" class="block font-medium">New Category Name</label>
-        <input type="text" id="categoryName" name="name" class="w-full p-2 border rounded" required>
+  <!-- Members List -->
+  <h2>Members & Attendance</h2>
+  <% if (members.length === 0) { %>
+    <p>No members yet.</p>
+  <% } else { %>
+    <% members.forEach(member => { %>
+      <div class="member">
+        <form action="/members/<%= member.id %>/attendance" method="POST">
+          <strong><%= member.name %></strong>
+          <% for (let i = 0; i < 8; i++) { %>
+            <label>
+              <input type="checkbox" name="attendance" <%= member.attendance[i] ? 'checked' : '' %> />
+              Event <%= i + 1 %>
+            </label>
+          <% } %>
+          <button type="submit">Update Attendance</button>
+        </form>
+        <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
+          <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
+        </form>
       </div>
-      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Add Category</button>
-    </form>
+    <% }); %>
+  <% } %>
 
-    <!-- Form to add a new item to a category -->
-    <form action="/add-item" method="POST" class="mb-6 space-y-4">
-      <div>
-        <label for="category" class="block font-medium">Category</label>
-        <select id="category" name="categoryId" class="w-full p-2 border rounded" required>
-          <option value="">Select a category</option>
-          <% categories.forEach(category => { %>
-            <option value="<%= category.id %>"><%= category.name %></option>
-          <% }); %>
-        </select>
-      </div>
-      <div>
-        <label for="itemName" class="block font-medium">Item Name</label>
-        <input type="text" id="itemName" name="name" class="w-full p-2 border rounded" required>
-      </div>
-      <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded">Add Item</button>
-    </form>
+  <hr/>
 
-    <!-- Form to update member attendance -->
-    <form action="/update-attendance" method="POST" class="mb-6 space-y-4">
-      <div>
-        <label for="member" class="block font-medium">Select Member</label>
-        <select id="member" name="memberId" class="w-full p-2 border rounded" required>
-          <option value="">Select a member</option>
-          <% members.forEach(member => { %>
-            <option value="<%= member.id %>"><%= member.name %></option>
-          <% }); %>
-        </select>
-      </div>
-      <div>
-        <label for="attendance" class="block font-medium">Update Attendance</label>
-        <input type="checkbox" id="attendance" name="attendance" value="true">
-        <label for="attendance">Mark Attendance</label>
-      </div>
-      <button type="submit" class="bg-orange-600 text-white px-4 py-2 rounded">Update Attendance</button>
-    </form>
+  <!-- Add Category -->
+  <h2>Add Category</h2>
+  <form action="/categories" method="POST">
+    <input type="text" name="name" placeholder="Category Name" required />
+    <button type="submit">Add Category</button>
+  </form>
 
-    <!-- Form for selecting category/item and checking attendance -->
-    <form action="/check-item" method="POST" class="space-y-4">
-      <div>
-        <label for="category" class="block font-medium">Category</label>
-        <select id="category" name="categoryId" class="w-full p-2 border rounded" required>
-          <option value="">Select a category</option>
-          <% categories.forEach(category => { %>
-            <option value="<%= category.id %>"><%= category.name %></option>
-          <% }); %>
-        </select>
-      </div>
+  <!-- Categories & Items -->
+  <h2>Categories & Items</h2>
+  <% if (categories.length === 0) { %>
+    <p>No categories yet.</p>
+  <% } else { %>
+    <% categories.forEach(category => { %>
+      <div class="category">
+        <form action="/categories/<%= category.id %>/edit" method="POST">
+          <input type="text" name="name" value="<%= category.name %>" />
+          <button type="submit">Rename</button>
+        </form>
 
-      <div>
-        <label for="item" class="block font-medium">Item</label>
-        <select id="item" name="itemId" class="w-full p-2 border rounded" required>
-          <option value="">Select an item</option>
-        </select>
-      </div>
+        <h4>Add Item</h4>
+        <form action="/categories/<%= category.id %>/items" method="POST">
+          <input type="text" name="name" placeholder="Item Name" required />
+          <button type="submit">Add</button>
+        </form>
 
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Check Attendance</button>
-    </form>
-
-    <% if (results) { %>
-      <div class="mt-6">
-        <h2 class="text-xl font-semibold mb-2">Eligible Members:</h2>
-        <% if (results.length > 0) { %>
-          <ul class="list-disc list-inside">
-            <% results.forEach(member => { %>
-              <li><%= member.name %></li>
-            <% }) %>
+        <% if (category.items.length > 0) { %>
+          <ul>
+            <% category.items.forEach(item => { %>
+              <li>
+                <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
+                  <input type="text" name="name" value="<%= item.name %>" />
+                  <button type="submit">Update</button>
+                </form>
+                <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
+                  <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
+                </form>
+              </li>
+            <% }); %>
           </ul>
-        <% } else { %>
-          <p>No eligible members found for this item.</p>
         <% } %>
       </div>
-    <% } %>
-  </div>
+    <% }); %>
+  <% } %>
 
-  <script>
-    const categories = <%- JSON.stringify(categories) %>;
-    const itemSelect = document.getElementById('item');
-    document.getElementById('category').addEventListener('change', function () {
-      const selectedCategory = categories.find(cat => cat.id === this.value);
-      itemSelect.innerHTML = '<option value="">Select an item</option>';
-      if (selectedCategory) {
-        selectedCategory.items.forEach(item => {
-          const option = document.createElement('option');
-          option.value = item.id;
-          option.textContent = item.name;
-          itemSelect.appendChild(option);
-        });
-      }
-    });
-  </script>
+  <hr/>
+
+  <!-- Check Eligibility for Items -->
+  <h2>Check Eligibility for Items</h2>
+  <form action="/check-item" method="POST">
+    <label for="categoryId">Select Category:</label>
+    <select name="categoryId" id="categoryId" required>
+      <% categories.forEach(category => { %>
+        <option value="<%= category.id %>"><%= category.name %></option>
+      <% }); %>
+    </select>
+
+    <label for="itemId">Select Item:</label>
+    <select name="itemId" id="itemId" required>
+      <% categories.forEach(category => { %>
+        <optgroup label="<%= category.name %>">
+          <% category.items.forEach(item => { %>
+            <option value="<%= item.id %>"><%= item.name %></option>
+          <% }); %>
+        </optgroup>
+      <% }); %>
+    </select>
+
+    <button type="submit">Check Eligibility</button>
+  </form>
+
+  <!-- Display Results -->
+  <h3>Eligible Members:</h3>
+  <% if (results && results.length > 0) { %>
+    <ul>
+      <% results.forEach(member => { %>
+        <li><%= member.name %> (Attendance: <%= member.attendance.filter(a => a).length / member.attendance.length * 100 %>%)</li>
+      <% }); %>
+    </ul>
+  <% } else if (results) { %>
+    <p>No eligible members found.</p>
+  <% } %>
 </body>
 </html>
