@@ -88,8 +88,8 @@
 
   <hr/>
 
-  <!-- Assign Items to Members -->
-  <h2>Assign Items to Members</h2>
+  <!-- Assign Multiple Items to Members -->
+  <h2>Assign Multiple Items to Members</h2>
   <% members.forEach(member => { %>
     <div class="member">
       <h3><%= member.name %></h3>
@@ -108,27 +108,22 @@
         <p>No items assigned.</p>
       <% } %>
 
-      <!-- Form to assign new item -->
-      <form action="/members/<%= member.id %>/add-item" method="POST">
-        <label>Category:
-          <select name="categoryId" required>
-            <% categories.forEach(cat => { %>
-              <option value="<%= cat.id %>"><%= cat.name %></option>
+      <!-- Form to assign multiple items -->
+      <form action="/members/<%= member.id %>/add-items" method="POST">
+        <h4>Select Items to Assign</h4>
+
+        <% categories.forEach(category => { %>
+          <h5><%= category.name %></h5>
+          <label>Select Items:</label>
+          <select name="itemIds" multiple required>
+            <% category.items.forEach(item => { %>
+              <option value="<%= item.id %>"><%= item.name %></option>
             <% }); %>
           </select>
-        </label>
+          <input type="hidden" name="categoryIds" value="<%= category.id %>" />
+        <% }); %>
 
-        <label>Item:
-          <select name="itemId" required>
-            <% categories.forEach(cat => { %>
-              <% cat.items.forEach(item => { %>
-                <option value="<%= item.id %>"><%= item.name %> (from <%= cat.name %>)</option>
-              <% }); %>
-            <% }); %>
-          </select>
-        </label>
-
-        <button type="submit">Assign</button>
+        <button type="submit">Assign Items</button>
       </form>
     </div>
   <% }); %>

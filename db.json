@@ -1,7 +1,7 @@
 {
   "members": [
     {
-      "id": "7666ecd5-b552-4299-b5cb-51b95ae4dfc2",
+      "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
       "name": "Kythor",
       "attendance": [
         true,
@@ -15,12 +15,12 @@
         },
         {
           "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-1"
+          "itemId": "item-uuid-4"
         }
       ]
     },
     {
-      "id": "0347cd11-2d27-4b71-aa11-715eacf58a2c",
+      "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
       "name": "LexieGoldfish",
       "attendance": [
         true,
@@ -42,11 +42,11 @@
       "items": [
         {
           "id": "item-uuid-1",
-          "name": "Item 1"
+          "name": "Wooden wand"
         },
         {
           "id": "item-uuid-2",
-          "name": "Item 2"
+          "name": "Iron Wand"
         }
       ]
     },
@@ -56,13 +56,88 @@
       "items": [
         {
           "id": "item-uuid-3",
-          "name": "Item 3"
+          "name": "Wooden Staff"
         },
         {
           "id": "item-uuid-4",
-          "name": "Item 4"
+          "name": "Iron Staff"
         }
       ]
+    },
+    {
+      "id": "62ccbd28-831d-440e-ad2c-97ee2bb60ac8",
+      "name": "Crossbow",
+      "items": []
+    },
+    {
+      "id": "5a10dc7a-c8f3-4701-82b7-1c92f50add6f",
+      "name": "Greatsword",
+      "items": []
+    },
+    {
+      "id": "12e22212-7d7e-425d-a633-d3ba47ed7c3b",
+      "name": "Sword and Shield",
+      "items": []
+    },
+    {
+      "id": "22285c8e-f823-4fa5-86bf-1daa7993040d",
+      "name": "Daggers",
+      "items": []
+    },
+    {
+      "id": "0dfb2755-6116-4dc9-84f8-2e097d906414",
+      "name": "Spear",
+      "items": []
+    },
+    {
+      "id": "9dd75efa-456b-4670-942f-740378f648c9",
+      "name": "Longbow",
+      "items": []
+    },
+    {
+      "id": "059dbfbb-c7d3-4ca3-b1c6-04190d4d59f3",
+      "name": "Archboss weap 1",
+      "items": []
+    },
+    {
+      "id": "21a44a5c-df8b-4c61-b820-bdee62ba026f",
+      "name": "Archboss Weap 2",
+      "items": []
+    },
+    {
+      "id": "5db5c679-8c68-4a7e-9686-0cce21a8bc43",
+      "name": "Head",
+      "items": []
+    },
+    {
+      "id": "6bd90911-1c70-4b73-9af1-465f481765e4",
+      "name": "Chest",
+      "items": []
+    },
+    {
+      "id": "5945be42-3b96-4e38-8dac-8070e71d443e",
+      "name": "Legs",
+      "items": []
+    },
+    {
+      "id": "cc0223d8-a530-4a5e-a38e-fc9df4951995",
+      "name": "Feet",
+      "items": []
+    },
+    {
+      "id": "2ea8fe9c-bb7c-4551-84e0-b8a7ebc4bdc5",
+      "name": "Gloves",
+      "items": []
+    },
+    {
+      "id": "2c4ddd4b-ad6e-46d7-859a-332dc8e53788",
+      "name": "Cloak",
+      "items": []
+    },
+    {
+      "id": "bcd192d5-8f17-4bd9-96c3-b6c582618e79",
+      "name": "Necklace",
+      "items": []
     }
   ]
 }

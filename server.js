@@ -93,16 +93,22 @@ app.post("/categories/:catId/items/:itemId/delete", (req, res) => {
   res.redirect("/");
 });
 
-// Add Item to Member
-app.post("/members/:memberId/add-item", (req, res) => {
-  const { categoryId, itemId } = req.body;
+// Add Multiple Items to Member
+app.post("/members/:memberId/add-items", (req, res) => {
+  let { categoryIds, itemIds } = req.body;
+
+  // Make sure these are arrays even if only one item is selected
+  if (!Array.isArray(categoryIds)) categoryIds = [categoryIds];
+  if (!Array.isArray(itemIds)) itemIds = [itemIds];
 
   const member = db.get("members").find({ id: req.params.memberId });
 
-  const existing = member.get("items").find({ categoryId, itemId }).value();
-  if (!existing) {
-    member.get("items").push({ categoryId, itemId }).write();
-  }
+  categoryIds.forEach((categoryId, index) => {
+    const itemId = itemIds[index];
+    if (!member.get("items").find({ categoryId, itemId }).value()) {
+      member.get("items").push({ categoryId, itemId }).write();
+    }
+  });
 
   res.redirect("/");
 });
