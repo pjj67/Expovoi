@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Item Attendance Checker</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -8,7 +10,63 @@
   <div class="max-w-2xl mx-auto bg-white shadow-md rounded-xl p-6">
     <h1 class="text-2xl font-bold mb-4">Item Attendance Checker</h1>
 
-    <form id="itemForm" method="POST" action="/check-item" class="space-y-4">
+    <!-- Form to add a new member -->
+    <form action="/add-member" method="POST" class="mb-6 space-y-4">
+      <div>
+        <label for="memberName" class="block font-medium">New Member Name</label>
+        <input type="text" id="memberName" name="name" class="w-full p-2 border rounded" required>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Add Member</button>
+    </form>
+
+    <!-- Form to add a new category -->
+    <form action="/add-category" method="POST" class="mb-6 space-y-4">
+      <div>
+        <label for="categoryName" class="block font-medium">New Category Name</label>
+        <input type="text" id="categoryName" name="name" class="w-full p-2 border rounded" required>
+      </div>
+      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Add Category</button>
+    </form>
+
+    <!-- Form to add a new item to a category -->
+    <form action="/add-item" method="POST" class="mb-6 space-y-4">
+      <div>
+        <label for="category" class="block font-medium">Category</label>
+        <select id="category" name="categoryId" class="w-full p-2 border rounded" required>
+          <option value="">Select a category</option>
+          <% categories.forEach(category => { %>
+            <option value="<%= category.id %>"><%= category.name %></option>
+          <% }); %>
+        </select>
+      </div>
+      <div>
+        <label for="itemName" class="block font-medium">Item Name</label>
+        <input type="text" id="itemName" name="name" class="w-full p-2 border rounded" required>
+      </div>
+      <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded">Add Item</button>
+    </form>
+
+    <!-- Form to update member attendance -->
+    <form action="/update-attendance" method="POST" class="mb-6 space-y-4">
+      <div>
+        <label for="member" class="block font-medium">Select Member</label>
+        <select id="member" name="memberId" class="w-full p-2 border rounded" required>
+          <option value="">Select a member</option>
+          <% members.forEach(member => { %>
+            <option value="<%= member.id %>"><%= member.name %></option>
+          <% }); %>
+        </select>
+      </div>
+      <div>
+        <label for="attendance" class="block font-medium">Update Attendance</label>
+        <input type="checkbox" id="attendance" name="attendance" value="true">
+        <label for="attendance">Mark Attendance</label>
+      </div>
+      <button type="submit" class="bg-orange-600 text-white px-4 py-2 rounded">Update Attendance</button>
+    </form>
+
+    <!-- Form for selecting category/item and checking attendance -->
+    <form action="/check-item" method="POST" class="space-y-4">
       <div>
         <label for="category" class="block font-medium">Category</label>
         <select id="category" name="categoryId" class="w-full p-2 border rounded" required>
@@ -26,7 +84,7 @@
         </select>
       </div>
 
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Check</button>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Check Attendance</button>
     </form>
 
     <% if (results) { %>
