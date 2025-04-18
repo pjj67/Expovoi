@@ -88,40 +88,40 @@
 
   <hr/>
 
-  <!-- Check Eligibility for Items -->
-  <h2>Check Eligibility for Items</h2>
+  <!-- Eligibility Checker -->
+  <h2>Eligibility Checker</h2>
   <form action="/check-item" method="POST">
-    <label for="categoryId">Select Category:</label>
-    <select name="categoryId" id="categoryId" required>
+    <label for="categoryId">Category</label>
+    <select name="categoryId" required>
       <% categories.forEach(category => { %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% }); %>
     </select>
 
-    <label for="itemId">Select Item:</label>
-    <select name="itemId" id="itemId" required>
+    <label for="itemId">Item</label>
+    <select name="itemId" required>
       <% categories.forEach(category => { %>
-        <optgroup label="<%= category.name %>">
-          <% category.items.forEach(item => { %>
-            <option value="<%= item.id %>"><%= item.name %></option>
-          <% }); %>
-        </optgroup>
+        <% category.items.forEach(item => { %>
+          <option value="<%= item.id %>"><%= item.name %></option>
+        <% }); %>
       <% }); %>
     </select>
 
     <button type="submit">Check Eligibility</button>
   </form>
 
-  <!-- Display Results -->
-  <h3>Eligible Members:</h3>
-  <% if (results && results.length > 0) { %>
-    <ul>
-      <% results.forEach(member => { %>
-        <li><%= member.name %> (Attendance: <%= member.attendance.filter(a => a).length / member.attendance.length * 100 %>%)</li>
-      <% }); %>
-    </ul>
-  <% } else if (results) { %>
-    <p>No eligible members found.</p>
+  <% if (results) { %>
+    <h3>Eligible Members</h3>
+    <% if (results.length === 0) { %>
+      <p>No members meet the eligibility criteria.</p>
+    <% } else { %>
+      <ul>
+        <% results.forEach(member => { %>
+          <li><%= member.name %></li>
+        <% }); %>
+      </ul>
+    <% } %>
   <% } %>
+
 </body>
 </html>
