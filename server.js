@@ -1,117 +1,47 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const { v4: uuidv4 } = require("uuid");
-const low = require("lowdb");
-const FileSync = require("lowdb/adapters/FileSync");
-const adapter = new FileSync("db.json");
-const db = low(adapter);
+const { Low, JSONFile } = require("lowdb");
+const { nanoid } = require("nanoid");
+const cors = require("cors");
 
+const adapter = new JSONFile("db.json");
+const db = new Low(adapter);
+
+app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.set("view engine", "ejs");
 
-// Default DB structure
-db.defaults({ members: [], categories: [] }).write();
+(async () => {
+  await db.read();
+  db.data ||= { members: [], categories: [] };
+  await db.write();
+})();
 
-// Home Page
-app.get("/", (req, res) => {
-  const members = db.get("members").value();
-  const categories = db.get("categories").value();
-  res.render("index", { members, categories });
+// Get all categories
+app.get("/categories", async (req, res) => {
+  await db.read();
+  res.json(db.data.categories);
 });
 
-// Add Member
-app.post("/members", (req, res) => {
-  const name = req.body.name;
-  db.get("members")
-    .push({ id: uuidv4(), name, attendance: Array(8).fill(false), items: [] })
-    .write();
-  res.redirect("/");
-});
+// Get eligible members for a dropped item
+app.get("/eligible-members/:categoryId/:itemId", async (req, res) => {
+  await db.read();
+  const { categoryId, itemId } = req.params;
+  const members = db.data.members;
 
-// Remove Member
-app.post("/members/:id/delete", (req, res) => {
-  db.get("members").remove({ id: req.params.id }).write();
-  res.redirect("/");
-});
+  const eligible = members.filter(member => {
+    const hasItem = member.items?.some(
+      i => i.categoryId === categoryId && i.itemId === itemId
+    );
+    if (!hasItem) return false;
 
-// Update Attendance
-app.post("/members/:id/attendance", (req, res) => {
-  const attendance = req.body.attendance.map(val => val === "on");
-  db.get("members")
-    .find({ id: req.params.id })
-    .assign({ attendance })
-    .write();
-  res.redirect("/");
-});
-
-// Add Category
-app.post("/categories", (req, res) => {
-  const name = req.body.name;
-  db.get("categories")
-    .push({ id: uuidv4(), name, items: [] })
-    .write();
-  res.redirect("/");
-});
-
-// Update Category Name
-app.post("/categories/:id/edit", (req, res) => {
-  const name = req.body.name;
-  db.get("categories").find({ id: req.params.id }).assign({ name }).write();
-  res.redirect("/");
-});
-
-// Add Item to Category
-app.post("/categories/:id/items", (req, res) => {
-  const item = { id: uuidv4(), name: req.body.name };
-  db.get("categories")
-    .find({ id: req.params.id })
-    .get("items")
-    .push(item)
-    .write();
-  res.redirect("/");
-});
-
-// Edit Item in Category
-app.post("/categories/:catId/items/:itemId/edit", (req, res) => {
-  const { name } = req.body;
-  const category = db.get("categories").find({ id: req.params.catId });
-  const item = category.get("items").find({ id: req.params.itemId });
-  item.assign({ name }).write();
-  res.redirect("/");
-});
-
-// Delete Item
-app.post("/categories/:catId/items/:itemId/delete", (req, res) => {
-  db.get("categories")
-    .find({ id: req.params.catId })
-    .get("items")
-    .remove({ id: req.params.itemId })
-    .write();
-  res.redirect("/");
-});
-
-// Add Multiple Items to Member
-app.post("/members/:memberId/add-items", (req, res) => {
-  let { categoryIds, itemIds } = req.body;
-
-  // Make sure these are arrays even if only one item is selected
-  if (!Array.isArray(categoryIds)) categoryIds = [categoryIds];
-  if (!Array.isArray(itemIds)) itemIds = [itemIds];
-
-  const member = db.get("members").find({ id: req.params.memberId });
-
-  categoryIds.forEach((categoryId, index) => {
-    const itemId = itemIds[index];
-    if (!member.get("items").find({ categoryId, itemId }).value()) {
-      member.get("items").push({ categoryId, itemId }).write();
-    }
+    const attended = member.attendance?.filter(a => a === true).length || 0;
+    return attended >= 4; // 50% of 8
   });
 
-  res.redirect("/");
+  res.json(eligible);
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

@@ -3,11 +3,7 @@
     {
       "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
       "name": "Kythor",
-      "attendance": [
-        true,
-        true,
-        true
-      ],
+      "attendance": [true, true, true],
       "items": [
         {
           "categoryId": "category-uuid-1",
@@ -22,16 +18,7 @@
     {
       "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
       "name": "LexieGoldfish",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
+      "attendance": [true, true, true, true, true, true, true, true],
       "items": []
     }
   ],
@@ -40,210 +27,29 @@
       "id": "category-uuid-1",
       "name": "Wand",
       "items": [
-        {
-          "id": "item-uuid-1",
-          "name": "Codex of deep secrets"
-        },
-        {
-          "id": "item-uuid-2",
-          "name": "Cordy's grasp of manipulation"
-        },
-        {
-          "id": "684b0882-8c69-4ea8-95af-2f584852e212",
-          "name": "Deckman's balefire scepter"
-        },
-        {
-          "id": "43eae8e3-4ec1-4247-a1d3-c3078e09e841",
-          "name": "Forbidden Demonic Lexicon"
-        },
-        {
-          "id": "1c179b6e-3e07-40fe-ba5b-9f62ceba1afb",
-          "name": "Grayeye's Dripping Tome"
-        },
-        {
-          "id": "d0cdadb1-d3cd-4e1f-b132-5da89ed2dc8a",
-          "name": "Khanzaizin's valorous wand"
-        },
-        {
-          "id": "71363b07-249b-4545-bd85-addbf02acd8f",
-          "name": "Overture of eternal salvation"
-        },
-        {
-          "id": "361aa1b3-3a55-4791-822e-78c0c9686fee",
-          "name": "Tevent's grasp of withering"
-        }
+        { "id": "item-uuid-1", "name": "Codex of deep secrets" },
+        { "id": "item-uuid-2", "name": "Cordy's grasp of manipulation" },
+        { "id": "684b0882-8c69-4ea8-95af-2f584852e212", "name": "Deckman's balefire scepter" },
+        { "id": "43eae8e3-4ec1-4247-a1d3-c3078e09e841", "name": "Forbidden Demonic Lexicon" },
+        { "id": "1c179b6e-3e07-40fe-ba5b-9f62ceba1afb", "name": "Grayeye's Dripping Tome" },
+        { "id": "d0cdadb1-d3cd-4e1f-b132-5da89ed2dc8a", "name": "Khanzaizin's valorous wand" },
+        { "id": "71363b07-249b-4545-bd85-addbf02acd8f", "name": "Overture of eternal salvation" },
+        { "id": "361aa1b3-3a55-4791-822e-78c0c9686fee", "name": "Tevent's grasp of withering" }
       ]
     },
     {
       "id": "category-uuid-2",
       "name": "Staff",
       "items": [
-        {
-          "id": "item-uuid-3",
-          "name": "Abyssal Renaissance Foci"
-        },
-        {
-          "id": "item-uuid-4",
-          "name": "Crimson Wicked Staff"
-        },
-        {
-          "id": "14f151e9-e452-422b-a1b8-5989138f5f41",
-          "name": "Daigon's charred Emberstaff"
-        },
-        {
-          "id": "f1b5463c-f100-40ba-8128-4f4effabe266",
-          "name": "Deluzhnoa's ancient petrified staff"
-        },
-        {
-          "id": "c2e227f9-b803-41ab-87f7-7bc888397b77",
-          "name": "Ebon soulwind staff"
-        },
-        {
-          "id": "9f089b71-e326-4bfd-8fa8-77992a5446b0",
-          "name": "Grayeye's electrified staff"
-        },
-        {
-          "id": "e70324aa-89e6-49f9-b3df-99f4bdc31b6f",
-          "name": "Staff of enlightened reform"
-        },
-        {
-          "id": "9cd0418d-4098-4d2b-a8e7-dc3cd6ffd215",
-          "name": "Queen bellandir's hivemind staff"
-        }
+        { "id": "item-uuid-3", "name": "Abyssal Renaissance Foci" },
+        { "id": "item-uuid-4", "name": "Crimson Wicked Staff" },
+        { "id": "14f151e9-e452-422b-a1b8-5989138f5f41", "name": "Daigon's charred Emberstaff" },
+        { "id": "f1b5463c-f100-40ba-8128-4f4effabe266", "name": "Deluzhnoa's ancient petrified staff" },
+        { "id": "c2e227f9-b803-41ab-87f7-7bc888397b77", "name": "Ebon soulwind staff" },
+        { "id": "9f089b71-e326-4bfd-8fa8-77992a5446b0", "name": "Grayeye's electrified staff" },
+        { "id": "e70324aa-89e6-49f9-b3df-99f4bdc31b6f", "name": "Staff of enlightened reform" },
+        { "id": "9cd0418d-4098-4d2b-a8e7-dc3cd6ffd215", "name": "Queen bellandir's hivemind staff" }
       ]
-    },
-    {
-      "id": "62ccbd28-831d-440e-ad2c-97ee2bb60ac8",
-      "name": "Crossbow",
-      "items": [
-        {
-          "id": "ab643804-df25-4f03-9686-29e9e8a64844",
-          "name": "Akman's blodletting crossbows"
-        },
-        {
-          "id": "90d81ae6-33d2-4549-930b-0baa191f19fa",
-          "name": "Bercant's spineflower crossbows"
-        },
-        {
-          "id": "baa3deba-653d-4800-bcd1-c5af56e7b325",
-          "name": "Cordy's stormspore spike slingers"
-        },
-        {
-          "id": "833aaa64-5ea5-4b87-9705-8832ae1074e8",
-          "name": "Crossbows of the darkest night"
-        },
-        {
-          "id": "51348df2-7cc5-48d4-b511-f2902d7a743d",
-          "name": "Moonlight echo repeaters"
-        },
-        {
-          "id": "addc7c82-c190-46fe-9133-a0b1297e4e3c",
-          "name": "Unrelenting annihilation crossbows "
-        },
-        {
-          "id": "a6c9e3b9-0082-4196-8135-0052482b4e2b",
-          "name": "Queen bellandir's toxic spine throwers"
-        }
-      ]
-    },
-    {
-      "id": "5a10dc7a-c8f3-4701-82b7-1c92f50add6f",
-      "name": "Greatsword",
-      "items": [
-        {
-          "id": "6ff77ca0-031c-4f42-9128-2646330626a2",
-          "name": "Broadsword of the juggernaught"
-        },
-        {
-          "id": "12ed86a3-11c8-4bb7-99fe-e3d5ac686a91",
-          "name": "Celestial cyclone warblade"
-        }
-      ]
-    },
-    {
-      "id": "12e22212-7d7e-425d-a633-d3ba47ed7c3b",
-      "name": "Sword and Shield",
-      "items": []
-    },
-    {
-      "id": "22285c8e-f823-4fa5-86bf-1daa7993040d",
-      "name": "Daggers",
-      "items": []
-    },
-    {
-      "id": "0dfb2755-6116-4dc9-84f8-2e097d906414",
-      "name": "Spear",
-      "items": []
-    },
-    {
-      "id": "9dd75efa-456b-4670-942f-740378f648c9",
-      "name": "Longbow",
-      "items": []
-    },
-    {
-      "id": "059dbfbb-c7d3-4ca3-b1c6-04190d4d59f3",
-      "name": "Archboss weap 1",
-      "items": []
-    },
-    {
-      "id": "21a44a5c-df8b-4c61-b820-bdee62ba026f",
-      "name": "Archboss Weap 2",
-      "items": []
-    },
-    {
-      "id": "5db5c679-8c68-4a7e-9686-0cce21a8bc43",
-      "name": "Head",
-      "items": []
-    },
-    {
-      "id": "6bd90911-1c70-4b73-9af1-465f481765e4",
-      "name": "Chest",
-      "items": []
-    },
-    {
-      "id": "5945be42-3b96-4e38-8dac-8070e71d443e",
-      "name": "Legs",
-      "items": []
-    },
-    {
-      "id": "cc0223d8-a530-4a5e-a38e-fc9df4951995",
-      "name": "Feet",
-      "items": []
-    },
-    {
-      "id": "2ea8fe9c-bb7c-4551-84e0-b8a7ebc4bdc5",
-      "name": "Gloves",
-      "items": []
-    },
-    {
-      "id": "2c4ddd4b-ad6e-46d7-859a-332dc8e53788",
-      "name": "Cloak",
-      "items": []
-    },
-    {
-      "id": "bcd192d5-8f17-4bd9-96c3-b6c582618e79",
-      "name": "Necklace",
-      "items": []
-    },
-    {
-      "id": "b30997df-ba97-4640-b19a-bef00f23887f",
-      "name": "Bracelet",
-      "items": []
-    },
-    {
-      "id": "7d05caec-af16-4d61-8078-4b805ef1fd0b",
-      "name": "Belt",
-      "items": []
-    },
-    {
-      "id": "3d5f8c17-ac9f-4b38-b2fc-89773b5b66cd",
-      "name": "Ring 1",
-      "items": []
-    },
-    {
-      "id": "7f6d1ab4-5a48-4016-8151-64fac174baf1",
-      "name": "Ring 2",
-      "items": []
     }
   ]
 }
