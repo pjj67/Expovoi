@@ -1,0 +1,39 @@
+{
+  "members": [
+    {
+      "id": "3aa75446-8a4a-4807-9ad2-61228e0d5646",
+      "name": "Kythor",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "cf2c0b88-b503-4cbf-a95c-588541bfd8c8",
+      "name": "LexieGoldfish",
+      "attendance": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "54b712f5-c7a6-49f5-b7b4-2d0e6d3158fd",
+      "name": "Wand",
+      "items": []
+    },
+    {
+      "id": "c76db8f0-f337-4f01-a457-848678d5fed6",
+      "name": "Staff",
+      "items": []
+    }
+  ]
+}

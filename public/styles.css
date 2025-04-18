@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 10px 0;
+}
+
+.member, .category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
