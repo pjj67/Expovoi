@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 app.post("/members", (req, res) => {
   const name = req.body.name;
   db.get("members")
-    .push({ id: uuidv4(), name, attendance: Array(8).fill(false) })
+    .push({ id: uuidv4(), name, attendance: Array(8).fill(false), items: [] })
     .write();
   res.redirect("/");
 });
@@ -65,7 +65,7 @@ app.post("/categories/:id/edit", (req, res) => {
 
 // Add Item to Category
 app.post("/categories/:id/items", (req, res) => {
-  const item = { id: uuidv4(), name: req.body.name, description: req.body.description };
+  const item = { id: uuidv4(), name: req.body.name };
   db.get("categories")
     .find({ id: req.params.id })
     .get("items")
@@ -76,10 +76,10 @@ app.post("/categories/:id/items", (req, res) => {
 
 // Edit Item in Category
 app.post("/categories/:catId/items/:itemId/edit", (req, res) => {
-  const { name, description } = req.body;
+  const { name } = req.body;
   const category = db.get("categories").find({ id: req.params.catId });
   const item = category.get("items").find({ id: req.params.itemId });
-  item.assign({ name, description }).write();
+  item.assign({ name }).write();
   res.redirect("/");
 });
 
@@ -93,7 +93,19 @@ app.post("/categories/:catId/items/:itemId/delete", (req, res) => {
   res.redirect("/");
 });
 
+// Add Item to Member
+app.post("/members/:memberId/add-item", (req, res) => {
+  const { categoryId, itemId } = req.body;
+
+  const member = db.get("members").find({ id: req.params.memberId });
+
+  const existing = member.get("items").find({ categoryId, itemId }).value();
+  if (!existing) {
+    member.get("items").push({ categoryId, itemId }).write();
+  }
+
+  res.redirect("/");
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
-
-app.set("view engine", "ejs");

@@ -1,39 +1,68 @@
 {
   "members": [
     {
-      "id": "3aa75446-8a4a-4807-9ad2-61228e0d5646",
+      "id": "7666ecd5-b552-4299-b5cb-51b95ae4dfc2",
       "name": "Kythor",
       "attendance": [
         true,
         true,
-        true,
-        true,
-        true,
-        true,
-        true,
         true
+      ],
+      "items": [
+        {
+          "categoryId": "category-uuid-1",
+          "itemId": "item-uuid-1"
+        },
+        {
+          "categoryId": "category-uuid-2",
+          "itemId": "item-uuid-1"
+        }
       ]
     },
     {
-      "id": "cf2c0b88-b503-4cbf-a95c-588541bfd8c8",
+      "id": "0347cd11-2d27-4b71-aa11-715eacf58a2c",
       "name": "LexieGoldfish",
       "attendance": [
         true,
         true,
+        true,
+        true,
+        true,
+        true,
+        true,
         true
-      ]
+      ],
+      "items": []
     }
   ],
   "categories": [
     {
-      "id": "54b712f5-c7a6-49f5-b7b4-2d0e6d3158fd",
+      "id": "category-uuid-1",
       "name": "Wand",
-      "items": []
+      "items": [
+        {
+          "id": "item-uuid-1",
+          "name": "Item 1"
+        },
+        {
+          "id": "item-uuid-2",
+          "name": "Item 2"
+        }
+      ]
     },
     {
-      "id": "c76db8f0-f337-4f01-a457-848678d5fed6",
+      "id": "category-uuid-2",
       "name": "Staff",
-      "items": []
+      "items": [
+        {
+          "id": "item-uuid-3",
+          "name": "Item 3"
+        },
+        {
+          "id": "item-uuid-4",
+          "name": "Item 4"
+        }
+      ]
     }
   ]
 }

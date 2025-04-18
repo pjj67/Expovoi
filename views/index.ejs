@@ -64,7 +64,6 @@
         <h4>Add Item</h4>
         <form action="/categories/<%= category.id %>/items" method="POST">
           <input type="text" name="name" placeholder="Item Name" required />
-          <input type="text" name="description" placeholder="Description" />
           <button type="submit">Add</button>
         </form>
 
@@ -74,7 +73,6 @@
               <li>
                 <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
                   <input type="text" name="name" value="<%= item.name %>" />
-                  <input type="text" name="description" value="<%= item.description %>" />
                   <button type="submit">Update</button>
                 </form>
                 <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
@@ -87,5 +85,52 @@
       </div>
     <% }); %>
   <% } %>
+
+  <hr/>
+
+  <!-- Assign Items to Members -->
+  <h2>Assign Items to Members</h2>
+  <% members.forEach(member => { %>
+    <div class="member">
+      <h3><%= member.name %></h3>
+      <% if (member.items && member.items.length > 0) { %>
+        <ul>
+          <% member.items.forEach(assignment => {
+            const category = categories.find(c => c.id === assignment.categoryId);
+            const item = category ? category.items.find(i => i.id === assignment.itemId) : null;
+          %>
+            <% if (category && item) { %>
+              <li><strong><%= category.name %>:</strong> <%= item.name %></li>
+            <% } %>
+          <% }); %>
+        </ul>
+      <% } else { %>
+        <p>No items assigned.</p>
+      <% } %>
+
+      <!-- Form to assign new item -->
+      <form action="/members/<%= member.id %>/add-item" method="POST">
+        <label>Category:
+          <select name="categoryId" required>
+            <% categories.forEach(cat => { %>
+              <option value="<%= cat.id %>"><%= cat.name %></option>
+            <% }); %>
+          </select>
+        </label>
+
+        <label>Item:
+          <select name="itemId" required>
+            <% categories.forEach(cat => { %>
+              <% cat.items.forEach(item => { %>
+                <option value="<%= item.id %>"><%= item.name %> (from <%= cat.name %>)</option>
+              <% }); %>
+            <% }); %>
+          </select>
+        </label>
+
+        <button type="submit">Assign</button>
+      </form>
+    </div>
+  <% }); %>
 </body>
 </html>
