@@ -1,86 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Item Drop Eligibility Checker</title>
+  <title>Item Attendance Checker</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h2>Item Drop Eligibility Checker</h2>
+<body class="bg-gray-100 min-h-screen p-8">
+  <div class="max-w-2xl mx-auto bg-white shadow-md rounded-xl p-6">
+    <h1 class="text-2xl font-bold mb-4">Item Attendance Checker</h1>
 
-  <label for="categorySelect">Select Category:</label>
-  <select id="categorySelect">
-    <option value="">--Choose a category--</option>
-  </select>
+    <form id="itemForm" method="POST" action="/check-item" class="space-y-4">
+      <div>
+        <label for="category" class="block font-medium">Category</label>
+        <select id="category" name="categoryId" class="w-full p-2 border rounded" required>
+          <option value="">Select a category</option>
+          <% categories.forEach(category => { %>
+            <option value="<%= category.id %>"><%= category.name %></option>
+          <% }); %>
+        </select>
+      </div>
 
-  <br><br>
+      <div>
+        <label for="item" class="block font-medium">Item</label>
+        <select id="item" name="itemId" class="w-full p-2 border rounded" required>
+          <option value="">Select an item</option>
+        </select>
+      </div>
 
-  <label for="itemSelect">Select Item:</label>
-  <select id="itemSelect" disabled>
-    <option value="">--Choose an item--</option>
-  </select>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Check</button>
+    </form>
 
-  <br><br>
-
-  <div id="result"></div>
+    <% if (results) { %>
+      <div class="mt-6">
+        <h2 class="text-xl font-semibold mb-2">Eligible Members:</h2>
+        <% if (results.length > 0) { %>
+          <ul class="list-disc list-inside">
+            <% results.forEach(member => { %>
+              <li><%= member.name %></li>
+            <% }) %>
+          </ul>
+        <% } else { %>
+          <p>No eligible members found for this item.</p>
+        <% } %>
+      </div>
+    <% } %>
+  </div>
 
   <script>
-    let categories = [];
-
-    fetch("/categories")
-      .then(res => res.json())
-      .then(data => {
-        categories = data;
-        const categorySelect = document.getElementById("categorySelect");
-
-        data.forEach(cat => {
-          const opt = document.createElement("option");
-          opt.value = cat.id;
-          opt.textContent = cat.name;
-          categorySelect.appendChild(opt);
-        });
-      });
-
-    document.getElementById("categorySelect").addEventListener("change", function () {
+    const categories = <%- JSON.stringify(categories) %>;
+    const itemSelect = document.getElementById('item');
+    document.getElementById('category').addEventListener('change', function () {
       const selectedCategory = categories.find(cat => cat.id === this.value);
-      const itemSelect = document.getElementById("itemSelect");
-      itemSelect.innerHTML = "<option value=''>--Choose an item--</option>";
-      itemSelect.disabled = !selectedCategory;
-
-      if (selectedCategory && selectedCategory.items) {
+      itemSelect.innerHTML = '<option value="">Select an item</option>';
+      if (selectedCategory) {
         selectedCategory.items.forEach(item => {
-          const opt = document.createElement("option");
-          opt.value = item.id;
-          opt.textContent = item.name;
-          itemSelect.appendChild(opt);
+          const option = document.createElement('option');
+          option.value = item.id;
+          option.textContent = item.name;
+          itemSelect.appendChild(option);
         });
       }
-    });
-
-    document.getElementById("itemSelect").addEventListener("change", function () {
-      const categoryId = document.getElementById("categorySelect").value;
-      const itemId = this.value;
-      const result = document.getElementById("result");
-
-      if (!categoryId || !itemId) {
-        result.textContent = "Please select both category and item.";
-        return;
-      }
-
-      fetch(`/eligible-members/${categoryId}/${itemId}`)
-        .then(res => res.json())
-        .then(data => {
-          if (data.length === 0) {
-            result.innerHTML = `<p><strong>No members</strong> meet the attendance requirement for this item.</p>`;
-          } else {
-            result.innerHTML = `
-              <p><strong>Eligible Members for "${this.options[this.selectedIndex].text}":</strong></p>
-              <ul>
-                ${data.map(m => `<li>${m.name}</li>`).join("")}
-              </ul>
-            `;
-          }
-        });
     });
   </script>
 </body>
