@@ -4,14 +4,14 @@
       "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
       "name": "Kythor",
       "attendance": [
-        true,
         false,
         false,
         false,
         false,
         false,
         false,
-        true
+        false,
+        false
       ],
       "items": [
         {
@@ -104,14 +104,14 @@
       "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
       "name": "LexieGoldfish",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": [
         {
@@ -132,14 +132,14 @@
       "id": "76b132ed-ce75-4dad-96ee-6de11ef086f5",
       "name": "Angrylittleman",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": [
         {
@@ -232,14 +232,14 @@
       "id": "1874ee37-1d4c-4d93-8810-1a9662854ddf",
       "name": "EmKeiko",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -247,14 +247,14 @@
       "id": "308f9127-a1b4-4348-b6c3-cb6e1af27560",
       "name": "MrPsychou",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -262,14 +262,14 @@
       "id": "eb1cc6ca-0987-43b0-9455-8b94c2d12201",
       "name": "JirenKai",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -277,14 +277,14 @@
       "id": "7c7a5542-ef34-4448-82b5-a6209310ac40",
       "name": "fantaq",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": [
         {
@@ -377,14 +377,14 @@
       "id": "49b8dcff-d1f4-4485-ae8e-c0d2023505fe",
       "name": "EmStefan",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -392,14 +392,14 @@
       "id": "342cfe3c-f94b-4730-b6ad-6842f1293e5a",
       "name": "THUNDERSAINT",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -407,14 +407,14 @@
       "id": "94442956-fd31-4978-9231-e830be96a4e4",
       "name": "Di4ble",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -422,14 +422,14 @@
       "id": "6885b626-b1a4-4949-9111-393be7aa3334",
       "name": "HeavenBlade",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -437,14 +437,14 @@
       "id": "a68fed0a-aab2-4f3d-9bca-6a6637291af6",
       "name": "xCyrsn",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -452,14 +452,14 @@
       "id": "e8e2690b-06ce-4e87-8d18-1a9532e34f82",
       "name": "Ditawei",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -467,14 +467,14 @@
       "id": "59e866d4-f664-4749-b525-c4722ef4a3d8",
       "name": "Irishau",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -482,14 +482,14 @@
       "id": "de1c4601-8af0-45af-9599-3cbe966c5660",
       "name": "ResXIII",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -497,14 +497,14 @@
       "id": "e7474dd1-1cfc-46d0-9896-90cb2fae80de",
       "name": "Orphesie",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -512,14 +512,14 @@
       "id": "9052e311-724f-4433-8a1d-63f244c445b2",
       "name": "TarNxD",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -527,14 +527,14 @@
       "id": "22709c20-8a79-4136-a174-149a6285bf0f",
       "name": "ShukakuNoKira",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -542,14 +542,14 @@
       "id": "ffffa8c0-a0a1-4b6c-93bf-62971e0e3b93",
       "name": "DevilSlayer92",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -557,14 +557,14 @@
       "id": "979d5a72-1654-45a8-9a10-17ef86b54449",
       "name": "Dubhessa",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -572,14 +572,14 @@
       "id": "7df49107-1431-4678-8bcd-5d2e1eb0f9cf",
       "name": "oOHitsuOo",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -587,14 +587,14 @@
       "id": "e9245e4b-e874-419b-ab4d-c3a8c8bef42b",
       "name": "NotOsiris",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -602,14 +602,14 @@
       "id": "5b55d988-e7d8-464a-bed0-411a52bf6681",
       "name": "Azteron",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -617,14 +617,14 @@
       "id": "0f82ad65-19bb-4aae-912a-47eae01400a7",
       "name": "HxCMatus",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -632,14 +632,14 @@
       "id": "349fbed0-5a61-4759-a90d-f947fae4241d",
       "name": "ElGato",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -647,14 +647,14 @@
       "id": "cbe606c1-59cd-4445-920b-151d6c8ae1ef",
       "name": "komaxXx",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -662,14 +662,14 @@
       "id": "6d45f42b-f31b-41aa-830d-8662bf1a8fd3",
       "name": "lapinouchou",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -677,14 +677,14 @@
       "id": "8a404e92-78cd-48f2-b739-043321823951",
       "name": "BATEC",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -692,14 +692,14 @@
       "id": "78d67148-082d-4fbf-8bd9-b26992c7b993",
       "name": "TRIKI68",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -707,14 +707,14 @@
       "id": "33344dc7-e25c-42d7-826f-51b70650bb51",
       "name": "IcePain",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -722,14 +722,14 @@
       "id": "6af3c627-1cb7-43dd-ba71-3b6d81e91548",
       "name": "Tatajaagaa",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -737,14 +737,14 @@
       "id": "45a8571d-7366-4a9b-88f9-adabd70e8fd5",
       "name": "Eski93",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -752,14 +752,14 @@
       "id": "6dd0d7d2-c05c-4c5c-99c8-e368458429ba",
       "name": "Volrathz",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -767,14 +767,14 @@
       "id": "6d036329-985b-4996-93a5-9c60d3c78bf8",
       "name": "TheArabian",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -782,14 +782,14 @@
       "id": "92afa54f-5c4c-4afe-92e6-bc8e0063f7f3",
       "name": "ToriHana",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -797,14 +797,14 @@
       "id": "7f7691fb-8939-421c-8d62-b3101038b290",
       "name": "PAPY347",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -812,14 +812,14 @@
       "id": "bec8c2e3-6931-4fc0-b59a-74c93a92e690",
       "name": "Mephela",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -842,14 +842,14 @@
       "id": "2056d936-cff9-4800-b225-fa729363a46a",
       "name": "Narthaus",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -857,14 +857,14 @@
       "id": "a5505008-2f09-4d5a-80e3-d6179a79c63a",
       "name": "TwilightSkyee",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -872,14 +872,14 @@
       "id": "3212b073-bda4-42e1-abeb-1e72cefa9e53",
       "name": "maxwinistann",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -887,14 +887,14 @@
       "id": "da698f6c-2948-4f12-9f74-4e8857061643",
       "name": "Weiming",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -902,14 +902,14 @@
       "id": "69819ed6-02e2-4824-995c-e62562717c83",
       "name": "LeoAlien",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -917,14 +917,14 @@
       "id": "60f71fe4-b04e-4e21-9e8a-2c7d21c2b503",
       "name": "YOHANNHEJA",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -932,14 +932,14 @@
       "id": "7f856a2d-5f3d-4f78-ae33-64498ec9102d",
       "name": "JonnyyW",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -947,14 +947,14 @@
       "id": "cd4355b8-1bee-4bef-83cd-bd3ed9316c2a",
       "name": "KaraDead",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -962,14 +962,14 @@
       "id": "145a669a-ab18-443c-b199-f5e1f0517bb1",
       "name": "Silvendil",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -977,14 +977,14 @@
       "id": "c4bc61b6-6a0c-4d90-9685-466fb108bc58",
       "name": "xLuyu",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -992,14 +992,14 @@
       "id": "0ee79edd-7a4d-4a13-ace3-d047f97e6e6c",
       "name": "Ortakis",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1007,14 +1007,14 @@
       "id": "6b0aed5f-2f95-4a1c-a83f-86885980e194",
       "name": "TENZENKAI",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1022,14 +1022,14 @@
       "id": "c7be7fc5-1259-4cb4-9f31-af1521944a1b",
       "name": "Gorunn",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1037,14 +1037,14 @@
       "id": "c61727dd-960a-437b-ba80-0813b2cc539c",
       "name": "Bolotta",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1052,14 +1052,14 @@
       "id": "b0be174d-a11c-47bf-abbb-3c4dce6f5207",
       "name": "Babi99",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1067,14 +1067,14 @@
       "id": "81518ae5-53f6-4896-8020-74bf30af3a0c",
       "name": "Mauguensombre",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1082,14 +1082,14 @@
       "id": "ec8c6d28-39a9-4e41-b024-cc69a75f09b2",
       "name": "Zaralikos",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1112,14 +1112,14 @@
       "id": "015419d6-138f-42e5-8370-7d8f9c83be25",
       "name": "Marvelita",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1127,14 +1127,14 @@
       "id": "ee2f7555-3409-462e-bcf4-f96e0097cb2f",
       "name": "Lhosna",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1142,14 +1142,14 @@
       "id": "a6c26793-5c32-44c6-af67-2a81c5171513",
       "name": "JustBunny",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1157,14 +1157,14 @@
       "id": "b4944e59-25f6-4d13-961c-081e5de7a5ed",
       "name": "Miladria",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1178,7 +1178,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": []
@@ -1187,14 +1187,14 @@
       "id": "a2ee4443-66a9-417c-b04e-c6936e2f9eb9",
       "name": "BigPoyaso",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1202,14 +1202,14 @@
       "id": "0e9605a2-794c-488a-965a-9474c7460ff9",
       "name": "PrincessMel",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1217,14 +1217,14 @@
       "id": "09dae9dc-4053-417d-8560-e7805ddbf45d",
       "name": "SterLorD",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1232,14 +1232,14 @@
       "id": "f38dd153-d580-408b-9849-1eb90652a462",
       "name": "JustSwag",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1247,14 +1247,14 @@
       "id": "4fb41fbe-276c-4c1c-8414-e78e7a6b7864",
       "name": "ImYoyoo",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1262,14 +1262,14 @@
       "id": "ac520545-6c31-4026-bf66-7407b60ea21b",
       "name": "N0yan",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     }
