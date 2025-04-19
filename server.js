@@ -27,8 +27,15 @@ app.get('/', (req, res) => {
   // Sort members alphabetically by name
   db.members.sort((a, b) => a.name.localeCompare(b.name));
 
-  // Render the index page and pass the sorted members
-  res.render('index', { categories: db.categories, members: db.members });
+  // Get selected category ID from query params or set to null if not present
+  const selectedCategoryId = req.query.categoryId || null;
+
+  // Render the index page and pass the sorted members and selectedCategoryId
+  res.render('index', { 
+    categories: db.categories, 
+    members: db.members,
+    selectedCategoryId 
+  });
 });
 
 // Add Category

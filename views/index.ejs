@@ -6,7 +6,7 @@
   <title>Member Attendance Manager</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
+<body> 
   <h1>👥 Member Attendance Manager</h1>
 
   <!-- Eligibility Check -->
@@ -20,16 +20,20 @@
       <% }); %>
     </select>
 
-    <% if (selectedCategoryId) { %>
+    <% 
+      let selectedCategory = null;
+      if (selectedCategoryId) {
+        selectedCategory = categories.find(category => category.id === selectedCategoryId);
+      }
+    %>
+
+    <% if (selectedCategory && selectedCategory.items) { %>
       <label for="item">Select Item:</label>
       <select name="itemId" id="item" required>
         <option value="">Select Item</option>
-        <% const selectedCategory = categories.find(category => category.id === selectedCategoryId); %>
-        <% if (selectedCategory) { %>
-          <% selectedCategory.items.forEach(item => { %>
-            <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
-          <% }); %>
-        <% } %>
+        <% selectedCategory.items.forEach(item => { %>
+          <option value="<%= item.id %>" <%= typeof selectedItemId !== 'undefined' && item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
+        <% }); %>
       </select>
     <% } %>
 
@@ -46,7 +50,7 @@
         <li><%= member.name %></li>
       <% }); %>
     </ul>
-  <% } else { %>
+  <% } else if (typeof eligibleMembers !== 'undefined') { %>
     <p>No eligible members found.</p>
   <% } %>
 
