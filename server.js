@@ -23,18 +23,14 @@ function saveDatabase(data) {
 // Home Page - Display Categories, Members, and Assign Items
 app.get('/', (req, res) => {
   const db = loadDatabase();
-
-  // Sort members alphabetically by name
-  db.members.sort((a, b) => a.name.localeCompare(b.name));
-
-  // Get selected category ID from query params or set to null if not present
   const selectedCategoryId = req.query.categoryId || null;
 
-  // Render the index page and pass the sorted members and selectedCategoryId
-  res.render('index', { 
-    categories: db.categories, 
+  res.render('index', {
+    categories: db.categories,
     members: db.members,
-    selectedCategoryId 
+    selectedCategoryId,
+    selectedItemId: null,
+    eligibleMembers: undefined // so the "No eligible members" message only shows after a check
   });
 });
 
@@ -43,10 +39,9 @@ app.post('/categories', (req, res) => {
   const { name } = req.body;
   const db = loadDatabase();
   const newCategory = { id: uuid.v4(), name, items: [] };
-  
+
   db.categories.push(newCategory);
   saveDatabase(db);
-
   res.redirect('/');
 });
 
@@ -57,11 +52,10 @@ app.post('/categories/:id/items', (req, res) => {
   const db = loadDatabase();
 
   const category = db.categories.find(c => c.id === categoryId);
-  const newItem = { id: uuid.v4(), name };
-  
-  category.items.push(newItem);
-  saveDatabase(db);
+  if (!category) return res.status(404).send('Category not found');
 
+  category.items.push({ id: uuid.v4(), name });
+  saveDatabase(db);
   res.redirect('/');
 });
 
@@ -73,30 +67,43 @@ app.post('/members', (req, res) => {
   const newMember = {
     id: uuid.v4(),
     name,
-    attendance: Array(8).fill(false),  // 8 events by default, all set to false
+    attendance: Array(8).fill(false),
     items: []
   };
 
   db.members.push(newMember);
   saveDatabase(db);
-
   res.redirect('/');
 });
 
-// Add Items to Member
-app.post('/members/:id/add-items', (req, res) => {
+// Delete a member
+app.post('/members/:id/delete', (req, res) => {
   const memberId = req.params.id;
-  const { itemIds } = req.body; // itemIds is an array of selected item IDs
   const db = loadDatabase();
 
-  const member = db.members.find(m => m.id === memberId);
+  db.members = db.members.filter(member => member.id !== memberId);
 
-  // Add each selected item to the member's items list
+  saveDatabase(db);
+  res.redirect('/');
+});
+
+// Assign Items to Member
+app.post('/members/:id/add-items', (req, res) => {
+  const memberId = req.params.id;
+  const db = loadDatabase();
+  const member = db.members.find(m => m.id === memberId);
+  if (!member) return res.status(404).send('Member not found');
+
+  let itemIds = req.body.itemIds;
+  if (!Array.isArray(itemIds)) {
+    itemIds = [itemIds]; // handle single selection
+  }
+
   itemIds.forEach(itemId => {
-    const item = db.categories.flatMap(category => category.items).find(item => item.id === itemId);
-    if (item) {
-      const categoryId = db.categories.find(category => category.items.includes(item)).id;
-      member.items.push({ categoryId, itemId });
+    const category = db.categories.find(c => c.items.some(i => i.id === itemId));
+    const itemExists = member.items.some(i => i.itemId === itemId);
+    if (category && !itemExists) {
+      member.items.push({ categoryId: category.id, itemId });
     }
   });
 
@@ -111,30 +118,64 @@ app.post('/members/:id/remove-item', (req, res) => {
   const db = loadDatabase();
 
   const member = db.members.find(m => m.id === memberId);
+  if (!member) return res.status(404).send('Member not found');
 
-  // Remove the item from the member's items list
   member.items = member.items.filter(item => item.itemId !== itemId);
-
   saveDatabase(db);
   res.redirect('/');
 });
 
-// Update Attendance for a Member
+// Update Attendance for Member
 app.post('/members/:id/attendance', (req, res) => {
   const memberId = req.params.id;
   const { attendance } = req.body;
   const db = loadDatabase();
 
   const member = db.members.find(m => m.id === memberId);
+  if (!member) return res.status(404).send('Member not found');
 
-  // Update attendance
-  member.attendance = attendance.map(a => a === 'on');  // Convert 'on' values to boolean
+  if (!attendance) {
+    member.attendance = Array(8).fill(false);
+  } else if (Array.isArray(attendance)) {
+    member.attendance = Array(8).fill(false);
+    attendance.forEach((val, idx) => {
+      member.attendance[idx] = true;
+    });
+  } else {
+    // Single checkbox (e.g. only 1 event was checked)
+    member.attendance = Array(8).fill(false);
+    member.attendance[parseInt(attendance)] = true;
+  }
 
   saveDatabase(db);
   res.redirect('/');
 });
 
-// Start the server
+// Eligibility Check Handler
+app.post('/check-eligibility', (req, res) => {
+  const { categoryId, itemId } = req.body;
+  const db = loadDatabase();
+
+  const eligibleMembers = db.members
+    .filter(member => {
+      const hasItem = member.items.some(i => i.itemId === itemId);
+      const attendedCount = member.attendance.filter(Boolean).length;
+      return hasItem && attendedCount >= 4;
+    })
+    .sort((a, b) => a.name.localeCompare(b.name)); // 🔡 Sort alphabetically by name
+
+  res.render('index', {
+    categories: db.categories,
+    members: db.members,
+    selectedCategoryId: categoryId,
+    selectedItemId: itemId,
+    eligibleMembers
+  });
+});
+
+
+
+// Start Server
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`✅ Server running at http://localhost:${port}`);
 });
