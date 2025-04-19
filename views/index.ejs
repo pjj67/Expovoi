@@ -16,7 +16,7 @@
     <button type="submit">Add Member</button>
   </form>
 
-  <!-- Members & Attendance -->
+  <!-- Members List -->
   <h2>Members & Attendance</h2>
   <% if (members.length === 0) { %>
     <p>No members yet.</p>
@@ -42,96 +42,40 @@
 
   <hr/>
 
-  <!-- Eligibility Check Section -->
-  <h2>Eligibility</h2>
-
-  <!-- Dropdown to select a Category -->
-  <form id="eligibilityForm">
-    <label for="categorySelect">Select Item Category:</label>
-    <select id="categorySelect" name="category" onchange="loadItems()">
-      <option value="">-- Select Category --</option>
+  <!-- Eligibility Check -->
+  <h2>Eligibility Check</h2>
+  <form action="/check-eligibility" method="POST">
+    <label for="category">Select Category:</label>
+    <select name="categoryId" id="category" required>
       <% categories.forEach(category => { %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% }); %>
     </select>
-  </form>
 
-  <!-- Dropdown to select an Item (populated based on Category) -->
-  <form id="itemForm" style="display:none;">
-    <label for="itemSelect">Select Item:</label>
-    <select id="itemSelect" name="item">
-      <option value="">-- Select Item --</option>
+    <label for="item">Select Item:</label>
+    <select name="itemId" id="item" required>
+      <% if (categories.length > 0) { %>
+        <% categories.forEach(category => { %>
+          <optgroup label="<%= category.name %>">
+            <% category.items.forEach(item => { %>
+              <option value="<%= item.id %>"><%= item.name %></option>
+            <% }); %>
+          </optgroup>
+        <% }); %>
+      <% } %>
     </select>
+
+    <button type="submit">Check Eligibility</button>
   </form>
 
-  <!-- Button to Check Eligibility -->
-  <button id="checkEligibilityButton" onclick="checkEligibility()">Check Eligibility</button>
+  <% if (eligibleMembers) { %>
+    <h3>Eligible Members:</h3>
+    <ul>
+      <% eligibleMembers.forEach(member => { %>
+        <li><%= member.name %></li>
+      <% }); %>
+    </ul>
+  <% } %>
 
-  <!-- Eligible Members List -->
-  <h3>Eligible Members:</h3>
-  <ul id="eligibleMembersList"></ul>
-
-  <hr/>
-
-  <script>
-    // Load items when a category is selected
-    function loadItems() {
-      const categoryId = document.getElementById('categorySelect').value;
-      const itemSelect = document.getElementById('itemSelect');
-      const itemForm = document.getElementById('itemForm');
-      const categories = <%= JSON.stringify(categories) %>;
-
-      // Clear previous items
-      itemSelect.innerHTML = '<option value="">-- Select Item --</option>';
-
-      if (!categoryId) {
-        itemForm.style.display = 'none';
-        return;
-      }
-
-      const category = categories.find(cat => cat.id == categoryId);
-
-      category.items.forEach(item => {
-        const option = document.createElement('option');
-        option.value = item.id;
-        option.textContent = item.name;
-        itemSelect.appendChild(option);
-      });
-
-      itemForm.style.display = 'block';
-    }
-
-    // Check eligibility based on the selected item
-    function checkEligibility() {
-      const categoryId = document.getElementById('categorySelect').value;
-      const itemId = document.getElementById('itemSelect').value;
-      const members = <%= JSON.stringify(members) %>;
-      const categories = <%= JSON.stringify(categories) %>;
-      const eligibleMembersList = document.getElementById('eligibleMembersList');
-
-      // Clear previous eligibility list
-      eligibleMembersList.innerHTML = '';
-
-      if (!itemId || !categoryId) {
-        return;
-      }
-
-      const category = categories.find(cat => cat.id == categoryId);
-      const item = category.items.find(item => item.id == itemId);
-
-      // Check each member
-      members.forEach(member => {
-        const hasItem = member.items.some(item => item.itemId == itemId);
-        const attendedEvents = member.attendance.filter(attended => attended).length;
-
-        // If the member has the item and attended at least 4 events
-        if (hasItem && attendedEvents >= 4) {
-          const listItem = document.createElement('li');
-          listItem.textContent = member.name;
-          eligibleMembersList.appendChild(listItem);
-        }
-      });
-    }
-  </script>
 </body>
 </html>

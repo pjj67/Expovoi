@@ -23,7 +23,6 @@ function saveDatabase(data) {
 // Home Page - Display Categories, Members, and Assign Items
 app.get('/', (req, res) => {
   const db = loadDatabase();
-
   res.render('index', { categories: db.categories, members: db.members });
 });
 
@@ -32,7 +31,7 @@ app.post('/categories', (req, res) => {
   const { name } = req.body;
   const db = loadDatabase();
   const newCategory = { id: uuid.v4(), name, items: [] };
-  
+
   db.categories.push(newCategory);
   saveDatabase(db);
 
@@ -47,7 +46,7 @@ app.post('/categories/:id/items', (req, res) => {
 
   const category = db.categories.find(c => c.id === categoryId);
   const newItem = { id: uuid.v4(), name };
-  
+
   category.items.push(newItem);
   saveDatabase(db);
 
@@ -121,6 +120,30 @@ app.post('/members/:id/attendance', (req, res) => {
 
   saveDatabase(db);
   res.redirect('/');
+});
+
+// Eligibility Check Route
+app.post('/check-eligibility', (req, res) => {
+  const { categoryId, itemId } = req.body;
+  const db = loadDatabase();
+
+  // Find the category and item based on the selection
+  const category = db.categories.find(cat => cat.id === categoryId);
+  const item = category.items.find(i => i.id === itemId);
+
+  // Check eligible members
+  const eligibleMembers = db.members.filter(member => {
+    // Check if the member has the item assigned
+    const itemAssigned = member.items.some(i => i.itemId === itemId && i.categoryId === categoryId);
+
+    // Check attendance (at least 4 out of 8 events)
+    const attendanceRate = member.attendance.filter(att => att).length;
+    const eligibleAttendance = attendanceRate >= 4; // 50% attendance (4 out of 8)
+
+    return itemAssigned && eligibleAttendance;
+  });
+
+  res.render('index', { categories: db.categories, members: db.members, eligibleMembers, selectedCategory: categoryId, selectedItem: itemId });
 });
 
 // Start the server
