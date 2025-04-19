@@ -21,6 +21,14 @@
         {
           "categoryId": "category-uuid-2",
           "itemId": "item-uuid-4"
+        },
+        {
+          "categoryId": "category-uuid-1",
+          "itemId": "e306320a-1e7e-4ad4-bcdc-64688290ce8c"
+        },
+        {
+          "categoryId": "category-uuid-2",
+          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
         }
       ]
     },
@@ -109,6 +117,10 @@
         {
           "id": "361aa1b3-3a55-4791-822e-78c0c9686fee",
           "name": "Tevent's grasp of withering"
+        },
+        {
+          "id": "e306320a-1e7e-4ad4-bcdc-64688290ce8c",
+          "name": "None"
         }
       ]
     },
@@ -147,6 +159,10 @@
         {
           "id": "9cd0418d-4098-4d2b-a8e7-dc3cd6ffd215",
           "name": "Queen bellandir's hivemind staff"
+        },
+        {
+          "id": "67288e0f-ce03-4cc3-b7ee-cd1e1d502cc3",
+          "name": "None"
         }
       ]
     }

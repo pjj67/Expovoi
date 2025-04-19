@@ -181,5 +181,5 @@ app.post('/check-eligibility', (req, res) => {
 
 // Start Server
 app.listen(port, () => {
-  console.log(`✅ Server running at http://localhost:${port}`);
+  console.log(  Server running at http://localhost:${port});
 });
