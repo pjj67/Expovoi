@@ -931,9 +931,9 @@
       "name": "Am1ks",
       "attendance": [
         true,
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
         false,
         true,
         true,
