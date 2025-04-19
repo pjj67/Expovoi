@@ -28,7 +28,7 @@ function saveDatabase(data) {
   }
 }
 
-// Home
+// Home Route
 app.get('/', (req, res) => {
   const db = loadDatabase();
   const selectedCategoryId = req.query.categoryId || null;
@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// Add Category
+// Add Category Route
 app.post('/categories', (req, res) => {
   const db = loadDatabase();
   db.categories.push({ id: uuid.v4(), name: req.body.name, items: [] });
@@ -51,7 +51,7 @@ app.post('/categories', (req, res) => {
   res.redirect('/');
 });
 
-// Add Item to Category
+// Add Item to Category Route
 app.post('/categories/:id/items', (req, res) => {
   const db = loadDatabase();
   const category = db.categories.find(c => c.id === req.params.id);
@@ -61,7 +61,26 @@ app.post('/categories/:id/items', (req, res) => {
   res.redirect('/');
 });
 
-// Delete Item from Category
+// Update Category Name Route (POST)
+app.post('/categories/:id/edit', (req, res) => {
+  const db = loadDatabase();
+  const category = db.categories.find(c => c.id === req.params.id);
+
+  if (!category) {
+    return res.status(404).send('Category not found');
+  }
+
+  // Update the category name with the new one from the form
+  category.name = req.body.name;
+
+  // Save the updated database
+  saveDatabase(db);
+
+  // Redirect back to the home page (or where you want)
+  res.redirect('/');
+});
+
+// Delete Item from Category Route
 app.post('/categories/:categoryId/items/:itemId/delete', (req, res) => {
   const db = loadDatabase();
   const category = db.categories.find(c => c.id === req.params.categoryId);
@@ -73,7 +92,7 @@ app.post('/categories/:categoryId/items/:itemId/delete', (req, res) => {
   res.redirect('/');
 });
 
-// Update Item Name
+// Update Item Name Route
 app.post('/categories/:categoryId/items/:itemId/edit', (req, res) => {
   const db = loadDatabase();
   const category = db.categories.find(c => c.id === req.params.categoryId);
@@ -88,7 +107,7 @@ app.post('/categories/:categoryId/items/:itemId/edit', (req, res) => {
   res.redirect('/');
 });
 
-// Add Member
+// Add Member Route
 app.post('/members', (req, res) => {
   const db = loadDatabase();
   db.members.push({
@@ -101,7 +120,7 @@ app.post('/members', (req, res) => {
   res.redirect('/');
 });
 
-// Delete Member
+// Delete Member Route
 app.post('/members/:id/delete', (req, res) => {
   const db = loadDatabase();
   db.members = db.members.filter(m => m.id !== req.params.id);
@@ -109,7 +128,7 @@ app.post('/members/:id/delete', (req, res) => {
   res.redirect('/');
 });
 
-// Assign Items to Member with REPLACEMENT per Category
+// Assign Items to Member with REPLACEMENT per Category Route
 app.post('/members/:id/add-items', (req, res) => {
   const db = loadDatabase();
   const member = db.members.find(m => m.id === req.params.id);
@@ -133,7 +152,7 @@ app.post('/members/:id/add-items', (req, res) => {
   res.redirect('/');
 });
 
-// Remove Item from Member
+// Remove Item from Member Route
 app.post('/members/:id/remove-item', (req, res) => {
   const db = loadDatabase();
   const member = db.members.find(m => m.id === req.params.id);
@@ -144,7 +163,7 @@ app.post('/members/:id/remove-item', (req, res) => {
   res.redirect('/');
 });
 
-// Update Attendance
+// Update Attendance Route
 app.post('/members/:id/attendance', (req, res) => {
   const db = loadDatabase();
   const member = db.members.find(m => m.id === req.params.id);
@@ -171,18 +190,9 @@ app.post('/members/:id/attendance', (req, res) => {
   member.attendance = attendanceArray;
   saveDatabase(db);
   res.redirect('/');
-  
-  
-function saveDatabase(data) {
-  try {
-    fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 2));
-  } catch (error) {
-    console.error("Error saving database:", error);
-  }
-}
 });
 
-// Eligibility Check
+// Eligibility Check Route
 app.post('/check-eligibility', (req, res) => {
   const { categoryId, itemId } = req.body;
   const db = loadDatabase();
@@ -191,15 +201,13 @@ app.post('/check-eligibility', (req, res) => {
   let selectedItemName = null;
 
   if (categoryId === 'ring') {
-    // Get Ring 1 and Ring 2
+    // Ring logic
     const ringCategories = db.categories.filter(c => c.name === 'Ring 1' || c.name === 'Ring 2');
-    const ringCategoryIds = ringCategories.map(c => c.id);
 
-    // Get item name based on ID from Ring 1 or Ring 2
-    for (const category of ringCategories) {
-      const match = category.items.find(i => i.id === itemId);
-      if (match) {
-        selectedItemName = match.name;
+    for (const cat of ringCategories) {
+      const item = cat.items.find(i => i.id === itemId);
+      if (item) {
+        selectedItemName = item.name;
         break;
       }
     }
@@ -207,21 +215,43 @@ app.post('/check-eligibility', (req, res) => {
     if (selectedItemName) {
       eligibleMembers = db.members.filter(member => {
         const attendedCount = member.attendance.filter(Boolean).length;
-        const hasMatchingItem = member.items.some(i => {
-          const cat = db.categories.find(c => c.id === i.categoryId);
-          if (!cat || !ringCategoryIds.includes(cat.id)) return false;
-          const item = cat.items.find(it => it.id === i.itemId);
-          return item && item.name === selectedItemName;
+        const hasItem = member.items.some(i => {
+          const category = db.categories.find(c => c.id === i.categoryId);
+          const item = category?.items.find(it => it.id === i.itemId);
+          return category && (category.name === "Ring 1" || category.name === "Ring 2") && item?.name === selectedItemName;
         });
-        return hasMatchingItem && attendedCount >= 4;
+        return attendedCount >= 4 && hasItem;
       });
     }
+
   } else {
-    // Standard category match
-    eligibleMembers = db.members.filter(member => {
-      const attendedCount = member.attendance.filter(Boolean).length;
-      return member.items.some(i => i.itemId === itemId) && attendedCount >= 4;
-    });
+    // Standard or Weapon Special Case
+    const selectedCategory = db.categories.find(c => c.id === categoryId);
+    const item = selectedCategory?.items.find(i => i.id === itemId);
+    selectedItemName = item?.name;
+
+    const weaponNames = ["Wand", "Staff", "Crossbow", "Greatsword", "Sword and Shield", "Daggers", "Spear", "Longbow"];
+    const isWeaponCheck = weaponNames.includes(selectedItemName);
+
+    if (selectedItemName) {
+      eligibleMembers = db.members.filter(member => {
+        const attendedCount = member.attendance.filter(Boolean).length;
+
+        if (!isWeaponCheck) {
+          // Normal eligibility check
+          return member.items.some(i => i.itemId === itemId) && attendedCount >= 4;
+        } else {
+          // Special weapon check - look in Archboss Weap 1 & 2
+          const hasWeapon = member.items.some(i => {
+            const category = db.categories.find(c => c.id === i.categoryId);
+            const item = category?.items.find(it => it.id === i.itemId);
+            return category && ["Archboss Weap 1", "Archboss Weap 2"].includes(category.name) && item?.name === selectedItemName;
+          });
+
+          return attendedCount >= 4 && hasWeapon;
+        }
+      });
+    }
   }
 
   eligibleMembers.sort((a, b) => a.name.localeCompare(b.name));
@@ -234,7 +264,6 @@ app.post('/check-eligibility', (req, res) => {
     eligibleMembers
   });
 });
-
 
 app.listen(port, () => {
   console.log(`✅ Server running at http://localhost:${port}`);
