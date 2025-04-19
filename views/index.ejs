@@ -51,6 +51,85 @@
   <% } %>
 
   <hr/>
+    
+  <!-- Add Member -->
+  <h2>Add Member</h2>
+  <form action="/members" method="POST">
+    <input type="text" name="name" placeholder="Member Name" required />
+    <button type="submit">Add Member</button>
+  </form>
+
+  <!-- Members List -->
+  <h2>Members & Attendance</h2>
+  <% if (members.length === 0) { %>
+    <p>No members yet.</p>
+  <% } else { %>
+    <% members.forEach(member => { %>
+      <div class="member">
+        <form action="/members/<%= member.id %>/attendance" method="POST">
+          <strong><%= member.name %></strong>
+          <% for (let i = 0; i < 8; i++) { %>
+            <label>
+              <input type="checkbox" name="attendance" <%= member.attendance[i] ? 'checked' : '' %> />
+              Event <%= i + 1 %>
+            </label>
+          <% } %>
+          <button type="submit">Update Attendance</button>
+        </form>
+        <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
+          <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
+        </form>
+      </div>
+    <% }); %>
+  <% } %>
+
+  <hr/>
+
+  <!-- Categories & Items -->
+  <h2>Categories & Items</h2>
+  <% if (categories.length === 0) { %>
+    <p>No categories yet.</p>
+  <% } else { %>
+    <% categories.forEach(category => { %>
+      <div class="category">
+        <form action="/categories/<%= category.id %>/edit" method="POST">
+          <input type="text" name="name" value="<%= category.name %>" />
+          <button type="submit">Rename</button>
+        </form>
+
+        <h4>Add Item</h4>
+        <form action="/categories/<%= category.id %>/items" method="POST">
+          <input type="text" name="name" placeholder="Item Name" required />
+          <button type="submit">Add</button>
+        </form>
+
+        <% if (category.items.length > 0) { %>
+          <ul>
+            <% category.items.forEach(item => { %>
+              <li>
+                <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
+                  <input type="text" name="name" value="<%= item.name %>" />
+                  <button type="submit">Update</button>
+                </form>
+                <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
+                  <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
+                </form>
+              </li>
+            <% }); %>
+          </ul>
+        <% } %>
+      </div>
+    <% }); %>
+  <% } %>
+
+  <hr/>
+    
+  <!-- Add Category -->
+  <h2>Add Category</h2>
+  <form action="/categories" method="POST">
+    <input type="text" name="name" placeholder="Category Name" required />
+    <button type="submit">Add Category</button>
+  </form>  
 
   <!-- Assign Multiple Items to Members -->
   <h2>Assign Multiple Items to Members</h2>
@@ -92,83 +171,5 @@
   <% }); %>
 
   <hr/>
-
-  <!-- Add Member -->
-  <h2>Add Member</h2>
-  <form action="/members" method="POST">
-    <input type="text" name="name" placeholder="Member Name" required />
-    <button type="submit">Add Member</button>
-  </form>
-
-  <!-- Members List -->
-  <h2>Members & Attendance</h2>
-  <% if (members.length === 0) { %>
-    <p>No members yet.</p>
-  <% } else { %>
-    <% members.forEach(member => { %>
-      <div class="member">
-        <form action="/members/<%= member.id %>/attendance" method="POST">
-          <strong><%= member.name %></strong>
-          <% for (let i = 0; i < 8; i++) { %>
-            <label>
-              <input type="checkbox" name="attendance" <%= member.attendance[i] ? 'checked' : '' %> />
-              Event <%= i + 1 %>
-            </label>
-          <% } %>
-          <button type="submit">Update Attendance</button>
-        </form>
-        <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
-          <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
-        </form>
-      </div>
-    <% }); %>
-  <% } %>
-
-  <hr/>
-
-  <!-- Add Category -->
-  <h2>Add Category</h2>
-  <form action="/categories" method="POST">
-    <input type="text" name="name" placeholder="Category Name" required />
-    <button type="submit">Add Category</button>
-  </form>
-
-  <!-- Categories & Items -->
-  <h2>Categories & Items</h2>
-  <% if (categories.length === 0) { %>
-    <p>No categories yet.</p>
-  <% } else { %>
-    <% categories.forEach(category => { %>
-      <div class="category">
-        <form action="/categories/<%= category.id %>/edit" method="POST">
-          <input type="text" name="name" value="<%= category.name %>" />
-          <button type="submit">Rename</button>
-        </form>
-
-        <h4>Add Item</h4>
-        <form action="/categories/<%= category.id %>/items" method="POST">
-          <input type="text" name="name" placeholder="Item Name" required />
-          <button type="submit">Add</button>
-        </form>
-
-        <% if (category.items.length > 0) { %>
-          <ul>
-            <% category.items.forEach(item => { %>
-              <li>
-                <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
-                  <input type="text" name="name" value="<%= item.name %>" />
-                  <button type="submit">Update</button>
-                </form>
-                <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
-                  <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
-                </form>
-              </li>
-            <% }); %>
-          </ul>
-        <% } %>
-      </div>
-    <% }); %>
-  <% } %>
-
 </body>
 </html>
