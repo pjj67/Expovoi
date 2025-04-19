@@ -187,13 +187,32 @@ app.post('/check-eligibility', (req, res) => {
   const { categoryId, itemId } = req.body;
   const db = loadDatabase();
 
-  const eligibleMembers = db.members
-    .filter(member => {
-      const hasItem = member.items.some(i => i.itemId === itemId);
+  let eligibleMembers = [];
+
+  if (categoryId === 'ring') {
+    // Get category IDs for Ring 1 and Ring 2
+    const ringCategories = db.categories.filter(c => c.name === 'Ring 1' || c.name === 'Ring 2');
+    const ringCategoryIds = ringCategories.map(c => c.id);
+
+    eligibleMembers = db.members.filter(member => {
       const attendedCount = member.attendance.filter(Boolean).length;
-      return hasItem && attendedCount >= 4;
-    })
-    .sort((a, b) => a.name.localeCompare(b.name));
+
+      // Check if the member has the item in Ring 1 or Ring 2
+      const hasItemInRings = member.items.some(i =>
+        ringCategoryIds.includes(i.categoryId) && i.itemId === itemId
+      );
+
+      return hasItemInRings && attendedCount >= 4;
+    });
+  } else {
+    // Regular single-category check
+    eligibleMembers = db.members.filter(member => {
+      const attendedCount = member.attendance.filter(Boolean).length;
+      return member.items.some(i => i.itemId === itemId) && attendedCount >= 4;
+    });
+  }
+
+  eligibleMembers.sort((a, b) => a.name.localeCompare(b.name));
 
   res.render('index', {
     categories: db.categories,
