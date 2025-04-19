@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));  // Serving static files like CSS, images, etc.
 
 // Load the database (db.json)
 function loadDatabase() {
@@ -19,40 +20,38 @@ function saveDatabase(data) {
   fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 2));
 }
 
-// Homepage Route
+// Home Page - Display Categories, Members, and Assign Items
 app.get('/', (req, res) => {
   const db = loadDatabase();
-  res.render('index', { categories: db.categories, members: db.members, results: null });
+
+  res.render('index', { categories: db.categories, members: db.members });
 });
 
-// Check Item Route (Eligibility Check)
-app.post('/check-item', (req, res) => {
-  const { categoryId, itemId } = req.body;
+// Add Category
+app.post('/categories', (req, res) => {
+  const { name } = req.body;
+  const db = loadDatabase();
+  const newCategory = { id: uuid.v4(), name, items: [] };
+  
+  db.categories.push(newCategory);
+  saveDatabase(db);
+
+  res.redirect('/');
+});
+
+// Add Item to Category
+app.post('/categories/:id/items', (req, res) => {
+  const { name } = req.body;
+  const categoryId = req.params.id;
   const db = loadDatabase();
 
-  const category = db.categories.find(cat => cat.id === categoryId);
-  const item = category?.items.find(it => it.id === itemId);
+  const category = db.categories.find(c => c.id === categoryId);
+  const newItem = { id: uuid.v4(), name };
+  
+  category.items.push(newItem);
+  saveDatabase(db);
 
-  if (!category || !item) {
-    return res.redirect('/');
-  }
-
-  // Filter members who have the item assigned and at least 4 out of 8 events attended
-  const eligibleMembers = db.members.filter(member => {
-    const itemAssigned = member.items.some(it => it.categoryId === categoryId && it.itemId === itemId);
-
-    if (!itemAssigned) {
-      return false;
-    }
-
-    const eventsAttended = member.attendance.filter(att => att).length; // Number of events attended
-    const totalEvents = member.attendance.length; // Total number of events (8)
-
-    // Member is eligible if they attended at least 50% of the events (4 out of 8)
-    return eventsAttended >= 4; 
-  });
-
-  res.render('index', { categories: db.categories, members: db.members, results: eligibleMembers });
+  res.redirect('/');
 });
 
 // Add Member
@@ -73,6 +72,42 @@ app.post('/members', (req, res) => {
   res.redirect('/');
 });
 
+// Add Items to Member
+app.post('/members/:id/add-items', (req, res) => {
+  const memberId = req.params.id;
+  const { itemIds } = req.body; // itemIds is an array of selected item IDs
+  const db = loadDatabase();
+
+  const member = db.members.find(m => m.id === memberId);
+
+  // Add each selected item to the member's items list
+  itemIds.forEach(itemId => {
+    const item = db.categories.flatMap(category => category.items).find(item => item.id === itemId);
+    if (item) {
+      const categoryId = db.categories.find(category => category.items.includes(item)).id;
+      member.items.push({ categoryId, itemId });
+    }
+  });
+
+  saveDatabase(db);
+  res.redirect('/');
+});
+
+// Remove Item from Member
+app.post('/members/:id/remove-item', (req, res) => {
+  const memberId = req.params.id;
+  const { itemId } = req.body;
+  const db = loadDatabase();
+
+  const member = db.members.find(m => m.id === memberId);
+
+  // Remove the item from the member's items list
+  member.items = member.items.filter(item => item.itemId !== itemId);
+
+  saveDatabase(db);
+  res.redirect('/');
+});
+
 // Update Attendance for a Member
 app.post('/members/:id/attendance', (req, res) => {
   const memberId = req.params.id;
@@ -80,111 +115,9 @@ app.post('/members/:id/attendance', (req, res) => {
   const db = loadDatabase();
 
   const member = db.members.find(m => m.id === memberId);
-  member.attendance = attendance.map(att => att === 'on');  // Convert 'on' to true/false
 
-  saveDatabase(db);
-  res.redirect('/');
-});
-
-// Remove Member
-app.post('/members/:id/delete', (req, res) => {
-  const memberId = req.params.id;
-  const db = loadDatabase();
-
-  db.members = db.members.filter(m => m.id !== memberId);
-  saveDatabase(db);
-
-  res.redirect('/');
-});
-
-// Add Category
-app.post('/categories', (req, res) => {
-  const { name } = req.body;
-  const db = loadDatabase();
-
-  const newCategory = {
-    id: uuid.v4(),
-    name,
-    items: []
-  };
-
-  db.categories.push(newCategory);
-  saveDatabase(db);
-
-  res.redirect('/');
-});
-
-// Edit Category Name
-app.post('/categories/:id/edit', (req, res) => {
-  const { name } = req.body;
-  const categoryId = req.params.id;
-  const db = loadDatabase();
-
-  const category = db.categories.find(c => c.id === categoryId);
-  category.name = name;
-
-  saveDatabase(db);
-  res.redirect('/');
-});
-
-// Add Item to Category
-app.post('/categories/:id/items', (req, res) => {
-  const { name } = req.body;
-  const categoryId = req.params.id;
-  const db = loadDatabase();
-
-  const category = db.categories.find(c => c.id === categoryId);
-
-  const newItem = {
-    id: uuid.v4(),
-    name
-  };
-
-  category.items.push(newItem);
-  saveDatabase(db);
-
-  res.redirect('/');
-});
-
-// Edit Item Name
-app.post('/categories/:categoryId/items/:itemId/edit', (req, res) => {
-  const { name } = req.body;
-  const { categoryId, itemId } = req.params;
-  const db = loadDatabase();
-
-  const category = db.categories.find(c => c.id === categoryId);
-  const item = category.items.find(i => i.id === itemId);
-  item.name = name;
-
-  saveDatabase(db);
-  res.redirect('/');
-});
-
-// Delete Item
-app.post('/categories/:categoryId/items/:itemId/delete', (req, res) => {
-  const { categoryId, itemId } = req.params;
-  const db = loadDatabase();
-
-  const category = db.categories.find(c => c.id === categoryId);
-  category.items = category.items.filter(i => i.id !== itemId);
-
-  saveDatabase(db);
-  res.redirect('/');
-});
-
-// Assign Multiple Items to Members
-app.post('/members/:id/add-items', (req, res) => {
-  const memberId = req.params.id;
-  const { itemIds, categoryIds } = req.body;
-  const db = loadDatabase();
-
-  const member = db.members.find(m => m.id === memberId);
-
-  // Add each selected item to the member's items list
-  itemIds.forEach((itemId, index) => {
-    const categoryId = categoryIds[index];
-    member.items.push({ categoryId, itemId });
-  });
+  // Update attendance
+  member.attendance = attendance.map(a => a === 'on');  // Convert 'on' values to boolean
 
   saveDatabase(db);
   res.redirect('/');
