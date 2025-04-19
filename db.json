@@ -1220,33 +1220,270 @@
         {
           "id": "14fc15c3-6335-42e8-a614-fd08976f1b06",
           "name": "Unshakeable knight's sword"
+        },
+        {
+          "id": "6e1440bb-7aac-46bb-882d-5086690209da",
+          "name": "Queen bellandir's languishing blade"
+        },
+        {
+          "id": "571f0290-d0c2-4386-89fb-f7af00acd078",
+          "name": "None"
         }
       ]
     },
     {
       "id": "1b692927-40e8-473a-9b99-2a85bfcc8993",
       "name": "Daggers",
-      "items": []
+      "items": [
+        {
+          "id": "7fe43840-fb51-4e34-91b8-7dea05dd7b7d",
+          "name": "Bercant's whispering daggers"
+        },
+        {
+          "id": "85cf3b5f-af3b-4c42-ac38-bcbf3ced89fc",
+          "name": "Deluzhnoa's permafrost razors"
+        },
+        {
+          "id": "a1138c9b-42db-4a65-ab25-fd31d9649495",
+          "name": "Destiny binders"
+        },
+        {
+          "id": "f6cae43b-c8e9-4337-b110-abd3bae132c2",
+          "name": "Leviathan's bladed tendrils"
+        },
+        {
+          "id": "a31a0022-e7de-47b9-a23f-f8591fe21885",
+          "name": "Peerless obsidian razors"
+        },
+        {
+          "id": "ee1aa717-f9c4-4650-858f-826c58fa5041",
+          "name": "Razorthorn shredders"
+        },
+        {
+          "id": "762fa43f-73df-4a66-9f6f-6d1bb39efaa5",
+          "name": "Tevent's fangs of fury"
+        },
+        {
+          "id": "f1fbd8d4-01ba-4570-87e8-069c121cea79",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
       "name": "Spear",
-      "items": []
+      "items": [
+        {
+          "id": "fa922849-a321-4e3f-aa71-1baedd493cff",
+          "name": "Crimson hellskewer"
+        },
+        {
+          "id": "d58c6704-4f61-4474-a02d-c99827294ab3",
+          "name": "Deluzhnoa's serrated shard"
+        },
+        {
+          "id": "92d9e19f-2c25-4365-811c-9b83b4101f9f",
+          "name": "Naru's sawfang spear"
+        },
+        {
+          "id": "bc5eb3ac-1b74-4335-9347-dfbf21a5df5d",
+          "name": "Ranseur of murderous glee"
+        },
+        {
+          "id": "9ced661c-4e0a-46ff-acdc-3685b2a8c993",
+          "name": "Spear of unhuninged horror"
+        },
+        {
+          "id": "80097406-6566-4fc0-b764-dd75112212e7",
+          "name": "Windsheer spear"
+        },
+        {
+          "id": "6555c81c-580c-492b-b60c-6c4d94149fd1",
+          "name": "Queen bellandir's serrated spike"
+        },
+        {
+          "id": "7704b006-2b7f-4904-a2b8-6c3eb23450f3",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
       "name": "Longbow",
-      "items": []
+      "items": [
+        {
+          "id": "5d01e33e-a2dd-42fe-bc7f-6d5c99b91bec",
+          "name": "Arc of lunar radiance"
+        },
+        {
+          "id": "8100adca-ea25-4468-b0f3-c05d54b58a3f",
+          "name": "Bercant's steelstring bow"
+        },
+        {
+          "id": "b0570564-386a-42ee-8bf4-cd84b1d026a5",
+          "name": "Deluzhnoa's arc of frozen death"
+        },
+        {
+          "id": "bff1858e-a646-4687-b90e-c0b8df9ce9f4",
+          "name": "Leviathan's bloodstorm longbow"
+        },
+        {
+          "id": "84e2bfb5-1821-4dd4-b7ed-e8e8b82b2d3d",
+          "name": "Mystic truestrike longbow"
+        },
+        {
+          "id": "c0e5ec3e-7515-4e62-a45a-26bf2fd4cd68",
+          "name": "Titanspine Longbow"
+        },
+        {
+          "id": "5af74369-e39c-4b30-b948-836be9ad134e",
+          "name": "Tevent's arc of wailing death"
+        },
+        {
+          "id": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
       "name": "Archboss weap 1",
-      "items": []
+      "items": [
+        {
+          "id": "00e664cf-6200-4663-bfd0-3640aecf8115",
+          "name": "Cordy's grasp of manipulation"
+        },
+        {
+          "id": "87f26f7b-00cf-4b05-b9d1-fadac308cc15",
+          "name": "Cordy's stormspore spike slingers"
+        },
+        {
+          "id": "ced5aab9-72d1-4d8e-9af1-30b7c633bed5",
+          "name": "Cordy's warblade of creeping doom"
+        },
+        {
+          "id": "4895ee29-3521-4ca8-b694-6bc27334bbad",
+          "name": "Deluzhnoa's ancient petrified staff"
+        },
+        {
+          "id": "e465fec9-865f-4f9b-bc0f-e34123f4188d",
+          "name": "Deluzhnoa's arc of frozen death"
+        },
+        {
+          "id": "54583888-8c2d-4bca-8041-cecc519ca71b",
+          "name": "Deluzhnoa's edge of eternal frost"
+        },
+        {
+          "id": "5e70f85f-9b13-4dc0-94ee-4ae838c092b6",
+          "name": "Deluzhnoa's permafrost razors"
+        },
+        {
+          "id": "ec1a29c5-e295-45a3-9d13-0f97f9d92366",
+          "name": "Deluzhnoa's serrated shard"
+        },
+        {
+          "id": "60170a81-76ac-40dd-aeeb-1e937d3bcc94",
+          "name": "Queen bellandir's hivemind staff"
+        },
+        {
+          "id": "51f09815-7cc5-4cf1-a2bb-bb93f817051e",
+          "name": "Queen bellandir's languishing blade"
+        },
+        {
+          "id": "552198e5-0872-4838-a324-7ef96bc36589",
+          "name": "Queen bellandir's serrated spike"
+        },
+        {
+          "id": "23743691-73e3-4270-8d33-918d6cbe0ca0",
+          "name": "Queen bellandir's toxic spine throwers"
+        },
+        {
+          "id": "18039e83-555a-462d-bb3d-ff8cd6d8c5db",
+          "name": "Tevent's arc of wailing death"
+        },
+        {
+          "id": "28a00bca-8b6f-464a-be04-6ad170830e44",
+          "name": "Tevent's fangs of fury"
+        },
+        {
+          "id": "e9e58f03-fa06-444c-8545-090472db0253",
+          "name": "Tevent's grasp of withering"
+        },
+        {
+          "id": "a836abf6-2ec2-4c63-9a13-d5643beeedc6",
+          "name": "Tevent's warblade of despair"
+        },
+        {
+          "id": "5f20c965-0b82-486e-bbb8-82e128a80e29",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
       "name": "Archboss Weap 2",
-      "items": []
+      "items": [
+        {
+          "id": "c53a98e6-4040-4593-9a96-340f0235479e",
+          "name": "Cordy's grasp of manipulation"
+        },
+        {
+          "id": "7a207f8d-715b-43f0-b069-423aec7a02fa",
+          "name": "Cordy's stormspore spike slingers"
+        },
+        {
+          "id": "d3a03294-c686-43fc-a6a0-a50e472eae9c",
+          "name": "Cordy's warblade of creeping doom"
+        },
+        {
+          "id": "01e8c2a9-9c07-49f4-b679-c06a30eb7072",
+          "name": "Deluzhnoa's ancient petrified staff"
+        },
+        {
+          "id": "efc6f8af-3b3f-44f6-8d57-2a5f165ebd09",
+          "name": "Deluzhnoa's arc of frozen death"
+        },
+        {
+          "id": "e27ef47b-27e4-48e1-959a-a0f184747870",
+          "name": "Deluzhnoa's edge of eternal frost"
+        },
+        {
+          "id": "fbf2b9ad-c9dc-4c32-9e48-be7bd8ce5ca4",
+          "name": "Deluzhnoa's permafrost razors"
+        },
+        {
+          "id": "4855a373-e6e2-4e46-bb63-9b5c65003cc0",
+          "name": "Deluzhnoa's serrated shard"
+        },
+        {
+          "id": "40f5bcd7-d146-422d-95c4-adec8f9459ba",
+          "name": "Queen bellandir's hivemind staff"
+        },
+        {
+          "id": "7cbeda68-8c3b-4488-964c-abd2140f1167",
+          "name": "Queen bellandir's languishing blade"
+        },
+        {
+          "id": "5de56746-d937-4748-ba27-55e0c73381dd",
+          "name": "Queen bellandir's serrated spike"
+        },
+        {
+          "id": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630",
+          "name": "Queen bellandir's toxic spine throwers"
+        },
+        {
+          "id": "e284ef07-b368-404f-be05-217880251a7d",
+          "name": "Tevent's arc of wailing death"
+        },
+        {
+          "id": "844a4790-e56c-401c-9e90-d4ce9658b66b",
+          "name": "Tevent's fangs of fury"
+        },
+        {
+          "id": "1f83e497-3f90-4837-b55d-ddc2874dc5ec",
+          "name": "Tevent's grasp of withering"
+        }
+      ]
     },
     {
       "id": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
