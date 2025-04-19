@@ -114,18 +114,29 @@ app.post('/members/:id/attendance', (req, res) => {
   const member = db.members.find(m => m.id === req.params.id);
   if (!member) return res.status(404).send('Member not found');
 
-  member.attendance = Array(8).fill(false);
-  if (Array.isArray(req.body.attendance)) {
-    req.body.attendance.forEach(index => {
-      member.attendance[parseInt(index)] = true;
+  // Initialize attendance array
+  const attendanceArray = Array(8).fill(false);
+
+  let checkedIndexes = req.body.attendance;
+
+  if (checkedIndexes !== undefined) {
+    if (!Array.isArray(checkedIndexes)) {
+      checkedIndexes = [checkedIndexes];
+    }
+
+    checkedIndexes.forEach((_, i) => {
+      const index = parseInt(checkedIndexes[i]);
+      if (!isNaN(index) && index >= 0 && index < 8) {
+        attendanceArray[index] = true;
+      }
     });
-  } else if (req.body.attendance) {
-    member.attendance[parseInt(req.body.attendance)] = true;
   }
 
+  member.attendance = attendanceArray;
   saveDatabase(db);
   res.redirect('/');
 });
+
 
 // Eligibility Check
 app.post('/check-eligibility', (req, res) => {
