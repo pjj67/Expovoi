@@ -196,8 +196,167 @@
         {
           "id": "03600db7-c203-44eb-a591-5b6daf14d3be",
           "name": "Cordy's warblade of creeping doom"
+        },
+        {
+          "id": "847006d6-3e94-487e-a7f4-da25101ac7b6",
+          "name": "Tevent's warblade of despair"
+        },
+        {
+          "id": "577f2956-634e-47e6-985f-a710c8ead80f",
+          "name": "None"
         }
       ]
+    },
+    {
+      "id": "3a47768a-93bd-4cc2-8a08-7f275b4a46d3",
+      "name": "Sword and Shield",
+      "items": [
+        {
+          "id": "db4479cc-0177-4064-971d-85c5a6a036ce",
+          "name": "Blade of fiendish fortitude"
+        },
+        {
+          "id": "1360e52d-8ac0-494b-a850-8a1dc1ee7cd1",
+          "name": "Bulwark of invulnerability"
+        },
+        {
+          "id": "ba36c3d5-808b-4688-9816-954be33a8348",
+          "name": "Crimson doomblade"
+        },
+        {
+          "id": "19b26185-c0f1-44a1-aae0-c3f55b37fd63",
+          "name": "Daigon's stormblade"
+        },
+        {
+          "id": "733d671f-e7d2-4e5e-b24e-bde96a802aaf",
+          "name": "Deluzhnoa's edge of eternal frost"
+        },
+        {
+          "id": "b4def3e3-0c08-4294-9692-b81b7ed4acc8",
+          "name": "Unshakeable knight's sword"
+        },
+        {
+          "id": "998adf00-968e-4590-9148-e65be09ae285",
+          "name": "Queen bellandir's languishing blade"
+        },
+        {
+          "id": "d5cfcd7f-2991-4f8f-a425-602d987356f6",
+          "name": "None"
+        }
+      ]
+    },
+    {
+      "id": "57ade8c0-c18b-428c-ad80-fe2125d4d384",
+      "name": "Daggers",
+      "items": [
+        {
+          "id": "abf15e36-2d81-48ca-9c07-4ee6baa4e749",
+          "name": "Bercant's whispering daggers"
+        },
+        {
+          "id": "1e5d1031-f518-484b-a354-35fc3b72729f",
+          "name": "Deluzhnoa's permafrost razors"
+        },
+        {
+          "id": "2c7f7ac3-6ce2-4cd2-8fae-82f08a094312",
+          "name": "Destiny binders"
+        },
+        {
+          "id": "677309b7-12a8-405b-9eee-da04377e216c",
+          "name": "Leviathan's bladed tendrils"
+        },
+        {
+          "id": "a449b029-7300-49e7-9806-0267982693e7",
+          "name": "Peerless obsidian razors"
+        },
+        {
+          "id": "6108802e-ce0e-4ce1-a45e-2519d663eb61",
+          "name": "Razorthorn shredders"
+        },
+        {
+          "id": "9983f393-5778-49ec-a3e2-6bd6fb71fc4d",
+          "name": "Tevent's fangs of fury"
+        },
+        {
+          "id": "120021f3-0f8c-421c-9944-a0d0ff57e7e4",
+          "name": "None"
+        }
+      ]
+    },
+    {
+      "id": "e07b8049-654d-4d26-9a9d-e6190cce885e",
+      "name": "Spear",
+      "items": []
+    },
+    {
+      "id": "309627a7-14d7-4427-a4c4-e007e329e149",
+      "name": "Longbow",
+      "items": []
+    },
+    {
+      "id": "8ceac154-2d8e-4c05-935f-cbfbe74ab184",
+      "name": "Archboss weap 1",
+      "items": []
+    },
+    {
+      "id": "bc98016b-b0e8-4769-972a-5d9bd5d8dc9b",
+      "name": "Archboss Weap 2",
+      "items": []
+    },
+    {
+      "id": "2e9f6a36-cc3d-427b-9c08-ebfbf8da08d5",
+      "name": "Head",
+      "items": []
+    },
+    {
+      "id": "5f4d6a4b-1a35-43e4-925b-2c923ebc80dd",
+      "name": "Chest",
+      "items": []
+    },
+    {
+      "id": "518e911e-1422-4d9f-8849-86d6398cd130",
+      "name": "Legs",
+      "items": []
+    },
+    {
+      "id": "e316ffab-c8e1-49a5-ad77-8bd49eb5d43c",
+      "name": "Feet",
+      "items": []
+    },
+    {
+      "id": "aadc684d-986e-4928-a484-9fc838fd234c",
+      "name": "Gloves",
+      "items": []
+    },
+    {
+      "id": "dcbc1926-01a4-4c98-acb1-c4762e61fe39",
+      "name": "Cloak",
+      "items": []
+    },
+    {
+      "id": "042766f2-ade6-48e5-9edb-78509b1aea40",
+      "name": "Necklace",
+      "items": []
+    },
+    {
+      "id": "cab633b1-a4c0-4172-af94-2665a0ea14e1",
+      "name": "Bracelet",
+      "items": []
+    },
+    {
+      "id": "2816c26e-612c-4fe9-85cd-b3a075d912b4",
+      "name": "Ring 1",
+      "items": []
+    },
+    {
+      "id": "28a1695b-00a9-4c6b-a940-001ee4681f66",
+      "name": "Ring 2",
+      "items": []
+    },
+    {
+      "id": "63e1174a-b9fd-488d-a319-1e4e73189eef",
+      "name": "Belt",
+      "items": []
     }
   ]
 }
