@@ -1158,12 +1158,70 @@
     {
       "id": "c0080775-fc34-4454-9106-7003d851fc92",
       "name": "Greatsword",
-      "items": []
+      "items": [
+        {
+          "id": "9667c488-d4a6-4db0-a4da-1c6d03d8e4e9",
+          "name": "Broadsword of the juggernaught"
+        },
+        {
+          "id": "6422ae3c-e3da-47e7-ba0c-7b25c2ea62e7",
+          "name": "Celestial cyclone warblade"
+        },
+        {
+          "id": "c6e3dc83-da28-4469-9c23-f6c31e634792",
+          "name": "Grayeye's bloodlust greatsword"
+        },
+        {
+          "id": "a57521da-b72b-426e-bbe2-82ea19d71d1a",
+          "name": "Immortal titanic quakeblade"
+        },
+        {
+          "id": "af4e8750-b34f-487b-bcfa-a3f449a6d0fe",
+          "name": "Naru's frenzied greatblade"
+        },
+        {
+          "id": "12c12889-bb12-4d46-a774-9c90ef641e84",
+          "name": "Cordy's warblade of creeping doom"
+        },
+        {
+          "id": "974130f7-d05a-412a-85b3-6309cae649ff",
+          "name": "Tevent's warblade of despair"
+        },
+        {
+          "id": "b5ef0bae-51d8-4a55-a512-01ec4e6d8faf",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
       "name": "Sword and Shield",
-      "items": []
+      "items": [
+        {
+          "id": "f69b2e71-33fd-4b0f-878f-0a8329fdaf1e",
+          "name": "Blade of fiendish fortitude"
+        },
+        {
+          "id": "f4f0f0ec-8f33-4bfe-a83e-33f6e254be9b",
+          "name": "Bulwark of invulnerability"
+        },
+        {
+          "id": "b2ee8d55-ea36-4325-8f0c-aa4b51a6040d",
+          "name": "Crimson doomblade"
+        },
+        {
+          "id": "b802e207-7f03-4bc1-8841-2bb7a04d37e0",
+          "name": "Daigon's stormblade"
+        },
+        {
+          "id": "76da3d4a-3fa4-40aa-994e-1c669786464a",
+          "name": "Deluzhnoa's edge of eternal frost"
+        },
+        {
+          "id": "14fc15c3-6335-42e8-a614-fd08976f1b06",
+          "name": "Unshakeable knight's sword"
+        }
+      ]
     },
     {
       "id": "1b692927-40e8-473a-9b99-2a85bfcc8993",

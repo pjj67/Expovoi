@@ -6,7 +6,6 @@
   <title>Member Attendance Manager</title>
   <link rel="stylesheet" href="/styles.css" />
   <style>
-    /* Collapsible container */
     .collapsible {
       background-color: #777;
       color: white;
@@ -19,29 +18,25 @@
       font-size: 15px;
       margin-top: 10px;
     }
-
-    .collapsible:hover {
+    .collapsible:hover,
+    .active {
       background-color: #555;
     }
-
-    /* Content section that is collapsible */
     .content {
       padding: 0 18px;
       display: none;
       overflow: hidden;
       background-color: #f1f1f1;
     }
-
-    /* Show active collapsible when clicked */
-    .active, .collapsible:hover {
-      background-color: #555;
+    .content.show {
+      display: block;
     }
   </style>
 </head>
-<body> 
+<body>
   <h1>👥 Member Attendance Manager</h1>
 
-  <!-- Eligibility Check (Always visible) -->
+  <!-- Eligibility Check -->
   <h2>Eligibility Check</h2>
   <form action="/check-eligibility" method="POST">
     <label for="category">Select Category:</label>
@@ -52,19 +47,13 @@
       <% }); %>
     </select>
 
-    <% 
-      let selectedCategory = null;
-      if (selectedCategoryId) {
-        selectedCategory = categories.find(category => category.id === selectedCategoryId);
-      }
-    %>
-
+    <% let selectedCategory = categories.find(c => c.id === selectedCategoryId); %>
     <% if (selectedCategory && selectedCategory.items) { %>
       <label for="item">Select Item:</label>
       <select name="itemId" id="item" required>
         <option value="">Select Item</option>
         <% selectedCategory.items.forEach(item => { %>
-          <option value="<%= item.id %>" <%= typeof selectedItemId !== 'undefined' && item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
+          <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
         <% }); %>
       </select>
     <% } %>
@@ -72,33 +61,28 @@
     <button type="submit">Check Eligibility</button>
   </form>
 
-  <hr/>
-
-  <!-- Display Eligible Members -->
-  <% if (eligibleMembers && eligibleMembers.length > 0) { %>
-    <h3>Eligible Members:</h3>
-    <ul>
-      <% eligibleMembers.forEach(member => { %>
-        <li><%= member.name %></li>
-      <% }); %>
-    </ul>
-  <% } else if (typeof eligibleMembers !== 'undefined') { %>
-    <p>No eligible members found.</p>
+  <% if (eligibleMembers) { %>
+    <% if (eligibleMembers.length > 0) { %>
+      <h3>Eligible Members:</h3>
+      <ul>
+        <% eligibleMembers.forEach(member => { %>
+          <li><%= member.name %></li>
+        <% }); %>
+      </ul>
+    <% } else { %>
+      <p>No eligible members found.</p>
+    <% } %>
   <% } %>
 
-  <hr/>
-
-  <!-- Add Member & Manage Members -->
+  <!-- Add Member & Manage -->
   <button class="collapsible">Add Member & Manage Members</button>
   <div class="content">
-    <!-- Add Member -->
     <h2>Add Member</h2>
     <form action="/members" method="POST">
       <input type="text" name="name" placeholder="Member Name" required />
       <button type="submit">Add Member</button>
     </form>
 
-    <!-- Members List -->
     <h2>Members & Attendance</h2>
     <% if (members.length === 0) { %>
       <p>No members yet.</p>
@@ -121,8 +105,6 @@
         </div>
       <% }); %>
     <% } %>
-
-    <hr/>
   </div>
 
   <!-- Categories & Items -->
@@ -133,27 +115,23 @@
     <% } else { %>
       <% categories.forEach(category => { %>
         <div class="category">
-          <!-- Category name and form to edit it -->
           <form action="/categories/<%= category.id %>/edit" method="POST">
             <input type="text" name="name" value="<%= category.name %>" />
             <button type="submit">Rename</button>
           </form>
 
-          <!-- Add Item Form (Always visible) -->
           <h4>Add Item</h4>
           <form action="/categories/<%= category.id %>/items" method="POST">
             <input type="text" name="name" placeholder="Item Name" required />
             <button type="submit">Add</button>
           </form>
 
-          <!-- Dropdown for displaying items in the category -->
-          <button class="collapsible">Show Items in <%= category.name %></button>
+          <button class="collapsible">Show Items</button>
           <div class="content">
             <% if (category.items.length > 0) { %>
               <ul>
                 <% category.items.forEach(item => { %>
                   <li>
-                    <!-- Item update and delete forms -->
                     <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
                       <input type="text" name="name" value="<%= item.name %>" />
                       <button type="submit">Update</button>
@@ -165,14 +143,12 @@
                 <% }); %>
               </ul>
             <% } else { %>
-              <p>No items yet.</p>
+              <p>No items in this category.</p>
             <% } %>
           </div>
         </div>
       <% }); %>
     <% } %>
-
-    <hr/>
   </div>
 
   <!-- Add Category -->
@@ -183,13 +159,11 @@
       <input type="text" name="name" placeholder="Category Name" required />
       <button type="submit">Add Category</button>
     </form>
-    <hr/>
   </div>
 
   <!-- Assign Multiple Items to Members -->
   <button class="collapsible">Assign Multiple Items to Members</button>
   <div class="content">
-    <h2>Assign Multiple Items to Members</h2>
     <% members.forEach(member => { %>
       <div class="member">
         <h3><%= member.name %></h3>
@@ -208,41 +182,43 @@
           <p>No items assigned.</p>
         <% } %>
 
-        <!-- Form to assign multiple items -->
-        <form action="/members/<%= member.id %>/add-items" method="POST">
-          <h4>Select Items to Assign</h4>
-
-          <% categories.forEach(category => { %>
-            <h5><%= category.name %></h5>
-            <label>Select Items:</label>
-            <select name="itemIds" multiple required>
-              <% category.items.forEach(item => { %>
-                <option value="<%= item.id %>"><%= item.name %></option>
-              <% }); %>
-            </select>
-          <% }); %>
-
-          <button type="submit">Assign Items</button>
-        </form>
+        <button class="collapsible">Select Items to Assign</button>
+        <div class="content">
+          <form action="/members/<%= member.id %>/add-items" method="POST">
+            <% categories.forEach(category => { %>
+              <h5><%= category.name %></h5>
+              <select name="itemIds" multiple required>
+                <% category.items.forEach(item => { %>
+                  <option value="<%= item.id %>"><%= item.name %></option>
+                <% }); %>
+              </select>
+            <% }); %>
+            <button type="submit">Assign Items</button>
+          </form>
+        </div>
       </div>
     <% }); %>
   </div>
 
-  <hr/>
-  
   <script>
-    // JavaScript to handle collapsible sections
-    const collapsibles = document.querySelectorAll(".collapsible");
+    document.addEventListener("DOMContentLoaded", () => {
+      const collapsibles = document.querySelectorAll(".collapsible");
 
-    collapsibles.forEach(collapsible => {
-      collapsible.addEventListener("click", function() {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
+      collapsibles.forEach((collapsible, index) => {
+        const content = collapsible.nextElementSibling;
+        const isOpen = localStorage.getItem(`collapsible-${index}`) === "true";
+
+        if (isOpen) {
+          collapsible.classList.add("active");
+          content.classList.add("show");
         }
+
+        collapsible.addEventListener("click", () => {
+          const isVisible = content.classList.contains("show");
+          content.classList.toggle("show");
+          collapsible.classList.toggle("active");
+          localStorage.setItem(`collapsible-${index}`, !isVisible);
+        });
       });
     });
   </script>

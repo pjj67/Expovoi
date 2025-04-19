@@ -41,7 +41,7 @@
 <body> 
   <h1>👥 Member Attendance Manager</h1>
 
-  <!-- Eligibility Check -->
+  <!-- Eligibility Check (Always visible) -->
   <h2>Eligibility Check</h2>
   <form action="/check-eligibility" method="POST">
     <label for="category">Select Category:</label>
@@ -88,18 +88,17 @@
 
   <hr/>
 
-  <!-- Collapsible Section for Add Member -->
-  <button class="collapsible">Add Member</button>
+  <!-- Add Member & Manage Members -->
+  <button class="collapsible">Add Member & Manage Members</button>
   <div class="content">
+    <!-- Add Member -->
+    <h2>Add Member</h2>
     <form action="/members" method="POST">
       <input type="text" name="name" placeholder="Member Name" required />
       <button type="submit">Add Member</button>
     </form>
-  </div>
 
-  <!-- Collapsible Section for Members List -->
-  <button class="collapsible">Members List</button>
-  <div class="content">
+    <!-- Members List -->
     <h2>Members & Attendance</h2>
     <% if (members.length === 0) { %>
       <p>No members yet.</p>
@@ -122,64 +121,72 @@
         </div>
       <% }); %>
     <% } %>
+
+    <hr/>
   </div>
 
-  <hr/>
-
-  <!-- Collapsible Section for Categories & Items -->
+  <!-- Categories & Items -->
   <button class="collapsible">Categories & Items</button>
   <div class="content">
-    <h2>Categories & Items</h2>
     <% if (categories.length === 0) { %>
       <p>No categories yet.</p>
     <% } else { %>
       <% categories.forEach(category => { %>
         <div class="category">
+          <!-- Category name and form to edit it -->
           <form action="/categories/<%= category.id %>/edit" method="POST">
             <input type="text" name="name" value="<%= category.name %>" />
             <button type="submit">Rename</button>
           </form>
 
+          <!-- Add Item Form (Always visible) -->
           <h4>Add Item</h4>
           <form action="/categories/<%= category.id %>/items" method="POST">
             <input type="text" name="name" placeholder="Item Name" required />
             <button type="submit">Add</button>
           </form>
 
-          <% if (category.items.length > 0) { %>
-            <ul>
-              <% category.items.forEach(item => { %>
-                <li>
-                  <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
-                    <input type="text" name="name" value="<%= item.name %>" />
-                    <button type="submit">Update</button>
-                  </form>
-                  <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
-                    <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
-                  </form>
-                </li>
-              <% }); %>
-            </ul>
-          <% } %>
+          <!-- Dropdown for displaying items in the category -->
+          <button class="collapsible">Show Items in <%= category.name %></button>
+          <div class="content">
+            <% if (category.items.length > 0) { %>
+              <ul>
+                <% category.items.forEach(item => { %>
+                  <li>
+                    <!-- Item update and delete forms -->
+                    <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
+                      <input type="text" name="name" value="<%= item.name %>" />
+                      <button type="submit">Update</button>
+                    </form>
+                    <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
+                      <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
+                    </form>
+                  </li>
+                <% }); %>
+              </ul>
+            <% } else { %>
+              <p>No items yet.</p>
+            <% } %>
+          </div>
         </div>
       <% }); %>
     <% } %>
+
+    <hr/>
   </div>
 
-  <hr/>
-
-  <!-- Collapsible Section for Add Category -->
+  <!-- Add Category -->
   <button class="collapsible">Add Category</button>
   <div class="content">
+    <h2>Add Category</h2>
     <form action="/categories" method="POST">
       <input type="text" name="name" placeholder="Category Name" required />
       <button type="submit">Add Category</button>
-    </form>  
+    </form>
+    <hr/>
   </div>
 
-  <hr/>
-
-  <!-- Collapsible Section for Assign Multiple Items to Members -->
+  <!-- Assign Multiple Items to Members -->
   <button class="collapsible">Assign Multiple Items to Members</button>
   <div class="content">
     <h2>Assign Multiple Items to Members</h2>
