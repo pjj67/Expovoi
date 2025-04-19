@@ -8,16 +8,12 @@
         true,
         true,
         true,
-        false,
+        true,
         false,
         false,
         false
       ],
       "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
-        },
         {
           "categoryId": "category-uuid-2",
           "itemId": "item-uuid-3"
@@ -25,10 +21,6 @@
         {
           "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
           "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
-        },
-        {
-          "categoryId": "3e8f1f81-2e25-4573-9ce3-3946dfa60706",
-          "itemId": "725037ec-c5aa-4c25-a1c7-abc1a80d6343"
         }
       ]
     },
@@ -40,10 +32,10 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false
+        true,
+        true,
+        true,
+        true
       ],
       "items": [
         {
@@ -57,42 +49,6 @@
         {
           "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
           "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
-        },
-        {
-          "categoryId": "3e8f1f81-2e25-4573-9ce3-3946dfa60706",
-          "itemId": "725037ec-c5aa-4c25-a1c7-abc1a80d6343"
-        }
-      ]
-    },
-    {
-      "id": "3d8ff9df-dea4-427e-8ca9-0e60fc212446",
-      "name": "test",
-      "attendance": [
-        true,
-        true,
-        false,
-        true,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-2"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-3"
-        },
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
-        },
-        {
-          "categoryId": "3e8f1f81-2e25-4573-9ce3-3946dfa60706",
-          "itemId": "725037ec-c5aa-4c25-a1c7-abc1a80d6343"
         }
       ]
     }
@@ -181,16 +137,6 @@
         {
           "id": "25048c81-401c-46d7-81ef-95f168f9e9d0",
           "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "3e8f1f81-2e25-4573-9ce3-3946dfa60706",
-      "name": "test",
-      "items": [
-        {
-          "id": "725037ec-c5aa-4c25-a1c7-abc1a80d6343",
-          "name": "item 1"
         }
       ]
     }
