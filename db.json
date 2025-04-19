@@ -795,9 +795,9 @@
       "id": "c61727dd-960a-437b-ba80-0813b2cc539c",
       "name": "Bolotta",
       "attendance": [
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
         false,
         false,
         false,
@@ -932,7 +932,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         false,
         false,
         false,

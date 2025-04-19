@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Load and Save Database
 function loadDatabase() {
   try {
-    const rawData = fs.readFileSync(path.join(__dirname, 'db.json'));
+    const rawData = fs.readFileSync(path.join('db.json'));
     return JSON.parse(rawData);
   } catch (error) {
     console.error("Error loading database:", error);
@@ -22,7 +22,7 @@ function loadDatabase() {
 
 function saveDatabase(data) {
   try {
-    fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 2));
+    fs.writeFileSync(path.join('db.json'), JSON.stringify(data, null, 2));
   } catch (error) {
     console.error("Error saving database:", error);
   }
