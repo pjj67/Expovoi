@@ -60,9 +60,9 @@
       "id": "76b132ed-ce75-4dad-96ee-6de11ef086f5",
       "name": "Angrylittleman",
       "attendance": [
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
         false,
         false,
         false,
@@ -719,6 +719,306 @@
     {
       "id": "145a669a-ab18-443c-b199-f5e1f0517bb1",
       "name": "Silvendil",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "c4bc61b6-6a0c-4d90-9685-466fb108bc58",
+      "name": "xLuyu",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "0ee79edd-7a4d-4a13-ace3-d047f97e6e6c",
+      "name": "Ortakis",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "6b0aed5f-2f95-4a1c-a83f-86885980e194",
+      "name": "TENZENKAI",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "c7be7fc5-1259-4cb4-9f31-af1521944a1b",
+      "name": "Gorunn",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "c61727dd-960a-437b-ba80-0813b2cc539c",
+      "name": "Bolotta",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "b0be174d-a11c-47bf-abbb-3c4dce6f5207",
+      "name": "Babi99",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "81518ae5-53f6-4896-8020-74bf30af3a0c",
+      "name": "Mauguensombre",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "ec8c6d28-39a9-4e41-b024-cc69a75f09b2",
+      "name": "Zaralikos",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "03eaaa55-e950-45e0-bed9-48eef301fd1f",
+      "name": "Andol",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "015419d6-138f-42e5-8370-7d8f9c83be25",
+      "name": "Marvelita",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "ee2f7555-3409-462e-bcf4-f96e0097cb2f",
+      "name": "Lhosna",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "a6c26793-5c32-44c6-af67-2a81c5171513",
+      "name": "JustBunny",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "b4944e59-25f6-4d13-961c-081e5de7a5ed",
+      "name": "Miladria",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "99a7e4ea-d46f-45ad-8613-13123ba8ee75",
+      "name": "Am1ks",
+      "attendance": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "a2ee4443-66a9-417c-b04e-c6936e2f9eb9",
+      "name": "BigPoyaso",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "0e9605a2-794c-488a-965a-9474c7460ff9",
+      "name": "PrincessMel",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "09dae9dc-4053-417d-8560-e7805ddbf45d",
+      "name": "SterLorD",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "f38dd153-d580-408b-9849-1eb90652a462",
+      "name": "JustSwag",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "4fb41fbe-276c-4c1c-8414-e78e7a6b7864",
+      "name": "ImYoyoo",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
+    },
+    {
+      "id": "ac520545-6c31-4026-bf66-7407b60ea21b",
+      "name": "N0yan",
       "attendance": [
         false,
         false,
