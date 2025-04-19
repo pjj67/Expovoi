@@ -140,7 +140,6 @@ app.post("/members/:id/add-items", (req, res) => {
   res.redirect("/"); // Redirect back to the main page
 });
 
-
 // Remove Item from Member
 app.post('/members/:id/remove-item', (req, res) => {
   const db = loadDatabase();
@@ -152,31 +151,33 @@ app.post('/members/:id/remove-item', (req, res) => {
   res.redirect('/');
 });
 
-// Update Attendance
-app.post('/members/:id/attendance', (req, res) => {
+// ✅ Updated: Bulk Update Attendance for All Members
+app.post('/members/attendance', (req, res) => {
   const db = loadDatabase();
-  const member = db.members.find(m => m.id === req.params.id);
-  if (!member) return res.status(404).send('Member not found');
 
-  const attendanceArray = Array(8).fill(false);
-  let checkedIndexes = req.body.attendance;
+  // Extract attendance data for all members
+  const updatedAttendance = req.body.attendance; // Format: { memberId: [eventIndexes] }
 
-  if (checkedIndexes !== undefined) {
-    if (!Array.isArray(checkedIndexes)) {
-      checkedIndexes = [checkedIndexes];
+  db.members.forEach(member => {
+    const attendanceArray = Array(8).fill(false);
+    const memberAttendance = updatedAttendance[member.id];
+
+    if (memberAttendance) {
+      memberAttendance.forEach(eventIndex => {
+        const i = parseInt(eventIndex);
+        if (!isNaN(i) && i >= 0 && i < 8) {
+          attendanceArray[i] = true;
+        }
+      });
     }
 
-    checkedIndexes.forEach(index => {
-      const i = parseInt(index);
-      if (!isNaN(i) && i >= 0 && i < 8) {
-        attendanceArray[i] = true;
-      }
-    });
-  }
+    member.attendance = attendanceArray;
+  });
 
-  member.attendance = attendanceArray;
+  // Save the updated database
   saveDatabase(db);
-  res.redirect('/');
+
+  res.redirect('/'); // Redirect back to the main page
 });
 
 // Eligibility Check

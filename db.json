@@ -827,14 +827,14 @@
       "id": "641e72ec-361a-46cb-874f-580022159ba8",
       "name": "Date",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1097,14 +1097,14 @@
       "id": "03eaaa55-e950-45e0-bed9-48eef301fd1f",
       "name": "Andol",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
@@ -1172,14 +1172,14 @@
       "id": "99a7e4ea-d46f-45ad-8613-13123ba8ee75",
       "name": "Am1ks",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": []
     },
