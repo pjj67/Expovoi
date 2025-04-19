@@ -38,68 +38,69 @@
 
   <!-- Eligibility Check -->
   <h2>Eligibility Check</h2>
-  <form action="/check-eligibility" method="POST">
-    <label for="category">Select Category:</label>
-    <select name="categoryId" id="category" required>
-      <option value="">Select Category</option>
-      <% categories.forEach(category => {
-        if (
-          category.name !== "Ring 1" &&
-          category.name !== "Ring 2" &&
-          category.name !== "Archboss Weap 1" &&
-          category.name !== "Archboss Weap 2"
-        ) { %>
-          <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
-      <% } }); %>
-      <option value="ring" <%= selectedCategoryId === 'ring' ? 'selected' : '' %>>Ring</option>
-    </select>
+<form action="/check-eligibility" method="POST">
+  <label for="category">Select Category:</label>
+  <select name="categoryId" id="category" required>
+    <option value="">Select Category</option>
+  <% categories.forEach(category => {
+  if (
+    category.name !== "Ring 1" &&
+    category.name !== "Ring 2" &&
+    category.name !== "Archboss Weap 1" &&
+    category.name !== "Archboss Weap 2"
+  ) { %>
+        <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
+    <% } }); %>
+    <option value="ring" <%= selectedCategoryId === 'ring' ? 'selected' : '' %>>Ring</option>
+  </select>
 
-    <% 
-      let itemsToShow = [];
-      if (selectedCategoryId === 'ring') {
-        const ringCategories = categories.filter(c => c.name === "Ring 1" || c.name === "Ring 2");
-        const seenItems = new Set();
-        ringCategories.forEach(cat => {
-          cat.items.forEach(item => {
-            if (!seenItems.has(item.name)) {
-              itemsToShow.push(item);
-              seenItems.add(item.name);
-            }
-          });
+  <% 
+    let itemsToShow = [];
+    if (selectedCategoryId === 'ring') {
+      const ringCategories = categories.filter(c => c.name === "Ring 1" || c.name === "Ring 2");
+      const seenItems = new Set();
+      ringCategories.forEach(cat => {
+        cat.items.forEach(item => {
+          if (!seenItems.has(item.name)) {
+            itemsToShow.push(item);
+            seenItems.add(item.name);
+          }
         });
-      } else {
-        const selectedCategory = categories.find(c => c.id === selectedCategoryId);
-        itemsToShow = selectedCategory?.items || [];
-      }
-    %>
+      });
+    } else {
+      const selectedCategory = categories.find(c => c.id === selectedCategoryId);
+      itemsToShow = selectedCategory?.items || [];
+    }
+  %>
 
-    <% if (itemsToShow.length > 0) { %>
-      <label for="item">Select Item:</label>
-      <select name="itemId" id="item" required>
-        <option value="">Select Item</option>
-        <% itemsToShow.forEach(item => { %>
-          <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
-        <% }); %>
-      </select>
-    <% } %>
-
-    <button type="submit">Check Eligibility</button>
-  </form>
-
-  <% if (eligibleMembers) { %>
-    <% if (eligibleMembers.length > 0) { %>
-      <h3>Eligible Members:</h3>
-      <ul>
-        <% eligibleMembers.forEach(member => { %>
-          <li><%= member.name %></li>
-        <% }); %>
-      </ul>
-    <% } else { %>
-      <p>No eligible members found.</p>
-    <% } %>
+  <% if (itemsToShow.length > 0) { %>
+    <label for="item">Select Item:</label>
+    <select name="itemId" id="item" required>
+      <option value="">Select Item</option>
+      <% itemsToShow.forEach(item => { %>
+        <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
+      <% }); %>
+    </select>
   <% } %>
 
-  <!-- Add Member & Manage Members Section -->
+  <button type="submit">Check Eligibility</button>
+</form>
+
+<% if (eligibleMembers) { %>
+  <% if (eligibleMembers.length > 0) { %>
+    <h3>Eligible Members:</h3>
+    <ul>
+      <% eligibleMembers.forEach(member => { %>
+        <li><%= member.name %></li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No eligible members found.</p>
+  <% } %>
+<% } %>
+
+
+  <!-- Add Member & Manage -->
   <button class="collapsible">Add Member & Manage Members</button>
   <div class="content">
     <h2>Add Member</h2>
@@ -108,35 +109,31 @@
       <button type="submit">Add Member</button>
     </form>
 
-<!-- Members & Attendance -->
-<h2>Members & Attendance</h2>
-<% if (members.length === 0) { %>
-  <p>No members yet.</p>
-<% } else { %>
-  <% members.forEach(member => { %>
-    <div class="member">
-      <form action="/members/<%= member.id %>/attendance" method="POST">
-        <strong><%= member.name %></strong>
-        <!-- Checkboxes for attendance events -->
-        <% for (let i = 0; i < 8; i++) { %>
-          <label>
-            <input type="checkbox" name="attendance[<%= i %>]" value="1" <%= member.attendance[i] ? 'checked' : '' %> />
-            Event <%= i + 1 %>
-          </label>
-        <% } %>
-        <!-- Button to update all attendance events -->
-        <button type="submit">Update All Attendance</button>
-      </form>
-      <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
-        <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
-      </form>
-    </div>
-  <% }); %>
-<% } %>
-
+    <h2>Members & Attendance</h2>
+    <% if (members.length === 0) { %>
+      <p>No members yet.</p>
+    <% } else { %>
+      <% members.forEach(member => { %>
+        <div class="member">
+          <form action="/members/<%= member.id %>/attendance" method="POST">
+            <strong><%= member.name %></strong>
+            <% for (let i = 0; i < 8; i++) { %>
+              <label>
+                <input type="checkbox" name="attendance[]" value="<%= i %>" <%= member.attendance[i] ? 'checked' : '' %> />
+                Event <%= i + 1 %>
+              </label>
+            <% } %>
+            <button type="submit">Update Attendance</button>
+          </form>
+          <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
+            <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
+          </form>
+        </div>
+      <% }); %>
+    <% } %>
   </div>
 
-  <!-- Categories & Items Section -->
+  <!-- Categories & Items -->
   <button class="collapsible">Categories & Items</button>
   <div class="content">
     <% if (categories.length === 0) { %>
@@ -180,7 +177,7 @@
     <% } %>
   </div>
 
-  <!-- Add Category Section -->
+  <!-- Add Category -->
   <button class="collapsible">Add Category</button>
   <div class="content">
     <h2>Add Category</h2>
@@ -190,7 +187,7 @@
     </form>
   </div>
 
-  <!-- Edit Members Need List Section -->
+  <!-- Assign Multiple Items to Members -->
   <button class="collapsible">Edit Members Need List</button>
   <div class="content">
     <% members.forEach(member => { %>
@@ -213,18 +210,18 @@
 
         <button class="collapsible">Select Items to Assign</button>
         <div class="content">
-          <form action="/members/<%= member.id %>/add-items" method="POST">
-            <% categories.forEach(category => { %>
-              <h5><%= category.name %></h5>
-              <select name="categoryItems[<%= category.id %>]">
-                <option value="">-- Keep Current --</option>
-                <% category.items.forEach(item => { %>
-                  <option value="<%= item.id %>"><%= item.name %></option>
-                <% }); %>
-              </select>
-            <% }); %>
-            <button type="submit">Assign Items</button>
-          </form>
+         <form action="/members/<%= member.id %>/add-items" method="POST">
+  <% categories.forEach(category => { %>
+    <h5><%= category.name %></h5>
+    <select name="categoryItems[<%= category.id %>]">
+      <option value="">-- Keep Current --</option>
+      <% category.items.forEach(item => { %>
+        <option value="<%= item.id %>"><%= item.name %></option>
+      <% }); %>
+    </select>
+  <% }); %>
+  <button type="submit">Assign Items</button>
+</form>
         </div>
       </div>
     <% }); %>
