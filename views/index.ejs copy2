@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Member Attendance Manager</title>
+  <title>Angry's Attendance & Eligibility Manager</title>
   <link rel="stylesheet" href="/styles.css" />
   <style>
     .collapsible {
@@ -34,7 +34,7 @@
   </style>
 </head>
 <body>
-  <h1>👥 Member Attendance Manager</h1>
+  <h1>👥 Angry's Attendance & Eligibility Manager</h1>
 
   <!-- Eligibility Check -->
   <h2>Eligibility Check</h2>
@@ -210,17 +210,18 @@
 
         <button class="collapsible">Select Items to Assign</button>
         <div class="content">
-          <form action="/members/<%= member.id %>/add-items" method="POST">
-            <% categories.forEach(category => { %>
-              <h5><%= category.name %></h5>
-              <select name="itemIds" multiple required>
-                <% category.items.forEach(item => { %>
-                  <option value="<%= item.id %>"><%= item.name %></option>
-                <% }); %>
-              </select>
-            <% }); %>
-            <button type="submit">Assign Items</button>
-          </form>
+         <form action="/members/<%= member.id %>/add-items" method="POST">
+  <% categories.forEach(category => { %>
+    <h5><%= category.name %></h5>
+    <select name="categoryItems[<%= category.id %>]">
+      <option value="">-- Keep Current --</option>
+      <% category.items.forEach(item => { %>
+        <option value="<%= item.id %>"><%= item.name %></option>
+      <% }); %>
+    </select>
+  <% }); %>
+  <button type="submit">Assign Items</button>
+</form>
         </div>
       </div>
     <% }); %>
