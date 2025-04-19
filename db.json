@@ -16,15 +16,87 @@
       "items": [
         {
           "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
+          "itemId": "item-uuid-2"
         },
         {
           "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-3"
+          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
         },
         {
           "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
+          "itemId": "f4fb3045-9089-40b5-8013-011ca6372b03"
+        },
+        {
+          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
+          "itemId": "b5ef0bae-51d8-4a55-a512-01ec4e6d8faf"
+        },
+        {
+          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
+          "itemId": "571f0290-d0c2-4386-89fb-f7af00acd078"
+        },
+        {
+          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
+          "itemId": "f1fbd8d4-01ba-4570-87e8-069c121cea79"
+        },
+        {
+          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
+          "itemId": "7704b006-2b7f-4904-a2b8-6c3eb23450f3"
+        },
+        {
+          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
+          "itemId": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6"
+        },
+        {
+          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
+          "itemId": "e9e58f03-fa06-444c-8545-090472db0253"
+        },
+        {
+          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
+          "itemId": "01e8c2a9-9c07-49f4-b679-c06a30eb7072"
+        },
+        {
+          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
+          "itemId": "58968216-f14e-4f39-88d3-fc857e12ba48"
+        },
+        {
+          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
+          "itemId": "d1b445b9-8fdc-4c8e-a9de-435d6590a099"
+        },
+        {
+          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
+          "itemId": "73014a4a-7b06-4512-8727-26d74a9a01ec"
+        },
+        {
+          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
+          "itemId": "cd7b359a-398f-4de6-bf46-6d618fd68148"
+        },
+        {
+          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
+          "itemId": "4c88f858-8c8e-478c-af55-9a31a2f5fd9f"
+        },
+        {
+          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
+          "itemId": "bfc78737-574f-44ab-9850-e03b30752d63"
+        },
+        {
+          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+          "itemId": "0d6c686d-7b5a-41ef-a6e0-ea67aaefc74b"
+        },
+        {
+          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
+          "itemId": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9"
+        },
+        {
+          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
+          "itemId": "4ec7d389-0bd8-4d8a-994f-8cfc9a9d7021"
+        },
+        {
+          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
+          "itemId": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5"
+        },
+        {
+          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
+          "itemId": "084c160d-079c-46ea-8ab6-e75cd382f394"
         }
       ]
     },
@@ -61,13 +133,13 @@
       "name": "Angrylittleman",
       "attendance": [
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
       ],
       "items": [
         {
