@@ -1,38 +1,6 @@
 {
   "members": [
     {
-      "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
-      "name": "Kythor",
-      "attendance": [
-        true,
-        true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-4"
-        },
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "e306320a-1e7e-4ad4-bcdc-64688290ce8c"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        }
-      ]
-    },
-    {
       "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
       "name": "LexieGoldfish",
       "attendance": [
@@ -45,40 +13,37 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-3"
-        }
-      ]
+      "items": []
     },
     {
-      "id": "1db022ee-72a6-426d-9b57-5fe839f902f7",
+      "id": "55b5f490-ec0e-4899-9bda-bb45a8ebd8db",
       "name": "Angrylittleman",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
         false
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-3"
-        }
-      ]
+      "items": []
+    },
+    {
+      "id": "b5dacfab-7df9-43e3-9f79-d9e0b713a4d9",
+      "name": "Kythor",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": []
     }
   ],
   "categories": [
@@ -119,7 +84,7 @@
           "name": "Tevent's grasp of withering"
         },
         {
-          "id": "e306320a-1e7e-4ad4-bcdc-64688290ce8c",
+          "id": "35361864-1d4e-4933-b936-eaa9236eadb0",
           "name": "None"
         }
       ]
@@ -161,8 +126,76 @@
           "name": "Queen bellandir's hivemind staff"
         },
         {
-          "id": "67288e0f-ce03-4cc3-b7ee-cd1e1d502cc3",
+          "id": "b2a3e24a-b7b0-4a49-bc30-3edff4fcd97e",
           "name": "None"
+        }
+      ]
+    },
+    {
+      "id": "b20cf75a-6be5-49c6-9029-21bd4d4b5bf0",
+      "name": "Crossbow",
+      "items": [
+        {
+          "id": "ca6c7f5b-629f-4add-9c2e-7020feb1ee90",
+          "name": "Akman's bloodletting crossbows"
+        },
+        {
+          "id": "828a2706-998e-4775-a45d-dd6c66d57859",
+          "name": "Bercant's spineflower crossbows"
+        },
+        {
+          "id": "a46f5816-bf76-4048-b919-eafe3e3d6612",
+          "name": "Cordy's stormspore spike slingers"
+        },
+        {
+          "id": "3655143a-8294-4a5f-98f1-e4f6ef370e24",
+          "name": "Crossbows of the darkest night"
+        },
+        {
+          "id": "15cc2cd8-b7f1-4e69-b543-38f861a187bb",
+          "name": "Moonlight echo repeaters"
+        },
+        {
+          "id": "724ead60-00a0-4367-a389-fa079b878d9f",
+          "name": "Unrelenting annihilation crossbows "
+        },
+        {
+          "id": "a78493e7-d28e-4b43-859f-ff5e9c602e9f",
+          "name": "Queen bellandir's toxic spine throwers"
+        },
+        {
+          "id": "069f286f-c8c3-44fb-bc78-38757317db0f",
+          "name": "None"
+        }
+      ]
+    },
+    {
+      "id": "7ef44b5d-8d07-4d7a-baf3-bbca4b6a30b6",
+      "name": "Greatsword",
+      "items": [
+        {
+          "id": "aa9338f6-6906-463e-8b6a-49cf1ffc9fc4",
+          "name": "Broadsword of the juggernaught"
+        },
+        {
+          "id": "eb0a097a-1ec9-46b0-b2d0-843421928b2e",
+          "name": "Celestial cyclone warblade"
+        },
+        {
+          "id": "cd2e8fb0-6dea-401a-9aa9-12492e1e518b",
+          "name": "Grayeye's bloodlust greatsword"
+        },
+        {
+          "id": "66075815-7710-4c5e-bb1f-378f06bca23f",
+          "name": "Immortal titanic quakeblade"
+        },
+        {
+          "id": "ce2b85d1-1278-4cad-8233-394eef2e3c49",
+          "name": "Naru's frenzied greatblade"
+        },
+        {
+          "id": "03600db7-c203-44eb-a591-5b6daf14d3be",
+          "name": "Cordy's warblade of creeping doom"
         }
       ]
     }
