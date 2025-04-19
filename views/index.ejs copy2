@@ -6,7 +6,7 @@
   <title>Member Attendance Manager</title>
   <link rel="stylesheet" href="/styles.css" />
   <style>
-    /* Collapsible container */
+    /* Collapsible section styles */
     .collapsible {
       background-color: #777;
       color: white;
@@ -17,24 +17,17 @@
       border: none;
       outline: none;
       font-size: 15px;
-      margin-top: 10px;
     }
 
-    .collapsible:hover {
+    .active, .collapsible:hover {
       background-color: #555;
     }
 
-    /* Content section that is collapsible */
     .content {
       padding: 0 18px;
       display: none;
       overflow: hidden;
       background-color: #f1f1f1;
-    }
-
-    /* Show active collapsible when clicked */
-    .active, .collapsible:hover {
-      background-color: #555;
     }
   </style>
 </head>
@@ -42,64 +35,69 @@
   <h1>👥 Member Attendance Manager</h1>
 
   <!-- Eligibility Check -->
-  <h2>Eligibility Check</h2>
-  <form action="/check-eligibility" method="POST">
-    <label for="category">Select Category:</label>
-    <select name="categoryId" id="category" required>
-      <option value="">Select Category</option>
-      <% categories.forEach(category => { %>
-        <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
-      <% }); %>
-    </select>
-
-    <% 
-      let selectedCategory = null;
-      if (selectedCategoryId) {
-        selectedCategory = categories.find(category => category.id === selectedCategoryId);
-      }
-    %>
-
-    <% if (selectedCategory && selectedCategory.items) { %>
-      <label for="item">Select Item:</label>
-      <select name="itemId" id="item" required>
-        <option value="">Select Item</option>
-        <% selectedCategory.items.forEach(item => { %>
-          <option value="<%= item.id %>" <%= typeof selectedItemId !== 'undefined' && item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
+  <button class="collapsible">Eligibility Check</button>
+  <div class="content">
+    <form action="/check-eligibility" method="POST">
+      <label for="category">Select Category:</label>
+      <select name="categoryId" id="category" required>
+        <option value="">Select Category</option>
+        <% categories.forEach(category => { %>
+          <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
         <% }); %>
       </select>
-    <% } %>
 
-    <button type="submit">Check Eligibility</button>
-  </form>
+      <% 
+        let selectedCategory = null;
+        if (selectedCategoryId) {
+          selectedCategory = categories.find(category => category.id === selectedCategoryId);
+        }
+      %>
+
+      <% if (selectedCategory && selectedCategory.items) { %>
+        <label for="item">Select Item:</label>
+        <select name="itemId" id="item" required>
+          <option value="">Select Item</option>
+          <% selectedCategory.items.forEach(item => { %>
+            <option value="<%= item.id %>" <%= typeof selectedItemId !== 'undefined' && item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
+          <% }); %>
+        </select>
+      <% } %>
+
+      <button type="submit">Check Eligibility</button>
+    </form>
+  </div>
 
   <hr/>
 
   <!-- Display Eligible Members -->
-  <% if (eligibleMembers && eligibleMembers.length > 0) { %>
-    <h3>Eligible Members:</h3>
-    <ul>
-      <% eligibleMembers.forEach(member => { %>
-        <li><%= member.name %></li>
-      <% }); %>
-    </ul>
-  <% } else if (typeof eligibleMembers !== 'undefined') { %>
-    <p>No eligible members found.</p>
-  <% } %>
+  <button class="collapsible">Eligible Members</button>
+  <div class="content">
+    <% if (eligibleMembers && eligibleMembers.length > 0) { %>
+      <h3>Eligible Members:</h3>
+      <ul>
+        <% eligibleMembers.forEach(member => { %>
+          <li><%= member.name %></li>
+        <% }); %>
+      </ul>
+    <% } else if (typeof eligibleMembers !== 'undefined') { %>
+      <p>No eligible members found.</p>
+    <% } %>
+  </div>
 
   <hr/>
-
-  <!-- Collapsible Section for Add Member and below -->
-  <button class="collapsible">Add Member & Manage Members</button>
+    
+  <!-- Add Member -->
+  <button class="collapsible">Add Member</button>
   <div class="content">
-    <!-- Add Member -->
-    <h2>Add Member</h2>
     <form action="/members" method="POST">
       <input type="text" name="name" placeholder="Member Name" required />
       <button type="submit">Add Member</button>
     </form>
+  </div>
 
-    <!-- Members List -->
-    <h2>Members & Attendance</h2>
+  <!-- Members List -->
+  <button class="collapsible">Members & Attendance</button>
+  <div class="content">
     <% if (members.length === 0) { %>
       <p>No members yet.</p>
     <% } else { %>
@@ -121,11 +119,13 @@
         </div>
       <% }); %>
     <% } %>
+  </div>
 
-    <hr/>
+  <hr/>
 
-    <!-- Categories & Items -->
-    <h2>Categories & Items</h2>
+  <!-- Categories & Items -->
+  <button class="collapsible">Categories & Items</button>
+  <div class="content">
     <% if (categories.length === 0) { %>
       <p>No categories yet.</p>
     <% } else { %>
@@ -160,20 +160,24 @@
         </div>
       <% }); %>
     <% } %>
+  </div>
 
-    <hr/>
-
-    <!-- Add Category -->
-    <h2>Add Category</h2>
+  <hr/>
+    
+  <!-- Add Category -->
+  <button class="collapsible">Add Category</button>
+  <div class="content">
     <form action="/categories" method="POST">
       <input type="text" name="name" placeholder="Category Name" required />
       <button type="submit">Add Category</button>
     </form>  
+  </div>
 
-    <hr/>
-
-    <!-- Assign Multiple Items to Members -->
-    <h2>Assign Multiple Items to Members</h2>
+  <hr/>
+    
+  <!-- Assign Multiple Items to Members -->
+  <button class="collapsible">Assign Multiple Items to Members</button>
+  <div class="content">
     <% members.forEach(member => { %>
       <div class="member">
         <h3><%= member.name %></h3>
@@ -213,7 +217,7 @@
   </div>
 
   <hr/>
-  
+
   <script>
     // JavaScript to handle collapsible sections
     const collapsibles = document.querySelectorAll(".collapsible");
