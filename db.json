@@ -2082,23 +2082,250 @@
         {
           "id": "0584a5c6-7191-446c-9249-0a2889a90a27",
           "name": "Barbed cuffs of the tormentor"
+        },
+        {
+          "id": "06e20d86-5d30-4708-a21f-cd9b26f03756",
+          "name": "Bracelet of agony"
+        },
+        {
+          "id": "c6c66180-a217-458c-b1f2-466360e5826d",
+          "name": "Bracelet of fractured worlds"
+        },
+        {
+          "id": "3886972b-e86a-490a-a981-fe2c7b0d4c64",
+          "name": "Bracelet of the violent undertow"
+        },
+        {
+          "id": "325abbc8-0086-41ed-bc18-afd34c7fb397",
+          "name": "Coil of the verdant sovereign"
+        },
+        {
+          "id": "87a827a9-4252-471e-ac52-dc25d47f14db",
+          "name": "Infernal demonpact cuffs"
+        },
+        {
+          "id": "efb4a422-7edf-49dd-8888-85a0fc64aad2",
+          "name": "Primal golden cuffs"
+        },
+        {
+          "id": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9",
+          "name": "Restraints of the glacial queen"
+        },
+        {
+          "id": "8301d696-d8c2-4f14-a945-231d0475e74b",
+          "name": "Twisted coil of the enduring"
+        },
+        {
+          "id": "0da8cca2-e745-4f82-9aae-f050832fe61d",
+          "name": "None"
         }
       ]
     },
     {
       "id": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
       "name": "Ring 1",
-      "items": []
+      "items": [
+        {
+          "id": "4450d698-e4ce-44e4-9666-1606d23908cf",
+          "name": "Astral bond"
+        },
+        {
+          "id": "97f6a83c-6c3b-426b-9af8-1b32ef17b77b",
+          "name": "Band of the ancestor's blood"
+        },
+        {
+          "id": "e6e94713-df9b-4dcd-b917-c163ee420704",
+          "name": "Band of the resistance leader"
+        },
+        {
+          "id": "65cdead4-341b-4c2c-93e1-ecbd50cd616e",
+          "name": "Coil of endless hunger"
+        },
+        {
+          "id": "5d9d94ed-3cb3-40b3-a716-05ed0c573792",
+          "name": "Distant echoes band"
+        },
+        {
+          "id": "b5725bbc-d46f-481a-bd9b-f7e10778f730",
+          "name": "Honor's promise signet"
+        },
+        {
+          "id": "61fb70d3-9915-4b60-a955-7d74e2143bdb",
+          "name": "Ring of celestial light"
+        },
+        {
+          "id": "ca60edfb-1df8-4cad-9d2a-4cfc621ec2c7",
+          "name": "Ring of divine instruction"
+        },
+        {
+          "id": "1fa32ba7-de37-4e47-8011-26f4fc5681e1",
+          "name": "Ring of eternal Flames"
+        },
+        {
+          "id": "b136d08e-655c-4521-bca0-41780982c8a7",
+          "name": "Ring of song of punishment"
+        },
+        {
+          "id": "e21a499f-ac91-4afb-9a39-7b6da17d88ea",
+          "name": "Ring of spirited desire"
+        },
+        {
+          "id": "39813795-b2ea-4c6c-8375-d9d1a9b80346",
+          "name": "Ring of stalwart determination"
+        },
+        {
+          "id": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1",
+          "name": "Runed band of the black anvil"
+        },
+        {
+          "id": "1bbfe69f-d198-45a8-8fba-5751dc94ea7d",
+          "name": "Signet of the first snow"
+        },
+        {
+          "id": "a405869d-1a57-4f59-8e1b-b0c511e28acd",
+          "name": "Signet of the treant lord"
+        },
+        {
+          "id": "a2791234-7a94-4ddf-a989-3fee8aa438d8",
+          "name": "Sinking sun signet"
+        },
+        {
+          "id": "91dbd4ca-fccd-4d25-bec4-0f88fee2878e",
+          "name": "Solitaire of purity"
+        },
+        {
+          "id": "218de4fe-d6ad-49c7-aeb0-3e8039567692",
+          "name": "Symbol of nature's advance"
+        },
+        {
+          "id": "4ec7d389-0bd8-4d8a-994f-8cfc9a9d7021",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
       "name": "Ring 2",
-      "items": []
+      "items": [
+        {
+          "id": "6e60b932-1c95-489f-87f8-c1b662abfa0d",
+          "name": "Astral bond"
+        },
+        {
+          "id": "1dce7c18-e5cd-4c6d-831e-bbb0e4f8b61a",
+          "name": "Band of the ancestor's blood"
+        },
+        {
+          "id": "c6d35d53-6aad-40f7-a81b-9f1848829d53",
+          "name": "Band of the resistance leader"
+        },
+        {
+          "id": "0f61f84e-3bc0-4aea-b955-0502696ff652",
+          "name": "Coil of endless hunger"
+        },
+        {
+          "id": "d7733fee-2d87-4fb2-96b8-98ffa7dadfab",
+          "name": "Distant echoes band"
+        },
+        {
+          "id": "98a8c588-ab03-4e61-8730-5391cce7784f",
+          "name": "Honor's promise signet"
+        },
+        {
+          "id": "d4c84693-45fc-4d43-9585-a3a1c191a5de",
+          "name": "Ring of celestial light"
+        },
+        {
+          "id": "4c9e084b-7cd7-41f8-a246-90291af6d378",
+          "name": "Ring of divine instruction"
+        },
+        {
+          "id": "97f54abc-fa11-499f-a1d2-f0925ce9c7b1",
+          "name": "Ring of eternal Flames"
+        },
+        {
+          "id": "0ede4336-0399-42ff-b437-64a29301cb2f",
+          "name": "Ring of song of punishment"
+        },
+        {
+          "id": "3ff31254-fd09-458e-abd5-eac7385e0833",
+          "name": "Ring of spirited desire"
+        },
+        {
+          "id": "51bb5f91-fa58-460b-b33e-a4be9be3108e",
+          "name": "Ring of stalwart determination"
+        },
+        {
+          "id": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5",
+          "name": "Runed band of the black anvil"
+        },
+        {
+          "id": "445e49db-eede-426b-a989-e6439c935c76",
+          "name": "Signet of the first snow"
+        },
+        {
+          "id": "c308972e-d004-4bbe-aa85-3aec98cdbada",
+          "name": "Signet of the treant lord"
+        },
+        {
+          "id": "adde4f65-a7b2-485b-88bf-8442602c8df0",
+          "name": "Sinking sun signet"
+        },
+        {
+          "id": "38e47069-910c-46b5-a5b9-410369dce4d0",
+          "name": "Solitaire of purity"
+        },
+        {
+          "id": "084a35c8-9e6a-4d2b-8608-b40be299da5a",
+          "name": "Symbol of nature's advance"
+        },
+        {
+          "id": "6ddfa67e-3da5-41c7-83e0-cc6fc6bfb192",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "f78a26fc-5a11-4137-a1d7-c676546206f0",
       "name": "Belt",
-      "items": []
+      "items": [
+        {
+          "id": "3a78823e-5b73-4a67-9219-c52a8f4585d2",
+          "name": "Belt of claimed trophies"
+        },
+        {
+          "id": "526f842f-6188-43c2-90c9-016804a53c46",
+          "name": "Belt of the knight master"
+        },
+        {
+          "id": "06542cb6-cede-4ac3-9fcc-204076720cb0",
+          "name": "Burnt silk warsash"
+        },
+        {
+          "id": "25f51480-d402-44be-ae03-3a484edb1329",
+          "name": "Cunning ogre girdle"
+        },
+        {
+          "id": "a63016f8-382d-465e-bff9-1213d6fca3bf",
+          "name": "Elusive nymph coil"
+        },
+        {
+          "id": "4b607cd7-428f-4952-9a6f-9033ab1ea7cc",
+          "name": "Entranced apostle's belt"
+        },
+        {
+          "id": "084c160d-079c-46ea-8ab6-e75cd382f394",
+          "name": "Girdle of treant strength"
+        },
+        {
+          "id": "75086b94-2016-4cf6-88f9-ab9822319b57",
+          "name": "Hero's legacy warbelt"
+        },
+        {
+          "id": "ce83fdc4-e4d1-4728-8502-3f09d6184028",
+          "name": "Undisputed champion's belt"
+        }
+      ]
     }
   ]
 }
