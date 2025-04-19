@@ -16,7 +16,7 @@
       "items": [
         {
           "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-2"
+          "itemId": "item-uuid-1"
         },
         {
           "categoryId": "category-uuid-2",
@@ -44,11 +44,11 @@
       "items": [
         {
           "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
+          "itemId": "item-uuid-2"
         },
         {
           "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-3"
+          "itemId": "item-uuid-4"
         },
         {
           "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",

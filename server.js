@@ -7,25 +7,22 @@ const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));  // Serving static files like CSS, images, etc.
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Load the database (db.json)
+// Load and Save Database
 function loadDatabase() {
   const rawData = fs.readFileSync(path.join(__dirname, 'db.json'));
   return JSON.parse(rawData);
 }
 
-// Save to database (db.json)
 function saveDatabase(data) {
   fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 2));
 }
 
-// Home Page - Display Categories, Members, and Assign Items
+// Home
 app.get('/', (req, res) => {
   const db = loadDatabase();
   const selectedCategoryId = req.query.categoryId || null;
-
-  // Sort members alphabetically by name
   const sortedMembers = db.members.sort((a, b) => a.name.localeCompare(b.name));
 
   res.render('index', {
@@ -37,83 +34,62 @@ app.get('/', (req, res) => {
   });
 });
 
-
 // Add Category
 app.post('/categories', (req, res) => {
-  const { name } = req.body;
   const db = loadDatabase();
-  const newCategory = { id: uuid.v4(), name, items: [] };
-
-  db.categories.push(newCategory);
+  db.categories.push({ id: uuid.v4(), name: req.body.name, items: [] });
   saveDatabase(db);
   res.redirect('/');
 });
 
 // Add Item to Category
 app.post('/categories/:id/items', (req, res) => {
-  const { name } = req.body;
-  const categoryId = req.params.id;
   const db = loadDatabase();
-
-  const category = db.categories.find(c => c.id === categoryId);
+  const category = db.categories.find(c => c.id === req.params.id);
   if (!category) return res.status(404).send('Category not found');
-
-  category.items.push({ id: uuid.v4(), name });
+  category.items.push({ id: uuid.v4(), name: req.body.name });
   saveDatabase(db);
   res.redirect('/');
 });
 
 // Add Member
 app.post('/members', (req, res) => {
-  const { name } = req.body;
   const db = loadDatabase();
-
-  const newMember = {
+  db.members.push({
     id: uuid.v4(),
-    name,
+    name: req.body.name,
     attendance: Array(8).fill(false),
     items: []
-  };
-
-  db.members.push(newMember);
+  });
   saveDatabase(db);
   res.redirect('/');
 });
 
-// Delete a member
+// Delete Member
 app.post('/members/:id/delete', (req, res) => {
-  const memberId = req.params.id;
   const db = loadDatabase();
-
-  db.members = db.members.filter(member => member.id !== memberId);
-
+  db.members = db.members.filter(m => m.id !== req.params.id);
   saveDatabase(db);
   res.redirect('/');
 });
 
-
-/// Assign Items to Member (one per category, replacing if exists)
+// Assign Items to Member with REPLACEMENT per Category
 app.post('/members/:id/add-items', (req, res) => {
-  const memberId = req.params.id;
   const db = loadDatabase();
-  const member = db.members.find(m => m.id === memberId);
+  const member = db.members.find(m => m.id === req.params.id);
   if (!member) return res.status(404).send('Member not found');
 
   let itemIds = req.body.itemIds;
-  if (!itemIds) return res.redirect('/'); // No items submitted
-
-  if (!Array.isArray(itemIds)) {
-    itemIds = [itemIds]; // handle single selection
-  }
+  if (!Array.isArray(itemIds)) itemIds = [itemIds];
 
   itemIds.forEach(itemId => {
     const category = db.categories.find(c => c.items.some(i => i.id === itemId));
     if (!category) return;
 
-    // Remove any existing item from the same category
-    member.items = member.items.filter(item => item.categoryId !== category.id);
+    // Remove previous item from this category
+    member.items = member.items.filter(i => i.categoryId !== category.id);
 
-    // Add the new item from this category
+    // Add the new one
     member.items.push({ categoryId: category.id, itemId });
   });
 
@@ -121,48 +97,37 @@ app.post('/members/:id/add-items', (req, res) => {
   res.redirect('/');
 });
 
-
 // Remove Item from Member
 app.post('/members/:id/remove-item', (req, res) => {
-  const memberId = req.params.id;
-  const { itemId } = req.body;
   const db = loadDatabase();
-
-  const member = db.members.find(m => m.id === memberId);
+  const member = db.members.find(m => m.id === req.params.id);
   if (!member) return res.status(404).send('Member not found');
 
-  member.items = member.items.filter(item => item.itemId !== itemId);
+  member.items = member.items.filter(i => i.itemId !== req.body.itemId);
   saveDatabase(db);
   res.redirect('/');
 });
 
-// Update Attendance for Member
+// Update Attendance
 app.post('/members/:id/attendance', (req, res) => {
-  const memberId = req.params.id;
-  const { attendance } = req.body;
   const db = loadDatabase();
-
-  const member = db.members.find(m => m.id === memberId);
+  const member = db.members.find(m => m.id === req.params.id);
   if (!member) return res.status(404).send('Member not found');
 
-  if (!attendance) {
-    member.attendance = Array(8).fill(false);
-  } else if (Array.isArray(attendance)) {
-    member.attendance = Array(8).fill(false);
-    attendance.forEach((val, idx) => {
-      member.attendance[idx] = true;
+  member.attendance = Array(8).fill(false);
+  if (Array.isArray(req.body.attendance)) {
+    req.body.attendance.forEach(index => {
+      member.attendance[parseInt(index)] = true;
     });
-  } else {
-    // Single checkbox (e.g. only 1 event was checked)
-    member.attendance = Array(8).fill(false);
-    member.attendance[parseInt(attendance)] = true;
+  } else if (req.body.attendance) {
+    member.attendance[parseInt(req.body.attendance)] = true;
   }
 
   saveDatabase(db);
   res.redirect('/');
 });
 
-// Eligibility Check Handler
+// Eligibility Check
 app.post('/check-eligibility', (req, res) => {
   const { categoryId, itemId } = req.body;
   const db = loadDatabase();
@@ -173,7 +138,7 @@ app.post('/check-eligibility', (req, res) => {
       const attendedCount = member.attendance.filter(Boolean).length;
       return hasItem && attendedCount >= 4;
     })
-    .sort((a, b) => a.name.localeCompare(b.name)); // 🔡 Sort alphabetically by name
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   res.render('index', {
     categories: db.categories,
@@ -184,9 +149,6 @@ app.post('/check-eligibility', (req, res) => {
   });
 });
 
-
-
-// Start Server
 app.listen(port, () => {
   console.log(`✅ Server running at http://localhost:${port}`);
 });
