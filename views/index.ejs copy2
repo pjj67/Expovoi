@@ -38,41 +38,62 @@
 
   <!-- Eligibility Check -->
   <h2>Eligibility Check</h2>
-  <form action="/check-eligibility" method="POST">
-    <label for="category">Select Category:</label>
-    <select name="categoryId" id="category" required>
-      <option value="">Select Category</option>
-      <% categories.forEach(category => { %>
+<form action="/check-eligibility" method="POST">
+  <label for="category">Select Category:</label>
+  <select name="categoryId" id="category" required>
+    <option value="">Select Category</option>
+    <% categories.forEach(category => {
+      if (category.name !== "Ring 1" && category.name !== "Ring 2") { %>
         <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
+    <% } }); %>
+    <option value="ring" <%= selectedCategoryId === 'ring' ? 'selected' : '' %>>Ring</option>
+  </select>
+
+  <% 
+    let itemsToShow = [];
+    if (selectedCategoryId === 'ring') {
+      const ringCategories = categories.filter(c => c.name === "Ring 1" || c.name === "Ring 2");
+      const seenItems = new Set();
+      ringCategories.forEach(cat => {
+        cat.items.forEach(item => {
+          if (!seenItems.has(item.name)) {
+            itemsToShow.push(item);
+            seenItems.add(item.name);
+          }
+        });
+      });
+    } else {
+      const selectedCategory = categories.find(c => c.id === selectedCategoryId);
+      itemsToShow = selectedCategory?.items || [];
+    }
+  %>
+
+  <% if (itemsToShow.length > 0) { %>
+    <label for="item">Select Item:</label>
+    <select name="itemId" id="item" required>
+      <option value="">Select Item</option>
+      <% itemsToShow.forEach(item => { %>
+        <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
       <% }); %>
     </select>
-
-    <% let selectedCategory = categories.find(c => c.id === selectedCategoryId); %>
-    <% if (selectedCategory && selectedCategory.items) { %>
-      <label for="item">Select Item:</label>
-      <select name="itemId" id="item" required>
-        <option value="">Select Item</option>
-        <% selectedCategory.items.forEach(item => { %>
-          <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
-        <% }); %>
-      </select>
-    <% } %>
-
-    <button type="submit">Check Eligibility</button>
-  </form>
-
-  <% if (eligibleMembers) { %>
-    <% if (eligibleMembers.length > 0) { %>
-      <h3>Eligible Members:</h3>
-      <ul>
-        <% eligibleMembers.forEach(member => { %>
-          <li><%= member.name %></li>
-        <% }); %>
-      </ul>
-    <% } else { %>
-      <p>No eligible members found.</p>
-    <% } %>
   <% } %>
+
+  <button type="submit">Check Eligibility</button>
+</form>
+
+<% if (eligibleMembers) { %>
+  <% if (eligibleMembers.length > 0) { %>
+    <h3>Eligible Members:</h3>
+    <ul>
+      <% eligibleMembers.forEach(member => { %>
+        <li><%= member.name %></li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No eligible members found.</p>
+  <% } %>
+<% } %>
+
 
   <!-- Add Member & Manage -->
   <button class="collapsible">Add Member & Manage Members</button>
