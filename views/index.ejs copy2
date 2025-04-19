@@ -42,8 +42,13 @@
   <label for="category">Select Category:</label>
   <select name="categoryId" id="category" required>
     <option value="">Select Category</option>
-    <% categories.forEach(category => {
-      if (category.name !== "Ring 1" && category.name !== "Ring 2") { %>
+  <% categories.forEach(category => {
+  if (
+    category.name !== "Ring 1" &&
+    category.name !== "Ring 2" &&
+    category.name !== "Archboss Weap 1" &&
+    category.name !== "Archboss Weap 2"
+  ) { %>
         <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
     <% } }); %>
     <option value="ring" <%= selectedCategoryId === 'ring' ? 'selected' : '' %>>Ring</option>

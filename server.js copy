@@ -191,7 +191,7 @@ app.post('/check-eligibility', (req, res) => {
   let selectedItemName = null;
 
   if (categoryId === 'ring') {
-    // Get Ring 1 and Ring 2
+    // Get Ring 1 and Ring 2 categories
     const ringCategories = db.categories.filter(c => c.name === 'Ring 1' || c.name === 'Ring 2');
     const ringCategoryIds = ringCategories.map(c => c.id);
 
@@ -216,14 +216,41 @@ app.post('/check-eligibility', (req, res) => {
         return hasMatchingItem && attendedCount >= 4;
       });
     }
+  } else if (categoryId === 'archboss') {
+    // Get Archboss Weap 1 and Archboss Weap 2 categories
+    const archbossCategories = db.categories.filter(c => c.name === 'Archboss Weap 1' || c.name === 'Archboss Weap 2');
+    const archbossCategoryIds = archbossCategories.map(c => c.id);
+
+    // Get item name based on ID from Archboss Weap 1 or Archboss Weap 2
+    for (const category of archbossCategories) {
+      const match = category.items.find(i => i.id === itemId);
+      if (match) {
+        selectedItemName = match.name;
+        break;
+      }
+    }
+
+    if (selectedItemName) {
+      eligibleMembers = db.members.filter(member => {
+        const attendedCount = member.attendance.filter(Boolean).length;
+        const hasMatchingArchbossItem = member.items.some(i => {
+          const cat = db.categories.find(c => c.id === i.categoryId);
+          if (!cat || !archbossCategoryIds.includes(cat.id)) return false;
+          const item = cat.items.find(it => it.id === i.itemId);
+          return item && item.name === selectedItemName;
+        });
+        return hasMatchingArchbossItem && attendedCount >= 4;
+      });
+    }
   } else {
-    // Standard category match
+    // Standard category match (no special case like 'ring' or 'archboss')
     eligibleMembers = db.members.filter(member => {
       const attendedCount = member.attendance.filter(Boolean).length;
       return member.items.some(i => i.itemId === itemId) && attendedCount >= 4;
     });
   }
 
+  // Sort eligible members by name
   eligibleMembers.sort((a, b) => a.name.localeCompare(b.name));
 
   res.render('index', {
@@ -234,6 +261,7 @@ app.post('/check-eligibility', (req, res) => {
     eligibleMembers
   });
 });
+
 
 
 app.listen(port, () => {

@@ -16,7 +16,7 @@ function loadDatabase() {
     return JSON.parse(rawData);
   } catch (error) {
     console.error("Error loading database:", error);
-    return { categories: [], members: [] }; // return an empty structure in case of error
+    return { categories: [], members: [] };
   }
 }
 
@@ -66,8 +66,6 @@ app.post('/categories/:categoryId/items/:itemId/delete', (req, res) => {
   const db = loadDatabase();
   const category = db.categories.find(c => c.id === req.params.categoryId);
   if (!category) return res.status(404).send('Category not found');
-
-  // Remove the item from the category's items array
   category.items = category.items.filter(i => i.id !== req.params.itemId);
   saveDatabase(db);
   res.redirect('/');
@@ -82,7 +80,6 @@ app.post('/categories/:categoryId/items/:itemId/edit', (req, res) => {
   const item = category.items.find(i => i.id === req.params.itemId);
   if (!item) return res.status(404).send('Item not found');
 
-  // Update the item's name
   item.name = req.body.name;
   saveDatabase(db);
   res.redirect('/');
@@ -109,25 +106,32 @@ app.post('/members/:id/delete', (req, res) => {
   res.redirect('/');
 });
 
-// Assign Items to Member with REPLACEMENT per Category
+// ✅ Updated: Assign Items to Member (preserving non-updated items)
 app.post('/members/:id/add-items', (req, res) => {
   const db = loadDatabase();
   const member = db.members.find(m => m.id === req.params.id);
   if (!member) return res.status(404).send('Member not found');
 
   let itemIds = req.body.itemIds;
+  if (!itemIds) itemIds = [];
   if (!Array.isArray(itemIds)) itemIds = [itemIds];
+
+  const newAssignments = {};
 
   itemIds.forEach(itemId => {
     const category = db.categories.find(c => c.items.some(i => i.id === itemId));
-    if (!category) return;
-
-    // Remove previous item from this category
-    member.items = member.items.filter(i => i.categoryId !== category.id);
-
-    // Add the new one
-    member.items.push({ categoryId: category.id, itemId });
+    if (category) {
+      newAssignments[category.id] = itemId;
+    }
   });
+
+  member.items = member.items.filter(assignment => {
+    return !(assignment.categoryId in newAssignments);
+  });
+
+  for (const [categoryId, itemId] of Object.entries(newAssignments)) {
+    member.items.push({ categoryId, itemId });
+  }
 
   saveDatabase(db);
   res.redirect('/');
@@ -150,9 +154,7 @@ app.post('/members/:id/attendance', (req, res) => {
   const member = db.members.find(m => m.id === req.params.id);
   if (!member) return res.status(404).send('Member not found');
 
-  // Initialize attendance array
   const attendanceArray = Array(8).fill(false);
-
   let checkedIndexes = req.body.attendance;
 
   if (checkedIndexes !== undefined) {
@@ -160,10 +162,10 @@ app.post('/members/:id/attendance', (req, res) => {
       checkedIndexes = [checkedIndexes];
     }
 
-    checkedIndexes.forEach((_, i) => {
-      const index = parseInt(checkedIndexes[i]);
-      if (!isNaN(index) && index >= 0 && index < 8) {
-        attendanceArray[index] = true;
+    checkedIndexes.forEach(index => {
+      const i = parseInt(index);
+      if (!isNaN(i) && i >= 0 && i < 8) {
+        attendanceArray[i] = true;
       }
     });
   }
@@ -171,15 +173,6 @@ app.post('/members/:id/attendance', (req, res) => {
   member.attendance = attendanceArray;
   saveDatabase(db);
   res.redirect('/');
-  
-  
-function saveDatabase(data) {
-  try {
-    fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 2));
-  } catch (error) {
-    console.error("Error saving database:", error);
-  }
-}
 });
 
 // Eligibility Check
@@ -191,11 +184,9 @@ app.post('/check-eligibility', (req, res) => {
   let selectedItemName = null;
 
   if (categoryId === 'ring') {
-    // Get Ring 1 and Ring 2 categories
     const ringCategories = db.categories.filter(c => c.name === 'Ring 1' || c.name === 'Ring 2');
     const ringCategoryIds = ringCategories.map(c => c.id);
 
-    // Get item name based on ID from Ring 1 or Ring 2
     for (const category of ringCategories) {
       const match = category.items.find(i => i.id === itemId);
       if (match) {
@@ -217,11 +208,9 @@ app.post('/check-eligibility', (req, res) => {
       });
     }
   } else if (categoryId === 'archboss') {
-    // Get Archboss Weap 1 and Archboss Weap 2 categories
     const archbossCategories = db.categories.filter(c => c.name === 'Archboss Weap 1' || c.name === 'Archboss Weap 2');
     const archbossCategoryIds = archbossCategories.map(c => c.id);
 
-    // Get item name based on ID from Archboss Weap 1 or Archboss Weap 2
     for (const category of archbossCategories) {
       const match = category.items.find(i => i.id === itemId);
       if (match) {
@@ -243,14 +232,12 @@ app.post('/check-eligibility', (req, res) => {
       });
     }
   } else {
-    // Standard category match (no special case like 'ring' or 'archboss')
     eligibleMembers = db.members.filter(member => {
       const attendedCount = member.attendance.filter(Boolean).length;
       return member.items.some(i => i.itemId === itemId) && attendedCount >= 4;
     });
   }
 
-  // Sort eligible members by name
   eligibleMembers.sort((a, b) => a.name.localeCompare(b.name));
 
   res.render('index', {
@@ -261,8 +248,6 @@ app.post('/check-eligibility', (req, res) => {
     eligibleMembers
   });
 });
-
-
 
 app.listen(port, () => {
   console.log(`✅ Server running at http://localhost:${port}`);
