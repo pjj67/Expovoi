@@ -1184,6 +1184,66 @@
       "id": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
       "name": "Archboss weap 1",
       "items": []
+    },
+    {
+      "id": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
+      "name": "Archboss Weap 2",
+      "items": []
+    },
+    {
+      "id": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
+      "name": "Head",
+      "items": []
+    },
+    {
+      "id": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
+      "name": "Chest",
+      "items": []
+    },
+    {
+      "id": "2984463a-eae6-49b5-9602-95b36ecd06f0",
+      "name": "Legs",
+      "items": []
+    },
+    {
+      "id": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
+      "name": "Feet",
+      "items": []
+    },
+    {
+      "id": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
+      "name": "Gloves",
+      "items": []
+    },
+    {
+      "id": "6afb3825-5bb8-40e1-832f-08997c725cb3",
+      "name": "Cloak",
+      "items": []
+    },
+    {
+      "id": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+      "name": "Necklace",
+      "items": []
+    },
+    {
+      "id": "442dc7eb-d568-4953-a46c-4d966695d001",
+      "name": "Bracelet",
+      "items": []
+    },
+    {
+      "id": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
+      "name": "Ring 1",
+      "items": []
+    },
+    {
+      "id": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
+      "name": "Ring 2",
+      "items": []
+    },
+    {
+      "id": "f78a26fc-5a11-4137-a1d7-c676546206f0",
+      "name": "Belt",
+      "items": []
     }
   ]
 }
