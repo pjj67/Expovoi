@@ -7,17 +7,13 @@
         true,
         true,
         true,
-        true,
-        true,
-        true,
-        true,
-        true
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-2"
-        },
         {
           "categoryId": "category-uuid-2",
           "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
@@ -45,10 +41,6 @@
         {
           "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
           "itemId": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "e9e58f03-fa06-444c-8545-090472db0253"
         },
         {
           "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
@@ -97,6 +89,14 @@
         {
           "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
           "itemId": "084c160d-079c-46ea-8ab6-e75cd382f394"
+        },
+        {
+          "categoryId": "category-uuid-1",
+          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
+        },
+        {
+          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
+          "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
         }
       ]
     },
@@ -1591,7 +1591,7 @@
       "id": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
       "name": "Archboss Weap 1",
       "items": [
-         {
+        {
           "id": "c53a98e6-4040-4593-9a96-340f0235479e",
           "name": "Cordy's grasp of manipulation"
         },

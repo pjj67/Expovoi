@@ -107,35 +107,39 @@ app.post('/members/:id/delete', (req, res) => {
 });
 
 // ✅ Updated: Assign Items to Member (preserving non-updated items)
-app.post('/members/:id/add-items', (req, res) => {
-  const db = loadDatabase();
-  const member = db.members.find(m => m.id === req.params.id);
-  if (!member) return res.status(404).send('Member not found');
+app.post("/members/:id/add-items", (req, res) => {
+  const memberId = req.params.id;
+  const categoryItems = req.body.categoryItems; // format: { categoryId: itemId }
 
-  let itemIds = req.body.itemIds;
-  if (!itemIds) itemIds = [];
-  if (!Array.isArray(itemIds)) itemIds = [itemIds];
+  const db = loadDatabase(); // Load the database
 
-  const newAssignments = {};
+  const member = db.members.find((m) => m.id === memberId);
+  if (!member) return res.status(404).send("Member not found");
 
-  itemIds.forEach(itemId => {
-    const category = db.categories.find(c => c.items.some(i => i.id === itemId));
-    if (category) {
-      newAssignments[category.id] = itemId;
-    }
-  });
+  // If member doesn't have an 'items' array, initialize it
+  if (!member.items) member.items = [];
 
-  member.items = member.items.filter(assignment => {
-    return !(assignment.categoryId in newAssignments);
-  });
+  // Loop through each category and update items
+  for (const [categoryIdStr, itemIdStr] of Object.entries(categoryItems || {})) {
+    const categoryId = categoryIdStr;
+    const itemId = itemIdStr;
+    
+    // Skip if no item is selected (empty string)
+    if (!itemId) continue;
 
-  for (const [categoryId, itemId] of Object.entries(newAssignments)) {
+    // Remove old item assignment from the same category
+    member.items = member.items.filter((item) => item.categoryId !== categoryId);
+
+    // Add the new item to the member's items
     member.items.push({ categoryId, itemId });
   }
 
+  // Save the updated database
   saveDatabase(db);
-  res.redirect('/');
+
+  res.redirect("/"); // Redirect back to the main page
 });
+
 
 // Remove Item from Member
 app.post('/members/:id/remove-item', (req, res) => {
