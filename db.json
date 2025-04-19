@@ -6,16 +6,25 @@
       "attendance": [
         true,
         true,
-        true
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
       ],
       "items": [
         {
           "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
+          "itemId": "item-uuid-2"
         },
         {
           "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-4"
+          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
+        },
+        {
+          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
+          "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
         }
       ]
     },
@@ -32,7 +41,20 @@
         true,
         true
       ],
-      "items": []
+      "items": [
+        {
+          "categoryId": "category-uuid-1",
+          "itemId": "item-uuid-1"
+        },
+        {
+          "categoryId": "category-uuid-2",
+          "itemId": "item-uuid-3"
+        },
+        {
+          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
+          "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
+        }
+      ]
     }
   ],
   "categories": [
@@ -115,7 +137,12 @@
     {
       "id": "114c4737-6950-4e52-b014-ca8f2c2069f5",
       "name": "Crossbow",
-      "items": []
+      "items": [
+        {
+          "id": "25048c81-401c-46d7-81ef-95f168f9e9d0",
+          "name": "None"
+        }
+      ]
     }
   ]
 }

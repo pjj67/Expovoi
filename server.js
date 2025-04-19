@@ -92,7 +92,7 @@ app.post('/members/:id/delete', (req, res) => {
 });
 
 
-// Assign Items to Member
+/// Assign Items to Member (one per category, replacing if exists)
 app.post('/members/:id/add-items', (req, res) => {
   const memberId = req.params.id;
   const db = loadDatabase();
@@ -100,21 +100,27 @@ app.post('/members/:id/add-items', (req, res) => {
   if (!member) return res.status(404).send('Member not found');
 
   let itemIds = req.body.itemIds;
+  if (!itemIds) return res.redirect('/'); // No items submitted
+
   if (!Array.isArray(itemIds)) {
     itemIds = [itemIds]; // handle single selection
   }
 
   itemIds.forEach(itemId => {
     const category = db.categories.find(c => c.items.some(i => i.id === itemId));
-    const itemExists = member.items.some(i => i.itemId === itemId);
-    if (category && !itemExists) {
-      member.items.push({ categoryId: category.id, itemId });
-    }
+    if (!category) return;
+
+    // Remove any existing item from the same category
+    member.items = member.items.filter(item => item.categoryId !== category.id);
+
+    // Add the new item from this category
+    member.items.push({ categoryId: category.id, itemId });
   });
 
   saveDatabase(db);
   res.redirect('/');
 });
+
 
 // Remove Item from Member
 app.post('/members/:id/remove-item', (req, res) => {
