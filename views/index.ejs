@@ -16,7 +16,7 @@
     <button type="submit">Add Member</button>
   </form>
 
-  <!-- Members List -->
+  <!-- Members & Attendance -->
   <h2>Members & Attendance</h2>
   <% if (members.length === 0) { %>
     <p>No members yet.</p>
@@ -42,104 +42,96 @@
 
   <hr/>
 
-  <!-- Eligibility Check: Show eligible members -->
-  <h2>Eligible Members for Items</h2>
-  <% if (eligibleMembers.length === 0) { %>
-    <p>No eligible members yet.</p>
-  <% } else { %>
-    <ul>
-      <% eligibleMembers.forEach(member => { %>
-        <li><%= member.name %></li>
+  <!-- Eligibility Check Section -->
+  <h2>Eligibility</h2>
+
+  <!-- Dropdown to select a Category -->
+  <form id="eligibilityForm">
+    <label for="categorySelect">Select Item Category:</label>
+    <select id="categorySelect" name="category" onchange="loadItems()">
+      <option value="">-- Select Category --</option>
+      <% categories.forEach(category => { %>
+        <option value="<%= category.id %>"><%= category.name %></option>
       <% }); %>
-    </ul>
-  <% } %>
-
-  <hr/>
-
-  <!-- Add Category -->
-  <h2>Add Category</h2>
-  <form action="/categories" method="POST">
-    <input type="text" name="name" placeholder="Category Name" required />
-    <button type="submit">Add Category</button>
+    </select>
   </form>
 
-  <!-- Categories & Items -->
-  <h2>Categories & Items</h2>
-  <% if (categories.length === 0) { %>
-    <p>No categories yet.</p>
-  <% } else { %>
-    <% categories.forEach(category => { %>
-      <div class="category">
-        <form action="/categories/<%= category.id %>/edit" method="POST">
-          <input type="text" name="name" value="<%= category.name %>" />
-          <button type="submit">Rename</button>
-        </form>
+  <!-- Dropdown to select an Item (populated based on Category) -->
+  <form id="itemForm" style="display:none;">
+    <label for="itemSelect">Select Item:</label>
+    <select id="itemSelect" name="item">
+      <option value="">-- Select Item --</option>
+    </select>
+  </form>
 
-        <h4>Add Item</h4>
-        <form action="/categories/<%= category.id %>/items" method="POST">
-          <input type="text" name="name" placeholder="Item Name" required />
-          <button type="submit">Add</button>
-        </form>
+  <!-- Button to Check Eligibility -->
+  <button id="checkEligibilityButton" onclick="checkEligibility()">Check Eligibility</button>
 
-        <% if (category.items.length > 0) { %>
-          <ul>
-            <% category.items.forEach(item => { %>
-              <li>
-                <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
-                  <input type="text" name="name" value="<%= item.name %>" />
-                  <button type="submit">Update</button>
-                </form>
-                <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
-                  <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
-                </form>
-              </li>
-            <% }); %>
-          </ul>
-        <% } %>
-      </div>
-    <% }); %>
-  <% } %>
+  <!-- Eligible Members List -->
+  <h3>Eligible Members:</h3>
+  <ul id="eligibleMembersList"></ul>
 
   <hr/>
 
-  <!-- Assign Multiple Items to Members -->
-  <h2>Assign Multiple Items to Members</h2>
-  <% members.forEach(member => { %>
-    <div class="member">
-      <h3><%= member.name %></h3>
-      <% if (member.items && member.items.length > 0) { %>
-        <ul>
-          <% member.items.forEach(assignment => {
-            const category = categories.find(c => c.id === assignment.categoryId);
-            const item = category ? category.items.find(i => i.id === assignment.itemId) : null;
-          %>
-            <% if (category && item) { %>
-              <li><strong><%= category.name %>:</strong> <%= item.name %></li>
-            <% } %>
-          <% }); %>
-        </ul>
-      <% } else { %>
-        <p>No items assigned.</p>
-      <% } %>
+  <script>
+    // Load items when a category is selected
+    function loadItems() {
+      const categoryId = document.getElementById('categorySelect').value;
+      const itemSelect = document.getElementById('itemSelect');
+      const itemForm = document.getElementById('itemForm');
+      const categories = <%= JSON.stringify(categories) %>;
 
-      <!-- Form to assign multiple items -->
-      <form action="/members/<%= member.id %>/add-items" method="POST">
-        <h4>Select Items to Assign</h4>
+      // Clear previous items
+      itemSelect.innerHTML = '<option value="">-- Select Item --</option>';
 
-        <% categories.forEach(category => { %>
-          <h5><%= category.name %></h5>
-          <label>Select Items:</label>
-          <select name="itemIds" multiple required>
-            <% category.items.forEach(item => { %>
-              <option value="<%= item.id %>"><%= item.name %></option>
-            <% }); %>
-          </select>
-          <input type="hidden" name="categoryIds" value="<%= category.id %>" />
-        <% }); %>
+      if (!categoryId) {
+        itemForm.style.display = 'none';
+        return;
+      }
 
-        <button type="submit">Assign Items</button>
-      </form>
-    </div>
-  <% }); %>
+      const category = categories.find(cat => cat.id == categoryId);
+
+      category.items.forEach(item => {
+        const option = document.createElement('option');
+        option.value = item.id;
+        option.textContent = item.name;
+        itemSelect.appendChild(option);
+      });
+
+      itemForm.style.display = 'block';
+    }
+
+    // Check eligibility based on the selected item
+    function checkEligibility() {
+      const categoryId = document.getElementById('categorySelect').value;
+      const itemId = document.getElementById('itemSelect').value;
+      const members = <%= JSON.stringify(members) %>;
+      const categories = <%= JSON.stringify(categories) %>;
+      const eligibleMembersList = document.getElementById('eligibleMembersList');
+
+      // Clear previous eligibility list
+      eligibleMembersList.innerHTML = '';
+
+      if (!itemId || !categoryId) {
+        return;
+      }
+
+      const category = categories.find(cat => cat.id == categoryId);
+      const item = category.items.find(item => item.id == itemId);
+
+      // Check each member
+      members.forEach(member => {
+        const hasItem = member.items.some(item => item.itemId == itemId);
+        const attendedEvents = member.attendance.filter(attended => attended).length;
+
+        // If the member has the item and attended at least 4 events
+        if (hasItem && attendedEvents >= 4) {
+          const listItem = document.createElement('li');
+          listItem.textContent = member.name;
+          eligibleMembersList.appendChild(listItem);
+        }
+      });
+    }
+  </script>
 </body>
 </html>
