@@ -188,7 +188,7 @@
   </div>
 
   <!-- Assign Multiple Items to Members -->
-  <button class="collapsible">Assign Multiple Items to Members</button>
+  <button class="collapsible">Edit Members Need List</button>
   <div class="content">
     <% members.forEach(member => { %>
       <div class="member">
