@@ -25,14 +25,18 @@ app.get('/', (req, res) => {
   const db = loadDatabase();
   const selectedCategoryId = req.query.categoryId || null;
 
+  // Sort members alphabetically by name
+  const sortedMembers = db.members.sort((a, b) => a.name.localeCompare(b.name));
+
   res.render('index', {
     categories: db.categories,
-    members: db.members,
+    members: sortedMembers,
     selectedCategoryId,
     selectedItemId: null,
-    eligibleMembers: undefined // so the "No eligible members" message only shows after a check
+    eligibleMembers: undefined
   });
 });
+
 
 // Add Category
 app.post('/categories', (req, res) => {
