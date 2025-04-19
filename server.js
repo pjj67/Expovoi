@@ -137,7 +137,6 @@ app.post('/members/:id/attendance', (req, res) => {
   res.redirect('/');
 });
 
-
 // Eligibility Check
 app.post('/check-eligibility', (req, res) => {
   const { categoryId, itemId } = req.body;

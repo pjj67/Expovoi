@@ -4,10 +4,10 @@
       "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
       "name": "Kythor",
       "attendance": [
-        false,
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
+        true,
         false,
         false,
         false,
@@ -20,11 +20,15 @@
         },
         {
           "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
+          "itemId": "item-uuid-3"
         },
         {
           "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
           "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
+        },
+        {
+          "categoryId": "3e8f1f81-2e25-4573-9ce3-3946dfa60706",
+          "itemId": "725037ec-c5aa-4c25-a1c7-abc1a80d6343"
         }
       ]
     },
@@ -32,10 +36,10 @@
       "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
       "name": "LexieGoldfish",
       "attendance": [
-        false,
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
+        true,
         false,
         false,
         false,
@@ -44,26 +48,30 @@
       "items": [
         {
           "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-2"
+          "itemId": "item-uuid-1"
         },
         {
           "categoryId": "category-uuid-2",
-          "itemId": "item-uuid-4"
+          "itemId": "item-uuid-3"
         },
         {
           "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
           "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
+        },
+        {
+          "categoryId": "3e8f1f81-2e25-4573-9ce3-3946dfa60706",
+          "itemId": "725037ec-c5aa-4c25-a1c7-abc1a80d6343"
         }
       ]
     },
     {
-      "id": "d4743c6e-11b1-4330-b095-620592e8e245",
+      "id": "3d8ff9df-dea4-427e-8ca9-0e60fc212446",
       "name": "test",
       "attendance": [
+        true,
+        true,
         false,
-        false,
-        false,
-        false,
+        true,
         false,
         false,
         false,

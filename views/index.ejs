@@ -74,7 +74,7 @@
           <strong><%= member.name %></strong>
           <% for (let i = 0; i < 8; i++) { %>
             <label>
-              <input type="checkbox" name="attendance" <%= member.attendance[i] ? 'checked' : '' %> />
+              <input type="checkbox" name="attendance[]" value="<%= i %>" <%= member.attendance[i] ? 'checked' : '' %> />
               Event <%= i + 1 %>
             </label>
           <% } %>
