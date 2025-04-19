@@ -9,6 +9,90 @@
 <body>
   <h1>👥 Member Attendance Manager</h1>
 
+  <!-- Eligibility Check -->
+  <h2>Eligibility Check</h2>
+  <form action="/check-eligibility" method="POST">
+    <label for="category">Select Category:</label>
+    <select name="categoryId" id="category" required>
+      <option value="">Select Category</option>
+      <% categories.forEach(category => { %>
+        <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
+      <% }); %>
+    </select>
+
+    <% if (selectedCategoryId) { %>
+      <label for="item">Select Item:</label>
+      <select name="itemId" id="item" required>
+        <option value="">Select Item</option>
+        <% const selectedCategory = categories.find(category => category.id === selectedCategoryId); %>
+        <% if (selectedCategory) { %>
+          <% selectedCategory.items.forEach(item => { %>
+            <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
+          <% }); %>
+        <% } %>
+      </select>
+    <% } %>
+
+    <button type="submit">Check Eligibility</button>
+  </form>
+
+  <hr/>
+
+  <!-- Display Eligible Members -->
+  <% if (eligibleMembers && eligibleMembers.length > 0) { %>
+    <h3>Eligible Members:</h3>
+    <ul>
+      <% eligibleMembers.forEach(member => { %>
+        <li><%= member.name %></li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No eligible members found.</p>
+  <% } %>
+
+  <hr/>
+
+  <!-- Assign Multiple Items to Members -->
+  <h2>Assign Multiple Items to Members</h2>
+  <% members.forEach(member => { %>
+    <div class="member">
+      <h3><%= member.name %></h3>
+      <% if (member.items && member.items.length > 0) { %>
+        <ul>
+          <% member.items.forEach(assignment => {
+            const category = categories.find(c => c.id === assignment.categoryId);
+            const item = category ? category.items.find(i => i.id === assignment.itemId) : null;
+          %>
+            <% if (category && item) { %>
+              <li><strong><%= category.name %>:</strong> <%= item.name %></li>
+            <% } %>
+          <% }); %>
+        </ul>
+      <% } else { %>
+        <p>No items assigned.</p>
+      <% } %>
+
+      <!-- Form to assign multiple items -->
+      <form action="/members/<%= member.id %>/add-items" method="POST">
+        <h4>Select Items to Assign</h4>
+
+        <% categories.forEach(category => { %>
+          <h5><%= category.name %></h5>
+          <label>Select Items:</label>
+          <select name="itemIds" multiple required>
+            <% category.items.forEach(item => { %>
+              <option value="<%= item.id %>"><%= item.name %></option>
+            <% }); %>
+          </select>
+        <% }); %>
+
+        <button type="submit">Assign Items</button>
+      </form>
+    </div>
+  <% }); %>
+
+  <hr/>
+
   <!-- Add Member -->
   <h2>Add Member</h2>
   <form action="/members" method="POST">
@@ -42,39 +126,48 @@
 
   <hr/>
 
-  <!-- Eligibility Check -->
-  <h2>Eligibility Check</h2>
-  <form action="/check-eligibility" method="POST">
-    <label for="category">Select Category:</label>
-    <select name="categoryId" id="category" required>
-      <% categories.forEach(category => { %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% }); %>
-    </select>
-
-    <label for="item">Select Item:</label>
-    <select name="itemId" id="item" required>
-      <% if (categories.length > 0) { %>
-        <% categories.forEach(category => { %>
-          <optgroup label="<%= category.name %>">
-            <% category.items.forEach(item => { %>
-              <option value="<%= item.id %>"><%= item.name %></option>
-            <% }); %>
-          </optgroup>
-        <% }); %>
-      <% } %>
-    </select>
-
-    <button type="submit">Check Eligibility</button>
+  <!-- Add Category -->
+  <h2>Add Category</h2>
+  <form action="/categories" method="POST">
+    <input type="text" name="name" placeholder="Category Name" required />
+    <button type="submit">Add Category</button>
   </form>
 
-  <% if (eligibleMembers) { %>
-    <h3>Eligible Members:</h3>
-    <ul>
-      <% eligibleMembers.forEach(member => { %>
-        <li><%= member.name %></li>
-      <% }); %>
-    </ul>
+  <!-- Categories & Items -->
+  <h2>Categories & Items</h2>
+  <% if (categories.length === 0) { %>
+    <p>No categories yet.</p>
+  <% } else { %>
+    <% categories.forEach(category => { %>
+      <div class="category">
+        <form action="/categories/<%= category.id %>/edit" method="POST">
+          <input type="text" name="name" value="<%= category.name %>" />
+          <button type="submit">Rename</button>
+        </form>
+
+        <h4>Add Item</h4>
+        <form action="/categories/<%= category.id %>/items" method="POST">
+          <input type="text" name="name" placeholder="Item Name" required />
+          <button type="submit">Add</button>
+        </form>
+
+        <% if (category.items.length > 0) { %>
+          <ul>
+            <% category.items.forEach(item => { %>
+              <li>
+                <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
+                  <input type="text" name="name" value="<%= item.name %>" />
+                  <button type="submit">Update</button>
+                </form>
+                <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
+                  <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
+                </form>
+              </li>
+            <% }); %>
+          </ul>
+        <% } %>
+      </div>
+    <% }); %>
   <% } %>
 
 </body>

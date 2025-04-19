@@ -23,7 +23,65 @@ function saveDatabase(data) {
 // Home Page - Display Categories, Members, and Assign Items
 app.get('/', (req, res) => {
   const db = loadDatabase();
-  res.render('index', { categories: db.categories, members: db.members });
+  const selectedCategoryId = req.query.categoryId || null;  // Get selected category ID from query params
+  const selectedItemId = req.query.itemId || null;          // Get selected item ID from query params
+
+  res.render('index', { 
+    categories: db.categories, 
+    members: db.members,
+    selectedCategoryId,  // Pass selected category ID to EJS
+    selectedItemId,      // Pass selected item ID to EJS
+    eligibleMembers: [], // Initialize eligibleMembers as an empty array
+  });
+});
+
+// Check Eligibility for Members Based on Category and Item
+app.post('/check-eligibility', (req, res) => {
+  const db = loadDatabase();
+  const { categoryId, itemId } = req.body;
+
+  // Find the selected category and item
+  const selectedCategory = db.categories.find(c => c.id === categoryId);
+  const selectedItem = selectedCategory ? selectedCategory.items.find(i => i.id === itemId) : null;
+
+  // Find eligible members
+  const eligibleMembers = db.members.filter(member => {
+    // Check if member has the selected item
+    const hasItem = member.items.some(item => item.itemId === itemId);
+    // Check if member attended at least 4 out of 8 events
+    const attendanceCount = member.attendance.filter(attended => attended).length;
+    return hasItem && attendanceCount >= 4;
+  });
+
+  // Pass eligible members and selected item/category to the EJS
+  res.render('index', { 
+    categories: db.categories, 
+    members: db.members,
+    selectedCategoryId: categoryId,  // Keep selected category
+    selectedItemId: itemId,          // Keep selected item
+    eligibleMembers: eligibleMembers // Pass eligible members
+  });
+});
+
+// Add Items to Member
+app.post('/members/:id/add-items', (req, res) => {
+  const memberId = req.params.id;
+  const { itemIds } = req.body; // itemIds is an array of selected item IDs
+  const db = loadDatabase();
+
+  const member = db.members.find(m => m.id === memberId);
+
+  // Add each selected item to the member's items list
+  itemIds.forEach(itemId => {
+    const item = db.categories.flatMap(category => category.items).find(item => item.id === itemId);
+    if (item) {
+      const categoryId = db.categories.find(category => category.items.includes(item)).id;
+      member.items.push({ categoryId, itemId });
+    }
+  });
+
+  saveDatabase(db);
+  res.redirect('/');
 });
 
 // Add Category
@@ -31,7 +89,7 @@ app.post('/categories', (req, res) => {
   const { name } = req.body;
   const db = loadDatabase();
   const newCategory = { id: uuid.v4(), name, items: [] };
-
+  
   db.categories.push(newCategory);
   saveDatabase(db);
 
@@ -46,7 +104,7 @@ app.post('/categories/:id/items', (req, res) => {
 
   const category = db.categories.find(c => c.id === categoryId);
   const newItem = { id: uuid.v4(), name };
-
+  
   category.items.push(newItem);
   saveDatabase(db);
 
@@ -71,42 +129,6 @@ app.post('/members', (req, res) => {
   res.redirect('/');
 });
 
-// Add Items to Member
-app.post('/members/:id/add-items', (req, res) => {
-  const memberId = req.params.id;
-  const { itemIds } = req.body; // itemIds is an array of selected item IDs
-  const db = loadDatabase();
-
-  const member = db.members.find(m => m.id === memberId);
-
-  // Add each selected item to the member's items list
-  itemIds.forEach(itemId => {
-    const item = db.categories.flatMap(category => category.items).find(item => item.id === itemId);
-    if (item) {
-      const categoryId = db.categories.find(category => category.items.includes(item)).id;
-      member.items.push({ categoryId, itemId });
-    }
-  });
-
-  saveDatabase(db);
-  res.redirect('/');
-});
-
-// Remove Item from Member
-app.post('/members/:id/remove-item', (req, res) => {
-  const memberId = req.params.id;
-  const { itemId } = req.body;
-  const db = loadDatabase();
-
-  const member = db.members.find(m => m.id === memberId);
-
-  // Remove the item from the member's items list
-  member.items = member.items.filter(item => item.itemId !== itemId);
-
-  saveDatabase(db);
-  res.redirect('/');
-});
-
 // Update Attendance for a Member
 app.post('/members/:id/attendance', (req, res) => {
   const memberId = req.params.id;
@@ -120,30 +142,6 @@ app.post('/members/:id/attendance', (req, res) => {
 
   saveDatabase(db);
   res.redirect('/');
-});
-
-// Eligibility Check Route
-app.post('/check-eligibility', (req, res) => {
-  const { categoryId, itemId } = req.body;
-  const db = loadDatabase();
-
-  // Find the category and item based on the selection
-  const category = db.categories.find(cat => cat.id === categoryId);
-  const item = category.items.find(i => i.id === itemId);
-
-  // Check eligible members
-  const eligibleMembers = db.members.filter(member => {
-    // Check if the member has the item assigned
-    const itemAssigned = member.items.some(i => i.itemId === itemId && i.categoryId === categoryId);
-
-    // Check attendance (at least 4 out of 8 events)
-    const attendanceRate = member.attendance.filter(att => att).length;
-    const eligibleAttendance = attendanceRate >= 4; // 50% attendance (4 out of 8)
-
-    return itemAssigned && eligibleAttendance;
-  });
-
-  res.render('index', { categories: db.categories, members: db.members, eligibleMembers, selectedCategory: categoryId, selectedItem: itemId });
 });
 
 // Start the server
