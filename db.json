@@ -1756,33 +1756,334 @@
         {
           "id": "8d3d44fd-f7bd-4ac2-a482-b353a0a962e6",
           "name": "Sacred repose pants"
+        },
+        {
+          "id": "a887547f-a568-4045-a68f-0584a9517bc7",
+          "name": "Scaled trousers of the resistance"
+        },
+        {
+          "id": "3a51a5b1-3e9a-4756-9af7-a013c0074cd5",
+          "name": "Spectral overser's trousers"
+        },
+        {
+          "id": "583b5de7-6682-4674-9b7c-d4917693e16a",
+          "name": "Transcendent tempest's pants"
+        },
+        {
+          "id": "6fbd7a82-34ea-49b6-aeef-d517cd716308",
+          "name": "Trophy adorned leg guards"
+        },
+        {
+          "id": "0a83dbcb-a0e1-4b8b-b245-0fee3aca2884",
+          "name": "Void stalker's pants"
+        },
+        {
+          "id": "73014a4a-7b06-4512-8727-26d74a9a01ec",
+          "name": "None"
         }
       ]
     },
     {
       "id": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
       "name": "Feet",
-      "items": []
+      "items": [
+        {
+          "id": "528a98cb-5607-4d68-9255-85d3ffb22069",
+          "name": "Ardent herald's shoes"
+        },
+        {
+          "id": "b257ab49-c517-4a5b-b193-6c481391d5d2",
+          "name": "Auric vanguard's plate boots"
+        },
+        {
+          "id": "63f69bdf-9fa4-4ab3-9f49-268a17715aca",
+          "name": "Chosen vanquisher's boots"
+        },
+        {
+          "id": "d8d5fe01-536f-45f3-b2b4-61209f502e7c",
+          "name": "Deep fathom kicks"
+        },
+        {
+          "id": "32b46a06-9f53-4085-8008-9c4981667749",
+          "name": "Dread admiral's boots"
+        },
+        {
+          "id": "b0f6ae7a-4409-4229-9c96-84caad60ac7e",
+          "name": "Eternal warlord's sabatons"
+        },
+        {
+          "id": "01e2e0df-1ca9-444a-b405-3b594d91edd9",
+          "name": "Feral prophet's shoes"
+        },
+        {
+          "id": "0e88dba8-1419-40ff-97b4-017ca87a29a8",
+          "name": "First light's shoes"
+        },
+        {
+          "id": "9a38d3fe-6ec9-44a6-923a-37e2ee98f768",
+          "name": "Forgotten lotus boots"
+        },
+        {
+          "id": "055dc076-8dc4-4175-82f2-cb37987db6a7",
+          "name": "Hallowed shoes of the resistance"
+        },
+        {
+          "id": "6673b473-6668-4e94-b929-0e32f83b2eca",
+          "name": "Immortal legionnaire's sabatons"
+        },
+        {
+          "id": "e6eb7d06-03a2-4b5c-af12-f0544c91d835",
+          "name": "Imperial seeker's boots"
+        },
+        {
+          "id": "81c05b48-7784-41b0-973b-7d817e2c3c5f",
+          "name": "Infernal demonpact steps"
+        },
+        {
+          "id": "013624c0-7351-4a03-a4e5-b5ed4f7ec77a",
+          "name": "Oblivion's wrath stompers"
+        },
+        {
+          "id": "65f714f6-ee1f-43a8-8be8-bcc178222a2d",
+          "name": "Ossuary boots of the resistance"
+        },
+        {
+          "id": "30bcb256-bd3a-4e07-aff7-75449e2b4f01",
+          "name": "Royal praetor's sabatons"
+        },
+        {
+          "id": "d7c5baff-b98b-4ef8-8a23-56387c790ddc",
+          "name": "Sacred repose shoes"
+        },
+        {
+          "id": "463e526d-e2ea-4f0e-8b19-8edcc116af78",
+          "name": "Scaled boots of the resistance"
+        },
+        {
+          "id": "f99b63d4-cac1-4bbb-8756-fbccc42ea99c",
+          "name": "Spectral overseer's boots"
+        },
+        {
+          "id": "873b1398-8b0a-4ab1-ab5c-cb7ba09ea136",
+          "name": "Transcendent tempest's boots"
+        },
+        {
+          "id": "0ba3bc49-231e-4a98-bbf2-aaa9eeebc417",
+          "name": "Violent demonic beast's fur boots"
+        },
+        {
+          "id": "f8176c1b-b5d4-45d0-b0bf-c25d1394a48f",
+          "name": "Void stalker's Boots"
+        },
+        {
+          "id": "cd7b359a-398f-4de6-bf46-6d618fd68148",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
       "name": "Gloves",
-      "items": []
+      "items": [
+        {
+          "id": "0561c6ab-89bf-4df7-a077-b97c20097e35",
+          "name": "Ardent herald's gloves"
+        },
+        {
+          "id": "4bd1d3ab-8292-42da-bebb-24f63265b196",
+          "name": "Auric vanguard's gauntlets"
+        },
+        {
+          "id": "ea009545-cb13-43e9-9206-ff6044a8b165",
+          "name": "Chosen vanquisher's gloves"
+        },
+        {
+          "id": "4c88f858-8c8e-478c-af55-9a31a2f5fd9f",
+          "name": "Deep fathom grasp"
+        },
+        {
+          "id": "73cd58a8-7279-43f4-a39c-158715f6e8f0",
+          "name": "Devious hellfire grips"
+        },
+        {
+          "id": "c32116f5-055f-4ca9-894e-7afb8034f7f8",
+          "name": "Dread admiral's gloves"
+        },
+        {
+          "id": "38235fd4-5361-4a3d-8ebc-e5a5e3aab50b",
+          "name": "Eternal warlord's gauntlets"
+        },
+        {
+          "id": "25e3b55e-d7b9-4de2-90b8-6184e80977e1",
+          "name": "Feral prophet's gloves"
+        },
+        {
+          "id": "4e8d0148-87a9-4a70-8ff2-943fdee71f81",
+          "name": "First light's gloves"
+        },
+        {
+          "id": "8360c214-d71d-47a4-8e1f-1b4e7cbdf86f",
+          "name": "Forgotten lotus gloves"
+        },
+        {
+          "id": "ae13b5a7-0afc-4d96-a5fc-d32e5745b04a",
+          "name": "Hallowed gloves of the resistance"
+        },
+        {
+          "id": "7befbf4c-63e4-4676-9ae1-68d993c32480",
+          "name": "Immortal legionnaire's gauntlets"
+        },
+        {
+          "id": "547bfc94-aa2a-416d-b2f1-27522d5457b1",
+          "name": "Imperial seeker's gloves"
+        },
+        {
+          "id": "7123620d-8f4e-4434-92f9-36b35c346ef3",
+          "name": "Infernal demonpact grasp"
+        },
+        {
+          "id": "2241b6ed-0e07-4bb1-8a73-a4bbf3d1f456",
+          "name": "Oblivion's wrath gauntlets"
+        },
+        {
+          "id": "e98352c8-f3b5-410a-96ce-fc8b4382790e",
+          "name": "Ossuary gloves of the resistance"
+        },
+        {
+          "id": "94ef98c3-d5a4-47d1-93e8-4f949616f9a9",
+          "name": "Royal praetor's gauntlets"
+        },
+        {
+          "id": "62cc110c-5d19-40d7-b450-2ed11f4742da",
+          "name": "Sacred repose gloves"
+        },
+        {
+          "id": "5835fe36-8132-4dd4-82d5-7d9cca5abce2",
+          "name": "Scaled gloves of the resistance"
+        },
+        {
+          "id": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03",
+          "name": "Spectral overseer's handguards"
+        },
+        {
+          "id": "c11ba8c3-a110-4226-ad07-a8e8962f8fdd",
+          "name": "Transcendent tempest's touch"
+        },
+        {
+          "id": "a11eff7f-fbe2-41ec-9844-b05da148b763",
+          "name": "Void stalker's caress"
+        },
+        {
+          "id": "1a748af9-29a8-4247-a88a-4de2c8896603",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "6afb3825-5bb8-40e1-832f-08997c725cb3",
       "name": "Cloak",
-      "items": []
+      "items": [
+        {
+          "id": "c415a5a9-3570-459f-9f93-567e46a71ef7",
+          "name": "Cloak of the frozen expanse"
+        },
+        {
+          "id": "ab8726e3-b50c-4b8d-bce5-3bc3799101f6",
+          "name": "Cloak of victorious destiny"
+        },
+        {
+          "id": "884eaf36-56db-4a82-9a2d-44522fc2a97e",
+          "name": "Forward general's cloak"
+        },
+        {
+          "id": "316dd575-fffd-4343-a8bc-2c4cf5d2355a",
+          "name": "Grieving vengeance cloak"
+        },
+        {
+          "id": "4af3f454-de1f-4eb6-ba83-d93356d1e7cd",
+          "name": "Howling wind shroud"
+        },
+        {
+          "id": "324c999e-7f7a-472d-ab39-ad40c68cac3b",
+          "name": "Opulent noble's mantle"
+        },
+        {
+          "id": "967d826b-31ea-4bd4-88ad-8679737eab2b",
+          "name": "Royal spineflower drape"
+        },
+        {
+          "id": "31ee1051-d5ac-464b-a44c-ad486323a8c7",
+          "name": "Starlight fur cloak"
+        },
+        {
+          "id": "d8dce0f5-3f81-4745-9ec9-6c325e46f8a2",
+          "name": "Steadfast commander's cape"
+        },
+        {
+          "id": "bfc78737-574f-44ab-9850-e03b30752d63",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
       "name": "Necklace",
-      "items": []
+      "items": [
+        {
+          "id": "a8047bfb-089d-4171-8a59-8a8e5b35494e",
+          "name": "Collar of nature's wrath"
+        },
+        {
+          "id": "ca7e259f-3c14-43e6-8b2f-ef19634f0cbe",
+          "name": "Death knell gorget"
+        },
+        {
+          "id": "47dac6a1-8fd3-4bd8-988d-cf375645e837",
+          "name": "Deep draconic gorget"
+        },
+        {
+          "id": "6f956815-cb14-45c4-9e69-56077baaf34a",
+          "name": "Lunar conjunction necklace"
+        },
+        {
+          "id": "c26ffed2-c573-4693-9058-1377c9671ba9",
+          "name": "Noble birthright brooch"
+        },
+        {
+          "id": "76b7fd95-c2fb-4c4b-a67c-5d8d2b3a8351",
+          "name": "Pendant of barbaric rage"
+        },
+        {
+          "id": "0ff74927-a547-453f-a06d-6570f9f8a568",
+          "name": "Pendant of eternal flames"
+        },
+        {
+          "id": "d4800ebb-8931-4375-a16d-828e210cf679",
+          "name": "Pendant of frozen tears"
+        },
+        {
+          "id": "5a4418a5-1144-433a-98fe-2ca8238b3c07",
+          "name": "Primal ritual collar"
+        },
+        {
+          "id": "0d6c686d-7b5a-41ef-a6e0-ea67aaefc74b",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "442dc7eb-d568-4953-a46c-4d966695d001",
       "name": "Bracelet",
-      "items": []
+      "items": [
+        {
+          "id": "0f598d56-9a1c-46ed-8225-815d516af02d",
+          "name": "Bangle of the clearest night"
+        },
+        {
+          "id": "0584a5c6-7191-446c-9249-0a2889a90a27",
+          "name": "Barbed cuffs of the tormentor"
+        }
+      ]
     },
     {
       "id": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
