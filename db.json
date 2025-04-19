@@ -1482,23 +1482,282 @@
         {
           "id": "1f83e497-3f90-4837-b55d-ddc2874dc5ec",
           "name": "Tevent's grasp of withering"
+        },
+        {
+          "id": "e36b497c-614e-4651-b8f1-e32bda9f4e9c",
+          "name": "Tevent's warblade of despair"
+        },
+        {
+          "id": "398a46d3-7729-4007-9ad5-d6fe84dd5f14",
+          "name": "None"
         }
       ]
     },
     {
       "id": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
       "name": "Head",
-      "items": []
+      "items": [
+        {
+          "id": "35fff65e-22d0-4ccd-9fc6-32614cd6a18e",
+          "name": "Ardent Herald's Crown"
+        },
+        {
+          "id": "7c014479-de93-41c4-af21-afd808339144",
+          "name": "Auric vanguard's barbute"
+        },
+        {
+          "id": "15ddae67-7fbb-448e-a427-48eda62044da",
+          "name": "Chosen vanquisher's visage"
+        },
+        {
+          "id": "119e1033-9183-4f79-b667-122c5da6b52b",
+          "name": "Crown of icebound infinity"
+        },
+        {
+          "id": "66c4d278-182d-4f59-8c3b-2e6f5eb0b9c7",
+          "name": "Crowned skull of victory"
+        },
+        {
+          "id": "507a3e64-8848-469b-aefa-5271f3ea3b54",
+          "name": "Dread admiral's bicorne"
+        },
+        {
+          "id": "9bdf3baf-cd2d-43bf-943b-d583c72187df",
+          "name": "Eternal warlord's faceguard"
+        },
+        {
+          "id": "ea1954f2-e71a-4570-9f2c-48824e1cb4d4",
+          "name": "Feral prophet's crown"
+        },
+        {
+          "id": "6b77c20a-a9cc-47b6-9524-b64ccf02198a",
+          "name": "First light's Halo"
+        },
+        {
+          "id": "d48927e7-58ee-4b2e-b17e-e5f4fb95631c",
+          "name": "Forgotten lotus mask"
+        },
+        {
+          "id": "5b600d38-506b-432d-885b-34ddbee32083",
+          "name": "Hallowed hat of the resistance"
+        },
+        {
+          "id": "a572c43d-979c-4d70-8941-f9b8f8f133a7",
+          "name": "Immortal legionnaire's helm"
+        },
+        {
+          "id": "eb9a71d4-a467-4560-bc81-03a7f35bdd0e",
+          "name": "Imperial Seeker's Circlet"
+        },
+        {
+          "id": "f62f554d-c724-407a-8b79-8e196851fdae",
+          "name": "Oblivion's wrath barbute"
+        },
+        {
+          "id": "a70833d9-0458-4d09-a5ba-59c9fec30cf3",
+          "name": "Ossuary hood of the resistance"
+        },
+        {
+          "id": "c05094cf-d07d-4ad4-9336-ad0a1844f64c",
+          "name": "Royal praetor's visor"
+        },
+        {
+          "id": "cce49b49-e3ad-4c51-b48e-fef225ace8a2",
+          "name": "Sacred repose circle"
+        },
+        {
+          "id": "51033c09-1507-4d9e-b17a-788ad4cbef09",
+          "name": "Scaled tricorne of the resistance"
+        },
+        {
+          "id": "68a9fe3b-3ee4-404c-b83d-22a4fabc95bf",
+          "name": "Spectral overseer's mask"
+        },
+        {
+          "id": "b5683c6b-a24c-40cd-ba11-d2c22b5e7a59",
+          "name": "Transcendent tempest's cowl"
+        },
+        {
+          "id": "e42faa6c-fc46-4a98-a836-92b6f1d9ba5a",
+          "name": "Visage of the infernal tyrant"
+        },
+        {
+          "id": "2bb64fad-c326-4ad2-81a0-59b5bfb2f684",
+          "name": "Void stalker's mask"
+        },
+        {
+          "id": "58968216-f14e-4f39-88d3-fc857e12ba48",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
       "name": "Chest",
-      "items": []
+      "items": [
+        {
+          "id": "173dd433-a79b-4fc4-8d75-caec154460f3",
+          "name": "Ardent herald's gown"
+        },
+        {
+          "id": "4ef61617-c587-4639-8ae7-81ec759537bc",
+          "name": "Auric vanguard's full plate"
+        },
+        {
+          "id": "67b4de23-105e-4a47-adfb-67af68ca0252",
+          "name": "Chosen vanquisher's full plate"
+        },
+        {
+          "id": "b1e7496b-90a0-4ae0-8561-e0086deebc96",
+          "name": "Dread admiral's uniform"
+        },
+        {
+          "id": "8ad01250-6f29-4ecd-814e-a3788d8c8e3e",
+          "name": "Eternal warlord's plate"
+        },
+        {
+          "id": "20ca82d1-eb3a-4a2c-9bb9-46aa2e12d263",
+          "name": "Feral prophet's overcoat"
+        },
+        {
+          "id": "233c2222-fce1-4a6a-8759-a9c1bb611e53",
+          "name": "First light's tunic"
+        },
+        {
+          "id": "3e69de54-3016-4ffa-8b9d-27a23f77ab1a",
+          "name": "Forgotten lotus garb"
+        },
+        {
+          "id": "a667e386-d2fd-4034-9139-b64ba51e712a",
+          "name": "Golden blossom regalia"
+        },
+        {
+          "id": "3b080c5c-a2b4-4ebb-bdbb-c48e3aa359b3",
+          "name": "Hallowed robes of the resistance"
+        },
+        {
+          "id": "bfb057cb-7da8-4396-aaf7-14987e66eb64",
+          "name": "Immortal legionnaire's armor"
+        },
+        {
+          "id": "48e13de3-97c1-4e9e-83d1-68b69d67a3df",
+          "name": "Imperial seeker's tunic"
+        },
+        {
+          "id": "ee81d45d-5f8d-45bd-8ccc-3f4ae5cb12e3",
+          "name": "Kingslayer's banded platemail"
+        },
+        {
+          "id": "ab70509a-9bd3-4f2f-8d95-c29334048bdb",
+          "name": "Oblivion's s wrath's chest plate"
+        },
+        {
+          "id": "51f1ab48-3dfd-4995-9ad2-92780000895f",
+          "name": "Ossuary tunic of the resistance"
+        },
+        {
+          "id": "97467c4d-96c4-4fad-89f9-3ef5c11afd31",
+          "name": "Royal praetor's plate armor"
+        },
+        {
+          "id": "5d2180ba-f110-43db-92b0-dadfd09dcc91",
+          "name": "Sacred repose garb"
+        },
+        {
+          "id": "6603665f-c222-4262-ab25-b4a5cc5608b0",
+          "name": "Scaled armor of the resistance"
+        },
+        {
+          "id": "67859fd0-20d9-46eb-bb53-6fa5a74bd8bd",
+          "name": "Spectral overseer's s tunic"
+        },
+        {
+          "id": "f3761ef4-73bc-4664-8730-fafb73453841",
+          "name": "Transcendent tempest's armor"
+        },
+        {
+          "id": "485128b1-4ada-4fdf-ab53-8188e504c660",
+          "name": "Void stalker's overcoat"
+        },
+        {
+          "id": "d1b445b9-8fdc-4c8e-a9de-435d6590a099",
+          "name": "None"
+        }
+      ]
     },
     {
       "id": "2984463a-eae6-49b5-9602-95b36ecd06f0",
       "name": "Legs",
-      "items": []
+      "items": [
+        {
+          "id": "1ceee1eb-4560-4192-aa50-515311e4d394",
+          "name": "Ardent herald's pants"
+        },
+        {
+          "id": "24287dee-e22c-402b-8152-d94674a3cc16",
+          "name": "Auric vanguard's gaiters"
+        },
+        {
+          "id": "375cb86d-bd94-4783-aa59-95edddb4328f",
+          "name": "Chosen vanquisher's trousers"
+        },
+        {
+          "id": "fc97217b-7ca5-49cd-b458-5f5bc73a39ec",
+          "name": "Dread admiral's trousers"
+        },
+        {
+          "id": "0c2299d7-ab26-461a-b997-78f7996ff8a3",
+          "name": "Effortless victory greaves"
+        },
+        {
+          "id": "4fb3c2f3-da4c-4ad7-896b-000dc96c8ddc",
+          "name": "Eternal warlord's greaves"
+        },
+        {
+          "id": "017757db-c8bf-493e-b2fa-1184ad737ac7",
+          "name": "Feral prophet's pants"
+        },
+        {
+          "id": "9aeec102-8531-4e65-b4f0-e02fd9b4cf3d",
+          "name": "First light's pants"
+        },
+        {
+          "id": "32d0a46d-ad2b-4867-90fd-15051e47d71c",
+          "name": "Forgotten lotus pants"
+        },
+        {
+          "id": "0e02ccaf-d529-41a2-815e-da6fb69226e6",
+          "name": "Hallowed pants of the resistance"
+        },
+        {
+          "id": "2b5fc147-5e54-4fd0-9844-b60170ab7f20",
+          "name": "Immortal legionnaire's greaves"
+        },
+        {
+          "id": "43141c5f-f4e0-4461-b11b-d84e1310fa73",
+          "name": "Imperial seeker's trousers"
+        },
+        {
+          "id": "b7e4045e-2b4c-4f93-a0b6-77a0d66b95fb",
+          "name": "Oblivion's wrath leggings"
+        },
+        {
+          "id": "2bd2fbeb-1cdb-4832-8dde-f67d3c48ccb8",
+          "name": "Ossuary trousers of the resistance"
+        },
+        {
+          "id": "e4fe6912-2676-470e-91dc-3fe9e5c0ae79",
+          "name": "Pristine primalfang pants"
+        },
+        {
+          "id": "e2e70c7b-69cf-4124-bf52-c1e0f7e06cc6",
+          "name": "Royal praetor's gaiters"
+        },
+        {
+          "id": "8d3d44fd-f7bd-4ac2-a482-b353a0a962e6",
+          "name": "Sacred repose pants"
+        }
+      ]
     },
     {
       "id": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
