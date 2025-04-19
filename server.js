@@ -52,6 +52,37 @@ app.post('/categories/:id/items', (req, res) => {
   res.redirect('/');
 });
 
+// Delete Item from Category
+app.post('/categories/:categoryId/items/:itemId/delete', (req, res) => {
+  const db = loadDatabase();
+  const category = db.categories.find(c => c.id === req.params.categoryId);
+  if (!category) return res.status(404).send('Category not found');
+
+  // Remove the item from the category's items array
+  category.items = category.items.filter(i => i.id !== req.params.itemId);
+
+  saveDatabase(db);
+  res.redirect('/');
+});
+
+
+// Update Item Name
+app.post('/categories/:categoryId/items/:itemId/edit', (req, res) => {
+  const db = loadDatabase();
+  const category = db.categories.find(c => c.id === req.params.categoryId);
+  if (!category) return res.status(404).send('Category not found');
+
+  const item = category.items.find(i => i.id === req.params.itemId);
+  if (!item) return res.status(404).send('Item not found');
+
+  // Update the item's name
+  item.name = req.body.name;
+
+  saveDatabase(db);
+  res.redirect('/');
+});
+
+
 // Add Member
 app.post('/members', (req, res) => {
   const db = loadDatabase();
