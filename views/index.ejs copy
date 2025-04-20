@@ -3,177 +3,251 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Member Attendance Manager</title>
+  <title>Angry's Attendance & Eligibility Manager</title>
   <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .collapsible:hover,
+    .active {
+      background-color: #555;
+    }
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    .content.show {
+      display: block;
+    }
+  </style>
 </head>
-<body> 
-  <h1>👥 Member Attendance Manager</h1>
+<body>
+  <h1>👥 Angry's Attendance & Eligibility Manager</h1>
 
   <!-- Eligibility Check -->
   <h2>Eligibility Check</h2>
-  <form action="/check-eligibility" method="POST">
-    <label for="category">Select Category:</label>
-    <select name="categoryId" id="category" required>
-      <option value="">Select Category</option>
-      <% categories.forEach(category => { %>
+<form action="/check-eligibility" method="POST">
+  <label for="category">Select Category:</label>
+  <select name="categoryId" id="category" required>
+    <option value="">Select Category</option>
+  <% categories.forEach(category => {
+  if (
+    category.name !== "Ring 1" &&
+    category.name !== "Ring 2" &&
+    category.name !== "Archboss Weap 1" &&
+    category.name !== "Archboss Weap 2"
+  ) { %>
         <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
+    <% } }); %>
+    <option value="ring" <%= selectedCategoryId === 'ring' ? 'selected' : '' %>>Ring</option>
+  </select>
+
+  <% 
+    let itemsToShow = [];
+    if (selectedCategoryId === 'ring') {
+      const ringCategories = categories.filter(c => c.name === "Ring 1" || c.name === "Ring 2");
+      const seenItems = new Set();
+      ringCategories.forEach(cat => {
+        cat.items.forEach(item => {
+          if (!seenItems.has(item.name)) {
+            itemsToShow.push(item);
+            seenItems.add(item.name);
+          }
+        });
+      });
+    } else {
+      const selectedCategory = categories.find(c => c.id === selectedCategoryId);
+      itemsToShow = selectedCategory?.items || [];
+    }
+  %>
+
+  <% if (itemsToShow.length > 0) { %>
+    <label for="item">Select Item:</label>
+    <select name="itemId" id="item" required>
+      <option value="">Select Item</option>
+      <% itemsToShow.forEach(item => { %>
+        <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
       <% }); %>
     </select>
+  <% } %>
 
-    <% 
-      let selectedCategory = null;
-      if (selectedCategoryId) {
-        selectedCategory = categories.find(category => category.id === selectedCategoryId);
-      }
-    %>
+  <button type="submit">Check Eligibility</button>
+</form>
 
-    <% if (selectedCategory && selectedCategory.items) { %>
-      <label for="item">Select Item:</label>
-      <select name="itemId" id="item" required>
-        <option value="">Select Item</option>
-        <% selectedCategory.items.forEach(item => { %>
-          <option value="<%= item.id %>" <%= typeof selectedItemId !== 'undefined' && item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
-        <% }); %>
-      </select>
-    <% } %>
-
-    <button type="submit">Check Eligibility</button>
-  </form>
-
-  <hr/>
-
-  <!-- Display Eligible Members -->
-  <% if (eligibleMembers && eligibleMembers.length > 0) { %>
+<% if (eligibleMembers) { %>
+  <% if (eligibleMembers.length > 0) { %>
     <h3>Eligible Members:</h3>
     <ul>
       <% eligibleMembers.forEach(member => { %>
         <li><%= member.name %></li>
       <% }); %>
     </ul>
-  <% } else if (typeof eligibleMembers !== 'undefined') { %>
+  <% } else { %>
     <p>No eligible members found.</p>
   <% } %>
+<% } %>
 
-  <hr/>
-    
-  <!-- Add Member -->
-  <h2>Add Member</h2>
-  <form action="/members" method="POST">
-    <input type="text" name="name" placeholder="Member Name" required />
-    <button type="submit">Add Member</button>
-  </form>
 
-  <!-- Members List -->
-  <h2>Members & Attendance</h2>
-  <% if (members.length === 0) { %>
-    <p>No members yet.</p>
-  <% } else { %>
-    <% members.forEach(member => { %>
-      <div class="member">
-        <form action="/members/<%= member.id %>/attendance" method="POST">
-          <strong><%= member.name %></strong>
-          <% for (let i = 0; i < 8; i++) { %>
-            <label>
-              <input type="checkbox" name="attendance[]" value="<%= i %>" <%= member.attendance[i] ? 'checked' : '' %> />
-              Event <%= i + 1 %>
-            </label>
-          <% } %>
-          <button type="submit">Update Attendance</button>
-        </form>
-        <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
-          <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
-        </form>
-      </div>
-    <% }); %>
-  <% } %>
+  <!-- Add Member & Manage -->
+  <button class="collapsible">Add Member & Manage Members</button>
+  <div class="content">
+    <h2>Add Member</h2>
+    <form action="/members" method="POST">
+      <input type="text" name="name" placeholder="Member Name" required />
+      <button type="submit">Add Member</button>
+    </form>
 
-  <hr/>
+    <h2>Members & Attendance</h2>
+    <% if (members.length === 0) { %>
+      <p>No members yet.</p>
+    <% } else { %>
+      <% members.forEach(member => { %>
+        <div class="member">
+          <form action="/members/<%= member.id %>/attendance" method="POST">
+            <strong><%= member.name %></strong>
+            <% for (let i = 0; i < 8; i++) { %>
+              <label>
+                <input type="checkbox" name="attendance[]" value="<%= i %>" <%= member.attendance[i] ? 'checked' : '' %> />
+                Event <%= i + 1 %>
+              </label>
+            <% } %>
+            <button type="submit">Update Attendance</button>
+          </form>
+          <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
+            <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
+          </form>
+        </div>
+      <% }); %>
+    <% } %>
+  </div>
 
   <!-- Categories & Items -->
-  <h2>Categories & Items</h2>
-  <% if (categories.length === 0) { %>
-    <p>No categories yet.</p>
-  <% } else { %>
-    <% categories.forEach(category => { %>
-      <div class="category">
-        <form action="/categories/<%= category.id %>/edit" method="POST">
-          <input type="text" name="name" value="<%= category.name %>" />
-          <button type="submit">Rename</button>
-        </form>
+  <button class="collapsible">Categories & Items</button>
+  <div class="content">
+    <% if (categories.length === 0) { %>
+      <p>No categories yet.</p>
+    <% } else { %>
+      <% categories.forEach(category => { %>
+        <div class="category">
+          <form action="/categories/<%= category.id %>/edit" method="POST">
+            <input type="text" name="name" value="<%= category.name %>" />
+            <button type="submit">Rename</button>
+          </form>
 
-        <h4>Add Item</h4>
-        <form action="/categories/<%= category.id %>/items" method="POST">
-          <input type="text" name="name" placeholder="Item Name" required />
-          <button type="submit">Add</button>
-        </form>
+          <h4>Add Item</h4>
+          <form action="/categories/<%= category.id %>/items" method="POST">
+            <input type="text" name="name" placeholder="Item Name" required />
+            <button type="submit">Add</button>
+          </form>
 
-        <% if (category.items.length > 0) { %>
-          <ul>
-            <% category.items.forEach(item => { %>
-              <li>
-                <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
-                  <input type="text" name="name" value="<%= item.name %>" />
-                  <button type="submit">Update</button>
-                </form>
-                <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
-                  <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
-                </form>
-              </li>
-            <% }); %>
-          </ul>
-        <% } %>
-      </div>
-    <% }); %>
-  <% } %>
+          <button class="collapsible">Show Items</button>
+          <div class="content">
+            <% if (category.items.length > 0) { %>
+              <ul>
+                <% category.items.forEach(item => { %>
+                  <li>
+                    <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
+                      <input type="text" name="name" value="<%= item.name %>" />
+                      <button type="submit">Update</button>
+                    </form>
+                    <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
+                      <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
+                    </form>
+                  </li>
+                <% }); %>
+              </ul>
+            <% } else { %>
+              <p>No items in this category.</p>
+            <% } %>
+          </div>
+        </div>
+      <% }); %>
+    <% } %>
+  </div>
 
-  <hr/>
-    
   <!-- Add Category -->
-  <h2>Add Category</h2>
-  <form action="/categories" method="POST">
-    <input type="text" name="name" placeholder="Category Name" required />
-    <button type="submit">Add Category</button>
-  </form>  
+  <button class="collapsible">Add Category</button>
+  <div class="content">
+    <h2>Add Category</h2>
+    <form action="/categories" method="POST">
+      <input type="text" name="name" placeholder="Category Name" required />
+      <button type="submit">Add Category</button>
+    </form>
+  </div>
 
   <!-- Assign Multiple Items to Members -->
-  <h2>Assign Multiple Items to Members</h2>
-  <% members.forEach(member => { %>
-    <div class="member">
-      <h3><%= member.name %></h3>
-      <% if (member.items && member.items.length > 0) { %>
-        <ul>
-          <% member.items.forEach(assignment => {
-            const category = categories.find(c => c.id === assignment.categoryId);
-            const item = category ? category.items.find(i => i.id === assignment.itemId) : null;
-          %>
-            <% if (category && item) { %>
-              <li><strong><%= category.name %>:</strong> <%= item.name %></li>
-            <% } %>
-          <% }); %>
-        </ul>
-      <% } else { %>
-        <p>No items assigned.</p>
-      <% } %>
-
-      <!-- Form to assign multiple items -->
-      <form action="/members/<%= member.id %>/add-items" method="POST">
-        <h4>Select Items to Assign</h4>
-
-        <% categories.forEach(category => { %>
-          <h5><%= category.name %></h5>
-          <label>Select Items:</label>
-          <select name="itemIds" multiple required>
-            <% category.items.forEach(item => { %>
-              <option value="<%= item.id %>"><%= item.name %></option>
+  <button class="collapsible">Edit Members Need List</button>
+  <div class="content">
+    <% members.forEach(member => { %>
+      <div class="member">
+        <h3><%= member.name %></h3>
+        <% if (member.items && member.items.length > 0) { %>
+          <ul>
+            <% member.items.forEach(assignment => {
+              const category = categories.find(c => c.id === assignment.categoryId);
+              const item = category ? category.items.find(i => i.id === assignment.itemId) : null;
+            %>
+              <% if (category && item) { %>
+                <li><strong><%= category.name %>:</strong> <%= item.name %></li>
+              <% } %>
             <% }); %>
-          </select>
-        <% }); %>
+          </ul>
+        <% } else { %>
+          <p>No items assigned.</p>
+        <% } %>
 
-        <button type="submit">Assign Items</button>
-      </form>
-    </div>
+        <button class="collapsible">Select Items to Assign</button>
+        <div class="content">
+         <form action="/members/<%= member.id %>/add-items" method="POST">
+  <% categories.forEach(category => { %>
+    <h5><%= category.name %></h5>
+    <select name="categoryItems[<%= category.id %>]">
+      <option value="">-- Keep Current --</option>
+      <% category.items.forEach(item => { %>
+        <option value="<%= item.id %>"><%= item.name %></option>
+      <% }); %>
+    </select>
   <% }); %>
+  <button type="submit">Assign Items</button>
+</form>
+        </div>
+      </div>
+    <% }); %>
+  </div>
 
-  <hr/>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const collapsibles = document.querySelectorAll(".collapsible");
+
+      collapsibles.forEach((collapsible, index) => {
+        const content = collapsible.nextElementSibling;
+        const isOpen = localStorage.getItem(`collapsible-${index}`) === "true";
+
+        if (isOpen) {
+          collapsible.classList.add("active");
+          content.classList.add("show");
+        }
+
+        collapsible.addEventListener("click", () => {
+          const isVisible = content.classList.contains("show");
+          content.classList.toggle("show");
+          collapsible.classList.toggle("active");
+          localStorage.setItem(`collapsible-${index}`, !isVisible);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
