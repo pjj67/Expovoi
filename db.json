@@ -549,7 +549,64 @@
         true,
         true
       ],
-      "items": []
+      "items": [
+        {
+          "categoryId": "category-uuid-1",
+          "itemId": "d0cdadb1-d3cd-4e1f-b132-5da89ed2dc8a"
+        },
+        {
+          "categoryId": "category-uuid-2",
+          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
+        },
+        {
+          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
+          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
+        },
+        {
+          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
+          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
+        },
+        {
+          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
+          "itemId": "f62f554d-c724-407a-8b79-8e196851fdae"
+        },
+        {
+          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
+          "itemId": "4ef61617-c587-4639-8ae7-81ec759537bc"
+        },
+        {
+          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
+          "itemId": "6fbd7a82-34ea-49b6-aeef-d517cd716308"
+        },
+        {
+          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
+          "itemId": "013624c0-7351-4a03-a4e5-b5ed4f7ec77a"
+        },
+        {
+          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
+          "itemId": "4bd1d3ab-8292-42da-bebb-24f63265b196"
+        },
+        {
+          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
+          "itemId": "ab8726e3-b50c-4b8d-bce5-3bc3799101f6"
+        },
+        {
+          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+          "itemId": "d4800ebb-8931-4375-a16d-828e210cf679"
+        },
+        {
+          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
+          "itemId": "8301d696-d8c2-4f14-a945-231d0475e74b"
+        },
+        {
+          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
+          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
+        },
+        {
+          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
+          "itemId": "084c160d-079c-46ea-8ab6-e75cd382f394"
+        }
+      ]
     },
     {
       "id": "6885b626-b1a4-4949-9111-393be7aa3334",
