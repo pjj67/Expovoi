@@ -1514,7 +1514,20 @@
         true,
         true
       ],
-      "items": []
+      "items": [
+        {
+          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+          "itemId": "5a4418a5-1144-433a-98fe-2ca8238b3c07"
+        },
+        {
+          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
+          "itemId": "e6e94713-df9b-4dcd-b917-c163ee420704"
+        },
+        {
+          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
+          "itemId": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5"
+        }
+      ]
     },
     {
       "id": "bec8c2e3-6931-4fc0-b59a-74c93a92e690",
