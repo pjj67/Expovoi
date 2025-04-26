@@ -916,7 +916,24 @@
         true,
         true
       ],
-      "items": []
+      "items": [
+        {
+          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
+          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
+        },
+        {
+          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
+          "itemId": "4855a373-e6e2-4e46-bb63-9b5c65003cc0"
+        },
+        {
+          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
+        },
+        {
+          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
+          "itemId": "87a827a9-4252-471e-ac52-dc25d47f14db"
+        }
+      ]
     },
     {
       "id": "ffffa8c0-a0a1-4b6c-93bf-62971e0e3b93",
