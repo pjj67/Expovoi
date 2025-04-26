@@ -43,10 +43,6 @@
           "itemId": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6"
         },
         {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "01e8c2a9-9c07-49f4-b679-c06a30eb7072"
-        },
-        {
           "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
           "itemId": "58968216-f14e-4f39-88d3-fc857e12ba48"
         },
@@ -97,6 +93,10 @@
         {
           "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
           "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
+        },
+        {
+          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
+          "itemId": "398a46d3-7729-4007-9ad5-d6fe84dd5f14"
         }
       ]
     },
@@ -471,10 +471,6 @@
           "itemId": "item-uuid-1"
         },
         {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
-        },
-        {
           "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
           "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
         },
@@ -509,6 +505,10 @@
         {
           "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
           "itemId": "a63016f8-382d-465e-bff9-1213d6fca3bf"
+        },
+        {
+          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
+          "itemId": "571f0290-d0c2-4386-89fb-f7af00acd078"
         }
       ]
     },
@@ -1151,7 +1151,24 @@
         true,
         true
       ],
-      "items": []
+      "items": [
+        {
+          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
+          "itemId": "12c12889-bb12-4d46-a774-9c90ef641e84"
+        },
+        {
+          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
+          "itemId": "b802e207-7f03-4bc1-8841-2bb7a04d37e0"
+        },
+        {
+          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
+          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
+        },
+        {
+          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
+        }
+      ]
     },
     {
       "id": "cbe606c1-59cd-4445-920b-151d6c8ae1ef",
