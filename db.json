@@ -1090,42 +1090,6 @@
       ]
     },
     {
-      "id": "5b55d988-e7d8-464a-bed0-411a52bf6681",
-      "name": "Azteron",
-      "attendance": [
-        true,
-        true,
-        true,
-        false,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "62cc110c-5d19-40d7-b450-2ed11f4742da"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
       "id": "0f82ad65-19bb-4aae-912a-47eae01400a7",
       "name": "HxCMatus",
       "attendance": [
