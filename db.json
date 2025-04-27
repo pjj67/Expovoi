@@ -544,7 +544,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true,
         true,
         true
@@ -668,7 +668,7 @@
         true,
         false,
         true,
-        true,
+        false,
         true,
         true,
         true
@@ -756,7 +756,7 @@
         false,
         true,
         true,
-        false,
+        true,
         true,
         true,
         true
@@ -1240,10 +1240,6 @@
           "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
         },
         {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
           "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
           "itemId": "32d0a46d-ad2b-4867-90fd-15051e47d71c"
         },
@@ -1274,6 +1270,10 @@
         {
           "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
           "itemId": "a63016f8-382d-465e-bff9-1213d6fca3bf"
+        },
+        {
+          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
+          "itemId": "d1b445b9-8fdc-4c8e-a9de-435d6590a099"
         }
       ]
     },
@@ -1285,7 +1285,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true,
         true,
         true
@@ -1492,7 +1492,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true,
         true,
         true
@@ -1535,7 +1535,7 @@
         true,
         false,
         false,
-        false,
+        true,
         true,
         true,
         true
@@ -1631,7 +1631,7 @@
         false,
         false,
         false,
-        true,
+        false,
         true,
         true,
         true
@@ -1753,7 +1753,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true,
         true,
         true
@@ -1996,7 +1996,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true,
         true,
         true
@@ -2017,6 +2017,14 @@
         {
           "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
           "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
+        },
+        {
+          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
+          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
+        },
+        {
+          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
+          "itemId": "47dac6a1-8fd3-4bd8-988d-cf375645e837"
         }
       ]
     },
@@ -2067,7 +2075,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true,
         true,
         true
@@ -2333,7 +2341,7 @@
         false,
         false,
         true,
-        false,
+        true,
         true,
         true,
         true
