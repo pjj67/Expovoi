@@ -958,10 +958,6 @@
           "itemId": "06e20d86-5d30-4708-a21f-cd9b26f03756"
         },
         {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        },
-        {
           "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
           "itemId": "3ff31254-fd09-458e-abd5-eac7385e0833"
         },
@@ -996,6 +992,10 @@
         {
           "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
           "itemId": "ce83fdc4-e4d1-4728-8502-3f09d6184028"
+        },
+        {
+          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
+          "itemId": "4ec7d389-0bd8-4d8a-994f-8cfc9a9d7021"
         }
       ]
     },
