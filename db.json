@@ -521,7 +521,7 @@
         false,
         false,
         true,
-        true,
+        false,
         true,
         true
       ],
@@ -669,7 +669,7 @@
         false,
         true,
         false,
-        true,
+        false,
         true,
         true
       ],
@@ -1354,7 +1354,7 @@
         false,
         false,
         false,
-        true,
+        false,
         true,
         true
       ],
@@ -1405,7 +1405,7 @@
         true,
         false,
         true,
-        true,
+        false,
         true,
         true
       ],
@@ -1483,21 +1483,6 @@
           "itemId": "73014a4a-7b06-4512-8727-26d74a9a01ec"
         }
       ]
-    },
-    {
-      "id": "92afa54f-5c4c-4afe-92e6-bc8e0063f7f3",
-      "name": "ToriHana",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "items": []
     },
     {
       "id": "7f7691fb-8939-421c-8d62-b3101038b290",
@@ -1632,7 +1617,7 @@
         false,
         false,
         false,
-        true,
+        false,
         true,
         true
       ],
@@ -1754,7 +1739,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true,
         true
       ],
@@ -1937,7 +1922,7 @@
         false,
         true,
         true,
-        true,
+        false,
         true,
         true
       ],
@@ -2621,6 +2606,21 @@
         false,
         true,
         true
+      ],
+      "items": []
+    },
+    {
+      "id": "435bef0d-893a-463c-a124-ab8243cf0786",
+      "name": "LukeyBoy",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
       ],
       "items": []
     }
