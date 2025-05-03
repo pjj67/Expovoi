@@ -1,159 +1,75 @@
 {
   "members": [
     {
-      "id": "674fe79b-ab42-4900-9ee9-8e0f8e20089e",
-      "name": "Kythor",
+      "name": "Am1ks",
       "attendance": [
+        false,
         true,
         true,
         true,
-        true,
-        true,
-        true,
+        false,
+        false,
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "f4fb3045-9089-40b5-8013-011ca6372b03"
-        },
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "b5ef0bae-51d8-4a55-a512-01ec4e6d8faf"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "571f0290-d0c2-4386-89fb-f7af00acd078"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "f1fbd8d4-01ba-4570-87e8-069c121cea79"
-        },
-        {
-          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-          "itemId": "7704b006-2b7f-4904-a2b8-6c3eb23450f3"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "01e8c2a9-9c07-49f4-b679-c06a30eb7072"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "58968216-f14e-4f39-88d3-fc857e12ba48"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "d1b445b9-8fdc-4c8e-a9de-435d6590a099"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "73014a4a-7b06-4512-8727-26d74a9a01ec"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "cd7b359a-398f-4de6-bf46-6d618fd68148"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "4c88f858-8c8e-478c-af55-9a31a2f5fd9f"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "bfc78737-574f-44ab-9850-e03b30752d63"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "0d6c686d-7b5a-41ef-a6e0-ea67aaefc74b"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "4ec7d389-0bd8-4d8a-994f-8cfc9a9d7021"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "084c160d-079c-46ea-8ab6-e75cd382f394"
-        },
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
-        }
-      ]
+      "items": {
+        "Wand": [
+          "Overture of eternal salvation"
+        ],
+        "Head": [
+          "Transcendent tempest's cowl"
+        ],
+        "Chest": [
+          "Transcendent tempest's armor"
+        ],
+        "Legs": [
+          "Transcendent tempest's pants"
+        ],
+        "Feet": [
+          "Violent demonic beast's fur boots"
+        ],
+        "Gloves": [
+          "Transcendent tempest's touch"
+        ],
+        "Cloak": [
+          "Starlight fur cloak"
+        ],
+        "Necklace": [
+          "Deep draconic gorget"
+        ],
+        "Bracelet": [
+          "Bracelet of the violent undertow"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Hero's legacy warbelt"
+        ]
+      }
     },
     {
-      "id": "5d51fc1a-7ec7-47b7-b88d-2c92d98ff971",
-      "name": "LexieGoldfish",
+      "name": "Andol",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         true
       ],
-      "items": [
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "25048c81-401c-46d7-81ef-95f168f9e9d0"
-        },
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "68a9fe3b-3ee4-404c-b83d-22a4fabc95bf"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "6f956815-cb14-45c4-9e69-56077baaf34a"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "c6c66180-a217-458c-b1f2-466360e5826d"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "4450d698-e4ce-44e4-9666-1606d23908cf"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "084c160d-079c-46ea-8ab6-e75cd382f394"
-        }
-      ]
+      "items": {
+        "Greatsword": [
+          "Tevent's warblade of despair"
+        ],
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ]
+      }
     },
     {
-      "id": "76b132ed-ce75-4dad-96ee-6de11ef086f5",
       "name": "Angrylittleman",
       "attendance": [
         true,
@@ -165,397 +81,226 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "56c1acec-4a93-4fdc-af83-b920954d4e24"
-        },
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "f4fb3045-9089-40b5-8013-011ca6372b03"
-        },
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "b5ef0bae-51d8-4a55-a512-01ec4e6d8faf"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "571f0290-d0c2-4386-89fb-f7af00acd078"
-        },
-        {
-          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-          "itemId": "7704b006-2b7f-4904-a2b8-6c3eb23450f3"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "73014a4a-7b06-4512-8727-26d74a9a01ec"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "6ddfa67e-3da5-41c7-83e0-cc6fc6bfb192"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "4d8f2893-acd2-4580-988f-2ece31f998b4"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "7fe43840-fb51-4e34-91b8-7dea05dd7b7d"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "68a9fe3b-3ee4-404c-b83d-22a4fabc95bf"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "87a827a9-4252-471e-ac52-dc25d47f14db"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Daggers": [
+          "Bercant's whispering daggers"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Archboss Weap 2": [
+          "Tevent's fangs of fury"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": [
+          "Spectral overseer's handguards"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Bracelet": [
+          "Infernal demonpact cuffs"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
     },
     {
-      "id": "1874ee37-1d4c-4d93-8810-1a9662854ddf",
-      "name": "EmKeiko",
+      "name": "Babi99",
+      "attendance": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ]
+      }
+    },
+    {
+      "name": "BATEC",
+      "attendance": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "items": {
+        "Crossbow": [
+          "Cordy's stormspore spike slingers"
+        ],
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Legs": [
+          "Forgotten lotus pants"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": [
+          "Forgotten lotus gloves"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Necklace": [
+          "Collar of nature's wrath"
+        ],
+        "Bracelet": [
+          "Bracelet of the violent undertow"
+        ],
+        "Ring 1": [
+          "Symbol of nature's advance"
+        ],
+        "Belt": [
+          "Elusive nymph coil"
+        ]
+      }
+    },
+    {
+      "name": "BigPoyaso",
+      "attendance": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "items": {
+        "Crossbow": [
+          "Queen bellandir's toxic spine throwers"
+        ],
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ]
+      }
+    },
+    {
+      "name": "Bolotta",
       "attendance": [
         true,
         true,
         true,
         true,
         true,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Necklace": [
+          "Deep draconic gorget"
+        ]
+      }
+    },
+    {
+      "name": "Date",
+      "attendance": [
+        true,
+        true,
+        true,
+        false,
+        false,
         true,
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "efc6f8af-3b3f-44f6-8d57-2a5f165ebd09"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "68a9fe3b-3ee4-404c-b83d-22a4fabc95bf"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "a8047bfb-089d-4171-8a59-8a8e5b35494e"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9"
-        }
-      ]
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ]
+      }
     },
     {
-      "id": "308f9127-a1b4-4348-b6c3-cb6e1af27560",
-      "name": "MrPsychou",
+      "name": "DevilSlayer92",
       "attendance": [
         true,
         true,
         true,
         true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "3a51a5b1-3e9a-4756-9af7-a013c0074cd5"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03"
-        }
-      ]
-    },
-    {
-      "id": "eb1cc6ca-0987-43b0-9455-8b94c2d12201",
-      "name": "JirenKai",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
-        }
-      ]
+      "items": {
+        "Necklace": [
+          "Deep draconic gorget"
+        ],
+        "Bracelet": [
+          "Bracelet of agony"
+        ],
+        "Ring 2": [
+          "Ring of spirited desire"
+        ],
+        "Greatsword": [
+          "Cordy's warblade of creeping doom"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Belt": [
+          "Undisputed champion's belt"
+        ]
+      }
     },
     {
-      "id": "7c7a5542-ef34-4448-82b5-a6209310ac40",
-      "name": "fantaq",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "56c1acec-4a93-4fdc-af83-b920954d4e24"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "092883da-f7c4-4555-82e7-661219510450"
-        },
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "f4fb3045-9089-40b5-8013-011ca6372b03"
-        },
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "b5ef0bae-51d8-4a55-a512-01ec4e6d8faf"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "571f0290-d0c2-4386-89fb-f7af00acd078"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "f1fbd8d4-01ba-4570-87e8-069c121cea79"
-        },
-        {
-          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-          "itemId": "7704b006-2b7f-4904-a2b8-6c3eb23450f3"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "5f20c965-0b82-486e-bbb8-82e128a80e29"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "398a46d3-7729-4007-9ad5-d6fe84dd5f14"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "eb9a71d4-a467-4560-bc81-03a7f35bdd0e"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "73014a4a-7b06-4512-8727-26d74a9a01ec"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "1a748af9-29a8-4247-a88a-4de2c8896603"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "bfc78737-574f-44ab-9850-e03b30752d63"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "a8047bfb-089d-4171-8a59-8a8e5b35494e"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "0da8cca2-e745-4f82-9aae-f050832fe61d"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "4ec7d389-0bd8-4d8a-994f-8cfc9a9d7021"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "6ddfa67e-3da5-41c7-83e0-cc6fc6bfb192"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "4d8f2893-acd2-4580-988f-2ece31f998b4"
-        }
-      ]
-    },
-    {
-      "id": "49b8dcff-d1f4-4485-ae8e-c0d2023505fe",
-      "name": "EmStefan",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "item-uuid-1"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "4ef61617-c587-4639-8ae7-81ec759537bc"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "e2e70c7b-69cf-4124-bf52-c1e0f7e06cc6"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "30bcb256-bd3a-4e07-aff7-75449e2b4f01"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "38235fd4-5361-4a3d-8ebc-e5a5e3aab50b"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "0f598d56-9a1c-46ed-8225-815d516af02d"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "b5725bbc-d46f-481a-bd9b-f7e10778f730"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "a63016f8-382d-465e-bff9-1213d6fca3bf"
-        }
-      ]
-    },
-    {
-      "id": "342cfe3c-f94b-4730-b6ad-6842f1293e5a",
-      "name": "THUNDERSAINT",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "e36b497c-614e-4651-b8f1-e32bda9f4e9c"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
-        }
-      ]
-    },
-    {
-      "id": "94442956-fd31-4978-9231-e830be96a4e4",
       "name": "Di4ble",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "6885b626-b1a4-4949-9111-393be7aa3334",
-      "name": "HeavenBlade",
-      "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -564,62 +309,52 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "af4e8750-b34f-487b-bcfa-a3f449a6d0fe"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "12c12889-bb12-4d46-a774-9c90ef641e84"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "6b77c20a-a9cc-47b6-9524-b64ccf02198a"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "9aeec102-8531-4e65-b4f0-e02fd9b4cf3d"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "0e88dba8-1419-40ff-97b4-017ca87a29a8"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "4e8d0148-87a9-4a70-8ff2-943fdee71f81"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
+      "items": {
+        "Wand": [
+          "Khanzaizin's valorous wand"
+        ],
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Archboss Weap 1": [
+          "Cordy's grasp of manipulation"
+        ],
+        "Archboss Weap 2": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Head": [
+          "Oblivion's wrath barbute"
+        ],
+        "Chest": [
+          "Auric vanguard's full plate"
+        ],
+        "Legs": [
+          "Trophy adorned leg guards"
+        ],
+        "Feet": [
+          "Oblivion's wrath stompers"
+        ],
+        "Gloves": [
+          "Auric vanguard's gauntlets"
+        ],
+        "Cloak": [
+          "Cloak of victorious destiny"
+        ],
+        "Necklace": [
+          "Pendant of frozen tears"
+        ],
+        "Bracelet": [
+          "Twisted coil of the enduring"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
+        ]
+      }
     },
     {
-      "id": "a68fed0a-aab2-4f3d-9bca-6a6637291af6",
-      "name": "xCyrsn",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "e8e2690b-06ce-4e87-8d18-1a9532e34f82",
       "name": "Ditawei",
       "attendance": [
         true,
@@ -631,328 +366,40 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "e36b497c-614e-4651-b8f1-e32bda9f4e9c"
-        },
-        {
-          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-          "itemId": "5de56746-d937-4748-ba27-55e0c73381dd"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "12c12889-bb12-4d46-a774-9c90ef641e84"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "4ef61617-c587-4639-8ae7-81ec759537bc"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "b257ab49-c517-4a5b-b193-6c481391d5d2"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "4bd1d3ab-8292-42da-bebb-24f63265b196"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "a8047bfb-089d-4171-8a59-8a8e5b35494e"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "445e49db-eede-426b-a989-e6439c935c76"
-        }
-      ]
+      "items": {
+        "Greatsword": [
+          "Tevent's warblade of despair"
+        ],
+        "Spear": [
+          "Queen bellandir's serrated spike"
+        ],
+        "Archboss Weap 1": [
+          "Cordy's warblade of creeping doom"
+        ],
+        "Chest": [
+          "Auric vanguard's full plate"
+        ],
+        "Feet": [
+          "Auric vanguard's plate boots"
+        ],
+        "Gloves": [
+          "Auric vanguard's gauntlets"
+        ],
+        "Necklace": [
+          "Collar of nature's wrath"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Ring 2": [
+          "Signet of the first snow"
+        ]
+      }
     },
     {
-      "id": "59e866d4-f664-4749-b525-c4722ef4a3d8",
-      "name": "Irishau",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "e36b497c-614e-4651-b8f1-e32bda9f4e9c"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "d4800ebb-8931-4375-a16d-828e210cf679"
-        }
-      ]
-    },
-    {
-      "id": "de1c4601-8af0-45af-9599-3cbe966c5660",
-      "name": "ResXIII",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "32d0a46d-ad2b-4867-90fd-15051e47d71c"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "8360c214-d71d-47a4-8e1f-1b4e7cbdf86f"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "d8dce0f5-3f81-4745-9ec9-6c325e46f8a2"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "efb4a422-7edf-49dd-8888-85a0fc64aad2"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "91dbd4ca-fccd-4d25-bec4-0f88fee2878e"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "75086b94-2016-4cf6-88f9-ab9822319b57"
-        }
-      ]
-    },
-    {
-      "id": "e7474dd1-1cfc-46d0-9896-90cb2fae80de",
-      "name": "Orphesie",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "9052e311-724f-4433-8a1d-63f244c445b2",
-      "name": "TarNxD",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "e36b497c-614e-4651-b8f1-e32bda9f4e9c"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "eb9a71d4-a467-4560-bc81-03a7f35bdd0e"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "24287dee-e22c-402b-8152-d94674a3cc16"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "4bd1d3ab-8292-42da-bebb-24f63265b196"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "ab8726e3-b50c-4b8d-bce5-3bc3799101f6"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "76b7fd95-c2fb-4c4b-a67c-5d8d2b3a8351"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "efb4a422-7edf-49dd-8888-85a0fc64aad2"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "b5725bbc-d46f-481a-bd9b-f7e10778f730"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "526f842f-6188-43c2-90c9-016804a53c46"
-        }
-      ]
-    },
-    {
-      "id": "22709c20-8a79-4136-a174-149a6285bf0f",
-      "name": "ShukakuNoKira",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "ffffa8c0-a0a1-4b6c-93bf-62971e0e3b93",
-      "name": "DevilSlayer92",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "68a9fe3b-3ee4-404c-b83d-22a4fabc95bf"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "f99b63d4-cac1-4bbb-8756-fbccc42ea99c"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "47dac6a1-8fd3-4bd8-988d-cf375645e837"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "06e20d86-5d30-4708-a21f-cd9b26f03756"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "3ff31254-fd09-458e-abd5-eac7385e0833"
-        }
-      ]
-    },
-    {
-      "id": "979d5a72-1654-45a8-9a10-17ef86b54449",
       "name": "Dubhessa",
       "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "efee4818-c062-41c9-9ae8-f4e099b0cf28"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "66c4d278-182d-4f59-8c3b-2e6f5eb0b9c7"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "485128b1-4ada-4fdf-ab53-8188e504c660"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "32d0a46d-ad2b-4867-90fd-15051e47d71c"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "f8176c1b-b5d4-45d0-b0bf-c25d1394a48f"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "8360c214-d71d-47a4-8e1f-1b4e7cbdf86f"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "ca7e259f-3c14-43e6-8b2f-ef19634f0cbe"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "91dbd4ca-fccd-4d25-bec4-0f88fee2878e"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "084a35c8-9e6a-4d2b-8608-b40be299da5a"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "75086b94-2016-4cf6-88f9-ab9822319b57"
-        }
-      ]
-    },
-    {
-      "id": "7df49107-1431-4678-8bcd-5d2e1eb0f9cf",
-      "name": "oOHitsuOo",
-      "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -961,130 +408,62 @@
         true,
         true
       ],
-      "items": []
+      "items": {
+        "Crossbow": [
+          "Crossbows of the darkest night"
+        ],
+        "Ring 1": [
+          "Solitaire of purity"
+        ],
+        "Ring 2": [
+          "Symbol of nature's advance"
+        ],
+        "Head": [
+          "First light's Halo"
+        ],
+        "Chest": [
+          "Dread admiral's uniform"
+        ],
+        "Legs": [
+          "Forgotten lotus pants"
+        ],
+        "Feet": [
+          "First light's shoes"
+        ],
+        "Gloves": [
+          "Forgotten lotus gloves"
+        ]
+      }
     },
     {
-      "id": "e9245e4b-e874-419b-ab4d-c3a8c8bef42b",
-      "name": "NotOsiris",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "9aeec102-8531-4e65-b4f0-e02fd9b4cf3d"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
-      "id": "5b55d988-e7d8-464a-bed0-411a52bf6681",
-      "name": "Azteron",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "62cc110c-5d19-40d7-b450-2ed11f4742da"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
-      "id": "0f82ad65-19bb-4aae-912a-47eae01400a7",
-      "name": "HxCMatus",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "7fe43840-fb51-4e34-91b8-7dea05dd7b7d"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "325abbc8-0086-41ed-bc18-afd34c7fb397"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "97f6a83c-6c3b-426b-9af8-1b32ef17b77b"
-        }
-      ]
-    },
-    {
-      "id": "349fbed0-5a61-4759-a90d-f947fae4241d",
       "name": "ElGato",
       "attendance": [
         true,
         true,
         true,
         true,
-        true,
+        false,
         true,
         true,
         true
       ],
-      "items": []
+      "items": {
+        "Greatsword": [
+          "Cordy's warblade of creeping doom"
+        ],
+        "Sword and Shield": [
+          "Daigon's stormblade"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's languishing blade"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ]
+      }
     },
     {
-      "id": "cbe606c1-59cd-4445-920b-151d6c8ae1ef",
-      "name": "komaxXx",
+      "name": "EmKeiko",
       "attendance": [
         true,
         true,
@@ -1095,28 +474,35 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-          "itemId": "92d9e19f-2c25-4365-811c-9b83b4101f9f"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "4855a373-e6e2-4e46-bb63-9b5c65003cc0"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Longbow": [
+          "Deluzhnoa's arc of frozen death"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's arc of wailing death"
+        ],
+        "Archboss Weap 2": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Head": [
+          "Spectral overseer's mask"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Necklace": [
+          "Collar of nature's wrath"
+        ],
+        "Bracelet": [
+          "Restraints of the glacial queen"
+        ]
+      }
     },
     {
-      "id": "6d45f42b-f31b-41aa-830d-8662bf1a8fd3",
-      "name": "lapinouchou",
+      "name": "EmStefan",
       "attendance": [
         true,
         true,
@@ -1127,140 +513,30 @@
         true,
         true
       ],
-      "items": []
+      "items": {
+        "Wand": [
+          "Codex of deep secrets"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's grasp of withering"
+        ],
+        "Chest": [
+          "Auric vanguard's full plate"
+        ],
+        "Legs": [],
+        "Feet": [],
+        "Gloves": [],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Bracelet": [
+          "Restraints of the glacial queen"
+        ],
+        "Ring 1": [],
+        "Belt": []
+      }
     },
     {
-      "id": "8a404e92-78cd-48f2-b739-043321823951",
-      "name": "BATEC",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "3d69030a-8e84-4ff1-b4f0-234c6c7818a8"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "32d0a46d-ad2b-4867-90fd-15051e47d71c"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "8360c214-d71d-47a4-8e1f-1b4e7cbdf86f"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "a8047bfb-089d-4171-8a59-8a8e5b35494e"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "3886972b-e86a-490a-a981-fe2c7b0d4c64"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "218de4fe-d6ad-49c7-aeb0-3e8039567692"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "a63016f8-382d-465e-bff9-1213d6fca3bf"
-        }
-      ]
-    },
-    {
-      "id": "78d67148-082d-4fbf-8bd9-b26992c7b993",
-      "name": "TRIKI68",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "33344dc7-e25c-42d7-826f-51b70650bb51",
-      "name": "IcePain",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "67859fd0-20d9-46eb-bb53-6fa5a74bd8bd"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
-      "id": "6af3c627-1cb7-43dd-ba71-3b6d81e91548",
-      "name": "Tatajaagaa",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "45a8571d-7366-4a9b-88f9-adabd70e8fd5",
       "name": "Eski93",
       "attendance": [
         true,
@@ -1272,32 +548,223 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
-        },
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "084c160d-079c-46ea-8ab6-e75cd382f394"
-        }
-      ]
+      "items": {
+        "Wand": [
+          "Cordy's grasp of manipulation"
+        ],
+        "Staff": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's grasp of withering"
+        ],
+        "Bracelet": [
+          "Restraints of the glacial queen"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
+        ]
+      }
     },
     {
-      "id": "6dd0d7d2-c05c-4c5c-99c8-e368458429ba",
-      "name": "Volrathz",
+      "name": "fantaq",
+      "attendance": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "items": {
+        "Head": [
+          "Imperial Seeker's Circlet"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Necklace": [
+          "Collar of nature's wrath"
+        ]
+      }
+    },
+    {
+      "name": "Gorunn",
+      "attendance": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "HeavenBlade",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Greatsword": [
+          "Naru's frenzied greatblade"
+        ],
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Archboss Weap 1": [
+          "Cordy's warblade of creeping doom"
+        ],
+        "Head": [
+          "First light's Halo"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "First light's pants"
+        ],
+        "Feet": [
+          "First light's shoes"
+        ],
+        "Gloves": [
+          "First light's gloves"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
+    },
+    {
+      "name": "HxCMatus",
+      "attendance": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Bercant's whispering daggers"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Bracelet": [
+          "Coil of the verdant sovereign"
+        ],
+        "Ring 1": [
+          "Band of the ancestor's blood"
+        ]
+      }
+    },
+    {
+      "name": "IcePain",
+      "attendance": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Archboss Weap 2": [
+          "Tevent's fangs of fury"
+        ],
+        "Chest": [
+          "Spectral overseer's s tunic"
+        ],
+        "Gloves": [
+          "Spectral overseer's handguards"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
+    },
+    {
+      "name": "ImYoyoo",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Crossbow": [
+          "Queen bellandir's toxic spine throwers"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Archboss Weap 2": [
+          "Cordy's stormspore spike slingers"
+        ],
+        "Legs": [
+          "First light's pants"
+        ],
+        "Ring 1": [
+          "Symbol of nature's advance"
+        ]
+      }
+    },
+    {
+      "name": "Irishau",
+      "attendance": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Greatsword": [
+          "Tevent's warblade of despair"
+        ],
+        "Necklace": [
+          "Pendant of frozen tears"
+        ]
+      }
+    },
+    {
+      "name": "JirenKai",
       "attendance": [
         true,
         true,
@@ -1308,284 +775,1036 @@
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "e36b497c-614e-4651-b8f1-e32bda9f4e9c"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "c05094cf-d07d-4ad4-9336-ad0a1844f64c"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "94ef98c3-d5a4-47d1-93e8-4f949616f9a9"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "ab8726e3-b50c-4b8d-bce5-3bc3799101f6"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "5a4418a5-1144-433a-98fe-2ca8238b3c07"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "0f598d56-9a1c-46ed-8225-815d516af02d"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "b5725bbc-d46f-481a-bd9b-f7e10778f730"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "75086b94-2016-4cf6-88f9-ab9822319b57"
-        }
-      ]
+      "items": {
+        "Wand": [
+          "Cordy's grasp of manipulation"
+        ]
+      }
     },
     {
-      "id": "6d036329-985b-4996-93a5-9c60d3c78bf8",
+      "name": "JonnyyW",
+      "attendance": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ]
+      }
+    },
+    {
+      "name": "JustBunny",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "JustSwag",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Wand": [
+          "Tevent's grasp of withering"
+        ],
+        "Sword and Shield": [
+          "Deluzhnoa's edge of eternal frost"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's languishing blade"
+        ],
+        "Archboss Weap 2": [
+          "Cordy's grasp of manipulation"
+        ],
+        "Legs": [
+          "Royal praetor's gaiters"
+        ],
+        "Feet": [
+          "Royal praetor's sabatons"
+        ],
+        "Gloves": [
+          "Royal praetor's gauntlets"
+        ],
+        "Necklace": [
+          "Primal ritual collar"
+        ],
+        "Bracelet": [
+          "Restraints of the glacial queen"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
+    },
+    {
+      "name": "Jveve31",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "KaraDead",
+      "attendance": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Longbow": [
+          "Leviathan's bloodstorm longbow"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's arc of wailing death"
+        ],
+        "Ring 1": [
+          "Band of the ancestor's blood"
+        ]
+      }
+    },
+    {
+      "name": "komaxXx",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Spear": [
+          "Naru's sawfang spear"
+        ],
+        "Archboss Weap 1": [
+          "Deluzhnoa's serrated shard"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
+    },
+    {
+      "name": "Kyiatec",
+      "attendance": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Bracelet": [
+          "Infernal demonpact cuffs"
+        ]
+      }
+    },
+    {
+      "name": "Kythor",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Gloves": [],
+        "Bracelet": [
+          "Restraints of the glacial queen"
+        ],
+        "Ring 2": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
+        ],
+        "Wand": [
+          "Cordy's grasp of manipulation"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's grasp of withering"
+        ]
+      }
+    },
+    {
+      "name": "lapinouchou",
+      "attendance": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "LeoAlien",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "LexieGoldfish",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Crossbow": [
+          "Akman's bloodletting crossbows"
+        ],
+        "Wand": [
+          "Cordy's grasp of manipulation"
+        ],
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Head": [
+          "Spectral overseer's mask"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Necklace": [
+          "Lunar conjunction necklace"
+        ],
+        "Bracelet": [
+          "Bracelet of fractured worlds"
+        ],
+        "Ring 1": [
+          "Astral bond"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
+        ]
+      }
+    },
+    {
+      "name": "LukeyBoy",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "items": {}
+    },
+    {
+      "name": "Marvelita",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Sword and Shield": [
+          "Queen bellandir's languishing blade"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
+    },
+    {
+      "name": "Mauguensombre",
+      "attendance": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "maxwinistann",
+      "attendance": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Leviathan's bladed tendrils"
+        ],
+        "Spear": [
+          "Deluzhnoa's serrated shard"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's fangs of fury"
+        ],
+        "Head": [
+          "Ossuary hood of the resistance"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "Forgotten lotus pants"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Cloak": [
+          "Opulent noble's mantle"
+        ],
+        "Necklace": [
+          "Death knell gorget"
+        ],
+        "Bracelet": [
+          "Primal golden cuffs"
+        ],
+        "Ring 1": [
+          "Ring of eternal Flames"
+        ],
+        "Belt": [
+          "Elusive nymph coil"
+        ]
+      }
+    },
+    {
+      "name": "Mephela",
+      "attendance": [
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Crossbow": [
+          "Queen bellandir's toxic spine throwers"
+        ],
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ]
+      }
+    },
+    {
+      "name": "Miladria",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Head": [
+          "Feral prophet's crown"
+        ],
+        "Chest": [
+          "Auric vanguard's full plate"
+        ],
+        "Legs": [
+          "Auric vanguard's gaiters"
+        ],
+        "Feet": [
+          "Auric vanguard's plate boots"
+        ],
+        "Gloves": [
+          "Feral prophet's gloves"
+        ],
+        "Cloak": [
+          "Royal spineflower drape"
+        ],
+        "Necklace": [
+          "Primal ritual collar"
+        ],
+        "Bracelet": [
+          "Bangle of the clearest night"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Ring 2": [
+          "Sinking sun signet"
+        ],
+        "Belt": [
+          "Cunning ogre girdle"
+        ]
+      }
+    },
+    {
+      "name": "MrPsychou",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": []
+      }
+    },
+    {
+      "name": "N0yan",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Staff": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ]
+      }
+    },
+    {
+      "name": "Narthaus",
+      "attendance": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Leviathan's bladed tendrils"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's fangs of fury"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Bracelet": [
+          "Infernal demonpact cuffs"
+        ],
+        "Ring 1": [
+          "Symbol of nature's advance"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ]
+      }
+    },
+    {
+      "name": "NotOsiris",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "First light's pants"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
+    },
+    {
+      "name": "oOHitsuOo",
+      "attendance": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "Orphesie",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "Ortakis",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "PAPY347",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Ring 1": [
+          "Band of the resistance leader"
+        ],
+        "Ring 2": [
+          "Runed band of the black anvil"
+        ],
+        "Wand": [
+          "Cordy's grasp of manipulation"
+        ]
+      }
+    },
+    {
+      "name": "PrincessMel",
+      "attendance": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Greatsword": [
+          "Naru's frenzied greatblade"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "Forgotten lotus pants"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": [
+          "Forgotten lotus gloves"
+        ],
+        "Cloak": [
+          "Steadfast commander's cape"
+        ],
+        "Necklace": [
+          "Death knell gorget"
+        ],
+        "Bracelet": [
+          "Primal golden cuffs"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Ring 2": [
+          "Solitaire of purity"
+        ],
+        "Belt": [
+          "Elusive nymph coil"
+        ]
+      }
+    },
+    {
+      "name": "ResXIII",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Crossbow": [
+          "Queen bellandir's toxic spine throwers"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "Forgotten lotus pants"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": [
+          "Forgotten lotus gloves"
+        ],
+        "Cloak": [
+          "Steadfast commander's cape"
+        ],
+        "Bracelet": [
+          "Primal golden cuffs"
+        ],
+        "Ring 1": [
+          "Solitaire of purity"
+        ],
+        "Ring 2": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Hero's legacy warbelt"
+        ]
+      }
+    },
+    {
+      "name": "ShukakuNoKira",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Spear": [
+          "Deluzhnoa's serrated shard"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
+        ],
+        "Bracelet": [
+          "Infernal demonpact cuffs"
+        ]
+      }
+    },
+    {
+      "name": "Silvendil",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ],
+        "Staff": [
+          "Deluzhnoa's ancient petrified staff"
+        ],
+        "Head": [
+          "Imperial Seeker's Circlet"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Bracelet": [
+          "Bracelet of the violent undertow"
+        ],
+        "Ring 1": [
+          "Distant echoes band"
+        ],
+        "Ring 2": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Undisputed champion's belt"
+        ]
+      }
+    },
+    {
+      "name": "SnotraW",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "items": {
+        "Legs": [
+          "First light's pants"
+        ],
+        "Feet": [
+          "Forgotten lotus boots"
+        ],
+        "Gloves": [
+          "Forgotten lotus gloves"
+        ],
+        "Necklace": [
+          "Collar of nature's wrath"
+        ],
+        "Bracelet": [
+          "Infernal demonpact cuffs"
+        ]
+      }
+    },
+    {
+      "name": "SterLorD",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "items": {
+        "Legs": [
+          "Spectral overser's trousers"
+        ],
+        "Gloves": [
+          "Spectral overseer's handguards"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Hero's legacy warbelt"
+        ]
+      }
+    },
+    {
+      "name": "TarNxD",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "items": {
+        "Greatsword": [
+          "Tevent's warblade of despair"
+        ],
+        "Head": [
+          "Imperial Seeker's Circlet"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "Auric vanguard's gaiters"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": [
+          "Auric vanguard's gauntlets"
+        ],
+        "Cloak": [
+          "Cloak of victorious destiny"
+        ],
+        "Necklace": [
+          "Pendant of barbaric rage"
+        ],
+        "Bracelet": [
+          "Primal golden cuffs"
+        ],
+        "Ring 1": [
+          "Honor's promise signet"
+        ],
+        "Belt": [
+          "Belt of the knight master"
+        ]
+      }
+    },
+    {
+      "name": "Tatajaagaa",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {}
+    },
+    {
+      "name": "TENZENKAI",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "items": {}
+    },
+    {
       "name": "TheArabian",
       "attendance": [
         true,
         true,
         true,
+        false,
         true,
         true,
-        true,
-        true,
+        false,
         true
       ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "3a51a5b1-3e9a-4756-9af7-a013c0074cd5"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ],
+        "Gloves": [
+          "Spectral overseer's handguards"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
     },
     {
-      "id": "92afa54f-5c4c-4afe-92e6-bc8e0063f7f3",
-      "name": "ToriHana",
+      "name": "THUNDERSAINT",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Greatsword": [
+          "Tevent's warblade of despair"
+        ],
+        "Sword and Shield": [
+          "Queen bellandir's languishing blade"
+        ]
+      }
+    },
+    {
+      "name": "TRIKI68",
       "attendance": [
         true,
         true,
         true,
         true,
-        true,
+        false,
         true,
         true,
         true
       ],
-      "items": []
+      "items": {
+        "Greatsword": [
+          "Tevent's warblade of despair"
+        ],
+        "Necklace": [
+          "Primal ritual collar"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
     },
     {
-      "id": "7f7691fb-8939-421c-8d62-b3101038b290",
-      "name": "PAPY347",
+      "name": "Volrathz",
       "attendance": [
+        false,
+        false,
         true,
+        false,
         true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "bec8c2e3-6931-4fc0-b59a-74c93a92e690",
-      "name": "Mephela",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        }
-      ]
+      "items": {
+        "Greatsword": [
+          "Naru's frenzied greatblade"
+        ],
+        "Sword and Shield": [],
+        "Head": [],
+        "Gloves": [],
+        "Cloak": [],
+        "Bracelet": [],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [],
+        "Archboss Weap 1": [
+          "Tevent's warblade of despair"
+        ],
+        "Spear": [
+          "Naru's sawfang spear"
+        ],
+        "Archboss Weap 2": [
+          "Queen bellandir's serrated spike"
+        ]
+      }
     },
     {
-      "id": "641e72ec-361a-46cb-874f-580022159ba8",
-      "name": "Date",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        }
-      ]
-    },
-    {
-      "id": "2056d936-cff9-4800-b225-fa729363a46a",
-      "name": "Narthaus",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "f6cae43b-c8e9-4337-b110-abd3bae132c2"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "87a827a9-4252-471e-ac52-dc25d47f14db"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "218de4fe-d6ad-49c7-aeb0-3e8039567692"
-        }
-      ]
-    },
-    {
-      "id": "a5505008-2f09-4d5a-80e3-d6179a79c63a",
-      "name": "TwilightSkyee",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "3212b073-bda4-42e1-abeb-1e72cefa9e53",
-      "name": "maxwinistann",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "f6cae43b-c8e9-4337-b110-abd3bae132c2"
-        },
-        {
-          "categoryId": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-          "itemId": "4855a373-e6e2-4e46-bb63-9b5c65003cc0"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "a70833d9-0458-4d09-a5ba-59c9fec30cf3"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "48e13de3-97c1-4e9e-83d1-68b69d67a3df"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "32d0a46d-ad2b-4867-90fd-15051e47d71c"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "324c999e-7f7a-472d-ab39-ad40c68cac3b"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "ca7e259f-3c14-43e6-8b2f-ef19634f0cbe"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "efb4a422-7edf-49dd-8888-85a0fc64aad2"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "1fa32ba7-de37-4e47-8011-26f4fc5681e1"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "a63016f8-382d-465e-bff9-1213d6fca3bf"
-        }
-      ]
-    },
-    {
-      "id": "da698f6c-2948-4f12-9f74-4e8857061643",
       "name": "Weiming",
       "attendance": [
         true,
@@ -1597,1968 +1816,445 @@
         true,
         true
       ],
-      "items": []
+      "items": {
+        "Wand": [
+          "Cordy's grasp of manipulation"
+        ],
+        "Necklace": [
+          "Lunar conjunction necklace"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's grasp of withering"
+        ]
+      }
     },
     {
-      "id": "69819ed6-02e2-4824-995c-e62562717c83",
-      "name": "LeoAlien",
+      "name": "xCyrsn",
       "attendance": [
         true,
         true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "items": {
+        "Spear": [
+          "Crimson hellskewer"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Gloves": [
+          "Forgotten lotus gloves"
+        ],
+        "Cloak": [
+          "Steadfast commander's cape"
+        ]
+      }
+    },
+    {
+      "name": "xLuyu",
+      "attendance": [
+        true,
+        false,
+        false,
         true,
         true,
-        true,
-        true,
+        false,
         true,
         true
       ],
-      "items": []
+      "items": {}
     },
     {
-      "id": "60f71fe4-b04e-4e21-9e8a-2c7d21c2b503",
+      "name": "Yasuo1v9",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {
+        "Crossbow": [
+          "Queen bellandir's toxic spine throwers"
+        ]
+      }
+    },
+    {
       "name": "YOHANNHEJA",
       "attendance": [
         true,
         true,
         true,
         true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "7f856a2d-5f3d-4f78-ae33-64498ec9102d",
-      "name": "JonnyyW",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "af4e8750-b34f-487b-bcfa-a3f449a6d0fe"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "c26ffed2-c573-4693-9058-1377c9671ba9"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "87a827a9-4252-471e-ac52-dc25d47f14db"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "1fa32ba7-de37-4e47-8011-26f4fc5681e1"
-        }
-      ]
+      "items": {}
     },
     {
-      "id": "cd4355b8-1bee-4bef-83cd-bd3ed9316c2a",
-      "name": "KaraDead",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "bff1858e-a646-4687-b90e-c0b8df9ce9f4"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "97f6a83c-6c3b-426b-9af8-1b32ef17b77b"
-        }
-      ]
-    },
-    {
-      "id": "145a669a-ab18-443c-b199-f5e1f0517bb1",
-      "name": "Silvendil",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "eb9a71d4-a467-4560-bc81-03a7f35bdd0e"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "e6eb7d06-03a2-4b5c-af12-f0544c91d835"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "1dce7c18-e5cd-4c6d-831e-bbb0e4f8b61a"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "ce83fdc4-e4d1-4728-8502-3f09d6184028"
-        }
-      ]
-    },
-    {
-      "id": "c4bc61b6-6a0c-4d90-9685-466fb108bc58",
-      "name": "xLuyu",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "0ee79edd-7a4d-4a13-ace3-d047f97e6e6c",
-      "name": "Ortakis",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "6b0aed5f-2f95-4a1c-a83f-86885980e194",
-      "name": "TENZENKAI",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "c7be7fc5-1259-4cb4-9f31-af1521944a1b",
-      "name": "Gorunn",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "c61727dd-960a-437b-ba80-0813b2cc539c",
-      "name": "Bolotta",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
-      "id": "b0be174d-a11c-47bf-abbb-3c4dce6f5207",
-      "name": "Babi99",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        }
-      ]
-    },
-    {
-      "id": "81518ae5-53f6-4896-8020-74bf30af3a0c",
-      "name": "Mauguensombre",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "ec8c6d28-39a9-4e41-b024-cc69a75f09b2",
       "name": "Zaralikos",
       "attendance": [
+        false,
         true,
         true,
         true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        },
-        {
-          "categoryId": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-          "itemId": "e284ef07-b368-404f-be05-217880251a7d"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "c415a5a9-3570-459f-9f93-567e46a71ef7"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "218de4fe-d6ad-49c7-aeb0-3e8039567692"
-        },
-        {
-          "categoryId": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-          "itemId": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "ce83fdc4-e4d1-4728-8502-3f09d6184028"
-        }
-      ]
-    },
-    {
-      "id": "03eaaa55-e950-45e0-bed9-48eef301fd1f",
-      "name": "Andol",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
         true,
         true,
         true
       ],
-      "items": [
-        {
-          "categoryId": "c0080775-fc34-4454-9106-7003d851fc92",
-          "itemId": "e36b497c-614e-4651-b8f1-e32bda9f4e9c"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        }
-      ]
-    },
-    {
-      "id": "015419d6-138f-42e5-8370-7d8f9c83be25",
-      "name": "Marvelita",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "5a4418a5-1144-433a-98fe-2ca8238b3c07"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
-      "id": "ee2f7555-3409-462e-bcf4-f96e0097cb2f",
-      "name": "Lhosna",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "a6c26793-5c32-44c6-af67-2a81c5171513",
-      "name": "JustBunny",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "b4944e59-25f6-4d13-961c-081e5de7a5ed",
-      "name": "Miladria",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "99a7e4ea-d46f-45ad-8613-13123ba8ee75",
-      "name": "Am1ks",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "71363b07-249b-4545-bd85-addbf02acd8f"
-        },
-        {
-          "categoryId": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-          "itemId": "b5683c6b-a24c-40cd-ba11-d2c22b5e7a59"
-        },
-        {
-          "categoryId": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-          "itemId": "f3761ef4-73bc-4664-8730-fafb73453841"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "583b5de7-6682-4674-9b7c-d4917693e16a"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "0ba3bc49-231e-4a98-bbf2-aaa9eeebc417"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "c11ba8c3-a110-4226-ad07-a8e8962f8fdd"
-        },
-        {
-          "categoryId": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-          "itemId": "31ee1051-d5ac-464b-a44c-ad486323a8c7"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "47dac6a1-8fd3-4bd8-988d-cf375645e837"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "3886972b-e86a-490a-a981-fe2c7b0d4c64"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "75086b94-2016-4cf6-88f9-ab9822319b57"
-        }
-      ]
-    },
-    {
-      "id": "a2ee4443-66a9-417c-b04e-c6936e2f9eb9",
-      "name": "BigPoyaso",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        }
-      ]
-    },
-    {
-      "id": "0e9605a2-794c-488a-965a-9474c7460ff9",
-      "name": "PrincessMel",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": []
-    },
-    {
-      "id": "09dae9dc-4053-417d-8560-e7805ddbf45d",
-      "name": "SterLorD",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "3a51a5b1-3e9a-4756-9af7-a013c0074cd5"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        },
-        {
-          "categoryId": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-          "itemId": "75086b94-2016-4cf6-88f9-ab9822319b57"
-        }
-      ]
-    },
-    {
-      "id": "f38dd153-d580-408b-9849-1eb90652a462",
-      "name": "JustSwag",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-1",
-          "itemId": "1f83e497-3f90-4837-b55d-ddc2874dc5ec"
-        },
-        {
-          "categoryId": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-          "itemId": "e27ef47b-27e4-48e1-959a-a0f184747870"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "7cbeda68-8c3b-4488-964c-abd2140f1167"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "c53a98e6-4040-4593-9a96-340f0235479e"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "e2e70c7b-69cf-4124-bf52-c1e0f7e06cc6"
-        },
-        {
-          "categoryId": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-          "itemId": "30bcb256-bd3a-4e07-aff7-75449e2b4f01"
-        },
-        {
-          "categoryId": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-          "itemId": "94ef98c3-d5a4-47d1-93e8-4f949616f9a9"
-        },
-        {
-          "categoryId": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-          "itemId": "5a4418a5-1144-433a-98fe-2ca8238b3c07"
-        },
-        {
-          "categoryId": "442dc7eb-d568-4953-a46c-4d966695d001",
-          "itemId": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1"
-        }
-      ]
-    },
-    {
-      "id": "4fb41fbe-276c-4c1c-8414-e78e7a6b7864",
-      "name": "ImYoyoo",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "14f151e9-e452-422b-a1b8-5989138f5f41"
-        },
-        {
-          "categoryId": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-          "itemId": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630"
-        },
-        {
-          "categoryId": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-          "itemId": "3d69030a-8e84-4ff1-b4f0-234c6c7818a8"
-        },
-        {
-          "categoryId": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-          "itemId": "9aeec102-8531-4e65-b4f0-e02fd9b4cf3d"
-        },
-        {
-          "categoryId": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-          "itemId": "218de4fe-d6ad-49c7-aeb0-3e8039567692"
-        }
-      ]
-    },
-    {
-      "id": "ac520545-6c31-4026-bf66-7407b60ea21b",
-      "name": "N0yan",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "items": [
-        {
-          "categoryId": "category-uuid-2",
-          "itemId": "40f5bcd7-d146-422d-95c4-adec8f9459ba"
-        },
-        {
-          "categoryId": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-          "itemId": "844a4790-e56c-401c-9e90-d4ce9658b66b"
-        }
-      ]
+      "items": {
+        "Daggers": [
+          "Tevent's fangs of fury"
+        ],
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
+        ],
+        "Ring 1": [
+          "Symbol of nature's advance"
+        ],
+        "Ring 2": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Undisputed champion's belt"
+        ]
+      }
     }
   ],
-  "categories": [
-    {
-      "id": "category-uuid-1",
-      "name": "Wand",
-      "items": [
-        {
-          "id": "item-uuid-1",
-          "name": "Codex of deep secrets"
-        },
-        {
-          "id": "c53a98e6-4040-4593-9a96-340f0235479e",
-          "name": "Cordy's grasp of manipulation"
-        },
-        {
-          "id": "684b0882-8c69-4ea8-95af-2f584852e212",
-          "name": "Deckman's balefire scepter"
-        },
-        {
-          "id": "43eae8e3-4ec1-4247-a1d3-c3078e09e841",
-          "name": "Forbidden Demonic Lexicon"
-        },
-        {
-          "id": "1c179b6e-3e07-40fe-ba5b-9f62ceba1afb",
-          "name": "Grayeye's Dripping Tome"
-        },
-        {
-          "id": "d0cdadb1-d3cd-4e1f-b132-5da89ed2dc8a",
-          "name": "Khanzaizin's valorous wand"
-        },
-        {
-          "id": "71363b07-249b-4545-bd85-addbf02acd8f",
-          "name": "Overture of eternal salvation"
-        },
-        {
-          "id": "1f83e497-3f90-4837-b55d-ddc2874dc5ec",
-          "name": "Tevent's grasp of withering"
-        },
-        {
-          "id": "56c1acec-4a93-4fdc-af83-b920954d4e24",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "category-uuid-2",
-      "name": "Staff",
-      "items": [
-        {
-          "id": "item-uuid-3",
-          "name": "Abyssal Renaissance Foci"
-        },
-        {
-          "id": "item-uuid-4",
-          "name": "Crimson Wicked Staff"
-        },
-        {
-          "id": "14f151e9-e452-422b-a1b8-5989138f5f41",
-          "name": "Daigon's charred Emberstaff"
-        },
-        {
-          "id": "01e8c2a9-9c07-49f4-b679-c06a30eb7072",
-          "name": "Deluzhnoa's ancient petrified staff"
-        },
-        {
-          "id": "c2e227f9-b803-41ab-87f7-7bc888397b77",
-          "name": "Ebon soulwind staff"
-        },
-        {
-          "id": "9f089b71-e326-4bfd-8fa8-77992a5446b0",
-          "name": "Grayeye's electrified staff"
-        },
-        {
-          "id": "e70324aa-89e6-49f9-b3df-99f4bdc31b6f",
-          "name": "Staff of enlightened reform"
-        },
-        {
-          "id": "40f5bcd7-d146-422d-95c4-adec8f9459ba",
-          "name": "Queen bellandir's hivemind staff"
-        },
-        {
-          "id": "092883da-f7c4-4555-82e7-661219510450",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "114c4737-6950-4e52-b014-ca8f2c2069f5",
-      "name": "Crossbow",
-      "items": [
-        {
-          "id": "25048c81-401c-46d7-81ef-95f168f9e9d0",
-          "name": "Akman's bloodletting crossbows"
-        },
-        {
-          "id": "9a59ed57-8c1e-47ab-8389-33b20af47430",
-          "name": "Bercant's spineflower crossbows"
-        },
-        {
-          "id": "3d69030a-8e84-4ff1-b4f0-234c6c7818a8",
-          "name": "Cordy's stormspore spike slingers"
-        },
-        {
-          "id": "efee4818-c062-41c9-9ae8-f4e099b0cf28",
-          "name": "Crossbows of the darkest night"
-        },
-        {
-          "id": "e38c2ffc-b796-4426-8754-f0cd02b1ed4c",
-          "name": "Moonlight echo repeaters"
-        },
-        {
-          "id": "40bd9884-d066-47f6-8494-434f1608dadb",
-          "name": "Unrelenting annihilation crossbows"
-        },
-        {
-          "id": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630",
-          "name": "Queen bellandir's toxic spine throwers"
-        },
-        {
-          "id": "f4fb3045-9089-40b5-8013-011ca6372b03",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "c0080775-fc34-4454-9106-7003d851fc92",
-      "name": "Greatsword",
-      "items": [
-        {
-          "id": "9667c488-d4a6-4db0-a4da-1c6d03d8e4e9",
-          "name": "Broadsword of the juggernaught"
-        },
-        {
-          "id": "6422ae3c-e3da-47e7-ba0c-7b25c2ea62e7",
-          "name": "Celestial cyclone warblade"
-        },
-        {
-          "id": "c6e3dc83-da28-4469-9c23-f6c31e634792",
-          "name": "Grayeye's bloodlust greatsword"
-        },
-        {
-          "id": "a57521da-b72b-426e-bbe2-82ea19d71d1a",
-          "name": "Immortal titanic quakeblade"
-        },
-        {
-          "id": "af4e8750-b34f-487b-bcfa-a3f449a6d0fe",
-          "name": "Naru's frenzied greatblade"
-        },
-        {
-          "id": "12c12889-bb12-4d46-a774-9c90ef641e84",
-          "name": "Cordy's warblade of creeping doom"
-        },
-        {
-          "id": "e36b497c-614e-4651-b8f1-e32bda9f4e9c",
-          "name": "Tevent's warblade of despair"
-        },
-        {
-          "id": "b5ef0bae-51d8-4a55-a512-01ec4e6d8faf",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "f60d6487-4953-456c-a5cf-5727fa1b7bd8",
-      "name": "Sword and Shield",
-      "items": [
-        {
-          "id": "f69b2e71-33fd-4b0f-878f-0a8329fdaf1e",
-          "name": "Blade of fiendish fortitude"
-        },
-        {
-          "id": "f4f0f0ec-8f33-4bfe-a83e-33f6e254be9b",
-          "name": "Bulwark of invulnerability"
-        },
-        {
-          "id": "b2ee8d55-ea36-4325-8f0c-aa4b51a6040d",
-          "name": "Crimson doomblade"
-        },
-        {
-          "id": "b802e207-7f03-4bc1-8841-2bb7a04d37e0",
-          "name": "Daigon's stormblade"
-        },
-        {
-          "id": "e27ef47b-27e4-48e1-959a-a0f184747870",
-          "name": "Deluzhnoa's edge of eternal frost"
-        },
-        {
-          "id": "14fc15c3-6335-42e8-a614-fd08976f1b06",
-          "name": "Unshakeable knight's sword"
-        },
-        {
-          "id": "7cbeda68-8c3b-4488-964c-abd2140f1167",
-          "name": "Queen bellandir's languishing blade"
-        },
-        {
-          "id": "571f0290-d0c2-4386-89fb-f7af00acd078",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "1b692927-40e8-473a-9b99-2a85bfcc8993",
-      "name": "Daggers",
-      "items": [
-        {
-          "id": "7fe43840-fb51-4e34-91b8-7dea05dd7b7d",
-          "name": "Bercant's whispering daggers"
-        },
-        {
-          "id": "fbf2b9ad-c9dc-4c32-9e48-be7bd8ce5ca4",
-          "name": "Deluzhnoa's permafrost razors"
-        },
-        {
-          "id": "a1138c9b-42db-4a65-ab25-fd31d9649495",
-          "name": "Destiny binders"
-        },
-        {
-          "id": "f6cae43b-c8e9-4337-b110-abd3bae132c2",
-          "name": "Leviathan's bladed tendrils"
-        },
-        {
-          "id": "a31a0022-e7de-47b9-a23f-f8591fe21885",
-          "name": "Peerless obsidian razors"
-        },
-        {
-          "id": "ee1aa717-f9c4-4650-858f-826c58fa5041",
-          "name": "Razorthorn shredders"
-        },
-        {
-          "id": "844a4790-e56c-401c-9e90-d4ce9658b66b",
-          "name": "Tevent's fangs of fury"
-        },
-        {
-          "id": "f1fbd8d4-01ba-4570-87e8-069c121cea79",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "fc97b73f-f632-48e9-88f7-8eb4ecd3610f",
-      "name": "Spear",
-      "items": [
-        {
-          "id": "fa922849-a321-4e3f-aa71-1baedd493cff",
-          "name": "Crimson hellskewer"
-        },
-        {
-          "id": "4855a373-e6e2-4e46-bb63-9b5c65003cc0",
-          "name": "Deluzhnoa's serrated shard"
-        },
-        {
-          "id": "92d9e19f-2c25-4365-811c-9b83b4101f9f",
-          "name": "Naru's sawfang spear"
-        },
-        {
-          "id": "bc5eb3ac-1b74-4335-9347-dfbf21a5df5d",
-          "name": "Ranseur of murderous glee"
-        },
-        {
-          "id": "9ced661c-4e0a-46ff-acdc-3685b2a8c993",
-          "name": "Spear of unhuninged horror"
-        },
-        {
-          "id": "80097406-6566-4fc0-b764-dd75112212e7",
-          "name": "Windsheer spear"
-        },
-        {
-          "id": "5de56746-d937-4748-ba27-55e0c73381dd",
-          "name": "Queen bellandir's serrated spike"
-        },
-        {
-          "id": "7704b006-2b7f-4904-a2b8-6c3eb23450f3",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "e95ad23a-62b9-4d04-8afb-11c89c1c2e28",
-      "name": "Longbow",
-      "items": [
-        {
-          "id": "5d01e33e-a2dd-42fe-bc7f-6d5c99b91bec",
-          "name": "Arc of lunar radiance"
-        },
-        {
-          "id": "8100adca-ea25-4468-b0f3-c05d54b58a3f",
-          "name": "Bercant's steelstring bow"
-        },
-        {
-          "id": "efc6f8af-3b3f-44f6-8d57-2a5f165ebd09",
-          "name": "Deluzhnoa's arc of frozen death"
-        },
-        {
-          "id": "bff1858e-a646-4687-b90e-c0b8df9ce9f4",
-          "name": "Leviathan's bloodstorm longbow"
-        },
-        {
-          "id": "84e2bfb5-1821-4dd4-b7ed-e8e8b82b2d3d",
-          "name": "Mystic truestrike longbow"
-        },
-        {
-          "id": "c0e5ec3e-7515-4e62-a45a-26bf2fd4cd68",
-          "name": "Titanspine Longbow"
-        },
-        {
-          "id": "e284ef07-b368-404f-be05-217880251a7d",
-          "name": "Tevent's arc of wailing death"
-        },
-        {
-          "id": "aa4b9eff-0f49-4a73-89a0-dd0e3c163cf6",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "41f9beac-01e7-4974-b4e8-30e3a68938d4",
-      "name": "Archboss Weap 1",
-      "items": [
-        {
-          "id": "c53a98e6-4040-4593-9a96-340f0235479e",
-          "name": "Cordy's grasp of manipulation"
-        },
-        {
-          "id": "3d69030a-8e84-4ff1-b4f0-234c6c7818a8",
-          "name": "Cordy's stormspore spike slingers"
-        },
-        {
-          "id": "12c12889-bb12-4d46-a774-9c90ef641e84",
-          "name": "Cordy's warblade of creeping doom"
-        },
-        {
-          "id": "01e8c2a9-9c07-49f4-b679-c06a30eb7072",
-          "name": "Deluzhnoa's ancient petrified staff"
-        },
-        {
-          "id": "efc6f8af-3b3f-44f6-8d57-2a5f165ebd09",
-          "name": "Deluzhnoa's arc of frozen death"
-        },
-        {
-          "id": "e27ef47b-27e4-48e1-959a-a0f184747870",
-          "name": "Deluzhnoa's edge of eternal frost"
-        },
-        {
-          "id": "fbf2b9ad-c9dc-4c32-9e48-be7bd8ce5ca4",
-          "name": "Deluzhnoa's permafrost razors"
-        },
-        {
-          "id": "4855a373-e6e2-4e46-bb63-9b5c65003cc0",
-          "name": "Deluzhnoa's serrated shard"
-        },
-        {
-          "id": "40f5bcd7-d146-422d-95c4-adec8f9459ba",
-          "name": "Queen bellandir's hivemind staff"
-        },
-        {
-          "id": "7cbeda68-8c3b-4488-964c-abd2140f1167",
-          "name": "Queen bellandir's languishing blade"
-        },
-        {
-          "id": "5de56746-d937-4748-ba27-55e0c73381dd",
-          "name": "Queen bellandir's serrated spike"
-        },
-        {
-          "id": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630",
-          "name": "Queen bellandir's toxic spine throwers"
-        },
-        {
-          "id": "e284ef07-b368-404f-be05-217880251a7d",
-          "name": "Tevent's arc of wailing death"
-        },
-        {
-          "id": "844a4790-e56c-401c-9e90-d4ce9658b66b",
-          "name": "Tevent's fangs of fury"
-        },
-        {
-          "id": "1f83e497-3f90-4837-b55d-ddc2874dc5ec",
-          "name": "Tevent's grasp of withering"
-        },
-        {
-          "id": "e36b497c-614e-4651-b8f1-e32bda9f4e9c",
-          "name": "Tevent's warblade of despair"
-        },
-        {
-          "id": "5f20c965-0b82-486e-bbb8-82e128a80e29",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "ca673632-cecf-413a-a1bf-72649ff2a8d8",
-      "name": "Archboss Weap 2",
-      "items": [
-        {
-          "id": "c53a98e6-4040-4593-9a96-340f0235479e",
-          "name": "Cordy's grasp of manipulation"
-        },
-        {
-          "id": "3d69030a-8e84-4ff1-b4f0-234c6c7818a8",
-          "name": "Cordy's stormspore spike slingers"
-        },
-        {
-          "id": "d3a03294-c686-43fc-a6a0-a50e472eae9c",
-          "name": "Cordy's warblade of creeping doom"
-        },
-        {
-          "id": "01e8c2a9-9c07-49f4-b679-c06a30eb7072",
-          "name": "Deluzhnoa's ancient petrified staff"
-        },
-        {
-          "id": "efc6f8af-3b3f-44f6-8d57-2a5f165ebd09",
-          "name": "Deluzhnoa's arc of frozen death"
-        },
-        {
-          "id": "e27ef47b-27e4-48e1-959a-a0f184747870",
-          "name": "Deluzhnoa's edge of eternal frost"
-        },
-        {
-          "id": "fbf2b9ad-c9dc-4c32-9e48-be7bd8ce5ca4",
-          "name": "Deluzhnoa's permafrost razors"
-        },
-        {
-          "id": "4855a373-e6e2-4e46-bb63-9b5c65003cc0",
-          "name": "Deluzhnoa's serrated shard"
-        },
-        {
-          "id": "40f5bcd7-d146-422d-95c4-adec8f9459ba",
-          "name": "Queen bellandir's hivemind staff"
-        },
-        {
-          "id": "7cbeda68-8c3b-4488-964c-abd2140f1167",
-          "name": "Queen bellandir's languishing blade"
-        },
-        {
-          "id": "5de56746-d937-4748-ba27-55e0c73381dd",
-          "name": "Queen bellandir's serrated spike"
-        },
-        {
-          "id": "6dc710c8-2732-4ebf-b09e-f92ecc4f0630",
-          "name": "Queen bellandir's toxic spine throwers"
-        },
-        {
-          "id": "e284ef07-b368-404f-be05-217880251a7d",
-          "name": "Tevent's arc of wailing death"
-        },
-        {
-          "id": "844a4790-e56c-401c-9e90-d4ce9658b66b",
-          "name": "Tevent's fangs of fury"
-        },
-        {
-          "id": "1f83e497-3f90-4837-b55d-ddc2874dc5ec",
-          "name": "Tevent's grasp of withering"
-        },
-        {
-          "id": "e36b497c-614e-4651-b8f1-e32bda9f4e9c",
-          "name": "Tevent's warblade of despair"
-        },
-        {
-          "id": "398a46d3-7729-4007-9ad5-d6fe84dd5f14",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "f3a822e5-936e-4d73-abed-dcdb0cceb48a",
-      "name": "Head",
-      "items": [
-        {
-          "id": "35fff65e-22d0-4ccd-9fc6-32614cd6a18e",
-          "name": "Ardent Herald's Crown"
-        },
-        {
-          "id": "7c014479-de93-41c4-af21-afd808339144",
-          "name": "Auric vanguard's barbute"
-        },
-        {
-          "id": "15ddae67-7fbb-448e-a427-48eda62044da",
-          "name": "Chosen vanquisher's visage"
-        },
-        {
-          "id": "119e1033-9183-4f79-b667-122c5da6b52b",
-          "name": "Crown of icebound infinity"
-        },
-        {
-          "id": "66c4d278-182d-4f59-8c3b-2e6f5eb0b9c7",
-          "name": "Crowned skull of victory"
-        },
-        {
-          "id": "507a3e64-8848-469b-aefa-5271f3ea3b54",
-          "name": "Dread admiral's bicorne"
-        },
-        {
-          "id": "9bdf3baf-cd2d-43bf-943b-d583c72187df",
-          "name": "Eternal warlord's faceguard"
-        },
-        {
-          "id": "ea1954f2-e71a-4570-9f2c-48824e1cb4d4",
-          "name": "Feral prophet's crown"
-        },
-        {
-          "id": "6b77c20a-a9cc-47b6-9524-b64ccf02198a",
-          "name": "First light's Halo"
-        },
-        {
-          "id": "d48927e7-58ee-4b2e-b17e-e5f4fb95631c",
-          "name": "Forgotten lotus mask"
-        },
-        {
-          "id": "5b600d38-506b-432d-885b-34ddbee32083",
-          "name": "Hallowed hat of the resistance"
-        },
-        {
-          "id": "a572c43d-979c-4d70-8941-f9b8f8f133a7",
-          "name": "Immortal legionnaire's helm"
-        },
-        {
-          "id": "eb9a71d4-a467-4560-bc81-03a7f35bdd0e",
-          "name": "Imperial Seeker's Circlet"
-        },
-        {
-          "id": "f62f554d-c724-407a-8b79-8e196851fdae",
-          "name": "Oblivion's wrath barbute"
-        },
-        {
-          "id": "a70833d9-0458-4d09-a5ba-59c9fec30cf3",
-          "name": "Ossuary hood of the resistance"
-        },
-        {
-          "id": "c05094cf-d07d-4ad4-9336-ad0a1844f64c",
-          "name": "Royal praetor's visor"
-        },
-        {
-          "id": "cce49b49-e3ad-4c51-b48e-fef225ace8a2",
-          "name": "Sacred repose circle"
-        },
-        {
-          "id": "51033c09-1507-4d9e-b17a-788ad4cbef09",
-          "name": "Scaled tricorne of the resistance"
-        },
-        {
-          "id": "68a9fe3b-3ee4-404c-b83d-22a4fabc95bf",
-          "name": "Spectral overseer's mask"
-        },
-        {
-          "id": "b5683c6b-a24c-40cd-ba11-d2c22b5e7a59",
-          "name": "Transcendent tempest's cowl"
-        },
-        {
-          "id": "e42faa6c-fc46-4a98-a836-92b6f1d9ba5a",
-          "name": "Visage of the infernal tyrant"
-        },
-        {
-          "id": "2bb64fad-c326-4ad2-81a0-59b5bfb2f684",
-          "name": "Void stalker's mask"
-        },
-        {
-          "id": "58968216-f14e-4f39-88d3-fc857e12ba48",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "d0648fea-8bba-40c8-bdad-4d74d2c0ab12",
-      "name": "Chest",
-      "items": [
-        {
-          "id": "173dd433-a79b-4fc4-8d75-caec154460f3",
-          "name": "Ardent herald's gown"
-        },
-        {
-          "id": "4ef61617-c587-4639-8ae7-81ec759537bc",
-          "name": "Auric vanguard's full plate"
-        },
-        {
-          "id": "67b4de23-105e-4a47-adfb-67af68ca0252",
-          "name": "Chosen vanquisher's full plate"
-        },
-        {
-          "id": "b1e7496b-90a0-4ae0-8561-e0086deebc96",
-          "name": "Dread admiral's uniform"
-        },
-        {
-          "id": "8ad01250-6f29-4ecd-814e-a3788d8c8e3e",
-          "name": "Eternal warlord's plate"
-        },
-        {
-          "id": "20ca82d1-eb3a-4a2c-9bb9-46aa2e12d263",
-          "name": "Feral prophet's overcoat"
-        },
-        {
-          "id": "233c2222-fce1-4a6a-8759-a9c1bb611e53",
-          "name": "First light's tunic"
-        },
-        {
-          "id": "3e69de54-3016-4ffa-8b9d-27a23f77ab1a",
-          "name": "Forgotten lotus garb"
-        },
-        {
-          "id": "a667e386-d2fd-4034-9139-b64ba51e712a",
-          "name": "Golden blossom regalia"
-        },
-        {
-          "id": "3b080c5c-a2b4-4ebb-bdbb-c48e3aa359b3",
-          "name": "Hallowed robes of the resistance"
-        },
-        {
-          "id": "bfb057cb-7da8-4396-aaf7-14987e66eb64",
-          "name": "Immortal legionnaire's armor"
-        },
-        {
-          "id": "48e13de3-97c1-4e9e-83d1-68b69d67a3df",
-          "name": "Imperial seeker's tunic"
-        },
-        {
-          "id": "ee81d45d-5f8d-45bd-8ccc-3f4ae5cb12e3",
-          "name": "Kingslayer's banded platemail"
-        },
-        {
-          "id": "ab70509a-9bd3-4f2f-8d95-c29334048bdb",
-          "name": "Oblivion's s wrath's chest plate"
-        },
-        {
-          "id": "51f1ab48-3dfd-4995-9ad2-92780000895f",
-          "name": "Ossuary tunic of the resistance"
-        },
-        {
-          "id": "97467c4d-96c4-4fad-89f9-3ef5c11afd31",
-          "name": "Royal praetor's plate armor"
-        },
-        {
-          "id": "5d2180ba-f110-43db-92b0-dadfd09dcc91",
-          "name": "Sacred repose garb"
-        },
-        {
-          "id": "6603665f-c222-4262-ab25-b4a5cc5608b0",
-          "name": "Scaled armor of the resistance"
-        },
-        {
-          "id": "67859fd0-20d9-46eb-bb53-6fa5a74bd8bd",
-          "name": "Spectral overseer's s tunic"
-        },
-        {
-          "id": "f3761ef4-73bc-4664-8730-fafb73453841",
-          "name": "Transcendent tempest's armor"
-        },
-        {
-          "id": "485128b1-4ada-4fdf-ab53-8188e504c660",
-          "name": "Void stalker's overcoat"
-        },
-        {
-          "id": "d1b445b9-8fdc-4c8e-a9de-435d6590a099",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "2984463a-eae6-49b5-9602-95b36ecd06f0",
-      "name": "Legs",
-      "items": [
-        {
-          "id": "1ceee1eb-4560-4192-aa50-515311e4d394",
-          "name": "Ardent herald's pants"
-        },
-        {
-          "id": "24287dee-e22c-402b-8152-d94674a3cc16",
-          "name": "Auric vanguard's gaiters"
-        },
-        {
-          "id": "375cb86d-bd94-4783-aa59-95edddb4328f",
-          "name": "Chosen vanquisher's trousers"
-        },
-        {
-          "id": "fc97217b-7ca5-49cd-b458-5f5bc73a39ec",
-          "name": "Dread admiral's trousers"
-        },
-        {
-          "id": "0c2299d7-ab26-461a-b997-78f7996ff8a3",
-          "name": "Effortless victory greaves"
-        },
-        {
-          "id": "4fb3c2f3-da4c-4ad7-896b-000dc96c8ddc",
-          "name": "Eternal warlord's greaves"
-        },
-        {
-          "id": "017757db-c8bf-493e-b2fa-1184ad737ac7",
-          "name": "Feral prophet's pants"
-        },
-        {
-          "id": "9aeec102-8531-4e65-b4f0-e02fd9b4cf3d",
-          "name": "First light's pants"
-        },
-        {
-          "id": "32d0a46d-ad2b-4867-90fd-15051e47d71c",
-          "name": "Forgotten lotus pants"
-        },
-        {
-          "id": "0e02ccaf-d529-41a2-815e-da6fb69226e6",
-          "name": "Hallowed pants of the resistance"
-        },
-        {
-          "id": "2b5fc147-5e54-4fd0-9844-b60170ab7f20",
-          "name": "Immortal legionnaire's greaves"
-        },
-        {
-          "id": "43141c5f-f4e0-4461-b11b-d84e1310fa73",
-          "name": "Imperial seeker's trousers"
-        },
-        {
-          "id": "b7e4045e-2b4c-4f93-a0b6-77a0d66b95fb",
-          "name": "Oblivion's wrath leggings"
-        },
-        {
-          "id": "2bd2fbeb-1cdb-4832-8dde-f67d3c48ccb8",
-          "name": "Ossuary trousers of the resistance"
-        },
-        {
-          "id": "e4fe6912-2676-470e-91dc-3fe9e5c0ae79",
-          "name": "Pristine primalfang pants"
-        },
-        {
-          "id": "e2e70c7b-69cf-4124-bf52-c1e0f7e06cc6",
-          "name": "Royal praetor's gaiters"
-        },
-        {
-          "id": "8d3d44fd-f7bd-4ac2-a482-b353a0a962e6",
-          "name": "Sacred repose pants"
-        },
-        {
-          "id": "a887547f-a568-4045-a68f-0584a9517bc7",
-          "name": "Scaled trousers of the resistance"
-        },
-        {
-          "id": "3a51a5b1-3e9a-4756-9af7-a013c0074cd5",
-          "name": "Spectral overser's trousers"
-        },
-        {
-          "id": "583b5de7-6682-4674-9b7c-d4917693e16a",
-          "name": "Transcendent tempest's pants"
-        },
-        {
-          "id": "6fbd7a82-34ea-49b6-aeef-d517cd716308",
-          "name": "Trophy adorned leg guards"
-        },
-        {
-          "id": "0a83dbcb-a0e1-4b8b-b245-0fee3aca2884",
-          "name": "Void stalker's pants"
-        },
-        {
-          "id": "73014a4a-7b06-4512-8727-26d74a9a01ec",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "85ebf068-b4c5-49ee-8288-95f11cec5fe3",
-      "name": "Feet",
-      "items": [
-        {
-          "id": "528a98cb-5607-4d68-9255-85d3ffb22069",
-          "name": "Ardent herald's shoes"
-        },
-        {
-          "id": "b257ab49-c517-4a5b-b193-6c481391d5d2",
-          "name": "Auric vanguard's plate boots"
-        },
-        {
-          "id": "63f69bdf-9fa4-4ab3-9f49-268a17715aca",
-          "name": "Chosen vanquisher's boots"
-        },
-        {
-          "id": "d8d5fe01-536f-45f3-b2b4-61209f502e7c",
-          "name": "Deep fathom kicks"
-        },
-        {
-          "id": "32b46a06-9f53-4085-8008-9c4981667749",
-          "name": "Dread admiral's boots"
-        },
-        {
-          "id": "b0f6ae7a-4409-4229-9c96-84caad60ac7e",
-          "name": "Eternal warlord's sabatons"
-        },
-        {
-          "id": "01e2e0df-1ca9-444a-b405-3b594d91edd9",
-          "name": "Feral prophet's shoes"
-        },
-        {
-          "id": "0e88dba8-1419-40ff-97b4-017ca87a29a8",
-          "name": "First light's shoes"
-        },
-        {
-          "id": "9a38d3fe-6ec9-44a6-923a-37e2ee98f768",
-          "name": "Forgotten lotus boots"
-        },
-        {
-          "id": "055dc076-8dc4-4175-82f2-cb37987db6a7",
-          "name": "Hallowed shoes of the resistance"
-        },
-        {
-          "id": "6673b473-6668-4e94-b929-0e32f83b2eca",
-          "name": "Immortal legionnaire's sabatons"
-        },
-        {
-          "id": "e6eb7d06-03a2-4b5c-af12-f0544c91d835",
-          "name": "Imperial seeker's boots"
-        },
-        {
-          "id": "81c05b48-7784-41b0-973b-7d817e2c3c5f",
-          "name": "Infernal demonpact steps"
-        },
-        {
-          "id": "013624c0-7351-4a03-a4e5-b5ed4f7ec77a",
-          "name": "Oblivion's wrath stompers"
-        },
-        {
-          "id": "65f714f6-ee1f-43a8-8be8-bcc178222a2d",
-          "name": "Ossuary boots of the resistance"
-        },
-        {
-          "id": "30bcb256-bd3a-4e07-aff7-75449e2b4f01",
-          "name": "Royal praetor's sabatons"
-        },
-        {
-          "id": "d7c5baff-b98b-4ef8-8a23-56387c790ddc",
-          "name": "Sacred repose shoes"
-        },
-        {
-          "id": "463e526d-e2ea-4f0e-8b19-8edcc116af78",
-          "name": "Scaled boots of the resistance"
-        },
-        {
-          "id": "f99b63d4-cac1-4bbb-8756-fbccc42ea99c",
-          "name": "Spectral overseer's boots"
-        },
-        {
-          "id": "873b1398-8b0a-4ab1-ab5c-cb7ba09ea136",
-          "name": "Transcendent tempest's boots"
-        },
-        {
-          "id": "0ba3bc49-231e-4a98-bbf2-aaa9eeebc417",
-          "name": "Violent demonic beast's fur boots"
-        },
-        {
-          "id": "f8176c1b-b5d4-45d0-b0bf-c25d1394a48f",
-          "name": "Void stalker's Boots"
-        },
-        {
-          "id": "cd7b359a-398f-4de6-bf46-6d618fd68148",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "3b9f3882-6dfc-4ac0-ba7d-5ec4b6c009a8",
-      "name": "Gloves",
-      "items": [
-        {
-          "id": "0561c6ab-89bf-4df7-a077-b97c20097e35",
-          "name": "Ardent herald's gloves"
-        },
-        {
-          "id": "4bd1d3ab-8292-42da-bebb-24f63265b196",
-          "name": "Auric vanguard's gauntlets"
-        },
-        {
-          "id": "ea009545-cb13-43e9-9206-ff6044a8b165",
-          "name": "Chosen vanquisher's gloves"
-        },
-        {
-          "id": "4c88f858-8c8e-478c-af55-9a31a2f5fd9f",
-          "name": "Deep fathom grasp"
-        },
-        {
-          "id": "73cd58a8-7279-43f4-a39c-158715f6e8f0",
-          "name": "Devious hellfire grips"
-        },
-        {
-          "id": "c32116f5-055f-4ca9-894e-7afb8034f7f8",
-          "name": "Dread admiral's gloves"
-        },
-        {
-          "id": "38235fd4-5361-4a3d-8ebc-e5a5e3aab50b",
-          "name": "Eternal warlord's gauntlets"
-        },
-        {
-          "id": "25e3b55e-d7b9-4de2-90b8-6184e80977e1",
-          "name": "Feral prophet's gloves"
-        },
-        {
-          "id": "4e8d0148-87a9-4a70-8ff2-943fdee71f81",
-          "name": "First light's gloves"
-        },
-        {
-          "id": "8360c214-d71d-47a4-8e1f-1b4e7cbdf86f",
-          "name": "Forgotten lotus gloves"
-        },
-        {
-          "id": "ae13b5a7-0afc-4d96-a5fc-d32e5745b04a",
-          "name": "Hallowed gloves of the resistance"
-        },
-        {
-          "id": "7befbf4c-63e4-4676-9ae1-68d993c32480",
-          "name": "Immortal legionnaire's gauntlets"
-        },
-        {
-          "id": "547bfc94-aa2a-416d-b2f1-27522d5457b1",
-          "name": "Imperial seeker's gloves"
-        },
-        {
-          "id": "7123620d-8f4e-4434-92f9-36b35c346ef3",
-          "name": "Infernal demonpact grasp"
-        },
-        {
-          "id": "2241b6ed-0e07-4bb1-8a73-a4bbf3d1f456",
-          "name": "Oblivion's wrath gauntlets"
-        },
-        {
-          "id": "e98352c8-f3b5-410a-96ce-fc8b4382790e",
-          "name": "Ossuary gloves of the resistance"
-        },
-        {
-          "id": "94ef98c3-d5a4-47d1-93e8-4f949616f9a9",
-          "name": "Royal praetor's gauntlets"
-        },
-        {
-          "id": "62cc110c-5d19-40d7-b450-2ed11f4742da",
-          "name": "Sacred repose gloves"
-        },
-        {
-          "id": "5835fe36-8132-4dd4-82d5-7d9cca5abce2",
-          "name": "Scaled gloves of the resistance"
-        },
-        {
-          "id": "3e1f824f-d61a-4fe5-8632-51c26d4a6f03",
-          "name": "Spectral overseer's handguards"
-        },
-        {
-          "id": "c11ba8c3-a110-4226-ad07-a8e8962f8fdd",
-          "name": "Transcendent tempest's touch"
-        },
-        {
-          "id": "a11eff7f-fbe2-41ec-9844-b05da148b763",
-          "name": "Void stalker's caress"
-        },
-        {
-          "id": "1a748af9-29a8-4247-a88a-4de2c8896603",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "6afb3825-5bb8-40e1-832f-08997c725cb3",
-      "name": "Cloak",
-      "items": [
-        {
-          "id": "c415a5a9-3570-459f-9f93-567e46a71ef7",
-          "name": "Cloak of the frozen expanse"
-        },
-        {
-          "id": "ab8726e3-b50c-4b8d-bce5-3bc3799101f6",
-          "name": "Cloak of victorious destiny"
-        },
-        {
-          "id": "884eaf36-56db-4a82-9a2d-44522fc2a97e",
-          "name": "Forward general's cloak"
-        },
-        {
-          "id": "316dd575-fffd-4343-a8bc-2c4cf5d2355a",
-          "name": "Grieving vengeance cloak"
-        },
-        {
-          "id": "4af3f454-de1f-4eb6-ba83-d93356d1e7cd",
-          "name": "Howling wind shroud"
-        },
-        {
-          "id": "324c999e-7f7a-472d-ab39-ad40c68cac3b",
-          "name": "Opulent noble's mantle"
-        },
-        {
-          "id": "967d826b-31ea-4bd4-88ad-8679737eab2b",
-          "name": "Royal spineflower drape"
-        },
-        {
-          "id": "31ee1051-d5ac-464b-a44c-ad486323a8c7",
-          "name": "Starlight fur cloak"
-        },
-        {
-          "id": "d8dce0f5-3f81-4745-9ec9-6c325e46f8a2",
-          "name": "Steadfast commander's cape"
-        },
-        {
-          "id": "bfc78737-574f-44ab-9850-e03b30752d63",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "4fee2021-c569-4dd9-96d4-1708c02f5e34",
-      "name": "Necklace",
-      "items": [
-        {
-          "id": "a8047bfb-089d-4171-8a59-8a8e5b35494e",
-          "name": "Collar of nature's wrath"
-        },
-        {
-          "id": "ca7e259f-3c14-43e6-8b2f-ef19634f0cbe",
-          "name": "Death knell gorget"
-        },
-        {
-          "id": "47dac6a1-8fd3-4bd8-988d-cf375645e837",
-          "name": "Deep draconic gorget"
-        },
-        {
-          "id": "6f956815-cb14-45c4-9e69-56077baaf34a",
-          "name": "Lunar conjunction necklace"
-        },
-        {
-          "id": "c26ffed2-c573-4693-9058-1377c9671ba9",
-          "name": "Noble birthright brooch"
-        },
-        {
-          "id": "76b7fd95-c2fb-4c4b-a67c-5d8d2b3a8351",
-          "name": "Pendant of barbaric rage"
-        },
-        {
-          "id": "0ff74927-a547-453f-a06d-6570f9f8a568",
-          "name": "Pendant of eternal flames"
-        },
-        {
-          "id": "d4800ebb-8931-4375-a16d-828e210cf679",
-          "name": "Pendant of frozen tears"
-        },
-        {
-          "id": "5a4418a5-1144-433a-98fe-2ca8238b3c07",
-          "name": "Primal ritual collar"
-        },
-        {
-          "id": "0d6c686d-7b5a-41ef-a6e0-ea67aaefc74b",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "442dc7eb-d568-4953-a46c-4d966695d001",
-      "name": "Bracelet",
-      "items": [
-        {
-          "id": "0f598d56-9a1c-46ed-8225-815d516af02d",
-          "name": "Bangle of the clearest night"
-        },
-        {
-          "id": "0584a5c6-7191-446c-9249-0a2889a90a27",
-          "name": "Barbed cuffs of the tormentor"
-        },
-        {
-          "id": "06e20d86-5d30-4708-a21f-cd9b26f03756",
-          "name": "Bracelet of agony"
-        },
-        {
-          "id": "c6c66180-a217-458c-b1f2-466360e5826d",
-          "name": "Bracelet of fractured worlds"
-        },
-        {
-          "id": "3886972b-e86a-490a-a981-fe2c7b0d4c64",
-          "name": "Bracelet of the violent undertow"
-        },
-        {
-          "id": "325abbc8-0086-41ed-bc18-afd34c7fb397",
-          "name": "Coil of the verdant sovereign"
-        },
-        {
-          "id": "87a827a9-4252-471e-ac52-dc25d47f14db",
-          "name": "Infernal demonpact cuffs"
-        },
-        {
-          "id": "efb4a422-7edf-49dd-8888-85a0fc64aad2",
-          "name": "Primal golden cuffs"
-        },
-        {
-          "id": "09ba3c9c-c789-4005-a0b3-1f74c22e27e9",
-          "name": "Restraints of the glacial queen"
-        },
-        {
-          "id": "8301d696-d8c2-4f14-a945-231d0475e74b",
-          "name": "Twisted coil of the enduring"
-        },
-        {
-          "id": "0da8cca2-e745-4f82-9aae-f050832fe61d",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "bc95035d-8ce5-4fab-a1b6-4234ec531b6c",
-      "name": "Ring 1",
-      "items": [
-        {
-          "id": "4450d698-e4ce-44e4-9666-1606d23908cf",
-          "name": "Astral bond"
-        },
-        {
-          "id": "97f6a83c-6c3b-426b-9af8-1b32ef17b77b",
-          "name": "Band of the ancestor's blood"
-        },
-        {
-          "id": "e6e94713-df9b-4dcd-b917-c163ee420704",
-          "name": "Band of the resistance leader"
-        },
-        {
-          "id": "65cdead4-341b-4c2c-93e1-ecbd50cd616e",
-          "name": "Coil of endless hunger"
-        },
-        {
-          "id": "5d9d94ed-3cb3-40b3-a716-05ed0c573792",
-          "name": "Distant echoes band"
-        },
-        {
-          "id": "b5725bbc-d46f-481a-bd9b-f7e10778f730",
-          "name": "Honor's promise signet"
-        },
-        {
-          "id": "61fb70d3-9915-4b60-a955-7d74e2143bdb",
-          "name": "Ring of celestial light"
-        },
-        {
-          "id": "ca60edfb-1df8-4cad-9d2a-4cfc621ec2c7",
-          "name": "Ring of divine instruction"
-        },
-        {
-          "id": "1fa32ba7-de37-4e47-8011-26f4fc5681e1",
-          "name": "Ring of eternal Flames"
-        },
-        {
-          "id": "b136d08e-655c-4521-bca0-41780982c8a7",
-          "name": "Ring of song of punishment"
-        },
-        {
-          "id": "e21a499f-ac91-4afb-9a39-7b6da17d88ea",
-          "name": "Ring of spirited desire"
-        },
-        {
-          "id": "39813795-b2ea-4c6c-8375-d9d1a9b80346",
-          "name": "Ring of stalwart determination"
-        },
-        {
-          "id": "3c6675b3-2187-4e80-ac80-fd7bc9a6f3c1",
-          "name": "Runed band of the black anvil"
-        },
-        {
-          "id": "1bbfe69f-d198-45a8-8fba-5751dc94ea7d",
-          "name": "Signet of the first snow"
-        },
-        {
-          "id": "a405869d-1a57-4f59-8e1b-b0c511e28acd",
-          "name": "Signet of the treant lord"
-        },
-        {
-          "id": "a2791234-7a94-4ddf-a989-3fee8aa438d8",
-          "name": "Sinking sun signet"
-        },
-        {
-          "id": "91dbd4ca-fccd-4d25-bec4-0f88fee2878e",
-          "name": "Solitaire of purity"
-        },
-        {
-          "id": "218de4fe-d6ad-49c7-aeb0-3e8039567692",
-          "name": "Symbol of nature's advance"
-        },
-        {
-          "id": "4ec7d389-0bd8-4d8a-994f-8cfc9a9d7021",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "622d2667-e340-4a3a-9525-b0f751b5b9c5",
-      "name": "Ring 2",
-      "items": [
-        {
-          "id": "6e60b932-1c95-489f-87f8-c1b662abfa0d",
-          "name": "Astral bond"
-        },
-        {
-          "id": "1dce7c18-e5cd-4c6d-831e-bbb0e4f8b61a",
-          "name": "Band of the ancestor's blood"
-        },
-        {
-          "id": "c6d35d53-6aad-40f7-a81b-9f1848829d53",
-          "name": "Band of the resistance leader"
-        },
-        {
-          "id": "0f61f84e-3bc0-4aea-b955-0502696ff652",
-          "name": "Coil of endless hunger"
-        },
-        {
-          "id": "d7733fee-2d87-4fb2-96b8-98ffa7dadfab",
-          "name": "Distant echoes band"
-        },
-        {
-          "id": "98a8c588-ab03-4e61-8730-5391cce7784f",
-          "name": "Honor's promise signet"
-        },
-        {
-          "id": "d4c84693-45fc-4d43-9585-a3a1c191a5de",
-          "name": "Ring of celestial light"
-        },
-        {
-          "id": "4c9e084b-7cd7-41f8-a246-90291af6d378",
-          "name": "Ring of divine instruction"
-        },
-        {
-          "id": "97f54abc-fa11-499f-a1d2-f0925ce9c7b1",
-          "name": "Ring of eternal Flames"
-        },
-        {
-          "id": "0ede4336-0399-42ff-b437-64a29301cb2f",
-          "name": "Ring of song of punishment"
-        },
-        {
-          "id": "3ff31254-fd09-458e-abd5-eac7385e0833",
-          "name": "Ring of spirited desire"
-        },
-        {
-          "id": "51bb5f91-fa58-460b-b33e-a4be9be3108e",
-          "name": "Ring of stalwart determination"
-        },
-        {
-          "id": "776e52d9-bcf3-40e0-b32c-f5cc539bcab5",
-          "name": "Runed band of the black anvil"
-        },
-        {
-          "id": "445e49db-eede-426b-a989-e6439c935c76",
-          "name": "Signet of the first snow"
-        },
-        {
-          "id": "c308972e-d004-4bbe-aa85-3aec98cdbada",
-          "name": "Signet of the treant lord"
-        },
-        {
-          "id": "adde4f65-a7b2-485b-88bf-8442602c8df0",
-          "name": "Sinking sun signet"
-        },
-        {
-          "id": "38e47069-910c-46b5-a5b9-410369dce4d0",
-          "name": "Solitaire of purity"
-        },
-        {
-          "id": "084a35c8-9e6a-4d2b-8608-b40be299da5a",
-          "name": "Symbol of nature's advance"
-        },
-        {
-          "id": "6ddfa67e-3da5-41c7-83e0-cc6fc6bfb192",
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "id": "f78a26fc-5a11-4137-a1d7-c676546206f0",
-      "name": "Belt",
-      "items": [
-        {
-          "id": "3a78823e-5b73-4a67-9219-c52a8f4585d2",
-          "name": "Belt of claimed trophies"
-        },
-        {
-          "id": "526f842f-6188-43c2-90c9-016804a53c46",
-          "name": "Belt of the knight master"
-        },
-        {
-          "id": "06542cb6-cede-4ac3-9fcc-204076720cb0",
-          "name": "Burnt silk warsash"
-        },
-        {
-          "id": "25f51480-d402-44be-ae03-3a484edb1329",
-          "name": "Cunning ogre girdle"
-        },
-        {
-          "id": "a63016f8-382d-465e-bff9-1213d6fca3bf",
-          "name": "Elusive nymph coil"
-        },
-        {
-          "id": "4b607cd7-428f-4952-9a6f-9033ab1ea7cc",
-          "name": "Entranced apostle's belt"
-        },
-        {
-          "id": "084c160d-079c-46ea-8ab6-e75cd382f394",
-          "name": "Girdle of treant strength"
-        },
-        {
-          "id": "75086b94-2016-4cf6-88f9-ab9822319b57",
-          "name": "Hero's legacy warbelt"
-        },
-        {
-          "id": "ce83fdc4-e4d1-4728-8502-3f09d6184028",
-          "name": "Undisputed champion's belt"
-        },
-        {
-          "id": "4d8f2893-acd2-4580-988f-2ece31f998b4",
-          "name": "None"
-        }
-      ]
-    }
-  ]
+  "categories": {
+    "Wand": [
+      "Codex of deep secrets",
+      "Cordy's grasp of manipulation",
+      "Deckman's balefire scepter",
+      "Forbidden Demonic Lexicon",
+      "Grayeye's Dripping Tome",
+      "Khanzaizin's valorous wand",
+      "Overture of eternal salvation",
+      "Tevent's grasp of withering"
+    ],
+    "Staff": [
+      "Abyssal Renaissance Foci",
+      "Crimson Wicked Staff",
+      "Daigon's charred Emberstaff",
+      "Deluzhnoa's ancient petrified staff",
+      "Ebon soulwind staff",
+      "Grayeye's electrified staff",
+      "Staff of enlightened reform",
+      "Queen bellandir's hivemind staff"
+    ],
+    "Crossbow": [
+      "Akman's bloodletting crossbows",
+      "Bercant's spineflower crossbows",
+      "Cordy's stormspore spike slingers",
+      "Crossbows of the darkest night",
+      "Moonlight echo repeaters",
+      "Unrelenting annihilation crossbows",
+      "Queen bellandir's toxic spine throwers"
+    ],
+    "Greatsword": [
+      "Broadsword of the juggernaught",
+      "Celestial cyclone warblade",
+      "Grayeye's bloodlust greatsword",
+      "Immortal titanic quakeblade",
+      "Naru's frenzied greatblade",
+      "Cordy's warblade of creeping doom",
+      "Tevent's warblade of despair"
+    ],
+    "Sword and Shield": [
+      "Blade of fiendish fortitude",
+      "Bulwark of invulnerability",
+      "Crimson doomblade",
+      "Daigon's stormblade",
+      "Deluzhnoa's edge of eternal frost",
+      "Unshakeable knight's sword",
+      "Queen bellandir's languishing blade"
+    ],
+    "Daggers": [
+      "Bercant's whispering daggers",
+      "Deluzhnoa's permafrost razors",
+      "Destiny binders",
+      "Leviathan's bladed tendrils",
+      "Peerless obsidian razors",
+      "Razorthorn shredders",
+      "Tevent's fangs of fury"
+    ],
+    "Spear": [
+      "Crimson hellskewer",
+      "Deluzhnoa's serrated shard",
+      "Naru's sawfang spear",
+      "Ranseur of murderous glee",
+      "Spear of unhuninged horror",
+      "Windsheer spear",
+      "Queen bellandir's serrated spike"
+    ],
+    "Longbow": [
+      "Arc of lunar radiance",
+      "Bercant's steelstring bow",
+      "Deluzhnoa's arc of frozen death",
+      "Leviathan's bloodstorm longbow",
+      "Mystic truestrike longbow",
+      "Titanspine Longbow",
+      "Tevent's arc of wailing death"
+    ],
+    "Archboss Weap 1": [
+      "Cordy's grasp of manipulation",
+      "Cordy's stormspore spike slingers",
+      "Cordy's warblade of creeping doom",
+      "Deluzhnoa's ancient petrified staff",
+      "Deluzhnoa's arc of frozen death",
+      "Deluzhnoa's edge of eternal frost",
+      "Deluzhnoa's permafrost razors",
+      "Deluzhnoa's serrated shard",
+      "Queen bellandir's hivemind staff",
+      "Queen bellandir's languishing blade",
+      "Queen bellandir's serrated spike",
+      "Queen bellandir's toxic spine throwers",
+      "Tevent's arc of wailing death",
+      "Tevent's fangs of fury",
+      "Tevent's grasp of withering",
+      "Tevent's warblade of despair"
+    ],
+    "Archboss Weap 2": [
+      "Cordy's grasp of manipulation",
+      "Cordy's stormspore spike slingers",
+      "Cordy's warblade of creeping doom",
+      "Deluzhnoa's ancient petrified staff",
+      "Deluzhnoa's arc of frozen death",
+      "Deluzhnoa's edge of eternal frost",
+      "Deluzhnoa's permafrost razors",
+      "Deluzhnoa's serrated shard",
+      "Queen bellandir's hivemind staff",
+      "Queen bellandir's languishing blade",
+      "Queen bellandir's serrated spike",
+      "Queen bellandir's toxic spine throwers",
+      "Tevent's arc of wailing death",
+      "Tevent's fangs of fury",
+      "Tevent's grasp of withering",
+      "Tevent's warblade of despair"
+    ],
+    "Head": [
+      "Ardent Herald's Crown",
+      "Auric vanguard's barbute",
+      "Chosen vanquisher's visage",
+      "Crown of icebound infinity",
+      "Crowned skull of victory",
+      "Dread admiral's bicorne",
+      "Eternal warlord's faceguard",
+      "Feral prophet's crown",
+      "First light's Halo",
+      "Forgotten lotus mask",
+      "Hallowed hat of the resistance",
+      "Immortal legionnaire's helm",
+      "Imperial Seeker's Circlet",
+      "Oblivion's wrath barbute",
+      "Ossuary hood of the resistance",
+      "Royal praetor's visor",
+      "Sacred repose circle",
+      "Scaled tricorne of the resistance",
+      "Spectral overseer's mask",
+      "Transcendent tempest's cowl",
+      "Visage of the infernal tyrant",
+      "Void stalker's mask"
+    ],
+    "Chest": [
+      "Ardent herald's gown",
+      "Auric vanguard's full plate",
+      "Chosen vanquisher's full plate",
+      "Dread admiral's uniform",
+      "Eternal warlord's plate",
+      "Feral prophet's overcoat",
+      "First light's tunic",
+      "Forgotten lotus garb",
+      "Golden blossom regalia",
+      "Hallowed robes of the resistance",
+      "Immortal legionnaire's armor",
+      "Imperial seeker's tunic",
+      "Kingslayer's banded platemail",
+      "Oblivion's s wrath's chest plate",
+      "Ossuary tunic of the resistance",
+      "Royal praetor's plate armor",
+      "Sacred repose garb",
+      "Scaled armor of the resistance",
+      "Spectral overseer's s tunic",
+      "Transcendent tempest's armor",
+      "Void stalker's overcoat"
+    ],
+    "Legs": [
+      "Ardent herald's pants",
+      "Auric vanguard's gaiters",
+      "Chosen vanquisher's trousers",
+      "Dread admiral's trousers",
+      "Effortless victory greaves",
+      "Eternal warlord's greaves",
+      "Feral prophet's pants",
+      "First light's pants",
+      "Forgotten lotus pants",
+      "Hallowed pants of the resistance",
+      "Immortal legionnaire's greaves",
+      "Imperial seeker's trousers",
+      "Oblivion's wrath leggings",
+      "Ossuary trousers of the resistance",
+      "Pristine primalfang pants",
+      "Royal praetor's gaiters",
+      "Sacred repose pants",
+      "Scaled trousers of the resistance",
+      "Spectral overser's trousers",
+      "Transcendent tempest's pants",
+      "Trophy adorned leg guards",
+      "Void stalker's pants"
+    ],
+    "Feet": [
+      "Ardent herald's shoes",
+      "Auric vanguard's plate boots",
+      "Chosen vanquisher's boots",
+      "Deep fathom kicks",
+      "Dread admiral's boots",
+      "Eternal warlord's sabatons",
+      "Feral prophet's shoes",
+      "First light's shoes",
+      "Forgotten lotus boots",
+      "Hallowed shoes of the resistance",
+      "Immortal legionnaire's sabatons",
+      "Imperial seeker's boots",
+      "Infernal demonpact steps",
+      "Oblivion's wrath stompers",
+      "Ossuary boots of the resistance",
+      "Royal praetor's sabatons",
+      "Sacred repose shoes",
+      "Scaled boots of the resistance",
+      "Spectral overseer's boots",
+      "Transcendent tempest's boots",
+      "Violent demonic beast's fur boots",
+      "Void stalker's Boots"
+    ],
+    "Gloves": [
+      "Ardent herald's gloves",
+      "Auric vanguard's gauntlets",
+      "Chosen vanquisher's gloves",
+      "Deep fathom grasp",
+      "Devious hellfire grips",
+      "Dread admiral's gloves",
+      "Eternal warlord's gauntlets",
+      "Feral prophet's gloves",
+      "First light's gloves",
+      "Forgotten lotus gloves",
+      "Hallowed gloves of the resistance",
+      "Immortal legionnaire's gauntlets",
+      "Imperial seeker's gloves",
+      "Infernal demonpact grasp",
+      "Oblivion's wrath gauntlets",
+      "Ossuary gloves of the resistance",
+      "Royal praetor's gauntlets",
+      "Sacred repose gloves",
+      "Scaled gloves of the resistance",
+      "Spectral overseer's handguards",
+      "Transcendent tempest's touch",
+      "Void stalker's caress"
+    ],
+    "Cloak": [
+      "Cloak of the frozen expanse",
+      "Cloak of victorious destiny",
+      "Forward general's cloak",
+      "Grieving vengeance cloak",
+      "Howling wind shroud",
+      "Opulent noble's mantle",
+      "Royal spineflower drape",
+      "Starlight fur cloak",
+      "Steadfast commander's cape"
+    ],
+    "Necklace": [
+      "Collar of nature's wrath",
+      "Death knell gorget",
+      "Deep draconic gorget",
+      "Lunar conjunction necklace",
+      "Noble birthright brooch",
+      "Pendant of barbaric rage",
+      "Pendant of eternal flames",
+      "Pendant of frozen tears",
+      "Primal ritual collar"
+    ],
+    "Bracelet": [
+      "Bangle of the clearest night",
+      "Barbed cuffs of the tormentor",
+      "Bracelet of agony",
+      "Bracelet of fractured worlds",
+      "Bracelet of the violent undertow",
+      "Coil of the verdant sovereign",
+      "Infernal demonpact cuffs",
+      "Primal golden cuffs",
+      "Restraints of the glacial queen",
+      "Twisted coil of the enduring"
+    ],
+    "Ring 1": [
+      "Astral bond",
+      "Band of the ancestor's blood",
+      "Band of the resistance leader",
+      "Coil of endless hunger",
+      "Distant echoes band",
+      "Honor's promise signet",
+      "Ring of celestial light",
+      "Ring of divine instruction",
+      "Ring of eternal Flames",
+      "Ring of song of punishment",
+      "Ring of spirited desire",
+      "Ring of stalwart determination",
+      "Runed band of the black anvil",
+      "Signet of the first snow",
+      "Signet of the treant lord",
+      "Sinking sun signet",
+      "Solitaire of purity",
+      "Symbol of nature's advance"
+    ],
+    "Ring 2": [
+      "Astral bond",
+      "Band of the ancestor's blood",
+      "Band of the resistance leader",
+      "Coil of endless hunger",
+      "Distant echoes band",
+      "Honor's promise signet",
+      "Ring of celestial light",
+      "Ring of divine instruction",
+      "Ring of eternal Flames",
+      "Ring of song of punishment",
+      "Ring of spirited desire",
+      "Ring of stalwart determination",
+      "Runed band of the black anvil",
+      "Signet of the first snow",
+      "Signet of the treant lord",
+      "Sinking sun signet",
+      "Solitaire of purity",
+      "Symbol of nature's advance"
+    ],
+    "Belt": [
+      "Belt of claimed trophies",
+      "Belt of the knight master",
+      "Burnt silk warsash",
+      "Cunning ogre girdle",
+      "Elusive nymph coil",
+      "Entranced apostle's belt",
+      "Girdle of treant strength",
+      "Hero's legacy warbelt",
+      "Undisputed champion's belt"
+    ]
+  }
 }
