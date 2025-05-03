@@ -7,6 +7,18 @@ const FileSync = require("lowdb/adapters/FileSync");
 const file = path.join(__dirname, "db.json");
 const adapter = new FileSync(file);
 const db = low(adapter);
+const fs = require("fs");
+const publicDbPath = path.join(__dirname, "public", "db.json");
+
+// Wrap the original write method
+const originalWrite = db.write.bind(db);
+
+db.write = () => {
+  const result = originalWrite(); // do the normal write to db.json
+  fs.writeFileSync(publicDbPath, JSON.stringify(db.getState(), null, 2)); // also write to public/db.json
+  return result;
+};
+
 
 // Ensure default structure
 db.defaults({ members: [], categories: {} }).write();
