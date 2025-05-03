@@ -58,7 +58,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -127,7 +127,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Staff": [
@@ -193,7 +193,7 @@
         false,
         true,
         false,
-        true
+        false
       ],
       "items": {
         "Crossbow": [
@@ -277,7 +277,7 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "items": {
         "Necklace": [
@@ -313,7 +313,7 @@
         true,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Wand": [
@@ -606,7 +606,7 @@
         true,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -662,7 +662,7 @@
         true,
         true,
         false,
-        true
+        false
       ],
       "items": {
         "Daggers": [
@@ -689,7 +689,7 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "items": {
         "Staff": [
@@ -722,7 +722,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Staff": [
@@ -794,7 +794,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Daggers": [
@@ -818,7 +818,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -832,7 +832,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Wand": [
@@ -877,7 +877,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -891,7 +891,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Daggers": [
@@ -1006,7 +1006,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -1020,7 +1020,7 @@
         true,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -1076,7 +1076,7 @@
         false,
         true,
         true,
-        false
+        true
       ],
       "items": {}
     },
@@ -1111,7 +1111,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -1125,7 +1125,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Daggers": [
@@ -1176,7 +1176,7 @@
         true,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Crossbow": [
@@ -1249,7 +1249,7 @@
         true,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Feet": [
@@ -1268,7 +1268,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Staff": [
@@ -1369,7 +1369,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -1383,7 +1383,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -1397,7 +1397,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Ring 1": [
@@ -1469,7 +1469,7 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "items": {
         "Crossbow": [
@@ -1583,7 +1583,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Legs": [
@@ -1613,7 +1613,7 @@
         false,
         true,
         false,
-        true
+        false
       ],
       "items": {
         "Legs": [
@@ -1640,7 +1640,7 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -1688,7 +1688,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {}
     },
@@ -1716,7 +1716,7 @@
         true,
         true,
         false,
-        true
+        false
       ],
       "items": {
         "Daggers": [
@@ -1743,7 +1743,7 @@
         true,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -1764,7 +1764,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -1788,7 +1788,7 @@
         true,
         false,
         true,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -1851,7 +1851,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Spear": [
@@ -1895,7 +1895,7 @@
         false,
         false,
         false,
-        false
+        true
       ],
       "items": {
         "Crossbow": [
@@ -1913,7 +1913,7 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "items": {}
     },
@@ -1927,7 +1927,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Daggers": [
