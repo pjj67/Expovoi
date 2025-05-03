@@ -20,6 +20,7 @@
     summary:hover {
       color: #007BFF;
     }
+
     form {
       margin-top: 0.5em;
     }
@@ -30,184 +31,184 @@
       list-style-type: none;
       padding-left: 1em;
     }
-    
+
     .need-list {
-  display: grid;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
 
-.member-card {
-  border: 4px solid #181b1c;
-  border-radius: 10px;
-  padding: 1rem;
-  background-color: #fefefe;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
+    .member-card {
+      border: 4px solid #181b1c;
+      border-radius: 10px;
+      padding: 1rem;
+      background-color: #fefefe;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
 
-.member-card h3 {
-  margin-top: 0;
-  color: #333;
-}
+    .member-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
 
-.member-items {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 1rem;
-}
-    
+    .member-items {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+
     .member-items li:nth-child(odd) {
-  background-color: #87bad4;
-}
+      background-color: #87bad4;
+    }
 
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #eee;
+    }
 
-.item-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid #eee;
-}
+    .revoke-btn,
+    .assign-btn {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
 
-.revoke-btn,
-.assign-btn {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  padding: 5px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
+    .revoke-btn:hover {
+      background-color: #c82333;
+    }
 
-.revoke-btn:hover {
-  background-color: #c82333;
-}
+    .assign-btn {
+      background-color: #007bff;
+      margin-top: 0.5rem;
+    }
 
-.assign-btn {
-  background-color: #007bff;
-  margin-top: 0.5rem;
-}
+    .assign-btn:hover {
+      background-color: #0056b3;
+    }
 
-.assign-btn:hover {
-  background-color: #0056b3;
-}
+    .assign-form select,
+    .assign-form button {
+      margin-right: 0.5rem;
+      margin-top: 0.3rem;
+    }
 
-.assign-form select,
-.assign-form button {
-  margin-right: 0.5rem;
-  margin-top: 0.3rem;
-}
+    /* Attendance Styling */
+    .member-attendance {
+      margin-bottom: 1.5rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
 
+    .attendance-events {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .attendance-label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .attendance-label input {
+      margin-left: 5px;
+      transform: scale(1.2);
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2d4a22;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
+
 <body>
   <h1>Angrylittleman's Member Management</h1>
 
+  <!-- Eligibility Checker -->
   <h2>Eligibility Checker</h2>
-<form action="/check-eligibility" method="POST">
-  <label>Category:</label>
-  <select name="category" required onchange="this.form.submit()">
-    <option value="">--Choose Category--</option>
-    <% Object.keys(categories).forEach(function(cat) { 
-         if (!["Ring 2", "Archboss Weap 1", "Archboss Weap 2"].includes(cat)) {
-           const displayName = cat === "Ring 1" ? "Ring" : cat;
-    %>
-      <option value="<%= cat %>" <%= selectedCategory === cat ? "selected" : "" %>><%= displayName %></option>
-    <% } }) %>
-  </select>
+  <form action="/check-eligibility" method="POST">
+    <label>Category:</label>
+    <select name="category" required onchange="this.form.submit()">
+      <option value="">--Choose Category--</option>
+      <% Object.keys(categories).forEach(function(cat) { 
+           if (!["Ring 2", "Archboss Weap 1", "Archboss Weap 2"].includes(cat)) {
+             const displayName = cat === "Ring 1" ? "Ring" : cat;
+      %>
+        <option value="<%= cat %>" <%= selectedCategory === cat ? "selected" : "" %>><%= displayName %></option>
+      <% } }) %>
+    </select>
 
-  <% if (selectedCategory) { %>
-    <label>Item:</label>
-    <select name="item" required>
-      <% categories[selectedCategory].forEach(function(itm) { %>
-        <option value="<%= itm %>" <%= selectedItem === itm ? "selected" : "" %>><%= itm %></option>
+    <% if (selectedCategory) { %>
+      <label>Item:</label>
+      <select name="item" required>
+        <% categories[selectedCategory].forEach(function(itm) { %>
+          <option value="<%= itm %>" <%= selectedItem === itm ? "selected" : "" %>><%= itm %></option>
+        <% }) %>
+      </select>
+      <button type="submit">Check</button>
+    <% } %>
+  </form>
+
+  <% if (eligibleMembers && selectedItem) { %>
+    <h3>Eligible Members for "<%= selectedItem %>":</h3>
+    <ul>
+      <% eligibleMembers.forEach(function(m) { %>
+        <li><%= m.name %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+
+  <!-- Attendance -->
+  <details>
+    <summary>Attendance</summary>
+    <label for="attendanceFilter">Filter Attendance by Member:</label>
+    <select id="attendanceFilter" onchange="filterAttendance()">
+      <option value="all">All Members</option>
+      <% members.forEach(function(member) { %>
+        <option value="<%= member.name %>"><%= member.name %></option>
       <% }) %>
     </select>
-    <button type="submit">Check</button>
-  <% } %>
-</form>
 
-<% if (eligibleMembers && selectedItem) { %>
-  <h3>Eligible Members for "<%= selectedItem %>":</h3>
-  <ul>
-    <% eligibleMembers.forEach(function(m) { %>
-      <li><%= m.name %></li>
-    <% }) %>
-  </ul>
-<% } %>
-
-  <!-- Attendance Section -->
-<details>
-  <summary>Attendance</summary>
-  <form action="/update-attendance" method="POST" id="attendance-form">
-    <% members.forEach(function(member) { %>
-      <div class="member-attendance">
-        <strong><%= member.name %></strong>
-        <div class="attendance-events">
-          <% for (let i = 0; i < 8; i++) { %>
-            <label class="attendance-label">
-              Major Event <%= i + 1 %>
-              <input
-                type="checkbox"
-                name="attendance[<%= member.name %>][<%= i %>]"
-                value="true"
-                <%= member.attendance[i] ? "checked" : "" %> />
-            </label>
-          <% } %>
+    <form action="/update-attendance" method="POST" id="attendance-form">
+      <% members.forEach(function(member) { %>
+        <div class="member-attendance" data-member="<%= member.name %>">
+          <strong><%= member.name %></strong>
+          <div class="attendance-events">
+            <% for (let i = 0; i < 8; i++) { %>
+              <label class="attendance-label">
+                Major Event <%= i + 1 %>
+                <input type="checkbox" name="attendance[<%= member.name %>][<%= i %>]" value="true" <%= member.attendance[i] ? "checked" : "" %>>
+              </label>
+            <% } %>
+          </div>
         </div>
-      </div>
-    <% }) %>
-    <button type="submit" class="submit-btn">Update Attendance</button>
-  </form>
-</details>
+      <% }) %>
+      <button type="submit" class="submit-btn">Update Attendance</button>
+    </form>
+  </details>
 
-<style>
-  /* Attendance Section Styling */
-  .member-attendance {
-    margin-bottom: 1.5rem; /* Spacing between members */
-    padding: 10px;
-    border: 1px solid #ccc; /* Border for each member's section */
-    border-radius: 8px;
-  }
-
-  .attendance-events {
-    display: flex;
-    flex-wrap: wrap; /* Allow labels to wrap */
-    gap: 15px; /* Add spacing between checkboxes */
-    margin-top: 10px; /* Space between the member's name and the checkboxes */
-  }
-
-  .attendance-label {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; /* Space between checkboxes */
-    font-size: 14px;
-  }
-
-  .attendance-label input {
-    margin-left: 5px;
-    transform: scale(1.2); /* Slightly larger checkboxes */
-  }
-
-  .submit-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #2d4a22;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .submit-btn:hover {
-    background-color: #45a049;
-  }
-</style>
-
-
-   <!-- Category Section -->
+  <!-- Category Management -->
   <details>
     <summary>Categories</summary>
     <ul>
@@ -243,8 +244,8 @@
       <input type="submit" value="Add Category">
     </form>
   </details>
-            
-            <!-- Members Section -->
+
+  <!-- Members Management -->
   <details>
     <summary>Add/Remove Members</summary>
     <h3>Add Member:</h3>
@@ -266,53 +267,77 @@
     </form>
   </details>
 
- <!-- Need List Section (Not Collapsible) -->
-<h2>Need List:</h2>
-<div class="need-list">
-  <% members.forEach(function(member) { %>
-    <div class="member-card">
-      <h3><%= member.name %></h3>
-      <ul class="member-items">
-        <% Object.keys(categories).forEach(function(category) { %>
-          <% if (member.items[category]) { %>
-            <% member.items[category].forEach(function(item) { %>
-              <li class="item-row">
-                <span><strong><%= category %>:</strong> <%= item %></span>
-                <form action="/revoke-need" method="POST">
-                  <input type="hidden" name="member" value="<%= member.name %>">
-                  <input type="hidden" name="category" value="<%= category %>">
-                  <input type="hidden" name="item" value="<%= item %>">
-                  <button type="submit" class="revoke-btn">Revoke</button>
-                </form>
-              </li>
+  <!-- Need List -->
+  <h2>Need List:</h2>
+  <label for="memberFilter">Filter by Member:</label>
+  <select id="memberFilter" onchange="filterMembers()">
+    <option value="all">All Members</option>
+    <% members.forEach(function(member) { %>
+      <option value="<%= member.name %>"><%= member.name %></option>
+    <% }) %>
+  </select>
+
+  <div class="need-list">
+    <% members.forEach(function(member) { %>
+      <div class="member-card" data-member="<%= member.name %>">
+        <h3><%= member.name %></h3>
+        <form action="/update-needs" method="POST" class="need-form">
+          <ul class="member-items">
+            <% Object.keys(categories).forEach(function(category) { %>
+              <% if (member.items[category]) { %>
+                <% member.items[category].forEach(function(item) { %>
+                  <li class="item-row">
+                    <label>
+                      <input type="checkbox" name="revoke[<%= category %>][]" value="<%= item %>">
+                      <strong><%= category %>:</strong> <%= item %>
+                    </label>
+                  </li>
+                <% }) %>
+              <% } %>
             <% }) %>
-          <% } %>
-        <% }) %>
-      </ul>
+          </ul>
+          <div class="assign-form">
+            <label>Assign Category:</label>
+            <select name="assignCategory" onchange="updateMultiItemDropdown(this, '<%= member.name %>')">
+              <% Object.keys(categories).forEach(function(category) { %>
+                <option value="<%= category %>"><%= category %></option>
+              <% }) %>
+            </select>
 
-      <form action="/assign-need" method="POST" class="assign-form">
-        <label>Category:</label>
-        <select name="category" required onchange="updateItemDropdown(this, '<%= member.name %>')">
-          <% Object.keys(categories).forEach(function(category) { %>
-            <option value="<%= category %>"><%= category %></option>
-          <% }) %>
-        </select>
+            <label>Items:</label>
+            <select name="assignItems[]" id="multi-item-<%= member.name %>" multiple size="4" required>
+              <% const firstCategory = Object.keys(categories)[0];
+                 categories[firstCategory].forEach(function(item) { %>
+                <option value="<%= item %>"><%= item %></option>
+              <% }) %>
+            </select>
 
-        <label>Item:</label>
-        <select name="item" id="item-select-<%= member.name %>" required>
-          <% const firstCategory = Object.keys(categories)[0];
-             categories[firstCategory].forEach(function(item) { %>
-            <option value="<%= item %>"><%= item %></option>
-          <% }) %>
-        </select>
+            <input type="hidden" name="member" value="<%= member.name %>">
+            <button type="submit" class="assign-btn">Update Needs</button>
+          </div>
+        </form>
 
-        <input type="hidden" name="member" value="<%= member.name %>">
-        <button type="submit" class="assign-btn">Assign</button>
-      </form>
-    </div>
-  <% }) %>
-</div>
-  </details>
+        <form action="/assign-need" method="POST" class="assign-form">
+          <label>Category:</label>
+          <select name="category" required onchange="updateItemDropdown(this, '<%= member.name %>')">
+            <% Object.keys(categories).forEach(function(category) { %>
+              <option value="<%= category %>"><%= category %></option>
+            <% }) %>
+          </select>
+
+          <label>Item:</label>
+          <select name="item" id="item-select-<%= member.name %>" required>
+            <% categories[firstCategory].forEach(function(item) { %>
+              <option value="<%= item %>"><%= item %></option>
+            <% }) %>
+          </select>
+
+          <input type="hidden" name="member" value="<%= member.name %>">
+          <button type="submit" class="assign-btn">Assign</button>
+        </form>
+      </div>
+    <% }) %>
+  </div>
 
   <script>
     document.getElementById('attendance-form').addEventListener('submit', function(e) {
@@ -340,6 +365,32 @@
         option.value = item;
         option.textContent = item;
         itemSelect.appendChild(option);
+      });
+    }
+
+    function updateMultiItemDropdown(categorySelect, memberName) {
+      const category = categorySelect.value;
+      const itemSelect = document.getElementById(`multi-item-${memberName}`);
+      itemSelect.innerHTML = '';
+      (categories[category] || []).forEach(item => {
+        const option = document.createElement('option');
+        option.value = item;
+        option.textContent = item;
+        itemSelect.appendChild(option);
+      });
+    }
+
+    function filterMembers() {
+      const selected = document.getElementById("memberFilter").value;
+      document.querySelectorAll(".member-card").forEach(card => {
+        card.style.display = selected === "all" || card.getAttribute("data-member") === selected ? "block" : "none";
+      });
+    }
+
+    function filterAttendance() {
+      const selected = document.getElementById("attendanceFilter").value;
+      document.querySelectorAll(".member-attendance").forEach(section => {
+        section.style.display = selected === "all" || section.getAttribute("data-member") === selected ? "block" : "none";
       });
     }
   </script>

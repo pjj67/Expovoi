@@ -3,251 +3,345 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Angry's Attendance & Eligibility Manager</title>
-  <link rel="stylesheet" href="/styles.css" />
+  <title>Members Dashboard</title>
   <style>
-    .collapsible {
-      background-color: #777;
-      color: white;
+    details {
+      margin: 1em 0;
+      border: 4px solid #181b1c;
+      padding: 0.5em;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    summary {
+      font-weight: bold;
       cursor: pointer;
-      padding: 10px;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      font-size: 15px;
-      margin-top: 10px;
+      font-size: 1.1em;
     }
-    .collapsible:hover,
-    .active {
-      background-color: #555;
+    summary:hover {
+      color: #007BFF;
     }
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #f1f1f1;
+    form {
+      margin-top: 0.5em;
     }
-    .content.show {
-      display: block;
+    h2 {
+      margin-top: 2em;
     }
+    ul {
+      list-style-type: none;
+      padding-left: 1em;
+    }
+    
+    .need-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.member-card {
+  border: 4px solid #181b1c;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.member-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.member-items {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+    
+    .member-items li:nth-child(odd) {
+  background-color: #87bad4;
+}
+
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.revoke-btn,
+.assign-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.revoke-btn:hover {
+  background-color: #c82333;
+}
+
+.assign-btn {
+  background-color: #007bff;
+  margin-top: 0.5rem;
+}
+
+.assign-btn:hover {
+  background-color: #0056b3;
+}
+
+.assign-form select,
+.assign-form button {
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+}
+
   </style>
 </head>
 <body>
-  <h1>👥 Angry's Attendance & Eligibility Manager</h1>
+  <h1>Angrylittleman's Member Management</h1>
 
-  <!-- Eligibility Check -->
-  <h2>Eligibility Check</h2>
+  <h2>Eligibility Checker</h2>
 <form action="/check-eligibility" method="POST">
-  <label for="category">Select Category:</label>
-  <select name="categoryId" id="category" required>
-    <option value="">Select Category</option>
-  <% categories.forEach(category => {
-  if (
-    category.name !== "Ring 1" &&
-    category.name !== "Ring 2" &&
-    category.name !== "Archboss Weap 1" &&
-    category.name !== "Archboss Weap 2"
-  ) { %>
-        <option value="<%= category.id %>" <%= category.id === selectedCategoryId ? 'selected' : '' %>><%= category.name %></option>
-    <% } }); %>
-    <option value="ring" <%= selectedCategoryId === 'ring' ? 'selected' : '' %>>Ring</option>
+  <label>Category:</label>
+  <select name="category" required onchange="this.form.submit()">
+    <option value="">--Choose Category--</option>
+    <% Object.keys(categories).forEach(function(cat) { 
+         if (!["Ring 2", "Archboss Weap 1", "Archboss Weap 2"].includes(cat)) {
+           const displayName = cat === "Ring 1" ? "Ring" : cat;
+    %>
+      <option value="<%= cat %>" <%= selectedCategory === cat ? "selected" : "" %>><%= displayName %></option>
+    <% } }) %>
   </select>
 
-  <% 
-    let itemsToShow = [];
-    if (selectedCategoryId === 'ring') {
-      const ringCategories = categories.filter(c => c.name === "Ring 1" || c.name === "Ring 2");
-      const seenItems = new Set();
-      ringCategories.forEach(cat => {
-        cat.items.forEach(item => {
-          if (!seenItems.has(item.name)) {
-            itemsToShow.push(item);
-            seenItems.add(item.name);
-          }
-        });
-      });
-    } else {
-      const selectedCategory = categories.find(c => c.id === selectedCategoryId);
-      itemsToShow = selectedCategory?.items || [];
-    }
-  %>
-
-  <% if (itemsToShow.length > 0) { %>
-    <label for="item">Select Item:</label>
-    <select name="itemId" id="item" required>
-      <option value="">Select Item</option>
-      <% itemsToShow.forEach(item => { %>
-        <option value="<%= item.id %>" <%= item.id === selectedItemId ? 'selected' : '' %>><%= item.name %></option>
-      <% }); %>
+  <% if (selectedCategory) { %>
+    <label>Item:</label>
+    <select name="item" required>
+      <% categories[selectedCategory].forEach(function(itm) { %>
+        <option value="<%= itm %>" <%= selectedItem === itm ? "selected" : "" %>><%= itm %></option>
+      <% }) %>
     </select>
+    <button type="submit">Check</button>
   <% } %>
-
-  <button type="submit">Check Eligibility</button>
 </form>
 
-<% if (eligibleMembers) { %>
-  <% if (eligibleMembers.length > 0) { %>
-    <h3>Eligible Members:</h3>
-    <ul>
-      <% eligibleMembers.forEach(member => { %>
-        <li><%= member.name %></li>
-      <% }); %>
-    </ul>
-  <% } else { %>
-    <p>No eligible members found.</p>
-  <% } %>
+<% if (eligibleMembers && selectedItem) { %>
+  <h3>Eligible Members for "<%= selectedItem %>":</h3>
+  <ul>
+    <% eligibleMembers.forEach(function(m) { %>
+      <li><%= m.name %></li>
+    <% }) %>
+  </ul>
 <% } %>
 
-
-  <!-- Add Member & Manage -->
-  <button class="collapsible">Add Member & Manage Members</button>
-  <div class="content">
-    <h2>Add Member</h2>
-    <form action="/members" method="POST">
-      <input type="text" name="name" placeholder="Member Name" required />
-      <button type="submit">Add Member</button>
-    </form>
-
-    <h2>Members & Attendance</h2>
-    <% if (members.length === 0) { %>
-      <p>No members yet.</p>
-    <% } else { %>
-      <% members.forEach(member => { %>
-        <div class="member">
-          <form action="/members/<%= member.id %>/attendance" method="POST">
-            <strong><%= member.name %></strong>
-            <% for (let i = 0; i < 8; i++) { %>
-              <label>
-                <input type="checkbox" name="attendance[]" value="<%= i %>" <%= member.attendance[i] ? 'checked' : '' %> />
-                Event <%= i + 1 %>
-              </label>
-            <% } %>
-            <button type="submit">Update Attendance</button>
-          </form>
-          <form action="/members/<%= member.id %>/delete" method="POST" style="display:inline;">
-            <button type="submit" onclick="return confirm('Remove this member?')">Remove</button>
-          </form>
-        </div>
-      <% }); %>
-    <% } %>
-  </div>
-
-  <!-- Categories & Items -->
-  <button class="collapsible">Categories & Items</button>
-  <div class="content">
-    <% if (categories.length === 0) { %>
-      <p>No categories yet.</p>
-    <% } else { %>
-      <% categories.forEach(category => { %>
-        <div class="category">
-          <form action="/categories/<%= category.id %>/edit" method="POST">
-            <input type="text" name="name" value="<%= category.name %>" />
-            <button type="submit">Rename</button>
-          </form>
-
-          <h4>Add Item</h4>
-          <form action="/categories/<%= category.id %>/items" method="POST">
-            <input type="text" name="name" placeholder="Item Name" required />
-            <button type="submit">Add</button>
-          </form>
-
-          <button class="collapsible">Show Items</button>
-          <div class="content">
-            <% if (category.items.length > 0) { %>
-              <ul>
-                <% category.items.forEach(item => { %>
-                  <li>
-                    <form action="/categories/<%= category.id %>/items/<%= item.id %>/edit" method="POST">
-                      <input type="text" name="name" value="<%= item.name %>" />
-                      <button type="submit">Update</button>
-                    </form>
-                    <form action="/categories/<%= category.id %>/items/<%= item.id %>/delete" method="POST" style="display:inline;">
-                      <button type="submit" onclick="return confirm('Delete this item?')">Delete</button>
-                    </form>
-                  </li>
-                <% }); %>
-              </ul>
-            <% } else { %>
-              <p>No items in this category.</p>
-            <% } %>
-          </div>
-        </div>
-      <% }); %>
-    <% } %>
-  </div>
-
-  <!-- Add Category -->
-  <button class="collapsible">Add Category</button>
-  <div class="content">
-    <h2>Add Category</h2>
-    <form action="/categories" method="POST">
-      <input type="text" name="name" placeholder="Category Name" required />
-      <button type="submit">Add Category</button>
-    </form>
-  </div>
-
-  <!-- Assign Multiple Items to Members -->
-  <button class="collapsible">Edit Members Need List</button>
-  <div class="content">
-    <% members.forEach(member => { %>
-      <div class="member">
-        <h3><%= member.name %></h3>
-        <% if (member.items && member.items.length > 0) { %>
-          <ul>
-            <% member.items.forEach(assignment => {
-              const category = categories.find(c => c.id === assignment.categoryId);
-              const item = category ? category.items.find(i => i.id === assignment.itemId) : null;
-            %>
-              <% if (category && item) { %>
-                <li><strong><%= category.name %>:</strong> <%= item.name %></li>
-              <% } %>
-            <% }); %>
-          </ul>
-        <% } else { %>
-          <p>No items assigned.</p>
-        <% } %>
-
-        <button class="collapsible">Select Items to Assign</button>
-        <div class="content">
-         <form action="/members/<%= member.id %>/add-items" method="POST">
-  <% categories.forEach(category => { %>
-    <h5><%= category.name %></h5>
-    <select name="categoryItems[<%= category.id %>]">
-      <option value="">-- Keep Current --</option>
-      <% category.items.forEach(item => { %>
-        <option value="<%= item.id %>"><%= item.name %></option>
-      <% }); %>
-    </select>
-  <% }); %>
-  <button type="submit">Assign Items</button>
-</form>
+  <!-- Attendance Section -->
+<details>
+  <summary>Attendance</summary>
+  <form action="/update-attendance" method="POST" id="attendance-form">
+    <% members.forEach(function(member) { %>
+      <div class="member-attendance">
+        <strong><%= member.name %></strong>
+        <div class="attendance-events">
+          <% for (let i = 0; i < 8; i++) { %>
+            <label class="attendance-label">
+              Major Event <%= i + 1 %>
+              <input
+                type="checkbox"
+                name="attendance[<%= member.name %>][<%= i %>]"
+                value="true"
+                <%= member.attendance[i] ? "checked" : "" %> />
+            </label>
+          <% } %>
         </div>
       </div>
-    <% }); %>
-  </div>
+    <% }) %>
+    <button type="submit" class="submit-btn">Update Attendance</button>
+  </form>
+</details>
+
+<style>
+  /* Attendance Section Styling */
+  .member-attendance {
+    margin-bottom: 1.5rem; /* Spacing between members */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for each member's section */
+    border-radius: 8px;
+  }
+
+  .attendance-events {
+    display: flex;
+    flex-wrap: wrap; /* Allow labels to wrap */
+    gap: 15px; /* Add spacing between checkboxes */
+    margin-top: 10px; /* Space between the member's name and the checkboxes */
+  }
+
+  .attendance-label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Space between checkboxes */
+    font-size: 14px;
+  }
+
+  .attendance-label input {
+    margin-left: 5px;
+    transform: scale(1.2); /* Slightly larger checkboxes */
+  }
+
+  .submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2d4a22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+</style>
+
+
+   <!-- Category Section -->
+  <details>
+    <summary>Categories</summary>
+    <ul>
+      <% Object.keys(categories).forEach(function(category) { %>
+        <li>
+          <strong><%= category %></strong>:
+          <ul>
+            <% categories[category].forEach(function(item) { %>
+              <li>
+                <%= item %>
+                <form action="/remove-item" method="POST">
+                  <input type="hidden" name="category" value="<%= category %>">
+                  <input type="hidden" name="item" value="<%= item %>">
+                  <input type="submit" value="Remove Item">
+                </form>
+              </li>
+            <% }) %>
+          </ul>
+          <form action="/add-item" method="POST">
+            <input type="hidden" name="category" value="<%= category %>">
+            <label for="item">Add Item:</label>
+            <input type="text" name="item" required>
+            <input type="submit" value="Add Item">
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+
+    <h3>Add Category:</h3>
+    <form action="/add-category" method="POST">
+      <label for="category">Category Name:</label>
+      <input type="text" name="category" required>
+      <input type="submit" value="Add Category">
+    </form>
+  </details>
+            
+            <!-- Members Section -->
+  <details>
+    <summary>Add/Remove Members</summary>
+    <h3>Add Member:</h3>
+    <form action="/add-member" method="POST">
+      <label for="name">Member Name:</label>
+      <input type="text" name="name" required>
+      <input type="submit" value="Add Member">
+    </form>
+
+    <h3>Remove Member:</h3>
+    <form action="/remove-member" method="POST">
+      <label for="name">Select Member:</label>
+      <select name="name" required>
+        <% members.forEach(function(member) { %>
+          <option value="<%= member.name %>"><%= member.name %></option>
+        <% }) %>
+      </select>
+      <input type="submit" value="Remove Member">
+    </form>
+  </details>
+
+ <!-- Need List Section (Not Collapsible) -->
+<h2>Need List:</h2>
+<div class="need-list">
+  <% members.forEach(function(member) { %>
+    <div class="member-card">
+      <h3><%= member.name %></h3>
+      <ul class="member-items">
+        <% Object.keys(categories).forEach(function(category) { %>
+          <% if (member.items[category]) { %>
+            <% member.items[category].forEach(function(item) { %>
+              <li class="item-row">
+                <span><strong><%= category %>:</strong> <%= item %></span>
+                <form action="/revoke-need" method="POST">
+                  <input type="hidden" name="member" value="<%= member.name %>">
+                  <input type="hidden" name="category" value="<%= category %>">
+                  <input type="hidden" name="item" value="<%= item %>">
+                  <button type="submit" class="revoke-btn">Revoke</button>
+                </form>
+              </li>
+            <% }) %>
+          <% } %>
+        <% }) %>
+      </ul>
+
+      <form action="/assign-need" method="POST" class="assign-form">
+        <label>Category:</label>
+        <select name="category" required onchange="updateItemDropdown(this, '<%= member.name %>')">
+          <% Object.keys(categories).forEach(function(category) { %>
+            <option value="<%= category %>"><%= category %></option>
+          <% }) %>
+        </select>
+
+        <label>Item:</label>
+        <select name="item" id="item-select-<%= member.name %>" required>
+          <% const firstCategory = Object.keys(categories)[0];
+             categories[firstCategory].forEach(function(item) { %>
+            <option value="<%= item %>"><%= item %></option>
+          <% }) %>
+        </select>
+
+        <input type="hidden" name="member" value="<%= member.name %>">
+        <button type="submit" class="assign-btn">Assign</button>
+      </form>
+    </div>
+  <% }) %>
+</div>
+  </details>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const collapsibles = document.querySelectorAll(".collapsible");
-
-      collapsibles.forEach((collapsible, index) => {
-        const content = collapsible.nextElementSibling;
-        const isOpen = localStorage.getItem(`collapsible-${index}`) === "true";
-
-        if (isOpen) {
-          collapsible.classList.add("active");
-          content.classList.add("show");
+    document.getElementById('attendance-form').addEventListener('submit', function(e) {
+      const form = e.target;
+      const checkboxes = form.querySelectorAll('input[type=checkbox]');
+      checkboxes.forEach(cb => {
+        if (!cb.checked) {
+          const hidden = document.createElement('input');
+          hidden.type = 'hidden';
+          hidden.name = cb.name;
+          hidden.value = 'false';
+          form.appendChild(hidden);
         }
-
-        collapsible.addEventListener("click", () => {
-          const isVisible = content.classList.contains("show");
-          content.classList.toggle("show");
-          collapsible.classList.toggle("active");
-          localStorage.setItem(`collapsible-${index}`, !isVisible);
-        });
       });
     });
+
+    const categories = <%- JSON.stringify(categories) %>;
+
+    function updateItemDropdown(categorySelect, memberName) {
+      const category = categorySelect.value;
+      const itemSelect = document.getElementById(`item-select-${memberName}`);
+      itemSelect.innerHTML = '';
+      (categories[category] || []).forEach(item => {
+        const option = document.createElement('option');
+        option.value = item;
+        option.textContent = item;
+        itemSelect.appendChild(option);
+      });
+    }
   </script>
 </body>
 </html>
