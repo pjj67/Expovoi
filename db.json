@@ -376,15 +376,9 @@
         "Archboss Weap 1": [
           "Cordy's warblade of creeping doom"
         ],
-        "Chest": [
-          "Auric vanguard's full plate"
-        ],
-        "Feet": [
-          "Auric vanguard's plate boots"
-        ],
-        "Gloves": [
-          "Auric vanguard's gauntlets"
-        ],
+        "Chest": [],
+        "Feet": [],
+        "Gloves": [],
         "Necklace": [
           "Collar of nature's wrath"
         ],
@@ -953,6 +947,9 @@
         ],
         "Bracelet": [
           "Infernal demonpact cuffs"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
         ]
       }
     },
