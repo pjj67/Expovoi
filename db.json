@@ -1201,37 +1201,35 @@
       ],
       "items": {
         "Head": [
-          "Feral prophet's crown"
+          "Transcendent tempest's cowl"
         ],
         "Chest": [
-          "Auric vanguard's full plate"
+          "Transcendent tempest's armor"
         ],
         "Legs": [
-          "Auric vanguard's gaiters"
+          "Transcendent tempest's pants"
         ],
-        "Feet": [
-          "Auric vanguard's plate boots"
-        ],
+        "Feet": [],
         "Gloves": [
-          "Feral prophet's gloves"
+          "Transcendent tempest's touch"
         ],
         "Cloak": [
-          "Royal spineflower drape"
+          "Starlight fur cloak"
         ],
         "Necklace": [
-          "Primal ritual collar"
+          "Deep draconic gorget"
         ],
         "Bracelet": [
-          "Bangle of the clearest night"
+          "Primal golden cuffs"
         ],
         "Ring 1": [
           "Runed band of the black anvil"
         ],
         "Ring 2": [
-          "Sinking sun signet"
+          "Band of the ancestor's blood"
         ],
         "Belt": [
-          "Cunning ogre girdle"
+          "Hero's legacy warbelt"
         ]
       }
     },
