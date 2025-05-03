@@ -1782,28 +1782,17 @@
       ],
       "items": {
         "Greatsword": [
+          "Naru's frenzied greatblade"
+        ],
+        "Sword and Shield": [],
+        "Head": [],
+        "Gloves": [],
+        "Cloak": [],
+        "Bracelet": [],
+        "Ring 1": [],
+        "Belt": [],
+        "Archboss Weap 1": [
           "Tevent's warblade of despair"
-        ],
-        "Sword and Shield": [
-          "Queen bellandir's languishing blade"
-        ],
-        "Head": [
-          "Royal praetor's visor"
-        ],
-        "Gloves": [
-          "Royal praetor's gauntlets"
-        ],
-        "Cloak": [
-          "Cloak of victorious destiny"
-        ],
-        "Bracelet": [
-          "Bangle of the clearest night"
-        ],
-        "Ring 1": [
-          "Honor's promise signet"
-        ],
-        "Belt": [
-          "Hero's legacy warbelt"
         ]
       }
     },
@@ -1877,6 +1866,24 @@
         true
       ],
       "items": {}
+    },
+    {
+      "name": "Yasuo1v9",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {
+        "Crossbow": [
+          "Queen bellandir's toxic spine throwers"
+        ]
+      }
     },
     {
       "name": "YOHANNHEJA",
