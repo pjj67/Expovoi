@@ -184,6 +184,20 @@
       }
     },
     {
+      "name": "BatPlague",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {}
+    },
+    {
       "name": "BigPoyaso",
       "attendance": [
         false,
@@ -713,39 +727,6 @@
       }
     },
     {
-      "name": "ImYoyoo",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Staff": [
-          "Daigon's charred Emberstaff"
-        ],
-        "Crossbow": [
-          "Queen bellandir's toxic spine throwers"
-        ],
-        "Archboss Weap 1": [
-          "Queen bellandir's hivemind staff"
-        ],
-        "Archboss Weap 2": [
-          "Cordy's stormspore spike slingers"
-        ],
-        "Legs": [
-          "First light's pants"
-        ],
-        "Ring 1": [
-          "Symbol of nature's advance"
-        ]
-      }
-    },
-    {
       "name": "Irishau",
       "attendance": [
         true,
@@ -1102,20 +1083,6 @@
       }
     },
     {
-      "name": "Mauguensombre",
-      "attendance": [
-        false,
-        true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {}
-    },
-    {
       "name": "maxwinistann",
       "attendance": [
         false,
@@ -1259,27 +1226,6 @@
       }
     },
     {
-      "name": "N0yan",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Staff": [
-          "Queen bellandir's hivemind staff"
-        ],
-        "Daggers": [
-          "Tevent's fangs of fury"
-        ]
-      }
-    },
-    {
       "name": "Narthaus",
       "attendance": [
         false,
@@ -1361,20 +1307,6 @@
     },
     {
       "name": "Orphesie",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {}
-    },
-    {
-      "name": "Ortakis",
       "attendance": [
         false,
         false,
