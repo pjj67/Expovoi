@@ -1815,7 +1815,29 @@
         true,
         true
       ],
-      "items": {}
+      "items": {
+        "Greatsword": [
+          "Naru's frenzied greatblade"
+        ],
+        "Spear": [
+          "Naru's sawfang spear"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's serrated spike"
+        ],
+        "Archboss Weap 2": [
+          "Deluzhnoa's serrated shard"
+        ],
+        "Head": [
+          "Forgotten lotus mask"
+        ],
+        "Chest": [
+          "Forgotten lotus garb"
+        ],
+        "Legs": [
+          "Forgotten lotus pants"
+        ]
+      }
     },
     {
       "name": "Yasuo1v9",
