@@ -34,9 +34,7 @@
         "Cloak": [
           "Starlight fur cloak"
         ],
-        "Necklace": [
-          "Deep draconic gorget"
-        ],
+        "Necklace": [],
         "Bracelet": [
           "Bracelet of the violent undertow"
         ],
@@ -294,9 +292,7 @@
         false
       ],
       "items": {
-        "Necklace": [
-          "Deep draconic gorget"
-        ],
+        "Necklace": [],
         "Bracelet": [
           "Bracelet of agony"
         ],
@@ -721,9 +717,7 @@
         "Gloves": [
           "Spectral overseer's handguards"
         ],
-        "Ring 1": [
-          "Runed band of the black anvil"
-        ]
+        "Ring 1": []
       }
     },
     {
@@ -1198,9 +1192,7 @@
         "Belt": [
           "Hero's legacy warbelt"
         ],
-        "Staff": [
-          "Daigon's charred Emberstaff"
-        ],
+        "Staff": [],
         "Archboss Weap 1": [
           "Queen bellandir's hivemind staff"
         ]
