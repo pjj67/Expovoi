@@ -420,26 +420,20 @@
       ],
       "items": {
         "Crossbow": [
-          "Crossbows of the darkest night"
+          "Bercant's spineflower crossbows"
         ],
-        "Ring 1": [
-          "Solitaire of purity"
-        ],
+        "Ring 1": [],
         "Ring 2": [],
-        "Head": [
-          "First light's Halo"
+        "Head": [],
+        "Chest": [],
+        "Legs": [],
+        "Feet": [],
+        "Gloves": [],
+        "Archboss Weap 1": [
+          "Tevent's fangs of fury"
         ],
-        "Chest": [
-          "Dread admiral's uniform"
-        ],
-        "Legs": [
-          "Forgotten lotus pants"
-        ],
-        "Feet": [
-          "First light's shoes"
-        ],
-        "Gloves": [
-          "Forgotten lotus gloves"
+        "Archboss Weap 2": [
+          "Cordy's stormspore spike slingers"
         ]
       }
     },
