@@ -1861,6 +1861,20 @@
           "Undisputed champion's belt"
         ]
       }
+    },
+    {
+      "name": "Chepytz",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {}
     }
   ],
   "categories": {
