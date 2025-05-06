@@ -138,16 +138,19 @@
     <% }) %>
   </ul>
 <% } %>
-
-  <h2>Major Event Dates</h2>
-<div class="event-dates">
-  <% for (let i = 1; i <= 8; i++) { %>
-    <div class="event-date-row">
-      <label for="event-date-<%= i %>">Major Event <%= i %> Date:</label>
-      <input type="date" id="event-date-<%= i %>" name="event-date-<%= i %>">
+  
+<h2>Major Event Dates</h2>
+  <form action="/update-event-dates" method="POST">
+    <div class="event-dates">
+      <% for (let i = 1; i <= 8; i++) { %>
+        <div class="event-date-row">
+          <label for="event-date-<%= i %>">Major Event <%= i %> Date:</label>
+          <input type="date" id="event-date-<%= i %>" name="event-date-<%= i %>" value="<%= eventDates[i - 1] || '' %>">
+        </div>
+      <% } %>
     </div>
-  <% } %>
-</div>
+    <button type="submit">Update Event Dates</button>
+  </form>
 
 
 

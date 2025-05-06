@@ -21,7 +21,7 @@ db.write = () => {
 
 
 // Ensure default structure
-db.defaults({ members: [], categories: {} }).write();
+db.defaults({ members: [], categories: {}, eventDates: [] }).write();
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -30,20 +30,35 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  const { members = [], categories = {} } = db.getState();
+  const { members = [], categories = {}, eventDates = [] } = db.getState();
 
   const sortedMembers = members.sort((a, b) => a.name.localeCompare(b.name));
 
   res.render("index", {
     members: sortedMembers,
-    
     categories,
+    eventDates,
     selectedCategory: "", // 👈 Fix: Add this line
     selectedItem: "",      // (optional) if you're also using `selectedItem`
     eligibleMembers: []    // (optional) for eligibility list output
   });
 });
 
+
+// Handle event date updates
+app.post("/update-event-dates", (req, res) => {
+  const eventDates = [];
+
+  // Loop through the event dates and store them if they're valid
+  for (let i = 1; i <= 8; i++) {
+    const eventDate = req.body[`event-date-${i}`];
+    eventDates.push(eventDate || null); // Store null if date is empty
+  }
+
+  // Update the event dates in the database
+  db.set("eventDates", eventDates).write();
+  res.redirect("/"); // Redirect to the home page to show the updated event dates
+});
 // --- Member Routes ---
 app.post("/add-member", (req, res) => {
   const { name } = req.body;
