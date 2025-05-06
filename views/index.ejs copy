@@ -137,75 +137,93 @@
   </ul>
 <% } %>
 
-  <!-- Attendance Section -->
-<details>
-  <summary>Attendance</summary>
-  <form action="/update-attendance" method="POST" id="attendance-form">
-    <% members.forEach(function(member) { %>
-      <div class="member-attendance">
-        <strong><%= member.name %></strong>
-        <div class="attendance-events">
-          <% for (let i = 0; i < 8; i++) { %>
-            <label class="attendance-label">
-              Major Event <%= i + 1 %>
-              <input
-                type="checkbox"
-                name="attendance[<%= member.name %>][<%= i %>]"
-                value="true"
-                <%= member.attendance[i] ? "checked" : "" %> />
-            </label>
-          <% } %>
+    <!-- Attendance Section -->
+  <details>
+    <summary>Attendance</summary>
+    <label for="attendanceFilter">Filter Attendance by Member:</label>
+    <select id="attendanceFilter" onchange="filterAttendance()">
+      <option value="all">All Members</option>
+      <% members.forEach(function(member) { %>
+        <option value="<%= member.name %>"><%= member.name %></option>
+      <% }) %>
+    </select>
+
+    <!-- Add clear all checkboxes buttons for each Major Event -->
+    <div>
+      <button type="button" onclick="clearEvent(1)">Clear Major Event 1</button>
+      <button type="button" onclick="clearEvent(2)">Clear Major Event 2</button>
+      <button type="button" onclick="clearEvent(3)">Clear Major Event 3</button>
+      <button type="button" onclick="clearEvent(4)">Clear Major Event 4</button>
+      <button type="button" onclick="clearEvent(5)">Clear Major Event 5</button>
+      <button type="button" onclick="clearEvent(6)">Clear Major Event 6</button>
+      <button type="button" onclick="clearEvent(7)">Clear Major Event 7</button>
+      <button type="button" onclick="clearEvent(8)">Clear Major Event 8</button>
+    </div>
+
+    <form action="/update-attendance" method="POST" id="attendance-form">
+      <% members.forEach(function(member) { %>
+        <div class="member-attendance" data-member="<%= member.name %>">
+          <strong><%= member.name %></strong>
+          <div class="attendance-events">
+            <% for (let i = 0; i < 8; i++) { %>
+              <label class="attendance-label">
+                Major Event <%= i + 1 %>
+                <input
+                  type="checkbox"
+                  name="attendance[<%= member.name %>][<%= i %>]"
+                  value="true"
+                  <%= member.attendance[i] ? "checked" : "" %> />
+              </label>
+            <% } %>
+          </div>
         </div>
-      </div>
-    <% }) %>
-    <button type="submit" class="submit-btn">Update Attendance</button>
-  </form>
-</details>
+      <% }) %>
+      <button type="submit" class="submit-btn">Update Attendance</button>
+    </form>
+  </details>
 
-<style>
-  /* Attendance Section Styling */
-  .member-attendance {
-    margin-bottom: 1.5rem; /* Spacing between members */
-    padding: 10px;
-    border: 1px solid #ccc; /* Border for each member's section */
-    border-radius: 8px;
-  }
+  <style>
+    .member-attendance {
+      margin-bottom: 1.5rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
 
-  .attendance-events {
-    display: flex;
-    flex-wrap: wrap; /* Allow labels to wrap */
-    gap: 15px; /* Add spacing between checkboxes */
-    margin-top: 10px; /* Space between the member's name and the checkboxes */
-  }
+    .attendance-events {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
 
-  .attendance-label {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; /* Space between checkboxes */
-    font-size: 14px;
-  }
+    .attendance-label {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      font-size: 14px;
+    }
 
-  .attendance-label input {
-    margin-left: 5px;
-    transform: scale(1.2); /* Slightly larger checkboxes */
-  }
+    .attendance-label input {
+      margin-left: 5px;
+      transform: scale(1.2);
+    }
 
-  .submit-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #2d4a22;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2d4a22;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-  .submit-btn:hover {
-    background-color: #45a049;
-  }
-</style>
-
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
 
    <!-- Category Section -->
   <details>
@@ -267,10 +285,21 @@
   </details>
 
  <!-- Need List Section (Not Collapsible) -->
+<!-- Need List Section (Not Collapsible) -->
 <h2>Need List:</h2>
+
+<!-- Member Filter Dropdown -->
+<label for="memberFilter">Filter by Member:</label>
+<select id="memberFilter" onchange="filterMembers()">
+  <option value="all">All Members</option>
+  <% members.forEach(function(member) { %>
+    <option value="<%= member.name %>"><%= member.name %></option>
+  <% }) %>
+</select>
+
 <div class="need-list">
   <% members.forEach(function(member) { %>
-    <div class="member-card">
+    <div class="member-card" data-member="<%= member.name %>">
       <h3><%= member.name %></h3>
       <ul class="member-items">
         <% Object.keys(categories).forEach(function(category) { %>
@@ -342,6 +371,36 @@
         itemSelect.appendChild(option);
       });
     }
+    function filterMembers() {
+  const selected = document.getElementById("memberFilter").value;
+  document.querySelectorAll(".member-card").forEach(card => {
+    if (selected === "all" || card.getAttribute("data-member") === selected) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+    function filterAttendance() {
+  const selected = document.getElementById("attendanceFilter").value;
+  document.querySelectorAll(".member-attendance").forEach(section => {
+    if (selected === "all" || section.getAttribute("data-member") === selected) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
+    }
+  });
+}
+    function clearEvent(eventNumber) {
+    // Loop through all member attendance checkboxes
+    document.querySelectorAll('.member-attendance').forEach(function(member) {
+      // Find the checkbox for the specific Major Event (1-8)
+      const checkbox = member.querySelector(`input[name="attendance[${member.getAttribute('data-member')}][${eventNumber - 1}]"]`);
+      if (checkbox) {
+        checkbox.checked = false; // Uncheck the checkbox
+      }
+    });
+  }
   </script>
 </body>
 </html>
