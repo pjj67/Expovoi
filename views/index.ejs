@@ -104,6 +104,7 @@
 <body>
   <h1>Angrylittleman's Member Management</h1>
 
+  
   <h2>Eligibility Checker</h2>
 <form action="/check-eligibility" method="POST">
   <label>Category:</label>
@@ -127,8 +128,6 @@
     <button type="submit">Check</button>
   <% } %>
 </form>
-        
-        
 
 <% if (eligibleMembers && selectedItem) { %>
   <h3>Eligible Members for "<%= selectedItem %>":</h3>
@@ -140,17 +139,18 @@
 <% } %>
   
 <h2>Major Event Dates</h2>
-  <form action="/update-event-dates" method="POST">
-    <div class="event-dates">
-      <% for (let i = 1; i <= 8; i++) { %>
-        <div class="event-date-row">
-          <label for="event-date-<%= i %>">Major Event <%= i %> Date:</label>
-          <input type="date" id="event-date-<%= i %>" name="event-date-<%= i %>" value="<%= eventDates[i - 1] || '' %>">
-        </div>
-      <% } %>
-    </div>
-    <button type="submit">Update Event Dates</button>
-  </form>
+<form action="/update-event-dates" method="POST">
+  <div class="event-dates">
+    <% for (let i = 1; i <= 8; i++) { %>
+      <div class="event-date-row">
+        <label for="event-date-<%= i %>">Major Event <%= i %> Date:</label>
+        <input type="date" id="event-date-<%= i %>" name="event-date-<%= i %>" value="<%= eventDates[i - 1] || '' %>">
+      </div>
+    <% } %>
+  </div>
+  <button type="submit">Update Event Dates</button>
+</form>
+
 
 
 

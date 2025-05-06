@@ -19,8 +19,7 @@ db.write = () => {
   return result;
 };
 
-
-// Ensure default structure
+// Ensure default structure (including eventDates array)
 db.defaults({ members: [], categories: {}, eventDates: [] }).write();
 
 app.set("view engine", "ejs");
@@ -32,18 +31,21 @@ app.use(express.json());
 app.get("/", (req, res) => {
   const { members = [], categories = {}, eventDates = [] } = db.getState();
 
+  // Log eventDates to check the value
+  console.log("eventDates:", eventDates); // This will help in debugging
+
+  // Sort the members by name (optional)
   const sortedMembers = members.sort((a, b) => a.name.localeCompare(b.name));
 
   res.render("index", {
     members: sortedMembers,
     categories,
-    eventDates,
-    selectedCategory: "", // 👈 Fix: Add this line
-    selectedItem: "",      // (optional) if you're also using `selectedItem`
-    eligibleMembers: []    // (optional) for eligibility list output
+    eventDates, // Ensure eventDates is passed correctly
+    selectedCategory: "",
+    selectedItem: "",
+    eligibleMembers: []
   });
 });
-
 
 // Handle event date updates
 app.post("/update-event-dates", (req, res) => {
@@ -59,6 +61,7 @@ app.post("/update-event-dates", (req, res) => {
   db.set("eventDates", eventDates).write();
   res.redirect("/"); // Redirect to the home page to show the updated event dates
 });
+
 // --- Member Routes ---
 app.post("/add-member", (req, res) => {
   const { name } = req.body;
@@ -199,8 +202,6 @@ app.post("/check-eligibility", (req, res) => {
     eligibleMembers
   });
 });
-
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log("App running on port", PORT));
