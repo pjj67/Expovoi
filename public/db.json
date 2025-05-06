@@ -70,9 +70,9 @@
     {
       "name": "Angrylittleman",
       "attendance": [
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
         true,
         true,
         true,

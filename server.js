@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
   console.log("eventDates:", eventDates); // This will help in debugging
 
   // Sort the members by name (optional)
-  const sortedMembers = members.sort((a, b) => a.name.localeCompare(b.name));
+  const sortedMembers = [...members].sort((a, b) => a.name.localeCompare(b.name));
 
   res.render("index", {
     members: sortedMembers,
@@ -178,28 +178,38 @@ app.post("/update-attendance", (req, res) => {
 
 app.post("/check-eligibility", (req, res) => {
   const { category, item } = req.body;
+  const { members = [], categories = {}, eventDates = [] } = db.getState();
 
-  const { members = [], categories = {} } = db.getState();
+  console.log("Checking eligibility for category:", category);
+  console.log("Item to check:", item);
 
   const eligibleMembers = members.filter(member => {
     const attendanceCount = member.attendance.filter(a => a).length;
 
-    // Check all categories for the item, not just the selected one
-    const hasItem = Object.values(member.items || {}).some(itemList =>
-      itemList.includes(item)
-    );
+    // Debugging the attendance
+    console.log(`Member ${member.name} attendance count:`, attendanceCount);
 
+    // Check if member has the item in the selected category
+    const hasItem = member.items[category] && member.items[category].includes(item);
+
+    // Debugging if the member has the item
+    console.log(`Does ${member.name} have the item?`, hasItem);
+
+    // Check eligibility: attendance >= 4 and has the item
     return attendanceCount >= 4 && hasItem;
   });
 
-  const sortedMembers = members.sort((a, b) => a.name.localeCompare(b.name));
+  console.log("Eligible members:", eligibleMembers);
+
+  const sortedMembers = [...members].sort((a, b) => a.name.localeCompare(b.name));
 
   res.render("index", {
     members: sortedMembers,
     categories,
     selectedCategory: category,
     selectedItem: item,
-    eligibleMembers
+    eligibleMembers,
+    eventDates // Pass eventDates for the front-end to access if needed
   });
 });
 
