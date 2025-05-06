@@ -127,6 +127,8 @@
     <button type="submit">Check</button>
   <% } %>
 </form>
+        
+        
 
 <% if (eligibleMembers && selectedItem) { %>
   <h3>Eligible Members for "<%= selectedItem %>":</h3>
@@ -136,6 +138,18 @@
     <% }) %>
   </ul>
 <% } %>
+
+  <h2>Major Event Dates</h2>
+<div class="event-dates">
+  <% for (let i = 1; i <= 8; i++) { %>
+    <div class="event-date-row">
+      <label for="event-date-<%= i %>">Major Event <%= i %> Date:</label>
+      <input type="date" id="event-date-<%= i %>" name="event-date-<%= i %>">
+    </div>
+  <% } %>
+</div>
+
+
 
     <!-- Attendance Section -->
   <details>
@@ -183,6 +197,36 @@
   </details>
 
   <style>
+    
+   .event-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #181b1c;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.event-date-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-date-row label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.event-date-row input[type="date"] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
     .member-attendance {
       margin-bottom: 1.5rem;
       padding: 10px;
