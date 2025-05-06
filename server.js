@@ -36,6 +36,7 @@ app.get("/", (req, res) => {
 
   res.render("index", {
     members: sortedMembers,
+    
     categories,
     selectedCategory: "", // 👈 Fix: Add this line
     selectedItem: "",      // (optional) if you're also using `selectedItem`
