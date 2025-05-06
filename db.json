@@ -70,9 +70,9 @@
     {
       "name": "Angrylittleman",
       "attendance": [
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
         true,
         true,
         true,
@@ -1057,7 +1057,17 @@
         true,
         true
       ],
-      "items": {}
+      "items": {
+        "Gloves": [
+          "Spectral overseer's handguards"
+        ],
+        "Legs": [
+          "Spectral overser's trousers"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
     },
     {
       "name": "Marvelita",
@@ -2191,16 +2201,6 @@
       "Girdle of treant strength",
       "Hero's legacy warbelt",
       "Undisputed champion's belt"
-    ],
-    "eventDates": [
-      "2025-05-01",
-      "2025-05-02",
-      "2025-05-03",
-      "2025-05-04",
-      "2025-05-05",
-      "2025-05-06",
-      "2025-05-07",
-      "2025-05-08"
     ]
   },
   "eventDates": [
