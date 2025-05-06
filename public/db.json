@@ -141,7 +141,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         false,
         true,
         true,
@@ -221,7 +221,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         true,
         false,
@@ -274,7 +274,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         false,
         false,
         true,
@@ -389,7 +389,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         true,
         true,
@@ -425,7 +425,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         true,
         true,
@@ -557,7 +557,7 @@
       "attendance": [
         false,
         true,
-        true,
+        false,
         true,
         true,
         true,
@@ -700,7 +700,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         false,
         false,
@@ -853,7 +853,7 @@
       "attendance": [
         false,
         false,
-        true,
+        false,
         false,
         false,
         false,
@@ -921,7 +921,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         true,
         true,
@@ -1050,7 +1050,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         false,
         false,
         true,
@@ -1167,7 +1167,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         false,
         false,
         false,
@@ -1302,7 +1302,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         true,
         true,
@@ -1354,7 +1354,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -1512,7 +1512,7 @@
       "attendance": [
         false,
         false,
-        false,
+        true,
         false,
         false,
         true,
@@ -1631,7 +1631,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         false,
         true,
@@ -1645,7 +1645,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         false,
         true,
         true,
@@ -1693,7 +1693,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         false,
         true,
@@ -1810,7 +1810,7 @@
       "attendance": [
         true,
         false,
-        false,
+        true,
         true,
         true,
         false,
@@ -1860,7 +1860,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         false,
         true,
@@ -2206,7 +2206,7 @@
   "eventDates": [
     "2025-05-04",
     "2025-05-05",
-    "2025-04-22",
+    "2025-05-06",
     "2025-04-25",
     "2025-04-27",
     "2025-04-28",
