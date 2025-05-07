@@ -557,7 +557,7 @@
       "attendance": [
         false,
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -590,7 +590,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -700,7 +700,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         false,
         false,
@@ -921,7 +921,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -1095,7 +1095,7 @@
       "attendance": [
         false,
         false,
-        false,
+        true,
         true,
         false,
         true,
@@ -1858,7 +1858,7 @@
       "attendance": [
         true,
         false,
-        false,
+        true,
         true,
         false,
         true,
