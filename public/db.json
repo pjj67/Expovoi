@@ -306,7 +306,9 @@
         false
       ],
       "items": {
-        "Necklace": [],
+        "Necklace": [
+          "Deep draconic gorget"
+        ],
         "Bracelet": [
           "Bracelet of agony"
         ],
@@ -316,14 +318,19 @@
         "Greatsword": [
           "Cordy's warblade of creeping doom"
         ],
-        "Chest": [
-          "Imperial seeker's tunic"
-        ],
-        "Feet": [
-          "Imperial seeker's boots"
-        ],
+        "Chest": [],
+        "Feet": [],
         "Belt": [
           "Undisputed champion's belt"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Archboss Weap 1": [
+          "Tevent's warblade of despair"
+        ],
+        "Spear": [
+          "Deluzhnoa's serrated shard"
         ]
       }
     },
