@@ -1288,20 +1288,23 @@
         true
       ],
       "items": {
-        "Daggers": [
-          "Tevent's fangs of fury"
-        ],
-        "Chest": [
-          "Imperial seeker's tunic"
-        ],
-        "Legs": [
-          "First light's pants"
-        ],
+        "Daggers": [],
+        "Chest": [],
+        "Legs": [],
         "Feet": [
-          "Imperial seeker's boots"
+          "Royal praetor's sabatons"
         ],
         "Ring 1": [
           "Runed band of the black anvil"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's languishing blade"
+        ],
+        "Head": [
+          "Royal praetor's visor"
+        ],
+        "Necklace": [
+          "Noble birthright brooch"
         ]
       }
     },
@@ -1889,6 +1892,36 @@
         ],
         "Belt": [
           "Undisputed champion's belt"
+        ]
+      }
+    },
+    {
+      "name": "Gindii",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {
+        "Greatsword": [
+          "Naru's frenzied greatblade"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Feet": [
+          "Imperial seeker's boots"
+        ],
+        "Archboss Weap 1": [
+          "Cordy's warblade of creeping doom"
+        ],
+        "Archboss Weap 2": [
+          "Tevent's warblade of despair"
         ]
       }
     }
