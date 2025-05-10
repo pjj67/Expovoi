@@ -154,8 +154,9 @@
 <!-- Totals for Major Events -->
 <div id="event-totals" style="margin-top: 1rem; padding: 1rem; border: 2px solid #181b1c; border-radius: 10px; background-color: #e8f4f8;">
   <h3>Attendance Totals per Major Event:</h3>
-  <ul id="event-totals-list" style="list-style: none; padding-left: 0;"></ul>
+  <div id="event-totals-list" class="totals-grid"></div>
 </div>
+
 
 
 
@@ -205,6 +206,23 @@
   </details>
 
   <style>
+    
+    .totals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.totals-grid div {
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
     
    .event-dates {
   display: grid;
@@ -444,7 +462,7 @@
   list.innerHTML = "";
   totals.forEach((count, i) => {
     const li = document.createElement("li");
-    li.textContent = `Major Event ${i + 1}: ${count} attending`;
+   li.innerHTML = `<strong>Major Event (${i + 1})</strong>: ${count}`;
     list.appendChild(li);
   });
 }
@@ -456,6 +474,15 @@ document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
   cb.addEventListener("change", updateEventTotals);
 });
 
+    function clearEvent(eventNumber) {
+  document.querySelectorAll('.member-attendance').forEach(function(member) {
+    const checkbox = member.querySelector(`input[name="attendance[${member.getAttribute('data-member')}][${eventNumber - 1}]"]`);
+    if (checkbox) checkbox.checked = false;
+  });
+  updateEventTotals(); // refresh count after clearing
+}
+
+    
     function filterMembers() {
   const selected = document.getElementById("memberFilter").value;
   document.querySelectorAll(".member-card").forEach(card => {
