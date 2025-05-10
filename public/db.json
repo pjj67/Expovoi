@@ -474,14 +474,15 @@
         "Greatsword": [
           "Cordy's warblade of creeping doom"
         ],
-        "Sword and Shield": [
-          "Daigon's stormblade"
-        ],
+        "Sword and Shield": [],
         "Archboss Weap 1": [
           "Queen bellandir's languishing blade"
         ],
         "Necklace": [
           "Noble birthright brooch"
+        ],
+        "Archboss Weap 2": [
+          "Deluzhnoa's edge of eternal frost"
         ]
       }
     },
