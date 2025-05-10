@@ -151,6 +151,11 @@
   <button type="submit">Update Event Dates</button>
 </form>
 
+<!-- Totals for Major Events -->
+<div id="event-totals" style="margin-top: 1rem; padding: 1rem; border: 2px solid #181b1c; border-radius: 10px; background-color: #e8f4f8;">
+  <h3>Attendance Totals per Major Event:</h3>
+  <ul id="event-totals-list" style="list-style: none; padding-left: 0;"></ul>
+</div>
 
 
 
@@ -407,6 +412,8 @@
 
     const categories = <%- JSON.stringify(categories) %>;
 
+  
+    
     function updateItemDropdown(categorySelect, memberName) {
       const category = categorySelect.value;
       const itemSelect = document.getElementById(`item-select-${memberName}`);
@@ -418,6 +425,37 @@
         itemSelect.appendChild(option);
       });
     }
+    
+    function updateEventTotals() {
+  const totals = Array(8).fill(0); // 8 events
+  document.querySelectorAll(".member-attendance").forEach(section => {
+    section.querySelectorAll("input[type=checkbox]").forEach((checkbox, index) => {
+      if (checkbox.checked) {
+        const match = checkbox.name.match(/\[(\d+)\]$/); // Get event index from name
+        if (match) {
+          const i = parseInt(match[1]);
+          totals[i]++;
+        }
+      }
+    });
+  });
+
+  const list = document.getElementById("event-totals-list");
+  list.innerHTML = "";
+  totals.forEach((count, i) => {
+    const li = document.createElement("li");
+    li.textContent = `Major Event ${i + 1}: ${count} attending`;
+    list.appendChild(li);
+  });
+}
+
+// Run on load
+document.addEventListener("DOMContentLoaded", updateEventTotals);
+// Also update when checkboxes are clicked
+document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+  cb.addEventListener("change", updateEventTotals);
+});
+
     function filterMembers() {
   const selected = document.getElementById("memberFilter").value;
   document.querySelectorAll(".member-card").forEach(card => {
