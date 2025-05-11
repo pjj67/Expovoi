@@ -190,7 +190,7 @@ app.post("/check-eligibility", (req, res) => {
     console.log(`Member ${member.name} attendance count:`, attendanceCount);
 
     // Check if member has the item in the selected category
-    const hasItem = member.items[category] && member.items[category].includes(item);
+    const hasItem = Object.values(member.items || {}).some(itemList => itemList.includes(item));
 
     // Debugging if the member has the item
     console.log(`Does ${member.name} have the item?`, hasItem);
