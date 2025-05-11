@@ -1199,12 +1199,13 @@
         "Bracelet": [
           "Infernal demonpact cuffs"
         ],
-        "Ring 1": [
-          "Symbol of nature's advance"
-        ],
+        "Ring 1": [],
         "Feet": [],
         "Archboss Weap 2": [
           "Deluzhnoa's serrated shard"
+        ],
+        "Chest": [
+          "Imperial seeker's tunic"
         ]
       }
     },
@@ -2184,7 +2185,7 @@
     "2025-05-06",
     "2025-05-09",
     "2025-05-10",
-    "2025-04-28",
+    "2025-05-11",
     "2025-04-29",
     "2025-05-03"
   ]
