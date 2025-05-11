@@ -183,20 +183,6 @@
       }
     },
     {
-      "name": "BatPlague",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {}
-    },
-    {
       "name": "BigPoyaso",
       "attendance": [
         false,
@@ -807,51 +793,6 @@
         false
       ],
       "items": {}
-    },
-    {
-      "name": "JustSwag",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Wand": [
-          "Tevent's grasp of withering"
-        ],
-        "Sword and Shield": [
-          "Deluzhnoa's edge of eternal frost"
-        ],
-        "Archboss Weap 1": [
-          "Queen bellandir's languishing blade"
-        ],
-        "Archboss Weap 2": [
-          "Cordy's grasp of manipulation"
-        ],
-        "Legs": [
-          "Royal praetor's gaiters"
-        ],
-        "Feet": [
-          "Royal praetor's sabatons"
-        ],
-        "Gloves": [
-          "Royal praetor's gauntlets"
-        ],
-        "Necklace": [
-          "Primal ritual collar"
-        ],
-        "Bracelet": [
-          "Restraints of the glacial queen"
-        ],
-        "Ring 1": [
-          "Runed band of the black anvil"
-        ]
-      }
     },
     {
       "name": "Jveve31",
