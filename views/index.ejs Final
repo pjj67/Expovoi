@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Members Dashboard</title>
+  <style>
+    details {
+      margin: 1em 0;
+      border: 4px solid #181b1c;
+      padding: 0.5em;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    summary:hover {
+      color: #007BFF;
+    }
+    form {
+      margin-top: 0.5em;
+    }
+    h2 {
+      margin-top: 2em;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1em;
+    }
+    
+    .need-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.member-card {
+  border: 4px solid #181b1c;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.member-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.member-items {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+    
+    .member-items li:nth-child(odd) {
+  background-color: #87bad4;
+}
+
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.revoke-btn,
+.assign-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.revoke-btn:hover {
+  background-color: #c82333;
+}
+
+.assign-btn {
+  background-color: #007bff;
+  margin-top: 0.5rem;
+}
+
+.assign-btn:hover {
+  background-color: #0056b3;
+}
+
+.assign-form select,
+.assign-form button {
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Angrylittleman's Member Management</h1>
+
+  
+  <h2>Eligibility Checker</h2>
+<form action="/check-eligibility" method="POST">
+  <label>Category:</label>
+  <select name="category" required onchange="this.form.submit()">
+    <option value="">--Choose Category--</option>
+    <% Object.keys(categories).forEach(function(cat) { 
+         if (!["Ring 2", "Archboss Weap 1", "Archboss Weap 2"].includes(cat)) {
+           const displayName = cat === "Ring 1" ? "Ring" : cat;
+    %>
+      <option value="<%= cat %>" <%= selectedCategory === cat ? "selected" : "" %>><%= displayName %></option>
+    <% } }) %>
+  </select>
+
+  <% if (selectedCategory) { %>
+    <label>Item:</label>
+    <select name="item" required>
+      <% categories[selectedCategory].forEach(function(itm) { %>
+        <option value="<%= itm %>" <%= selectedItem === itm ? "selected" : "" %>><%= itm %></option>
+      <% }) %>
+    </select>
+    <button type="submit">Check</button>
+  <% } %>
+</form>
+
+<% if (eligibleMembers && selectedItem) { %>
+  <h3>Eligible Members for "<%= selectedItem %>":</h3>
+  <ul>
+    <% eligibleMembers.forEach(function(m) { %>
+      <li><%= m.name %></li>
+    <% }) %>
+  </ul>
+<% } %>
+  
+<h2>Major Event Dates</h2>
+<form action="/update-event-dates" method="POST">
+  <div class="event-dates">
+    <% for (let i = 1; i <= 8; i++) { %>
+      <div class="event-date-row">
+        <label for="event-date-<%= i %>">Major Event <%= i %> Date:</label>
+        <input type="date" id="event-date-<%= i %>" name="event-date-<%= i %>" value="<%= eventDates[i - 1] || '' %>">
+      </div>
+    <% } %>
+  </div>
+  <button type="submit">Update Event Dates</button>
+</form>
+
+<!-- Totals for Major Events -->
+<div id="event-totals" style="margin-top: 1rem; padding: 1rem; border: 2px solid #181b1c; border-radius: 10px; background-color: #e8f4f8;">
+  <h3>Attendance Totals per Major Event:</h3>
+  <div id="event-totals-list" class="totals-grid"></div>
+</div>
+
+
+
+
+    <!-- Attendance Section -->
+  <details>
+    <summary>Attendance</summary>
+    <label for="attendanceFilter">Filter Attendance by Member:</label>
+    <select id="attendanceFilter" onchange="filterAttendance()">
+      <option value="all">All Members</option>
+      <% members.forEach(function(member) { %>
+        <option value="<%= member.name %>"><%= member.name %></option>
+      <% }) %>
+    </select>
+
+    <!-- Add clear all checkboxes buttons for each Major Event -->
+    <div>
+      <button type="button" onclick="clearEvent(1)">Clear Major Event 1</button>
+      <button type="button" onclick="clearEvent(2)">Clear Major Event 2</button>
+      <button type="button" onclick="clearEvent(3)">Clear Major Event 3</button>
+      <button type="button" onclick="clearEvent(4)">Clear Major Event 4</button>
+      <button type="button" onclick="clearEvent(5)">Clear Major Event 5</button>
+      <button type="button" onclick="clearEvent(6)">Clear Major Event 6</button>
+      <button type="button" onclick="clearEvent(7)">Clear Major Event 7</button>
+      <button type="button" onclick="clearEvent(8)">Clear Major Event 8</button>
+    </div>
+
+    <form action="/update-attendance" method="POST" id="attendance-form">
+      <% members.forEach(function(member) { %>
+        <div class="member-attendance" data-member="<%= member.name %>">
+          <strong><%= member.name %></strong>
+          <div class="attendance-events">
+            <% for (let i = 0; i < 8; i++) { %>
+              <label class="attendance-label">
+                Major Event <%= i + 1 %>
+                <input
+                  type="checkbox"
+                  name="attendance[<%= member.name %>][<%= i %>]"
+                  value="true"
+                  <%= member.attendance[i] ? "checked" : "" %> />
+              </label>
+            <% } %>
+          </div>
+        </div>
+      <% }) %>
+      <button type="submit" class="submit-btn">Update Attendance</button>
+    </form>
+  </details>
+
+  <style>
+    
+    .totals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.totals-grid div {
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+    
+   .event-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #181b1c;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.event-date-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-date-row label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.event-date-row input[type="date"] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+    .member-attendance {
+      margin-bottom: 1.5rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .attendance-events {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .attendance-label {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    .attendance-label input {
+      margin-left: 5px;
+      transform: scale(1.2);
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2d4a22;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+   <!-- Category Section -->
+  <details>
+    <summary>Categories</summary>
+    <ul>
+      <% Object.keys(categories).forEach(function(category) { %>
+        <li>
+          <strong><%= category %></strong>:
+          <ul>
+            <% categories[category].forEach(function(item) { %>
+              <li>
+                <%= item %>
+                <form action="/remove-item" method="POST">
+                  <input type="hidden" name="category" value="<%= category %>">
+                  <input type="hidden" name="item" value="<%= item %>">
+                  <input type="submit" value="Remove Item">
+                </form>
+              </li>
+            <% }) %>
+          </ul>
+          <form action="/add-item" method="POST">
+            <input type="hidden" name="category" value="<%= category %>">
+            <label for="item">Add Item:</label>
+            <input type="text" name="item" required>
+            <input type="submit" value="Add Item">
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+
+    <h3>Add Category:</h3>
+    <form action="/add-category" method="POST">
+      <label for="category">Category Name:</label>
+      <input type="text" name="category" required>
+      <input type="submit" value="Add Category">
+    </form>
+  </details>
+            
+            <!-- Members Section -->
+  <details>
+    <summary>Add/Remove Members</summary>
+    <h3>Add Member:</h3>
+    <form action="/add-member" method="POST">
+      <label for="name">Member Name:</label>
+      <input type="text" name="name" required>
+      <input type="submit" value="Add Member">
+    </form>
+
+    <h3>Remove Member:</h3>
+    <form action="/remove-member" method="POST">
+      <label for="name">Select Member:</label>
+      <select name="name" required>
+        <% members.forEach(function(member) { %>
+          <option value="<%= member.name %>"><%= member.name %></option>
+        <% }) %>
+      </select>
+      <input type="submit" value="Remove Member">
+    </form>
+  </details>
+
+<!-- Need List Section (Not Collapsible) -->
+<h2>Need List:</h2>
+
+<!-- Member Filter Dropdown -->
+<label for="memberFilter">Filter by Member:</label>
+<select id="memberFilter" onchange="filterMembers()">
+  <option value="all">All Members</option>
+  <% members.forEach(function(member) { %>
+    <option value="<%= member.name %>"><%= member.name %></option>
+  <% }) %>
+</select>
+
+<div class="need-list">
+  <% members.forEach(function(member) { %>
+    <div class="member-card" data-member="<%= member.name %>">
+      <h3><%= member.name %></h3>
+      <ul class="member-items">
+        <% Object.keys(categories).forEach(function(category) { %>
+          <% if (member.items[category]) { %>
+            <% member.items[category].forEach(function(item) { %>
+              <li class="item-row">
+                <span><strong><%= category %>:</strong> <%= item %></span>
+                <form action="/revoke-need" method="POST">
+                  <input type="hidden" name="member" value="<%= member.name %>">
+                  <input type="hidden" name="category" value="<%= category %>">
+                  <input type="hidden" name="item" value="<%= item %>">
+                  <button type="submit" class="revoke-btn">Revoke</button>
+                </form>
+              </li>
+            <% }) %>
+          <% } %>
+        <% }) %>
+      </ul>
+
+      <form action="/assign-need" method="POST" class="assign-form">
+        <label>Category:</label>
+        <select name="category" required onchange="updateItemDropdown(this, '<%= member.name %>')">
+          <% Object.keys(categories).forEach(function(category) { %>
+            <option value="<%= category %>"><%= category %></option>
+          <% }) %>
+        </select>
+
+        <label>Item:</label>
+        <select name="item" id="item-select-<%= member.name %>" required>
+          <% const firstCategory = Object.keys(categories)[0];
+             categories[firstCategory].forEach(function(item) { %>
+            <option value="<%= item %>"><%= item %></option>
+          <% }) %>
+        </select>
+
+        <input type="hidden" name="member" value="<%= member.name %>">
+        <button type="submit" class="assign-btn">Assign</button>
+      </form>
+    </div>
+  <% }) %>
+</div>
+  </details>
+
+  <script>
+    document.getElementById('attendance-form').addEventListener('submit', function(e) {
+      const form = e.target;
+      const checkboxes = form.querySelectorAll('input[type=checkbox]');
+      checkboxes.forEach(cb => {
+        if (!cb.checked) {
+          const hidden = document.createElement('input');
+          hidden.type = 'hidden';
+          hidden.name = cb.name;
+          hidden.value = 'false';
+          form.appendChild(hidden);
+        }
+      });
+    });
+
+    const categories = <%- JSON.stringify(categories) %>;
+
+  
+    
+    function updateItemDropdown(categorySelect, memberName) {
+      const category = categorySelect.value;
+      const itemSelect = document.getElementById(`item-select-${memberName}`);
+      itemSelect.innerHTML = '';
+      (categories[category] || []).forEach(item => {
+        const option = document.createElement('option');
+        option.value = item;
+        option.textContent = item;
+        itemSelect.appendChild(option);
+      });
+    }
+    
+    function updateEventTotals() {
+  const totals = Array(8).fill(0); // 8 events
+  document.querySelectorAll(".member-attendance").forEach(section => {
+    section.querySelectorAll("input[type=checkbox]").forEach((checkbox, index) => {
+      if (checkbox.checked) {
+        const match = checkbox.name.match(/\[(\d+)\]$/); // Get event index from name
+        if (match) {
+          const i = parseInt(match[1]);
+          totals[i]++;
+        }
+      }
+    });
+  });
+
+  const list = document.getElementById("event-totals-list");
+  list.innerHTML = "";
+  totals.forEach((count, i) => {
+    const li = document.createElement("li");
+   li.innerHTML = `<strong>Major Event (${i + 1})</strong>: ${count}`;
+    list.appendChild(li);
+  });
+}
+
+// Run on load
+document.addEventListener("DOMContentLoaded", updateEventTotals);
+// Also update when checkboxes are clicked
+document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+  cb.addEventListener("change", updateEventTotals);
+});
+
+    function clearEvent(eventNumber) {
+  document.querySelectorAll('.member-attendance').forEach(function(member) {
+    const checkbox = member.querySelector(`input[name="attendance[${member.getAttribute('data-member')}][${eventNumber - 1}]"]`);
+    if (checkbox) checkbox.checked = false;
+  });
+  updateEventTotals(); // refresh count after clearing
+}
+
+    
+    function filterMembers() {
+  const selected = document.getElementById("memberFilter").value;
+  document.querySelectorAll(".member-card").forEach(card => {
+    if (selected === "all" || card.getAttribute("data-member") === selected) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+    function filterAttendance() {
+  const selected = document.getElementById("attendanceFilter").value;
+  document.querySelectorAll(".member-attendance").forEach(section => {
+    if (selected === "all" || section.getAttribute("data-member") === selected) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
+    }
+  });
+}
+    function clearEvent(eventNumber) {
+    // Loop through all member attendance checkboxes
+    document.querySelectorAll('.member-attendance').forEach(function(member) {
+      // Find the checkbox for the specific Major Event (1-8)
+      const checkbox = member.querySelector(`input[name="attendance[${member.getAttribute('data-member')}][${eventNumber - 1}]"]`);
+      if (checkbox) {
+        checkbox.checked = false; // Uncheck the checkbox
+      }
+    });
+  }
+  </script>
+</body>
+</html>
