@@ -1684,8 +1684,12 @@
         "Gloves": [],
         "Cloak": [],
         "Bracelet": [],
-        "Ring 1": [],
-        "Belt": [],
+        "Ring 1": [
+          "Ring of stalwart determination"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
+        ],
         "Archboss Weap 1": [
           "Tevent's warblade of despair"
         ],
@@ -1694,6 +1698,12 @@
         ],
         "Archboss Weap 2": [
           "Cordy's warblade of creeping doom"
+        ],
+        "Necklace": [
+          "Lunar conjunction necklace"
+        ],
+        "Ring 2": [
+          "Coil of endless hunger"
         ]
       }
     },
