@@ -228,13 +228,26 @@
           "Imperial seeker's boots"
         ],
         "Necklace": [
-          "Deep draconic gorget"
+          "Deep draconic gorget",
+          "Collar of nature's wrath"
         ],
         "Archboss Weap 2": [
           "Deluzhnoa's ancient petrified staff"
         ],
         "Cloak": [
           "Cloak of the frozen expanse"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
+        ],
+        "Bracelet": [
+          "Barbed cuffs of the tormentor"
+        ],
+        "Ring 2": [
+          "Ring of eternal Flames"
+        ],
+        "Head": [
+          "Transcendent tempest's cowl"
         ]
       }
     },
@@ -859,7 +872,8 @@
           "Deluzhnoa's serrated shard"
         ],
         "Necklace": [
-          "Noble birthright brooch"
+          "Noble birthright brooch",
+          "Pendant of barbaric rage"
         ],
         "Ring 1": []
       }
@@ -1053,41 +1067,23 @@
       ],
       "items": {
         "Daggers": [
-          "Leviathan's bladed tendrils"
+          "Tevent's fangs of fury"
         ],
         "Spear": [
           "Deluzhnoa's serrated shard"
         ],
-        "Archboss Weap 1": [
-          "Tevent's fangs of fury"
-        ],
-        "Head": [
-          "Ossuary hood of the resistance"
-        ],
-        "Chest": [
-          "Imperial seeker's tunic"
-        ],
-        "Legs": [
-          "Forgotten lotus pants"
-        ],
+        "Archboss Weap 1": [],
+        "Head": [],
+        "Chest": [],
+        "Legs": [],
         "Feet": [
           "Imperial seeker's boots"
         ],
-        "Cloak": [
-          "Opulent noble's mantle"
-        ],
-        "Necklace": [
-          "Death knell gorget"
-        ],
-        "Bracelet": [
-          "Primal golden cuffs"
-        ],
-        "Ring 1": [
-          "Ring of eternal Flames"
-        ],
-        "Belt": [
-          "Elusive nymph coil"
-        ]
+        "Cloak": [],
+        "Necklace": [],
+        "Bracelet": [],
+        "Ring 1": [],
+        "Belt": []
       }
     },
     {
@@ -1204,18 +1200,26 @@
           "Cloak of the frozen expanse"
         ],
         "Necklace": [
-          "Noble birthright brooch"
+          "Pendant of barbaric rage"
         ],
         "Bracelet": [
           "Infernal demonpact cuffs"
         ],
-        "Ring 1": [],
+        "Ring 1": [
+          "Coil of endless hunger"
+        ],
         "Feet": [],
         "Archboss Weap 2": [
           "Deluzhnoa's serrated shard"
         ],
         "Chest": [
           "Imperial seeker's tunic"
+        ],
+        "Ring 2": [
+          "Ring of spirited desire"
+        ],
+        "Belt": [
+          "Undisputed champion's belt"
         ]
       }
     },
