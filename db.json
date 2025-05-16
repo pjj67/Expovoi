@@ -664,8 +664,12 @@
           "Cordy's warblade of creeping doom"
         ],
         "Head": [],
-        "Chest": [],
-        "Legs": [],
+        "Chest": [
+          "Imperial seeker's tunic"
+        ],
+        "Legs": [
+          "Imperial seeker's trousers"
+        ],
         "Feet": [
           "Imperial seeker's boots"
         ],
