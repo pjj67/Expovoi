@@ -411,13 +411,20 @@
         "Feet": [],
         "Gloves": [],
         "Necklace": [
-          "Collar of nature's wrath"
+          "Collar of nature's wrath",
+          "Pendant of barbaric rage"
         ],
         "Ring 1": [
           "Runed band of the black anvil"
         ],
         "Ring 2": [
           "Signet of the first snow"
+        ],
+        "Archboss Weap 2": [
+          "Deluzhnoa's serrated shard"
+        ],
+        "Cloak": [
+          "Cloak of the frozen expanse"
         ]
       }
     },
@@ -656,23 +663,24 @@
         "Archboss Weap 1": [
           "Cordy's warblade of creeping doom"
         ],
-        "Head": [
-          "First light's Halo"
-        ],
-        "Chest": [
-          "Imperial seeker's tunic"
-        ],
-        "Legs": [
-          "First light's pants"
-        ],
+        "Head": [],
+        "Chest": [],
+        "Legs": [],
         "Feet": [
-          "First light's shoes"
+          "Imperial seeker's boots"
         ],
-        "Gloves": [
-          "First light's gloves"
-        ],
+        "Gloves": [],
         "Ring 1": [
           "Runed band of the black anvil"
+        ],
+        "Ring 2": [
+          "Coil of endless hunger"
+        ],
+        "Bracelet": [
+          "Coil of the verdant sovereign"
+        ],
+        "Belt": [
+          "Undisputed champion's belt"
         ]
       }
     },
@@ -1315,6 +1323,9 @@
         ],
         "Wand": [
           "Cordy's grasp of manipulation"
+        ],
+        "Bracelet": [
+          "Restraints of the glacial queen"
         ]
       }
     },
@@ -1747,6 +1758,15 @@
         ],
         "Archboss Weap 1": [
           "Tevent's grasp of withering"
+        ],
+        "Ring 2": [
+          "Band of the resistance leader"
+        ],
+        "Bracelet": [
+          "Restraints of the glacial queen"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
         ]
       }
     },
@@ -1893,7 +1913,19 @@
           "Girdle of treant strength"
         ],
         "Necklace": [
-          "Collar of nature's wrath"
+          "Pendant of barbaric rage"
+        ],
+        "Head": [
+          "Imperial Seeker's Circlet"
+        ],
+        "Bracelet": [
+          "Barbed cuffs of the tormentor"
+        ],
+        "Ring 1": [
+          "Coil of endless hunger"
+        ],
+        "Ring 2": [
+          "Ring of stalwart determination"
         ]
       }
     }
