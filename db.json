@@ -3,7 +3,7 @@
     {
       "name": "Am1ks",
       "attendance": [
-        true,
+        false,
         true,
         true,
         false,
@@ -115,7 +115,7 @@
     {
       "name": "Babi99",
       "attendance": [
-        false,
+        true,
         true,
         true,
         true,
@@ -136,7 +136,7 @@
     {
       "name": "BATEC",
       "attendance": [
-        true,
+        false,
         true,
         false,
         false,
@@ -290,7 +290,7 @@
     {
       "name": "DevilSlayer92",
       "attendance": [
-        true,
+        false,
         false,
         true,
         true,
@@ -431,7 +431,7 @@
     {
       "name": "Dubhessa",
       "attendance": [
-        true,
+        false,
         true,
         false,
         false,
@@ -567,7 +567,7 @@
     {
       "name": "Eski93",
       "attendance": [
-        false,
+        true,
         true,
         true,
         true,
@@ -603,7 +603,7 @@
     {
       "name": "fantaq",
       "attendance": [
-        true,
+        false,
         true,
         true,
         false,
@@ -630,7 +630,7 @@
     {
       "name": "Gorunn",
       "attendance": [
-        true,
+        false,
         false,
         false,
         false,
@@ -791,7 +791,7 @@
     {
       "name": "JonnyyW",
       "attendance": [
-        false,
+        true,
         false,
         true,
         true,
@@ -870,7 +870,7 @@
     {
       "name": "komaxXx",
       "attendance": [
-        true,
+        false,
         false,
         false,
         false,
@@ -1104,7 +1104,7 @@
     {
       "name": "Mephela",
       "attendance": [
-        true,
+        false,
         true,
         false,
         false,
@@ -1128,7 +1128,7 @@
     {
       "name": "Miladria",
       "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -1380,7 +1380,7 @@
     {
       "name": "ResXIII",
       "attendance": [
-        true,
+        false,
         false,
         false,
         true,
@@ -1551,7 +1551,7 @@
     {
       "name": "TarNxD",
       "attendance": [
-        false,
+        true,
         false,
         false,
         false,
@@ -1675,7 +1675,7 @@
     {
       "name": "TRIKI68",
       "attendance": [
-        true,
+        false,
         true,
         false,
         false,
@@ -1857,7 +1857,7 @@
     {
       "name": "Zaralikos",
       "attendance": [
-        true,
+        false,
         false,
         true,
         false,
@@ -1932,6 +1932,20 @@
           "Ring of stalwart determination"
         ]
       }
+    },
+    {
+      "name": "Osyek",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {}
     }
   ],
   "categories": {
@@ -2251,7 +2265,7 @@
     ]
   },
   "eventDates": [
-    "2025-05-04",
+    "2025-05-16",
     "2025-05-05",
     "2025-05-06",
     "2025-05-09",
