@@ -1594,35 +1594,23 @@
         "Greatsword": [
           "Tevent's warblade of despair"
         ],
-        "Head": [
-          "Imperial Seeker's Circlet"
-        ],
-        "Chest": [
-          "Imperial seeker's tunic"
-        ],
-        "Legs": [
-          "Auric vanguard's gaiters"
-        ],
+        "Head": [],
+        "Chest": [],
+        "Legs": [],
         "Feet": [
           "Imperial seeker's boots"
         ],
-        "Gloves": [
-          "Auric vanguard's gauntlets"
-        ],
-        "Cloak": [
-          "Cloak of victorious destiny"
-        ],
+        "Gloves": [],
+        "Cloak": [],
         "Necklace": [
           "Pendant of barbaric rage"
         ],
-        "Bracelet": [
-          "Primal golden cuffs"
-        ],
+        "Bracelet": [],
         "Ring 1": [
           "Honor's promise signet"
         ],
         "Belt": [
-          "Belt of the knight master"
+          "Girdle of treant strength"
         ]
       }
     },
