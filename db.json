@@ -932,9 +932,7 @@
         true
       ],
       "items": {
-        "Staff": [
-          "Daigon's charred Emberstaff"
-        ],
+        "Staff": [],
         "Gloves": [],
         "Bracelet": [
           "Restraints of the glacial queen"
@@ -948,6 +946,9 @@
         ],
         "Archboss Weap 1": [
           "Tevent's grasp of withering"
+        ],
+        "Necklace": [
+          "Lunar conjunction necklace"
         ]
       }
     },
@@ -1064,6 +1065,15 @@
         ],
         "Ring 1": [
           "Runed band of the black anvil"
+        ],
+        "Necklace": [
+          "Primal ritual collar"
+        ],
+        "Ring 2": [
+          "Ring of stalwart determination"
+        ],
+        "Belt": [
+          "Girdle of treant strength"
         ]
       }
     },
@@ -1288,6 +1298,27 @@
       "items": {
         "Staff": [
           "Daigon's charred Emberstaff"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
+        ],
+        "Longbow": [
+          "Titanspine Longbow"
+        ],
+        "Archboss Weap 2": [
+          "Tevent's arc of wailing death"
+        ],
+        "Cloak": [
+          "Starlight fur cloak"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Bracelet": [
+          "Bracelet of the violent undertow"
+        ],
+        "Belt": [
+          "Hero's legacy warbelt"
         ]
       }
     },
