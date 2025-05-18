@@ -5,7 +5,7 @@
       "attendance": [
         false,
         false,
-        true,
+        false,
         false,
         false,
         false,
@@ -117,7 +117,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         false,
         false,
@@ -204,7 +204,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -269,7 +269,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         true,
         false,
@@ -381,7 +381,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         false,
         false,
@@ -423,7 +423,7 @@
       "attendance": [
         false,
         true,
-        false,
+        true,
         false,
         true,
         true,
@@ -467,9 +467,7 @@
         ],
         "Sword and Shield": [],
         "Archboss Weap 1": [],
-        "Necklace": [
-          "Noble birthright brooch"
-        ],
+        "Necklace": [],
         "Archboss Weap 2": []
       }
     },
@@ -594,7 +592,7 @@
       "attendance": [
         false,
         true,
-        true,
+        false,
         false,
         false,
         false,
@@ -635,7 +633,7 @@
       "attendance": [
         false,
         true,
-        false,
+        true,
         false,
         false,
         true,
@@ -682,7 +680,7 @@
       "attendance": [
         false,
         true,
-        true,
+        false,
         false,
         false,
         false,
@@ -782,7 +780,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         false,
         false,
@@ -861,7 +859,7 @@
       "attendance": [
         false,
         true,
-        false,
+        true,
         false,
         true,
         false,
@@ -961,7 +959,7 @@
       "attendance": [
         true,
         false,
-        false,
+        true,
         false,
         true,
         false,
@@ -1056,9 +1054,7 @@
         "Ring 1": [
           "Runed band of the black anvil"
         ],
-        "Necklace": [
-          "Primal ritual collar"
-        ],
+        "Necklace": [],
         "Ring 2": [
           "Ring of stalwart determination"
         ],
@@ -1072,7 +1068,7 @@
       "attendance": [
         false,
         false,
-        true,
+        false,
         false,
         false,
         false,
@@ -1242,7 +1238,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         true,
         true,
@@ -1278,7 +1274,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         false,
         true,
         true,
@@ -1504,14 +1500,15 @@
         "Bracelet": [
           "Bracelet of the violent undertow"
         ],
-        "Ring 1": [
-          "Distant echoes band"
-        ],
+        "Ring 1": [],
         "Ring 2": [
           "Runed band of the black anvil"
         ],
         "Belt": [
           "Undisputed champion's belt"
+        ],
+        "Necklace": [
+          "Pendant of frozen tears"
         ]
       }
     },
@@ -1520,7 +1517,7 @@
       "attendance": [
         false,
         true,
-        true,
+        false,
         false,
         true,
         false,
@@ -1627,7 +1624,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -1641,7 +1638,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         false,
         true,
         false,
@@ -1689,7 +1686,7 @@
       "attendance": [
         false,
         false,
-        false,
+        true,
         false,
         true,
         false,
@@ -1711,7 +1708,7 @@
       "attendance": [
         true,
         false,
-        true,
+        false,
         true,
         false,
         true,
@@ -1755,7 +1752,7 @@
       "attendance": [
         true,
         true,
-        true,
+        false,
         true,
         true,
         true,
@@ -1791,7 +1788,7 @@
       "attendance": [
         false,
         true,
-        false,
+        true,
         false,
         false,
         false,
@@ -1844,9 +1841,7 @@
         "Head": [
           "Forgotten lotus mask"
         ],
-        "Chest": [
-          "Forgotten lotus garb"
-        ],
+        "Chest": [],
         "Legs": [
           "Forgotten lotus pants"
         ]
@@ -1950,7 +1945,7 @@
       "attendance": [
         true,
         true,
-        false,
+        true,
         false,
         false,
         false,
@@ -2293,7 +2288,7 @@
   "eventDates": [
     "2025-05-16",
     "2025-05-17",
-    "2025-05-06",
+    "2025-05-18",
     "2025-05-09",
     "2025-05-10",
     "2025-05-11",
