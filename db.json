@@ -4,7 +4,7 @@
       "name": "Am1ks",
       "attendance": [
         false,
-        true,
+        false,
         true,
         false,
         false,
@@ -116,7 +116,7 @@
       "name": "Babi99",
       "attendance": [
         true,
-        true,
+        false,
         true,
         true,
         false,
@@ -137,7 +137,7 @@
       "name": "BATEC",
       "attendance": [
         false,
-        true,
+        false,
         false,
         false,
         true,
@@ -269,7 +269,7 @@
       "name": "Date",
       "attendance": [
         true,
-        false,
+        true,
         false,
         true,
         true,
@@ -389,7 +389,7 @@
       "name": "Ditawei",
       "attendance": [
         true,
-        false,
+        true,
         false,
         true,
         false,
@@ -644,7 +644,7 @@
       "name": "HeavenBlade",
       "attendance": [
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -691,7 +691,7 @@
       "name": "HxCMatus",
       "attendance": [
         false,
-        false,
+        true,
         true,
         false,
         false,
@@ -870,7 +870,7 @@
       "name": "komaxXx",
       "attendance": [
         false,
-        false,
+        true,
         false,
         false,
         true,
@@ -1027,7 +1027,7 @@
       "name": "LukeyBoy",
       "attendance": [
         true,
-        true,
+        false,
         true,
         false,
         false,
@@ -1114,7 +1114,7 @@
       "name": "Mephela",
       "attendance": [
         false,
-        true,
+        false,
         false,
         false,
         true,
@@ -1205,7 +1205,7 @@
       "name": "Narthaus",
       "attendance": [
         true,
-        false,
+        true,
         true,
         false,
         false,
@@ -1251,7 +1251,7 @@
       "name": "NotOsiris",
       "attendance": [
         true,
-        true,
+        false,
         true,
         true,
         true,
@@ -1525,7 +1525,7 @@
       "name": "SnotraW",
       "attendance": [
         false,
-        false,
+        true,
         true,
         false,
         true,
@@ -1632,7 +1632,7 @@
       "name": "TENZENKAI",
       "attendance": [
         true,
-        false,
+        true,
         false,
         true,
         true,
@@ -1646,7 +1646,7 @@
       "name": "TheArabian",
       "attendance": [
         true,
-        false,
+        true,
         false,
         false,
         true,
@@ -1694,7 +1694,7 @@
       "name": "TRIKI68",
       "attendance": [
         false,
-        true,
+        false,
         false,
         false,
         true,
@@ -1716,7 +1716,7 @@
       "name": "Volrathz",
       "attendance": [
         true,
-        true,
+        false,
         true,
         true,
         false,
@@ -1760,7 +1760,7 @@
       "name": "Weiming",
       "attendance": [
         true,
-        false,
+        true,
         true,
         true,
         true,
@@ -1796,7 +1796,7 @@
       "name": "xCyrsn",
       "attendance": [
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -1826,7 +1826,7 @@
       "name": "xLuyu",
       "attendance": [
         true,
-        false,
+        true,
         true,
         true,
         false,
@@ -1955,7 +1955,21 @@
       "name": "Osyek",
       "attendance": [
         true,
+        true,
         false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "items": {}
+    },
+    {
+      "name": "JtSlayR",
+      "attendance": [
+        false,
+        true,
         false,
         false,
         false,
@@ -2284,7 +2298,7 @@
   },
   "eventDates": [
     "2025-05-16",
-    "2025-05-05",
+    "2025-05-17",
     "2025-05-06",
     "2025-05-09",
     "2025-05-10",
