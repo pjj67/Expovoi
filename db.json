@@ -490,9 +490,7 @@
         "Staff": [
           "Daigon's charred Emberstaff"
         ],
-        "Longbow": [
-          "Deluzhnoa's arc of frozen death"
-        ],
+        "Longbow": [],
         "Archboss Weap 1": [
           "Tevent's arc of wailing death"
         ],
@@ -506,11 +504,12 @@
           "Cloak of the frozen expanse"
         ],
         "Necklace": [
-          "Collar of nature's wrath"
+          "Collar of nature's wrath",
+          "Pendant of frozen tears"
         ],
         "Bracelet": [
-          "Restraints of the glacial queen",
-          "Bracelet of the violent undertow"
+          "Barbed cuffs of the tormentor",
+          "Bracelet of agony"
         ],
         "Chest": [
           "Imperial seeker's tunic"
@@ -1396,6 +1395,9 @@
         ],
         "Belt": [
           "Elusive nymph coil"
+        ],
+        "Archboss Weap 1": [
+          "Cordy's warblade of creeping doom"
         ]
       }
     },
