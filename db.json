@@ -356,18 +356,12 @@
         "Head": [
           "Oblivion's wrath barbute"
         ],
-        "Chest": [
-          "Auric vanguard's full plate"
-        ],
-        "Legs": [
-          "Trophy adorned leg guards"
-        ],
+        "Chest": [],
+        "Legs": [],
         "Feet": [
           "Oblivion's wrath stompers"
         ],
-        "Gloves": [
-          "Auric vanguard's gauntlets"
-        ],
+        "Gloves": [],
         "Cloak": [
           "Cloak of victorious destiny"
         ],
@@ -377,9 +371,7 @@
         "Bracelet": [
           "Twisted coil of the enduring"
         ],
-        "Ring 1": [
-          "Runed band of the black anvil"
-        ],
+        "Ring 1": [],
         "Belt": [
           "Girdle of treant strength"
         ]
