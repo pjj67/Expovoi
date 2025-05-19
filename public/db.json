@@ -468,7 +468,13 @@
         "Sword and Shield": [],
         "Archboss Weap 1": [],
         "Necklace": [],
-        "Archboss Weap 2": []
+        "Archboss Weap 2": [],
+        "Belt": [
+          "Belt of the knight master"
+        ],
+        "Spear": [
+          "Queen bellandir's serrated spike"
+        ]
       }
     },
     {
@@ -530,7 +536,7 @@
       ],
       "items": {
         "Wand": [
-          "Codex of deep secrets"
+          "Cordy's grasp of manipulation"
         ],
         "Archboss Weap 1": [
           "Tevent's grasp of withering"
@@ -548,7 +554,9 @@
           "Restraints of the glacial queen"
         ],
         "Ring 1": [],
-        "Belt": []
+        "Belt": [
+          "Belt of the knight master"
+        ]
       }
     },
     {
@@ -1256,22 +1264,21 @@
         "Chest": [],
         "Legs": [],
         "Feet": [
-          "Royal praetor's sabatons"
+          "Auric vanguard's plate boots"
         ],
-        "Ring 1": [
-          "Runed band of the black anvil"
-        ],
+        "Ring 1": [],
         "Archboss Weap 1": [
           "Queen bellandir's languishing blade"
         ],
-        "Head": [
-          "Royal praetor's visor"
-        ],
+        "Head": [],
         "Necklace": [
           "Noble birthright brooch"
         ],
         "Belt": [
           "Girdle of treant strength"
+        ],
+        "Gloves": [
+          "Auric vanguard's gauntlets"
         ]
       }
     },
