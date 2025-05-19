@@ -874,8 +874,8 @@
           "Deluzhnoa's serrated shard"
         ],
         "Necklace": [
-          "Noble birthright brooch",
-          "Pendant of barbaric rage"
+          "Pendant of barbaric rage",
+          "Pendant of frozen tears"
         ],
         "Ring 1": []
       }
@@ -1184,7 +1184,10 @@
         "Feet": [
           "Imperial seeker's boots"
         ],
-        "Gloves": []
+        "Gloves": [],
+        "Bracelet": [
+          "Coil of the verdant sovereign"
+        ]
       }
     },
     {
@@ -1462,10 +1465,12 @@
           "Deluzhnoa's serrated shard"
         ],
         "Necklace": [
-          "Noble birthright brooch"
+          "Noble birthright brooch",
+          "Pendant of frozen tears"
         ],
         "Bracelet": [
-          "Infernal demonpact cuffs"
+          "Infernal demonpact cuffs",
+          "Coil of the verdant sovereign"
         ]
       }
     },
@@ -1488,9 +1493,7 @@
         "Staff": [
           "Deluzhnoa's ancient petrified staff"
         ],
-        "Head": [
-          "Imperial Seeker's Circlet"
-        ],
+        "Head": [],
         "Feet": [
           "Imperial seeker's boots"
         ],
@@ -1500,12 +1503,15 @@
         "Bracelet": [
           "Bracelet of the violent undertow"
         ],
-        "Ring 1": [],
+        "Ring 1": [
+          "Ring of song of punishment"
+        ],
         "Ring 2": [
           "Runed band of the black anvil"
         ],
         "Belt": [
-          "Undisputed champion's belt"
+          "Undisputed champion's belt",
+          "Belt of claimed trophies"
         ],
         "Necklace": [
           "Pendant of frozen tears"
