@@ -672,6 +672,9 @@
         ],
         "Belt": [
           "Undisputed champion's belt"
+        ],
+        "Necklace": [
+          "Pendant of barbaric rage"
         ]
       }
     },
@@ -1501,10 +1504,12 @@
           "Cloak of the frozen expanse"
         ],
         "Bracelet": [
-          "Bracelet of the violent undertow"
+          "Bracelet of fractured worlds",
+          "Barbed cuffs of the tormentor"
         ],
         "Ring 1": [
-          "Ring of song of punishment"
+          "Ring of song of punishment",
+          "Distant echoes band"
         ],
         "Ring 2": [
           "Runed band of the black anvil"
