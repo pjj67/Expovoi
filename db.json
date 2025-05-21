@@ -536,26 +536,24 @@
       ],
       "items": {
         "Wand": [
-          "Cordy's grasp of manipulation"
+          "Deckman's balefire scepter"
         ],
         "Archboss Weap 1": [
           "Tevent's grasp of withering"
         ],
         "Chest": [
-          "Auric vanguard's full plate"
+          "Chosen vanquisher's full plate"
         ],
-        "Legs": [],
+        "Legs": [
+          "Auric vanguard's gaiters"
+        ],
         "Feet": [],
         "Gloves": [],
-        "Necklace": [
-          "Noble birthright brooch"
-        ],
-        "Bracelet": [
-          "Restraints of the glacial queen"
-        ],
+        "Necklace": [],
+        "Bracelet": [],
         "Ring 1": [],
         "Belt": [
-          "Belt of the knight master"
+          "Cunning ogre girdle"
         ]
       }
     },
@@ -1712,12 +1710,15 @@
         true
       ],
       "items": {
-        "Greatsword": [
-          "Tevent's warblade of despair"
+        "Greatsword": [],
+        "Necklace": [
+          "Primal ritual collar"
         ],
-        "Necklace": [],
         "Ring 1": [
           "Runed band of the black anvil"
+        ],
+        "Daggers": [
+          "Tevent's fangs of fury"
         ]
       }
     },
