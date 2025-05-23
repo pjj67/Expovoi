@@ -276,7 +276,7 @@
         true,
         false,
         false,
-        true,
+        false,
         true,
         false
       ],
@@ -366,7 +366,7 @@
         true,
         true,
         false,
-        false,
+        true,
         true,
         true
       ],
@@ -408,7 +408,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true,
         true
       ],
@@ -583,7 +583,7 @@
         false,
         true,
         true,
-        false,
+        true,
         false,
         false
       ],
@@ -610,7 +610,7 @@
         false,
         false,
         false,
-        true,
+        false,
         false,
         false
       ],
@@ -774,7 +774,7 @@
         false,
         true,
         false,
-        false,
+        true,
         true,
         true
       ],
@@ -1010,7 +1010,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true,
         true
       ],
@@ -1062,7 +1062,7 @@
         false,
         true,
         false,
-        false,
+        true,
         false,
         true
       ],
@@ -1270,7 +1270,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true,
         true
       ],
@@ -1575,7 +1575,7 @@
         false,
         false,
         false,
-        true,
+        false,
         false,
         false
       ],
@@ -1687,7 +1687,7 @@
         true,
         true,
         true,
-        false,
+        true,
         false,
         true
       ],
@@ -1712,7 +1712,7 @@
         false,
         true,
         true,
-        true,
+        false,
         false,
         false
       ],
@@ -1822,7 +1822,7 @@
         true,
         false,
         false,
-        true,
+        false,
         false,
         false
       ],
@@ -1870,7 +1870,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true,
         true
       ],
@@ -1901,7 +1901,7 @@
         false,
         false,
         false,
-        true,
+        false,
         false,
         false
       ],
@@ -1949,7 +1949,7 @@
         true,
         true,
         true,
-        false,
+        true,
         false,
         false
       ],
@@ -1963,7 +1963,7 @@
         false,
         false,
         true,
-        false,
+        true,
         false,
         false
       ],
@@ -1977,7 +1977,21 @@
         false,
         true,
         true,
+        true,
         false,
+        false
+      ],
+      "items": {}
+    },
+    {
+      "name": "Roxorino",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
         false,
         false
       ],
@@ -2306,7 +2320,7 @@
     "2025-05-18",
     "2025-05-19",
     "2025-05-20",
-    "2025-05-11",
+    "2025-05-23",
     "2025-05-12",
     "2025-05-13"
   ]
