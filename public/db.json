@@ -90,22 +90,28 @@
         "Archboss Weap 2": [
           "Tevent's fangs of fury"
         ],
-        "Chest": [
-          "Imperial seeker's tunic"
-        ],
-        "Feet": [
-          "Imperial seeker's boots"
-        ],
+        "Chest": [],
+        "Feet": [],
         "Gloves": [],
         "Cloak": [
           "Cloak of the frozen expanse"
         ],
         "Necklace": [
-          "Noble birthright brooch"
+          "Noble birthright brooch",
+          "Pendant of eternal flames"
         ],
-        "Bracelet": [],
-        "Ring 1": [],
-        "Ring 2": []
+        "Bracelet": [
+          "Twisted coil of the enduring"
+        ],
+        "Ring 1": [
+          "Ring of stalwart determination"
+        ],
+        "Ring 2": [
+          "Band of the resistance leader"
+        ],
+        "Belt": [
+          "Belt of claimed trophies"
+        ]
       }
     },
     {
@@ -763,6 +769,9 @@
       "items": {
         "Wand": [
           "Cordy's grasp of manipulation"
+        ],
+        "Ring 1": [
+          "Band of the resistance leader"
         ]
       }
     },
