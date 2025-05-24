@@ -76,7 +76,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -123,7 +123,7 @@
         false,
         false,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -144,7 +144,7 @@
         false,
         false,
         false,
-        true,
+        false,
         false
       ],
       "items": {
@@ -210,7 +210,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -261,7 +261,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -283,7 +283,7 @@
         false,
         false,
         false,
-        true,
+        false,
         false
       ],
       "items": {
@@ -324,7 +324,7 @@
         true,
         false,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -373,7 +373,7 @@
         true,
         false,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -415,7 +415,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -519,7 +519,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -554,7 +554,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -763,7 +763,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -784,7 +784,7 @@
         true,
         false,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -863,7 +863,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -889,7 +889,7 @@
         true,
         false,
         true,
-        true,
+        false,
         false
       ],
       "items": {
@@ -1020,7 +1020,7 @@
         true,
         false,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -1105,7 +1105,7 @@
         false,
         true,
         false,
-        false,
+        true,
         false
       ],
       "items": {
@@ -1187,7 +1187,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -1233,7 +1233,7 @@
         false,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -1348,7 +1348,7 @@
         true,
         true,
         true,
-        true,
+        false,
         true
       ],
       "items": {
@@ -1614,7 +1614,7 @@
         false,
         false,
         true,
-        true,
+        false,
         true
       ],
       "items": {}
@@ -1859,7 +1859,7 @@
         true,
         true,
         false,
-        true,
+        false,
         true
       ],
       "items": {
@@ -1941,7 +1941,23 @@
         false,
         false
       ],
-      "items": {}
+      "items": {
+        "Belt": [
+          "Belt of claimed trophies"
+        ],
+        "Bracelet": [
+          "Barbed cuffs of the tormentor"
+        ],
+        "Necklace": [
+          "Pendant of frozen tears"
+        ],
+        "Ring 1": [
+          "Distant echoes band"
+        ],
+        "Ring 2": [
+          "Coil of endless hunger"
+        ]
+      }
     },
     {
       "name": "JtSlayR",
@@ -2309,7 +2325,7 @@
     "2025-05-19",
     "2025-05-20",
     "2025-05-23",
-    "2025-05-12",
+    "2025-05-24",
     "2025-05-13"
   ]
 }
