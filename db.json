@@ -2013,7 +2013,11 @@
         true,
         false
       ],
-      "items": {}
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ]
+      }
     },
     {
       "name": "Zelystin",
