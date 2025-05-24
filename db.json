@@ -76,7 +76,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -373,7 +373,7 @@
         true,
         false,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -415,7 +415,7 @@
         true,
         true,
         false,
-        false,
+        true,
         true
       ],
       "items": {
@@ -519,7 +519,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -554,7 +554,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -590,7 +590,7 @@
         true,
         true,
         true,
-        false,
+        true,
         false
       ],
       "items": {
@@ -617,7 +617,7 @@
         false,
         false,
         false,
-        false,
+        true,
         false
       ],
       "items": {}
@@ -763,7 +763,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -863,7 +863,7 @@
         true,
         true,
         false,
-        false,
+        true,
         true
       ],
       "items": {
@@ -889,7 +889,7 @@
         true,
         false,
         true,
-        false,
+        true,
         false
       ],
       "items": {
@@ -963,7 +963,7 @@
         false,
         false,
         false,
-        false,
+        true,
         false
       ],
       "items": {}
@@ -1072,7 +1072,7 @@
         true,
         false,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -1233,7 +1233,7 @@
         false,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -1348,7 +1348,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "items": {
@@ -1614,7 +1614,7 @@
         false,
         false,
         true,
-        false,
+        true,
         true
       ],
       "items": {}
@@ -1781,7 +1781,7 @@
         false,
         false,
         false,
-        false,
+        true,
         false
       ],
       "items": {
@@ -1811,7 +1811,7 @@
         false,
         false,
         false,
-        false,
+        true,
         false
       ],
       "items": {
@@ -1938,7 +1938,7 @@
         true,
         true,
         true,
-        false,
+        true,
         false
       ],
       "items": {
@@ -1968,7 +1968,7 @@
         false,
         true,
         true,
-        false,
+        true,
         false
       ],
       "items": {}
@@ -1996,6 +1996,48 @@
         false,
         false,
         true,
+        false,
+        false
+      ],
+      "items": {}
+    },
+    {
+      "name": "Munaman",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "items": {}
+    },
+    {
+      "name": "Zelystin",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "items": {}
+    },
+    {
+      "name": "xart3miz",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
