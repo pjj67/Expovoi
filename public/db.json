@@ -1133,35 +1133,23 @@
         true
       ],
       "items": {
-        "Head": [
-          "Transcendent tempest's cowl"
+        "Head": [],
+        "Chest": [],
+        "Legs": [],
+        "Feet": [
+          "Imperial seeker's boots"
         ],
-        "Chest": [
-          "Transcendent tempest's armor"
+        "Gloves": [],
+        "Cloak": [],
+        "Necklace": [
+          "Collar of nature's wrath"
         ],
-        "Legs": [
-          "Transcendent tempest's pants"
-        ],
-        "Feet": [],
-        "Gloves": [
-          "Transcendent tempest's touch"
-        ],
-        "Cloak": [
-          "Starlight fur cloak"
-        ],
-        "Necklace": [],
-        "Bracelet": [
-          "Primal golden cuffs"
-        ],
+        "Bracelet": [],
         "Ring 1": [
           "Runed band of the black anvil"
         ],
-        "Ring 2": [
-          "Band of the ancestor's blood"
-        ],
-        "Belt": [
-          "Hero's legacy warbelt"
-        ],
+        "Ring 2": [],
+        "Belt": [],
         "Staff": [],
         "Archboss Weap 1": [
           "Queen bellandir's hivemind staff"
@@ -1370,30 +1358,21 @@
         "Chest": [
           "Imperial seeker's tunic"
         ],
-        "Legs": [
-          "Forgotten lotus pants"
-        ],
+        "Legs": [],
         "Feet": [
           "Imperial seeker's boots"
         ],
         "Gloves": [],
-        "Cloak": [
-          "Steadfast commander's cape"
-        ],
+        "Cloak": [],
         "Necklace": [],
         "Bracelet": [
-          "Primal golden cuffs",
           "Coil of the verdant sovereign"
         ],
         "Ring 1": [
           "Runed band of the black anvil"
         ],
-        "Ring 2": [
-          "Solitaire of purity"
-        ],
-        "Belt": [
-          "Elusive nymph coil"
-        ],
+        "Ring 2": [],
+        "Belt": [],
         "Archboss Weap 1": [
           "Cordy's warblade of creeping doom"
         ]
