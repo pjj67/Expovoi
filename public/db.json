@@ -1030,8 +1030,12 @@
         "Longbow": [
           "Tevent's arc of wailing death"
         ],
-        "Necklace": [
-          "Collar of nature's wrath"
+        "Necklace": [],
+        "Belt": [
+          "Belt of claimed trophies"
+        ],
+        "Ring 1": [
+          "Ring of spirited desire"
         ]
       }
     },
