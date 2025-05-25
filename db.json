@@ -47,27 +47,6 @@
       }
     },
     {
-      "name": "Andol",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Greatsword": [
-          "Tevent's warblade of despair"
-        ],
-        "Daggers": [
-          "Tevent's fangs of fury"
-        ]
-      }
-    },
-    {
       "name": "Angrylittleman",
       "attendance": [
         true,
@@ -828,33 +807,6 @@
       "items": {}
     },
     {
-      "name": "KaraDead",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Daggers": [
-          "Tevent's fangs of fury"
-        ],
-        "Longbow": [
-          "Leviathan's bloodstorm longbow"
-        ],
-        "Archboss Weap 1": [
-          "Tevent's arc of wailing death"
-        ],
-        "Ring 1": [
-          "Band of the ancestor's blood"
-        ]
-      }
-    },
-    {
       "name": "komaxXx",
       "attendance": [
         false,
@@ -1061,39 +1013,6 @@
         "Belt": [
           "Girdle of treant strength"
         ]
-      }
-    },
-    {
-      "name": "maxwinistann",
-      "attendance": [
-        false,
-        false,
-        false,
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "items": {
-        "Daggers": [
-          "Tevent's fangs of fury"
-        ],
-        "Spear": [
-          "Deluzhnoa's serrated shard"
-        ],
-        "Archboss Weap 1": [],
-        "Head": [],
-        "Chest": [],
-        "Legs": [],
-        "Feet": [
-          "Imperial seeker's boots"
-        ],
-        "Cloak": [],
-        "Necklace": [],
-        "Bracelet": [],
-        "Ring 1": [],
-        "Belt": []
       }
     },
     {
