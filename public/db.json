@@ -13,36 +13,32 @@
         true
       ],
       "items": {
-        "Wand": [
-          "Overture of eternal salvation"
-        ],
-        "Head": [
-          "Transcendent tempest's cowl"
-        ],
-        "Chest": [
-          "Transcendent tempest's armor"
-        ],
-        "Legs": [
-          "Transcendent tempest's pants"
-        ],
-        "Feet": [
-          "Violent demonic beast's fur boots"
-        ],
-        "Gloves": [
-          "Transcendent tempest's touch"
-        ],
+        "Wand": [],
+        "Head": [],
+        "Chest": [],
+        "Legs": [],
+        "Feet": [],
+        "Gloves": [],
         "Cloak": [
-          "Starlight fur cloak"
+          "Cloak of the frozen expanse"
         ],
-        "Necklace": [],
+        "Necklace": [
+          "Pendant of frozen tears"
+        ],
         "Bracelet": [
-          "Bracelet of the violent undertow"
+          "Barbed cuffs of the tormentor"
         ],
         "Ring 1": [
           "Runed band of the black anvil"
         ],
         "Belt": [
-          "Hero's legacy warbelt"
+          "Undisputed champion's belt"
+        ],
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Ring 2": [
+          "Ring of eternal Flames"
         ]
       }
     },
