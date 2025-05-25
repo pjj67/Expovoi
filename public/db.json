@@ -1763,7 +1763,20 @@
         false,
         true
       ],
-      "items": {}
+      "items": {
+        "Staff": [
+          "Daigon's charred Emberstaff"
+        ],
+        "Longbow": [
+          "Tevent's arc of wailing death"
+        ],
+        "Necklace": [
+          "Collar of nature's wrath"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ]
+      }
     },
     {
       "name": "Zaralikos",
