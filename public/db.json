@@ -1120,14 +1120,12 @@
           "Cloak of the frozen expanse"
         ],
         "Necklace": [
-          "Pendant of barbaric rage"
+          "Noble birthright brooch"
         ],
         "Bracelet": [
           "Infernal demonpact cuffs"
         ],
-        "Ring 1": [
-          "Coil of endless hunger"
-        ],
+        "Ring 1": [],
         "Feet": [],
         "Archboss Weap 2": [
           "Deluzhnoa's serrated shard"
@@ -1135,11 +1133,13 @@
         "Chest": [
           "Imperial seeker's tunic"
         ],
-        "Ring 2": [
-          "Ring of spirited desire"
+        "Ring 2": [],
+        "Belt": [],
+        "Legs": [
+          "Spectral overser's trousers"
         ],
-        "Belt": [
-          "Undisputed champion's belt"
+        "Gloves": [
+          "Spectral overseer's handguards"
         ]
       }
     },
