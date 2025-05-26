@@ -1417,36 +1417,6 @@
       }
     },
     {
-      "name": "SnotraW",
-      "attendance": [
-        false,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Legs": [
-          "First light's pants"
-        ],
-        "Feet": [
-          "Forgotten lotus boots"
-        ],
-        "Gloves": [
-          "Forgotten lotus gloves"
-        ],
-        "Necklace": [
-          "Collar of nature's wrath"
-        ],
-        "Bracelet": [
-          "Infernal demonpact cuffs"
-        ]
-      }
-    },
-    {
       "name": "SterLorD",
       "attendance": [
         false,
@@ -1561,27 +1531,6 @@
         ],
         "Ring 1": [
           "Runed band of the black anvil"
-        ]
-      }
-    },
-    {
-      "name": "THUNDERSAINT",
-      "attendance": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "items": {
-        "Greatsword": [
-          "Tevent's warblade of despair"
-        ],
-        "Sword and Shield": [
-          "Queen bellandir's languishing blade"
         ]
       }
     },
