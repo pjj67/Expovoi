@@ -13,7 +13,9 @@
         true
       ],
       "items": {
-        "Wand": [],
+        "Wand": [
+          "Tevent's grasp of withering"
+        ],
         "Head": [],
         "Chest": [],
         "Legs": [],
