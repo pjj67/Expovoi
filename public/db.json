@@ -1880,7 +1880,23 @@
         false,
         false
       ],
-      "items": {}
+      "items": {
+        "Belt": [
+          "Belt of claimed trophies"
+        ],
+        "Bracelet": [
+          "Barbed cuffs of the tormentor"
+        ],
+        "Necklace": [
+          "Pendant of frozen tears"
+        ],
+        "Ring 1": [
+          "Distant echoes band"
+        ],
+        "Ring 2": [
+          "Coil of endless hunger"
+        ]
+      }
     },
     {
       "name": "Roxorino",
