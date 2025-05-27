@@ -101,7 +101,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Staff": [
@@ -351,7 +351,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -422,7 +422,7 @@
         true,
         true,
         true,
-        false
+        true
       ],
       "items": {
         "Greatsword": [
@@ -684,7 +684,7 @@
         true,
         true,
         true,
-        false
+        true
       ],
       "items": {
         "Staff": [
@@ -715,7 +715,7 @@
         false,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Greatsword": [
@@ -739,7 +739,7 @@
         true,
         true,
         true,
-        true
+        false
       ],
       "items": {
         "Wand": [
@@ -855,7 +855,7 @@
         false,
         true,
         true,
-        false
+        true
       ],
       "items": {
         "Staff": [
@@ -986,7 +986,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       "items": {
         "Gloves": [
@@ -1205,7 +1205,7 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "items": {
         "Staff": [
@@ -1628,7 +1628,7 @@
         true,
         true,
         true,
-        false
+        true
       ],
       "items": {
         "Wand": [
@@ -1834,7 +1834,7 @@
         true,
         true,
         true,
-        false
+        true
       ],
       "items": {
         "Belt": [
@@ -1878,7 +1878,7 @@
         true,
         true,
         false,
-        false
+        true
       ],
       "items": {
         "Belt": [
@@ -2283,6 +2283,6 @@
     "2025-05-20",
     "2025-05-23",
     "2025-05-24",
-    "2025-05-13"
+    "2025-05-27"
   ]
 }
