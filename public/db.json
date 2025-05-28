@@ -578,6 +578,9 @@
         ],
         "Necklace": [
           "Collar of nature's wrath"
+        ],
+        "Greatsword": [
+          "Cordy's warblade of creeping doom"
         ]
       }
     },
@@ -1905,7 +1908,17 @@
         false,
         false
       ],
-      "items": {}
+      "items": {
+        "Necklace": [
+          "Primal ritual collar"
+        ],
+        "Ring 1": [
+          "Runed band of the black anvil"
+        ],
+        "Belt": [
+          "Cunning ogre girdle"
+        ]
+      }
     },
     {
       "name": "Munaman",
