@@ -88,6 +88,9 @@
         ],
         "Belt": [
           "Belt of claimed trophies"
+        ],
+        "Earrings": [
+          "Bloodbright Earrings"
         ]
       }
     },
@@ -727,6 +730,9 @@
         ],
         "Bracelet": [
           "Barbed cuffs of the tormentor"
+        ],
+        "Earrings": [
+          "Gilded Granite Teardrops"
         ]
       }
     },
@@ -947,6 +953,12 @@
         ],
         "Ring 2": [
           "Astral bond"
+        ],
+        "Earrings": [
+          "Gilded Granite Teardrops"
+        ],
+        "Archboss Weap 1": [
+          "Queen bellandir's hivemind staff"
         ]
       }
     },
@@ -2255,7 +2267,14 @@
       "Hero's legacy warbelt",
       "Undisputed champion's belt"
     ],
-    "Earrings": []
+    "Earrings": [
+      "Bloodbright Earrings",
+      "Brilliant Regal Earrings",
+      "Earrings of Forlorn Elegance",
+      "Earrings of Glimmering Dew",
+      "Earrings of Primal Foresight",
+      "Gilded Granite Teardrops"
+    ]
   },
   "eventDates": [
     "2025-05-16",
