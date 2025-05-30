@@ -847,33 +847,6 @@
       }
     },
     {
-      "name": "Kyiatec",
-      "attendance": [
-        true,
-        true,
-        true,
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "items": {
-        "Staff": [
-          "Daigon's charred Emberstaff"
-        ],
-        "Necklace": [
-          "Noble birthright brooch"
-        ],
-        "Bracelet": [
-          "Infernal demonpact cuffs"
-        ],
-        "Archboss Weap 1": [
-          "Queen bellandir's hivemind staff"
-        ]
-      }
-    },
-    {
       "name": "Kythor",
       "attendance": [
         true,
