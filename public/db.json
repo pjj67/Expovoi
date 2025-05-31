@@ -3,7 +3,7 @@
     {
       "name": "Am1ks",
       "attendance": [
-        false,
+        true,
         false,
         false,
         false,
@@ -298,7 +298,7 @@
     {
       "name": "Di4ble",
       "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -562,7 +562,7 @@
     {
       "name": "fantaq",
       "attendance": [
-        false,
+        true,
         true,
         false,
         true,
@@ -590,7 +590,7 @@
     {
       "name": "Gorunn",
       "attendance": [
-        false,
+        true,
         false,
         false,
         false,
@@ -827,7 +827,7 @@
     {
       "name": "komaxXx",
       "attendance": [
-        false,
+        true,
         true,
         true,
         true,
@@ -966,7 +966,7 @@
     {
       "name": "LukeyBoy",
       "attendance": [
-        true,
+        false,
         false,
         true,
         true,
@@ -1018,7 +1018,7 @@
     {
       "name": "Mephela",
       "attendance": [
-        false,
+        true,
         false,
         false,
         false,
@@ -1046,7 +1046,7 @@
     {
       "name": "Miladria",
       "attendance": [
-        false,
+        true,
         true,
         true,
         true,
@@ -1104,7 +1104,7 @@
     {
       "name": "Narthaus",
       "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -1150,7 +1150,7 @@
     {
       "name": "NotOsiris",
       "attendance": [
-        true,
+        false,
         false,
         false,
         false,
@@ -1185,7 +1185,7 @@
     {
       "name": "oOHitsuOo",
       "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -1378,7 +1378,7 @@
     {
       "name": "Silvendil",
       "attendance": [
-        true,
+        false,
         true,
         true,
         true,
@@ -1563,7 +1563,7 @@
     {
       "name": "Volrathz",
       "attendance": [
-        true,
+        false,
         false,
         false,
         true,
@@ -1607,7 +1607,7 @@
     {
       "name": "Weiming",
       "attendance": [
-        true,
+        false,
         true,
         false,
         true,
@@ -1643,7 +1643,7 @@
     {
       "name": "xCyrsn",
       "attendance": [
-        false,
+        true,
         true,
         true,
         false,
@@ -1841,7 +1841,7 @@
     {
       "name": "JtSlayR",
       "attendance": [
-        false,
+        true,
         true,
         false,
         false,
@@ -1855,7 +1855,7 @@
     {
       "name": "SimplyHustla",
       "attendance": [
-        false,
+        true,
         false,
         false,
         true,
@@ -1927,7 +1927,7 @@
     {
       "name": "Zelystin",
       "attendance": [
-        false,
+        true,
         false,
         false,
         false,
@@ -2278,7 +2278,7 @@
     ]
   },
   "eventDates": [
-    "2025-05-16",
+    "2025-05-30",
     "2025-05-17",
     "2025-05-18",
     "2025-05-19",

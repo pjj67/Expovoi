@@ -1,0 +1,52 @@
+npm install express body-parser lowdb uuid
+node server.js
+npm install express ejs uuid
+node server.js
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+Refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
+refresh
